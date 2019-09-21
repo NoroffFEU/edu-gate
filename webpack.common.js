@@ -2,9 +2,11 @@
  const { CleanWebpackPlugin } = require('clean-webpack-plugin');
  const HtmlWebPackPlugin = require('html-webpack-plugin');
  const webpack = require("webpack");
+ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+ const devMode = process.env.NODE_ENV !== 'production';
 
  module.exports = {
-   entry: './src/index.js',
+   entry: "./src/index.js",
    module: {
     rules: [
       {
@@ -14,8 +16,17 @@
         options: { presets: ["@babel/env"] }
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        test: /\.(sa|sc|c)ss$/i,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: process.env.NODE_ENV === 'development',
+            },
+          },
+          "css-loader",
+          "sass-loader"
+        ]
       }
     ]
   },
@@ -26,7 +37,13 @@
      new HtmlWebPackPlugin({
         template: "./public/index.html",
         filename: "./index.html"
-      })
+      }),
+      new MiniCssExtractPlugin({
+        // Options similar to the same options in webpackOptions.output
+        // both options are optional
+        filename: devMode ? '[name].css' : '[name].[hash].css',
+        chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+      }),
    ],
    output: {
      filename: 'bundle.js',
