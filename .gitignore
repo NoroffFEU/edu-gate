@@ -1,3 +1,7 @@
 node_modules
 coverage
+<<<<<<< HEAD
 dist
+=======
+dist
+>>>>>>> setup redux with simple snippet of code
