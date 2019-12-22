@@ -1,11 +1,96 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import theme from './theme';
 
-function home () {
+const {  pureBlack, pureWhite, primaryLinkColor } = theme;
+
+const Wrapper = styled.section`
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+`;
+
+const HeaderTitle = styled.h1`
+font-family: Lato;
+font-style: normal;
+font-weight: 900;
+font-size: 70px;
+line-height: 84px;
+color: ${pureWhite};
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+`;
+
+
+const Description = styled.p`
+font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+color: ${pureBlack};
+`;
+
+const NavWrapper = styled.nav`
+  width: 100%;
+`;
+
+const List = styled.ul`
+  color: ${pureWhite};
+  padding: 0;
+`;
+
+const ListItem = styled.li`
+  display: inline-block;
+  padding: 5px;
+  text-transform: lowercase;
+  width: 123px;
+  text-align: center;
+  
+
+  @media (max-width: 768px){
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: ${pureWhite};
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: lowercase;
+
+  &:hover {
+    color: ${primaryLinkColor}
+  }
+`;
+
+
+export default function home () {
     return (
-        <div className="App">
-            <h1>Welcome to Edugate !!!</h1>
-            <p>home page</p>
-        </div>
+        <Wrapper>
+            <HeaderTitle>Edugate</HeaderTitle>
+            <NavWrapper>
+                <List>
+                <ListItem>
+                    <StyledLink to="/signup">Sign up</StyledLink>
+                </ListItem>
+                <ListItem>
+                    <StyledLink to="/login">Log in</StyledLink>
+                </ListItem>
+                </List>
+            </NavWrapper>
+            <Description>Welcome to Edugate, the platform that let you access your results online</Description>
+        </Wrapper>
     );
 }
 

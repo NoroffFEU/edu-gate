@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
     Route
 } from 'react-router-dom'
 import { hot } from 'react-hot-loader';
-import style from './style.scss';
 import { connect } from 'react-redux';
 import { simpleAction } from './actions/simpleAction';
 import Header from './components/header';
 import Routes from './routes';
 import NotFound from './components/notFound';
+import {GlobalStyles} from './components/global';
 
 
 const mapStateToProps = state => ({
@@ -23,24 +23,24 @@ const mapDispatchToProps = dispatch => ({
 class App extends Component {
     render() {
         return (
-            <Router>
-                <div>
-                    <Header />
-                    <Switch>
-                       { 
-                           Routes.map( (route, index) => (
-                            <Route
-                                path={route.path}
-                                component={route.component}
-                                exact={route.exact}
-                                key={`${route.component}-${index}`} />
-                       )) 
-                       }
-                       <Route component={NotFound} />
-                    </Switch>
-                    
-                </div>
-            </Router>
+            <Fragment>
+                <GlobalStyles />
+                <Router>
+                        <Header />
+                        <Switch>
+                        { 
+                            Routes.map( (route, index) => (
+                                <Route
+                                    path={route.path}
+                                    component={route.component}
+                                    exact={route.exact}
+                                    key={`${route.component}-${index}`} />
+                        )) 
+                        }
+                        <Route component={NotFound} />
+                        </Switch>
+                </Router>
+            </Fragment>
         );
     }
 }
