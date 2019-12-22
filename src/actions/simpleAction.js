@@ -4,7 +4,3 @@ export const simpleAction = () => dispatch => {
      payload: 'result_of_simple_action'
     })
    }
-<<<<<<< HEAD
-=======
-   
->>>>>>> setup redux with simple snippet of code
