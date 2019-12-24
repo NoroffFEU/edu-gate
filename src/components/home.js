@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import theme from './theme';
-
-const {  pureBlack, pureWhite, primaryLinkColor } = theme;
 
 const Wrapper = styled.section`
     text-align: center;
@@ -20,11 +17,10 @@ font-style: normal;
 font-weight: 900;
 font-size: 70px;
 line-height: 84px;
-color: ${pureWhite};
+color: ${({ theme }) => theme.pureWhite};
 
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
-
 
 const Description = styled.p`
 font-family: Lato;
@@ -32,7 +28,7 @@ font-style: normal;
 font-weight: 300;
 font-size: 20px;
 line-height: 24px;
-color: ${pureBlack};
+color: ${({ theme }) => theme.pureBlack};
 `;
 
 const NavWrapper = styled.nav`
@@ -40,7 +36,7 @@ const NavWrapper = styled.nav`
 `;
 
 const List = styled.ul`
-  color: ${pureWhite};
+  color: ${({ theme }) => theme.pureWhite};
   padding: 0;
 `;
 
@@ -61,7 +57,7 @@ const ListItem = styled.li`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: ${pureWhite};
+  color: ${({ theme }) => theme.pureWhite};
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -70,10 +66,10 @@ const StyledLink = styled(Link)`
   text-transform: lowercase;
 
   &:hover {
-    color: ${primaryLinkColor}
+    border-bottom: 2px solid ${({ theme }) => theme.pureWhite};
+    padding-bottom: 1px;
   }
 `;
-
 
 export default function home () {
     return (

@@ -4,7 +4,6 @@ const theme = {
     primaryLinkColor: '#212220',
     pureWhite: '#FFFFFF',
     pureBlack: '#000000',
-    
 };
 
 export default theme;

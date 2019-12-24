@@ -1,7 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import theme from './theme';
-
-const { primaryBgColor, primaryTextColor } = theme
 
 export const GlobalStyles = createGlobalStyle`
   html, body {
@@ -13,8 +10,8 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     align-items: center;
-    background: ${primaryBgColor};
-    color: ${primaryTextColor};
+    background: ${({ theme  }) => theme.primaryBgColor };
+    color: ${({ theme  }) => theme.primaryTextColor };
     display: flex;
     font-family: Lato, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     height: 100vh;
@@ -25,6 +22,4 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
     height: 100vh;
     padding: 10px;
-  }
-  `;
-  
+  }`;
