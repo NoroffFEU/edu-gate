@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import {bool} from 'prop-types';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { bool } from "prop-types";
 
 const NavWrapper = styled.nav`
   display: block;
   width: 100%;
 
   @media (max-width: 768px){
-    display: ${({ open }) => open ? 'block' : 'none'};
+    display: ${({ open }) => open ? "block" : "none"};
   }
 `;
 
@@ -87,26 +87,26 @@ const StyledLink = styled(Link)`
   }
 `;
 
-export default function header({open})  {
-    return (
+export default function header({ open })  {
+  return (
     <NavWrapper open={open}>
-        <HomeList>
-          <ListItem>
-            <HomeLink to="/">Edugate</HomeLink>
-          </ListItem>
-        </HomeList>
-        <List>
-          <ListItem>
-            <StyledLink to="/about">About</StyledLink>
-          </ListItem>
-          <ListItem>
-            <StyledLink to="/contact">Contact</StyledLink>
-          </ListItem>
-        </List>
-      </NavWrapper>
-    );
+      <HomeList>
+        <ListItem>
+          <HomeLink to="/">Edugate</HomeLink>
+        </ListItem>
+      </HomeList>
+      <List>
+        <ListItem>
+          <StyledLink to="/about">About</StyledLink>
+        </ListItem>
+        <ListItem>
+          <StyledLink to="/contact">Contact</StyledLink>
+        </ListItem>
+      </List>
+    </NavWrapper>
+  );
 }
 
-header.proptType ={
+header.propTypes ={
   open: bool.isRequired,
-}
+};

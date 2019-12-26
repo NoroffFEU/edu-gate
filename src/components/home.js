@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const Wrapper = styled.section`
     text-align: center;
@@ -72,22 +72,23 @@ const StyledLink = styled(Link)`
 `;
 
 export default function home () {
-    return (
-        <Wrapper>
-            <HeaderTitle>Edugate</HeaderTitle>
-            <NavWrapper>
-                <List>
-                <ListItem>
-                    <StyledLink to="/signup">Sign up</StyledLink>
-                </ListItem>
-                <ListItem>
-                    <StyledLink to="/login">Log in</StyledLink>
-                </ListItem>
-                </List>
-            </NavWrapper>
-            <Description>Welcome to Edugate, the platform that let you access your results online</Description>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <HeaderTitle>Edugate</HeaderTitle>
+      <NavWrapper>
+        <List>
+          <ListItem>
+            <StyledLink to="/signup">Sign up</StyledLink>
+          </ListItem>
+          <ListItem>
+            <StyledLink to="/login">Log in</StyledLink>
+          </ListItem>
+        </List>
+      </NavWrapper>
+      <Description>
+          Welcome to Edugate, the platform that let you access your
+           results online
+      </Description>
+    </Wrapper>
+  );
 }
-
-export default home

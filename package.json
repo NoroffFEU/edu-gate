@@ -8,7 +8,7 @@
     "start-dev": "webpack-dev-server --open --config webpack.dev.js",
     "start-prod": "webpack --open --config webpack.prod.js",
     "test": "jest --config ./jest.config.js --updateSnapshot --coverage",
-    "lint": "eslint src/**.js"
+    "lint": "eslint src/*.js"
   },
   "repository": {
     "type": "git",

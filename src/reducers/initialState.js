@@ -1,7 +1,7 @@
 const initialState = {
-    users: [],
-    schools:[],
-    results: [],
-}
+  users: [],
+  schools:[],
+  results: [],
+};
 
 export default initialState;

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   html, body {
@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme  }) => theme.primaryBgColor };
     color: ${({ theme  }) => theme.primaryTextColor };
     display: flex;
-    font-family: Lato, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: Lato, Helvetica, Arial, sans-serif, "Segoe UI Emoji";
     height: 100vh;
     justify-content: center;
     text-rendering: optimizeLegibility;
