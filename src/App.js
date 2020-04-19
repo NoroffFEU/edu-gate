@@ -12,17 +12,26 @@ import NotFound from './components/common/notFound';
 import { GlobalStyles } from './common/global';
 import theme from './common/theme';
 import Burger from './components/common/hamburger';
+import Loader from './components/loader';
 import { useOnClickOutside } from './hooks/index';
 
 function App() {
   const [ open, setOpen ] = useState(false);
   const node = useRef();
+  const [ showLoading, setShowLoading ] = useState(true);
   useOnClickOutside(node, () => setOpen(false));
+
+  // setTimeout(() => {
+  //   setShowLoading(false);
+  // }, 2000);
+
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Router>
         <div ref={node}>
+          <Loader setShowLoading={setShowLoading} showLoading={showLoading} />
           <Header open={open} />
           <Burger open={open} setOpen={setOpen} />
         </div>

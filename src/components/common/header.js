@@ -1,14 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { bool } from "prop-types";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { bool } from 'prop-types';
 
 const NavWrapper = styled.nav`
   display: block;
   width: 100%;
 
   @media (max-width: 768px){
-    display: ${({ open }) => open ? "block" : "none"};
+    display: ${({ open }) => open ? 'block' : 'none'};
   }
 `;
 
