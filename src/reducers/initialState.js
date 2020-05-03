@@ -2,7 +2,7 @@ const initialState = {
   users: [],
   schools:[],
   results: [],
-  isLoading: false,
+  isFetching: false,
 };
 
 export default initialState;

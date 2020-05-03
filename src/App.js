@@ -12,7 +12,7 @@ import NotFound from './components/common/notFound';
 import { GlobalStyles } from './common/global';
 import theme from './common/theme';
 import Burger from './components/common/hamburger';
-import Loader from './components/loader';
+import Loader from './svgIcons/Loader';
 import { useOnClickOutside } from './hooks/index';
 
 function App() {
@@ -21,20 +21,19 @@ function App() {
   const [ showLoading, setShowLoading ] = useState(true);
   useOnClickOutside(node, () => setOpen(false));
 
-  // setTimeout(() => {
-  //   setShowLoading(false);
-  // }, 2000);
-
+  setTimeout(() => {
+    setShowLoading(false);
+  }, 2000);
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Router>
         <div ref={node}>
-          <Loader setShowLoading={setShowLoading} showLoading={showLoading} />
           <Header open={open} />
           <Burger open={open} setOpen={setOpen} />
         </div>
+        { showLoading && <Loader /> }
         <Switch>
           { 
             Routes.map( (route, index) => (
