@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState }from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -74,18 +74,24 @@ const Button = styled.input`
 `;
 
 export default function Login() {
+  const [ value, setValue ] = useState('');
+
+  const handleChanges = (event) => {
+    setValue({ ...Input, [event.target.name]: event.target.value });
+  };
+
   return (
     <MainWrapper>
       <Wrapper>
         <HeaderTitle>Log In</HeaderTitle>
-        <form>
+        <form onSubmit={ () => {}}>
           <InputWrapper>
-            Username
-            <Input type="text" />
+                  Username
+            <Input type="text" name="userame" onChange={ handleChanges }/>
           </InputWrapper>
           <InputWrapper>
-            Password
-            <Input type="password" />
+                  Password
+            <Input type="password" name="password" onChange={ handleChanges } />
           </InputWrapper>
           <InputWrapper>Forgot your password? Click <Link to="/forgotPassword">here</Link></InputWrapper>
           <Button type="submit" value="Submit" />
@@ -94,5 +100,5 @@ export default function Login() {
       </Wrapper>
     </MainWrapper>
   );
-} 
+}
 

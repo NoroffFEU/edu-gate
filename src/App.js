@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useContext } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,16 +14,19 @@ import theme from './common/theme';
 import Burger from './components/common/hamburger';
 import Loader from './svgIcons/Loader';
 import { useOnClickOutside } from './hooks/index';
+import { store } from './store';
+import { isFetching } from './actions/simpleAction';
 
 function App() {
   const [ open, setOpen ] = useState(false);
   const node = useRef();
-  const [ showLoading, setShowLoading ] = useState(true);
   useOnClickOutside(node, () => setOpen(false));
 
-  setTimeout(() => {
-    setShowLoading(false);
-  }, 2000);
+  const globalState = useContext(store);
+  const { state, dispatch } = globalState;
+
+
+  isFetching(false, dispatch);
 
   return (
     <ThemeProvider theme={theme}>
@@ -33,7 +36,7 @@ function App() {
           <Header open={open} />
           <Burger open={open} setOpen={setOpen} />
         </div>
-        { showLoading && <Loader /> }
+        { state.isFetching && <Loader /> }
         <Switch>
           { 
             Routes.map( (route, index) => (
