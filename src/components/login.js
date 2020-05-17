@@ -1,6 +1,7 @@
-import React, { useState }from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { useInputChange } from '../hooks/index';
 
 const MainWrapper = styled.div`
   display: flex;
@@ -73,12 +74,13 @@ const Button = styled.input`
   width: 77px;
 `;
 
-export default function Login() {
-  const [ value, setValue ] = useState('');
+// const { dispatch } = globalState;
 
-  const handleChanges = (event) => {
-    setValue({ ...Input, [event.target.name]: event.target.value });
-  };
+export default function Login() {
+  const [ input, handleInputChange ] = useInputChange();
+  // console.log('globalState ==> ', globalState);
+  // const { dispatch } = globalState;
+  // isFetching(true, dispatch);
 
   return (
     <MainWrapper>
@@ -87,11 +89,11 @@ export default function Login() {
         <form onSubmit={ () => {}}>
           <InputWrapper>
                   Username
-            <Input type="text" name="userame" onChange={ handleChanges }/>
+            <Input type="text" name="userame" onChange={ handleInputChange }/>
           </InputWrapper>
           <InputWrapper>
                   Password
-            <Input type="password" name="password" onChange={ handleChanges } />
+            <Input type="password" name="password" onChange={ handleInputChange } />
           </InputWrapper>
           <InputWrapper>Forgot your password? Click <Link to="/forgotPassword">here</Link></InputWrapper>
           <Button type="submit" value="Submit" />

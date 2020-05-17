@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export const useOnClickOutside = (ref, handler) => {
   useEffect(() => {
@@ -14,4 +14,15 @@ export const useOnClickOutside = (ref, handler) => {
     };
   },
   [ ref, handler ]);
+};
+
+export const useInputChange = () => {
+  const [ input, setInput ] = useState({});
+
+  const handleInputChange = (e) => setInput({
+    ...input,
+    [e.currentTarget.name]: e.currentTarget.value
+  });
+
+  return [ input, handleInputChange ];
 };
