@@ -1,9 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import axios from 'axios';
-import { useInputChange } from '../hooks/index';
 import { CommonContext } from '../context/commonContext';
 
 const MainWrapper = styled.div`
@@ -75,6 +74,12 @@ const Input = styled.input`
   width: 100%;
 `;
 
+const ErrorList = styled.ul`
+  color: red;
+  margin: 0;
+  padding-left: 20px;
+`;
+
 const Button = styled.input`
   background: ${({ theme }) => theme.pureWhite};
   border-radius: 10px
@@ -89,25 +94,35 @@ const Button = styled.input`
 `;
 
 export default function SignUp() {
-  const { register, handleSubmit } = useForm();
+  const { register, errors: customErrors, reset, handleSubmit, getValues } = useForm();
   const { setCommonState, commonState } = useContext(CommonContext);
+  const [ errors, setErrors ] = useState({});
 
   const onSubmit = async(data) => {
+    console.log('api url  ====', process.env.API_URL);
     try {
       setCommonState(Object.assign({}, commonState, { isFetching: true }));
+      await axios.post(`${process.env.API_URL}users/signup`,
+        data);
+      setCommonState(Object.assign({}, commonState, { isFetching: false }));
+      reset();
       /**
      * TODO
-     * 1. save the payload(response) returned from the request so we can use the use's info across this app
-     * 2. save the domain to the env (webpack)
-     * 2. Solve the cors error from the server side
+     * 1. Create a success page
+     * 2. route to the page
+     * 3. abstract ErrorList to a new component and import it here
      */
-      const response = await axios.post('https://edugatee.herokuapp.com/api/v1/users/signup', data);
-      setCommonState(Object.assign({}, commonState, { isFetching: false }));
     }
     catch(error) {
-      console.log(error);
+      setErrors({ ...error.response.data });
       setCommonState(Object.assign({}, commonState, { isFetching: false }));
     }
+  };
+
+  const confirmPassword = (value) => {
+    const { password } = getValues();
+    if(value !== password) return 'Passwords should match!';
+    return true;
   };
 
   return (
@@ -117,25 +132,33 @@ export default function SignUp() {
         <form onSubmit={ handleSubmit(onSubmit) }>
           <InputWrapper>
             Email
-            <Input ref={ register } type="email" name="email" />
+            <ErrorList>{ errors.errors && errors.errors.email !== undefined  ? errors.errors.email.map((item,index) => <li key={index}>{item}</li>) : ''}</ErrorList>
+            <Input ref={ register({ required: true }) } name="email" />
           </InputWrapper>
           <HoriFlexWrapper>
             <ChildFlexWrapper>
               First Name
-              <Input ref={ register } type="text" name="firstname" />
+              <Input ref={ register } type="text" name="first_name" />
             </ChildFlexWrapper>
             <ChildFlexWrapper>
               Surname
-              <Input ref={ register } type="text" name="surname" />
+              <Input ref={ register } type="text" name="last_name" />
             </ChildFlexWrapper>
           </HoriFlexWrapper>
           <InputWrapper>
             Password
-            <Input ref={ register } type="password" name="password" />
+            <ErrorList>{ errors.errors && errors.errors.password !== undefined  ? errors.errors.password.map((item,index) => <li key={index}>{item}</li>) : ''}</ErrorList>
+            <Input ref={ register({ required: true }) } type="password" name="password" />
           </InputWrapper>
           <InputWrapper>
             Confirm Password
-            <Input ref={ register } type="password" name="confirmPassword" />
+            
+            <ErrorList>{ customErrors.confirmPassword && (
+              <li>
+                { customErrors.confirmPassword.message }
+              </li>
+            ) }</ErrorList>
+            <Input ref={ register({ required: true, validate: confirmPassword }) } type="password" name="confirmPassword" />
           </InputWrapper>
           <Button type="submit" value="Submit" />
           <InfoWrapper>Back to <Link to="/login">login</Link></InfoWrapper>

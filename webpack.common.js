@@ -57,6 +57,9 @@ module.exports = {
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
     }),
+    new webpack.DefinePlugin({
+      'process.env.API_URL': JSON.stringify('https://edugatee.herokuapp.com/api/v1/'),
+    })
   ],
   output: {
     filename: 'bundle.js',
