@@ -99,7 +99,6 @@ export default function SignUp() {
   const [ errors, setErrors ] = useState({});
 
   const onSubmit = async(data) => {
-    console.log('api url  ====', process.env.API_URL);
     try {
       setCommonState(Object.assign({}, commonState, { isFetching: true }));
       await axios.post(`${process.env.API_URL}users/signup`,
