@@ -1,10 +1,10 @@
 
 ## Project Brief: **Edugate** - Result Management System for High Schools in Nigeria
 
-**Objective:**  
+**Objective:**
 Edugate aims to streamline result management, user authentication, and administrative functions in high schools. This system will serve multiple user roles (Admin, Teacher, and Student) with unique access levels for each.
 
-**Project Overview:**  
+**Project Overview:**
 Edugate is a result management system tailored to meet the needs of high schools in Nigeria. Through a secure, user-friendly API, Edugate allows schools to manage and access student results, maintain user accounts, and verify data with role-specific permissions.
 
 ---
@@ -15,41 +15,41 @@ Edugate is a result management system tailored to meet the needs of high schools
    - **GET /api/v1**: Access the home page.
 
 2. **User Authentication & Account Management**
-   - **Signup**  
+   - **Signup**
      **POST /api/v1/users/signup**: Create new user accounts.
-   - **Login**  
+   - **Login**
      **POST /api/v1/users/login**: Authenticate users to grant access.
-   - **Logout**  
+   - **Logout**
      **GET /api/v1/users/logout**: Log out a user from the session.
-   - **Change Password**  
+   - **Change Password**
      **PATCH /api/v1/users/changePassword**: Allow users to update their passwords.
-   - **Verify User Email**  
+   - **Verify User Email**
      **PATCH /api/v1/user/verify/**: Confirm email address during user registration.
 
 3. **User Management (Admin)**
-   - **Search Users**  
+   - **Search Users**
      **GET /api/v1/users/:query**: Search for users using specific criteria.
-   - **Update User Information**  
+   - **Update User Information**
      **PATCH /api/v1/users/update**: Edit user details as needed.
-   - **Add New Users**  
+   - **Add New Users**
      **POST /api/v1/users/addusers**: Admins can add new students to the system.
-   - **Delete Users**  
+   - **Delete Users**
      **DELETE /api/v1/users/delete**: Remove users from the database (Admin access only).
 
 4. **School Management (Admin)**
-   - **Create School**  
+   - **Create School**
      **POST /api/v1/schools/create**: Set up new schools in the system.
 
 5. **Result Management (Teacher)**
-   - **View Results**  
+   - **View Results**
      **GET /api/v1/results**: Students and teachers can access the list of results.
-   - **Add New Results**  
+   - **Add New Results**
      **POST /api/v1/results/addresults**: Teachers can upload new results for students.
-   - **Update Results**  
+   - **Update Results**
      **PATCH /api/v1/results/update**: Modify existing results (Teacher access only).
-   - **View Top-Level Results**  
+   - **View Top-Level Results**
      **GET /api/v1/results/toplevel**: Teachers can view results summary at a high level.
-   - **Delete Results**  
+   - **Delete Results**
      **DELETE /api/v1/results/delete**: Remove incorrect or outdated result entries.
 
 ---
@@ -70,7 +70,7 @@ The requirements for Edugate's frontend development focus on creating a user-fri
 ### **2. Navigation & User Interface**
    - **Responsive Navigation Bar**: Include links to Home, Results, Profile, and Logout, with dynamic items based on user roles.
    - **Sidebar (Admin & Teacher)**: Provide options for managing users, results, and schools with icons and expand/collapse functionality on smaller screens.
-   - **Dashboard Layout**: 
+   - **Dashboard Layout**:
       - **Students**: View profile info, recent results, and academic status.
       - **Teachers**: Access to results management tools.
       - **Admins**: Manage users, schools, and high-level data.
@@ -154,6 +154,6 @@ These requirements aim to create a robust, visually consistent, and user-friendl
 
 ---
 
-**Note**: Feel free to reach out for guidance on technical or design-related questions during development. 
+**Note**: Feel free to reach out for guidance on technical or design-related questions during development.
 
 Good luck, and let's build something impactful together!
