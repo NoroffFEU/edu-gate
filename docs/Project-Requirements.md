@@ -9,6 +9,16 @@ Edugate is a result management system tailored to meet the needs of high schools
 
 ---
 
+### Timeline Summary
+
+- 1.	Style Guide & Prototyping
+- 2.	Authentication & Navigation
+- 3.	Dashboard & Profile Settings
+- 4.	Results Management
+- 5.	User & School Management
+- 6.	Notifications, Modals, & Finishing Touches
+  7.	
+
 ### Core Features & API Endpoints
 
 1. **Home**
@@ -133,16 +143,6 @@ The requirements for Edugate's frontend development focus on creating a user-fri
 ---
 
 These requirements aim to create a robust, visually consistent, and user-friendly frontend for Edugate. Each component should align with Edugate’s goal to be an efficient result management system for high schools in Nigeria.
-
-
-### Timeline Summary
-
-- 1.	Style Guide & Prototyping
-- 2.	Authentication & Navigation
-- 3.	Dashboard & Profile Settings
-- 4.	Results Management
-- 5.	User & School Management
-- 6.	Notifications, Modals, & Finishing Touches
 
 ### Evaluation Criteria
 
