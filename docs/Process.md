@@ -50,7 +50,7 @@ Your contribution is assessed based on your written reflection and role responsi
 - Screenshots of Figma contributions.
 - Links to relevant GitHub Issues and Pull Requests.
 - A link to the project board filtered by your GitHub username.
-- Evidence of involvement in discussions (e.g., Discord, Teams).
+- Evidence of involvement in discussions (e.g., Discor OR Teams).
 - A reflection (~500-1000 words) on your process.
 
 ## Marking Criteria
