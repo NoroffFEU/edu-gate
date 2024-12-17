@@ -8,7 +8,9 @@
     "start-dev": "webpack-dev-server --open --config webpack.dev.js",
     "start-prod": "webpack --open --config webpack.prod.js",
     "test": "jest --config ./jest.config.js --updateSnapshot --coverage",
-    "lint": "eslint src/*.js"
+    "lint": "eslint src/*.js",
+    "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+	  "build": "npx tailwindcss -i ./css/input.css -o ./css/style.css --minify"
   },
   "repository": {
     "type": "git",
@@ -64,5 +66,9 @@
     "sass": "1.23.7",
     "styled-components": "4.4.1",
     "webpack": "4.41.2"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": []
 }
