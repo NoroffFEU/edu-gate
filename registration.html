@@ -3,9 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="author" content="Ingelinn Hallseth" />
+    <meta
+      name="description"
+      content="The Registration page for Edugate. Edugate is a result management system for high schools in Nigeria."
+    />
+    <link rel="stylesheet" href="" />
+    <script src="" defer></script>
+    <title>Edugate | Registration</title>
   </head>
   <body>
-    Creating branch for the registration page
+    <header></header>
+    <main>
+      <form class="registration-form" action="submit-form-here" method="post">
+        <h1>Registration</h1>
+        <label for="school">School</label>
+        <input
+          type="text"
+          name="school"
+          id="school"
+          placeholder="Edugate"
+          required
+        />
+        <label for="address1">Address line 1</label>
+        <input
+          type="text"
+          name="address1"
+          id="address1"
+          placeholder="Address"
+          required
+        />
+        <label for="address2">Address line 2</label>
+        <input
+          type="text"
+          name="address2"
+          id="address2"
+          placeholder="Address"
+        />
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" placeholder="Oslo" required />
+        <label for="postal-code">Postal Code</label>
+        <input
+          type="number"
+          name="postal-code"
+          id="postal-code"
+          placeholder="0000"
+          required
+        />
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </main>
+    <footer></footer>
   </body>
 </html>
