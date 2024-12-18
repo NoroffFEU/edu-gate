@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -566,14 +566,6 @@ video {
   position: relative;
 }
 
-.m-40 {
-  margin: 10rem;
-}
-
-.m-10 {
-  margin: 2.5rem;
-}
-
 .block {
   display: block;
 }
@@ -594,52 +586,12 @@ video {
   border-width: 1px;
 }
 
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(76 175 80 / var(--tw-bg-opacity, 1));
-}
-
-.bg-accent {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 87 34 / var(--tw-bg-opacity, 1));
-}
-
-.bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 150 243 / var(--tw-bg-opacity, 1));
-}
-
-.fill-primary {
-  fill: #4CAF50;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
-.font-heading {
-  font-family: Poppins, sans-serif;
-}
-
-.font-body {
-  font-family: Roboto, sans-serif;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
 .lowercase {
   text-transform: lowercase;
 }
 
 .capitalize {
   text-transform: capitalize;
-}
-
-.text-accent-hover {
-  --tw-text-opacity: 1;
-  color: rgb(230 74 25 / var(--tw-text-opacity, 1));
 }
 
 .outline {

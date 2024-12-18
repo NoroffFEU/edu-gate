@@ -4,7 +4,6 @@
   "description": "The frontend part of edugate",
   "main": "app.js",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
     "start-dev": "webpack-dev-server --open --config webpack.dev.js",
     "start-prod": "webpack --open --config webpack.prod.js",
     "test": "jest --config ./jest.config.js --updateSnapshot --coverage",
