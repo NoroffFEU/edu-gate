@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Desktop</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <style>
+        h2{
+            font-size: 32px;
+            font-weight: 800;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 48px;
+        }
+        h3{
+            font-weight: 800;
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        h4{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600; /* Medium Bold */
+            font-size: 20px;
+            margin-bottom: 48px;
+
+        }
+        .student-initials img{
+            max-width: 150px;
+            margin-bottom: 24px;
+        }
+        .student-profile-container{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .see-profile img{
+            max-width: 96px;
+            margin-bottom: 16px;
+        }
+        .my-results img{
+            max-width: 96px;
+            margin-bottom: 16px;
+        }
+        .log-out img{
+            max-width: 96px;
+            margin-bottom: 16px;
+        }
+        .see-profile a p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+        }
+        .my-results a p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+        }
+        .log-out a p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+        }
+        .student-icons-container{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            gap: 48px;
+        }
+        .see-profile{
+            margin-right: 48px;
+        }
+        .my-results{
+            margin-right: 48px;
+        }
+        .see-profile, .my-results, .log-out {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        }
+        
+
+        
+        
+    </style>
+</head>
+<body>
+    <h2>Dashboard</h2>
+    <div class="student-profile-container">
+        <div class="student-initials"><img src="/public/icons/Student initials.png"></div>
+        <h3>Joe Bloggs</h3>
+        <h4>Student at Edugate school</h4>
+    </div>
+    <div class="student-icons-container">
+        <div class="see-profile">
+            <a href="#"><img src="/public/icons/user-circle.png"></a>
+            <a href="#"><p>See profile</p></a>
+        </div>
+        <div class="my-results">
+            <a href="#"><img src="/public/icons/results.png"></a>
+            <a href="#"><p>My results</p></a>
+        </div>
+        <div class="log-out">
+            <a href="#"><img src="/public/icons/logout.png"></a>
+            <a href="#"><p>My results</p></a>
+        </div>
+
+
+
+    </div>
+
+    
+</body>
+</html>
