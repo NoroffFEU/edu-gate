@@ -8,7 +8,7 @@
     "start-prod": "webpack --open --config webpack.prod.js",
     "test": "jest --config ./jest.config.js --updateSnapshot --coverage",
     "lint": "eslint src/*.js",
-    "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+    "dev": "npx tailwindcss -i ./css/styles.css -o ./dist/output.css --watch",
 	  "build": "npx tailwindcss -i ./css/input.css -o ./css/style.css --minify"
   },
   "repository": {
