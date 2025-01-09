@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="A page for adding teacher information" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Add Teachers</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">Dashboard</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<h1>Add Teachers</h1>
+
+			<section>
+				<p>To add teachers, upload an Excel spreadsheet with the following format:</p>
+
+				<!-- Table showing the expected format -->
+				<table>
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Surname</th>
+							<th>ID</th>
+							<th>Date of Birth</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>First Name</td>
+							<td>Second Name</td>
+							<td>School Teacher ID</td>
+							<td>Date of Birth</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- Form for uploading the Excel file -->
+				<form action="#" method="post" enctype="multipart/form-data">
+					<div>
+						<label for="fileUpload">Upload File:</label>
+						<input type="file" id="fileUpload" name="fileUpload" accept=".xlsx, .xls" />
+					</div>
+
+					<!-- Submit button -->
+					<div>
+						<button type="submit">Upload</button>
+					</div>
+				</form>
+
+				<!-- Link to navigate back -->
+				<div>
+					<a href="#">Back to Dashboard</a>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; 2025 Edgate School. All Rights Reserved.</p>
+		</footer>
+	</body>
+</html>
