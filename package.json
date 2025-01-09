@@ -9,7 +9,7 @@
     "test": "jest --config ./jest.config.js --updateSnapshot --coverage",
     "lint": "eslint src/*.js",
     "dev": "npx tailwindcss -i ./css/styles.css -o ./dist/output.css --watch",
-	  "build": "npx tailwindcss -i ./css/input.css -o ./css/style.css --minify"
+	  "build": "npx tailwindcss -i ./css/styles.css -o ./dist/output.css --minify"
   },
   "repository": {
     "type": "git",
