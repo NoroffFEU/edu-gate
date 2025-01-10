@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher dashboard</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      h2 {
+        font-size: 32px;
+        font-weight: 800;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 48px;
+      }
+      h3 {
+        font-weight: 800;
+        font-size: 24px;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+      h4 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 600; /* Medium Bold */
+        font-size: 16px;
+        margin-bottom: 48px;
+      }
+
+      .profile-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .profile-container img {
+        width: 150px;
+        height: 150px;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section a {
+        text-decoration: none;
+        color: #333333;
+      }
+
+      section img {
+        height: 96px;
+        width: 96px;
+        padding: 0 32px 0 32px;
+      }
+
+      .icons-container-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 48px;
+        text-align: center;
+      }
+      .icons-container-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        text-align: center;
+      }
+
+      .top-line p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600; /* Medium Bold */
+        font-size: 20px;
+        margin-bottom: 48px;
+      }
+
+      .bottom-line p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600; /* Medium Bold */
+        font-size: 20px;
+        margin-bottom: 48px;
+      }
+
+      .see-profile p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500; /* Medium Bold */
+        font-size: 24px;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Dashboard</h2>
+    <div class="profile-container">
+      <div class="initials-icon">
+        <img src="/public/icons/student-initials.png" />
+      </div>
+      <h3>Joe Bloggs</h3>
+      <h4>Teacher at Edugate school</h4>
+    </div>
+    <section>
+      <div class="icons-container-top">
+        <div class="top-line">
+          <a href="#"><img src="/public/icons/top-students.png" alt="" /></a>
+          <a href="#"><p>Top students</p></a>
+        </div>
+        <div class="top-line">
+          <a href="#"><img src="/public/icons/add-results.png" alt="" /></a>
+          <a href="#"><p>Add results</p></a>
+        </div>
+        <div class="top-line">
+          <a href="#"><img src="/public/icons/results.png" alt="" /></a>
+          <a href="#"><p>View results</p></a>
+        </div>
+      </div>
+      <div class="icons-container-bottom">
+        <div class="see-profile">
+          <a href="#"><img src="/public/icons/user-circle.png" alt="" /></a>
+          <a href="#"><p>See profile</p></a>
+        </div>
+        <div class="bottom-line">
+          <a href="#"><img src="/public/icons/logout.png" alt="" /></a>
+          <a href="#"><p>Log out</p></a>
+        </div>
+      </div>
+    </section>
+    <footer class="p-4 ml-10 mr-10">
+      <img src="../public/img/circle-footer.png" alt="" />
+    </footer>
+  </body>
+</html>
