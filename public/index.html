@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Results</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex">
+  <aside class="fixed left-0 top-0 h-full bg-white shadow-lg z-10 border-r-2 border-gray-500 border-opacity-50">
+    <nav class="h-full flex flex-col justify-center">
+        <li><img src="home.svg" alt="Home"></li>
+        <li><img src="book.png" alt="Book logo"></li>
+        <li><img src="user.png" alt="User logo"></li>
+        <li><img src="student.png" alt="Student logo"></li>
+        <li><img src="logout.png" alt="Logout"></li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="flex-1 ml-20 flex flex-col min-h-screen">
+    <header class="flex flex-row justify-between items-center p-4 border-b-2 border-gray-500 border-opacity-50">
+      <img src="edugate-logo.png" alt="Edugate logo">
+      <nav>
+        <ul class="flex items-center space-x-6">
+          <li>Dashboard</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li><img src="user-circle.svg" alt="Profile button"></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex flex-col items-center px-4 flex-grow">
+      <p class="self-start mb-12">Dashboard > Your results</p>
+      <div class="w-full max-w-2xl">
+        <h2 class="text-2xl font-bold text-center mb-2">Your Results</h2>
+        <p class="text-center mb-4">View your results</p>
+        <div class="flex justify-center mb-8">
+          <div class="relative w-96">
+            <input type="text" name="search" placeholder="Search for results..."
+              class="w-full p-2 pr-10 border rounded">
+            <button class="absolute right-2 top-1/2 transform -translate-y-1/2">
+              <img src="search.svg" alt="Search">
+            </button>
+          </div>
+        </div>
+
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="text-[#4CAF50] font-bold">
+              <th class="text-center py-3">Year</th>
+              <th class="text-center py-3">Term</th>
+              <th class="text-center py-3">Subject</th>
+              <th class="text-center py-3">Exam</th>
+              <th class="text-center py-3">Result</th>
+              <th class="text-center py-3">Grade</th>
+            </tr>
+          </thead>
+          <tbody class="odd:bg-[#f0fff4] even:bg-white">
+            <tr class="bg-gray-200">
+              <td class="text-center py-2">2019</td>
+              <td class="text-center py-2">3</td>
+              <td class="text-center py-2">Mathematics</td>
+              <td class="text-center py-2">M1</td>
+              <td class="text-center py-2">90/120</td>
+              <td class="text-center py-2">B</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="text-center py-2">2019</td>
+              <td class="text-center py-2">3</td>
+              <td class="text-center py-2">Physics</td>
+              <td class="text-center py-2">P3</td>
+              <td class="text-center py-2">102/120</td>
+              <td class="text-center py-2">A</td>
+            </tr>
+            <tr class="bg-gray-200">
+              <td class="text-center py-2">2019</td>
+              <td class="text-center py-2">3</td>
+              <td class="text-center py-2">English</td>
+              <td class="text-center py-2">E2</td>
+              <td class="text-center py-2">80/110</td>
+              <td class="text-center py-2">B</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="text-center py-2">2019</td>
+              <td class="text-center py-2">2</td>
+              <td class="text-center py-2">English</td>
+              <td class="text-center py-2">E1</td>
+              <td class="text-center py-2">95/130</td>
+              <td class="text-center py-2">B</td>
+            </tr>
+            <tr class="bg-gray-200">
+              <td class="text-center py-2">2019</td>
+              <td class="text-center py-2">3</td>
+              <td class="text-center py-2">Biology</td>
+              <td class="text-center py-2">B2</td>
+              <td class="text-center py-2">73/120</td>
+              <td class="text-center py-2">C</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="text-center py-2">2019</td>
+              <td class="text-center py-2">2</td>
+              <td class="text-center py-2">Physics</td>
+              <td class="text-center py-2">P2</td>
+              <td class="text-center py-2">110/120</td>
+              <td class="text-center py-2">A</td>
+            </tr>
+            <tr class="bg-gray-200">
+              <td class="text-center py-2">2019</td>
+              <td class="text-center py-2">1</td>
+              <td class="text-center py-2">History</td>
+              <td class="text-center py-2">H2</td>
+              <td class="text-center py-2">90/110</td>
+              <td class="text-center py-2">A</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <nav class="mt-8 flex justify-center">
+          <ul class="flex space-x-2">
+            <li>
+              <button
+                class="bg-gray-200 text-white border border-gray-300 rounded w-10 h-10 flex items-center justify-center">
+                <img src="double-back-disabled.svg" alt="Double back disabled" class="w-4 h-4">
+              </button>
+            </li>
+            <li>
+              <button
+                class="bg-gray-200 text-white border border-gray-300 rounded w-10 h-10 flex items-center justify-center">
+                <img src="back-disabled.svg" alt="Back disabled" class="w-4 h-4">
+              </button>
+            </li>
+            <li>
+              <button
+                class="bg-white text-black border border-gray-300 rounded w-10 h-10 flex items-center justify-center">1</button>
+            </li>
+            <li>
+              <button
+                class="bg-white text-black border border-gray-300 rounded w-10 h-10 flex items-center justify-center">2</button>
+            </li>
+            <li>
+              <button
+                class="bg-white text-black border border-gray-300 rounded w-10 h-10 flex items-center justify-center">...</button>
+            </li>
+            <li>
+              <button
+                class="bg-white text-black border border-gray-300 rounded w-10 h-10 flex items-center justify-center">7</button>
+            </li>
+            <li>
+              <button
+                class="bg-white text-black border border-gray-300 rounded w-10 h-10 flex items-center justify-center">8</button>
+            </li>
+            <li>
+              <button
+                class="bg-white text-black border border-gray-300 rounded w-10 h-10 flex items-center justify-center">
+                <img src="forward.svg" alt="Forward" class="w-4 h-4">
+              </button>
+            </li>
+            <li>
+              <button
+                class="bg-white text-black border border-gray-300 rounded w-10 h-10 flex items-center justify-center">
+                <img src="double-forward.svg" alt="double-forward" class="w-4 h-4">
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="flex justify-center mt-12 mb-8">
+          <button
+            class="border-2 border-[#2196F3] text-[#2196F3] font-bold bg-transparent px-6 py-2 rounded hover:bg-[#2196F3] hover:text-white transition-colors">
+            Back to dashboard
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-20 flex justify-center p-4">
+      <img src="circles.png" alt="Circles" class="w-auto">
+    </footer>
+  </div>
+</body>
+
+</html>
