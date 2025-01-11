@@ -7,6 +7,74 @@
     <title>About</title>
 </head>
 <body>
+    <header class="bg-neutral-light-gray text-neutral-dark-gray">
+        <nav class="max-w-7x1 flex items-center justify-between px-4 py-4">
+
+            <img class="pl-5" src="../public/img/logo-header.png" alt="Edugate Logo">
     
+            <!-- Hamburger Menu (Checkbox Hack) -->
+            <div class="relative md:hidden">
+                <input
+                    type="checkbox"
+                    id="menu-toggle"
+                    class="hidden peer"
+                />
+                <label
+                    for="menu-toggle"
+                    class="block cursor-pointer focus:outline-none"
+                    aria-label="Toggle menu"
+                >
+                    <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </label>
+    
+                <div
+                    class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
+                >
+
+                        <!-- need to remove hamburger icon when this is visible -->
+                    <label
+                        for="menu-toggle"
+                        class="absolute top-4 right-4 cursor-pointer focus:outline-none"
+                        aria-label="Close menu"
+                    >
+                        <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </label>
+    
+                    <!-- change up the icons when they have been added to icons file -->
+
+                    <ul class="flex flex-col items-end justify-center h-full gap-12 text-xl mr-8">
+                        <li>
+                            <a href="#" class="flex items-center gap-5 hover:underline">
+                                Login
+                                <img class="w-5 h-5" src="../public/icons/logout.png" alt="Login Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-5 hover:underline">
+                                Signup
+                                <img class="w-5 h-5" src="../public/icons/logout.png" alt="Signup Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-5 hover:underline">
+                                About
+                                <img class="w-5 h-5" src="../public/icons/logout.png" alt="About Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-5 hover:underline">
+                                Contact
+                                <img class="w-5 h-5" src="../public/icons/logout.png" alt="Contact Icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
