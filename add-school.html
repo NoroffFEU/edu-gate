@@ -8,65 +8,66 @@
     <link rel="stylesheet" href="#"/>
     <script src="#" defer></script>
     <title>Edugate | Add School</title>
+    <link rel="stylesheet" href="./dist/styles.css">
 </head>
-<body>
+<body class="bg-gray-100">
     <header></header>
-    <main>
-        <section>
-            <h1>Add School</h1>
-            <p>To add a school, upload an Excel spreadsheet with this format:</p>
+    <main class="max-w-4xl mx-auto p-6 mt-6">
+        <section class="mb-6 flex flex-col justify-cente items-center">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">Add School</h1>
+            <p class="text-gray-600">To add a school, upload an Excel spreadsheet with this format:</p>
         </section>
         <section>
-            <table border="1">
+            <table class="w-full border border-gray-300 text-left text-sm">
                 <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>A</th>
-                        <th>B</th>
-                        <th>C</th>
-                        <th>D</th>
-                        <th>E</th>
+                    <tr class="bg-gray-200 text-gray-600 uppercase text-xs">
+                        <th class="bg-gray-200 text-gray-600 uppercase text-xs px-4 py-2">#</th>
+                        <th class="border border-gray-300 px-4 py-2">A</th>
+                        <th class="border border-gray-300 px-4 py-2">B</th>
+                        <th class="border border-gray-300 px-4 py-2">C</th>
+                        <th class="border border-gray-300 px-4 py-2">D</th>
+                        <th class="border border-gray-300 px-4 py-2">E</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="col">1</th>
-                        <th scope="col">school_name</th>
-                        <th scope="col">city</th>
-                        <th scope="col">postcode</th>
-                        <th scope="col">address_1</th>
-                        <th scope="col">contact</th>
+                        <th class="bg-gray-200 border border-gray-300 px-4 py-2" scope="col">1</th>
+                        <th class="border border-gray-300 px-4 py-2" scope="col">school_name</th>
+                        <th class="border border-gray-300 px-4 py-2" scope="col">city</th>
+                        <th class="border border-gray-300 px-4 py-2" scope="col">postcode</th>
+                        <th class="border border-gray-300 px-4 py-2" scope="col">address_1</th>
+                        <th class="border border-gray-300 px-4 py-2" scope="col">contact</th>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>School name</td>
-                        <td>City</td>
-                        <td>Postcode</td>
-                        <td>Address</td>
-                        <td>Number</td>
+                        <td class="bg-gray-200 border border-gray-300 px-4 py-2">2</td>
+                        <td class="border border-gray-300 px-4 py-2">School name</td>
+                        <td class="border border-gray-300 px-4 py-2">City</td>
+                        <td class="border border-gray-300 px-4 py-2">Postcode</td>
+                        <td class="border border-gray-300 px-4 py-2">Address</td>
+                        <td class="border border-gray-300 px-4 py-2">Number</td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td>#</td>
+                        <td class="bg-gray-200 border border-gray-300 px-4 py-2">3</td>
+                        <td class="border border-gray-300 px-4 py-2">#</td>
+                        <td class="border border-gray-300 px-4 py-2">#</td>
+                        <td class="border border-gray-300 px-4 py-2">#</td>
+                        <td class="border border-gray-300 px-4 py-2">#</td>
+                        <td class="border border-gray-300 px-4 py-2">#</td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td>#</td>
+                        <td class="bg-gray-200 border border-gray-300 px-4 py-2">4</td>
+                        <td class="border border-gray-300 px-4 py-2">#</td>
+                        <td class="border border-gray-300 px-4 py-2">#</td>
+                        <td class="border border-gray-300 px-4 py-2">#</td>
+                        <td class="border border-gray-300 px-4 py-2">#</td>
+                        <td class="border border-gray-300 px-4 py-2">#</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-        <section>
-            <button type="button" class="upload-button">Upload</button>
-            <button type="button" class="back2dashb-button">Back to dashboard</button>
+        <section class="mt-6 flex flex-col gap-4 justify-center items-center">
+            <button type="button" class="px-6 py-2 max-w-xs bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition">Upload +</button>
+            <button type="button" class="px-6 py-2 max-w-xs bg-white text-blue-500 border-2 border-blue-500 font-semibold rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Back to dashboard</button>
         </section>
     </main>
 </body>
