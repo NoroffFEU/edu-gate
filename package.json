@@ -1,0 +1,24 @@
+{
+  "name": "add_teachers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoroffFEU/edu-gate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoroffFEU/edu-gate/issues"
+  },
+  "homepage": "https://github.com/NoroffFEU/edu-gate#readme",
+  "description": "",
+  "dependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
