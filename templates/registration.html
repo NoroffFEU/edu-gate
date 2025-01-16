@@ -13,46 +13,102 @@
     <script src="" defer></script>
     <title>Edugate | Registration</title>
   </head>
-  <body>
+  <body class="bg-gray-50">
     <header></header>
     <main>
-      <form class="registration-form" action="submit-form-here" method="post">
-        <h1>Registration</h1>
-        <label for="school">School</label>
-        <input
-          type="text"
-          name="school"
-          id="school"
-          placeholder="Edugate"
-          required
-        />
-        <label for="address1">Address line 1</label>
-        <input
-          type="text"
-          name="address1"
-          id="address1"
-          placeholder="Address"
-          required
-        />
-        <label for="address2">Address line 2</label>
-        <input
-          type="text"
-          name="address2"
-          id="address2"
-          placeholder="Address"
-        />
-        <label for="city">City</label>
-        <input type="text" name="city" id="city" placeholder="Oslo" required />
-        <label for="postal-code">Postal Code</label>
-        <input
-          type="number"
-          name="postal-code"
-          id="postal-code"
-          placeholder="0000"
-          required
-        />
-        <button type="submit" class="submit-button">Submit</button>
-      </form>
+      <div class="w-full max-w-sm justify-self-center mb-6 mt-6">
+        <form
+          class="bg-gray-50 shadow-inner px-12 pt-6 pb-8 mb-4"
+          action="submit-form-here"
+          method="post"
+        >
+          <h1 class="text-3xl text-center text-gray-700 font-bold mt-4 mb-10">
+            Registration
+          </h1>
+          <div class="mb-6">
+            <label
+              class="block text-gray-700 text-base font-bold mb-2"
+              for="school"
+              >School</label
+            >
+            <input
+              class="shadow-inner border rounded-lg w-full py-2 px-3 text-gray-700 text-sm"
+              type="text"
+              name="school"
+              id="school"
+              placeholder="Edugate"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-gray-700 text-base font-bold mb-2"
+              for="address1"
+              >Address line 1</label
+            >
+            <input
+              class="shadow-inner border rounded-lg w-full py-2 px-3 text-gray-700 text-sm"
+              type="text"
+              name="address1"
+              id="address1"
+              placeholder="Address"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-gray-700 text-base font-bold mb-2"
+              for="address2"
+              >Address line 2</label
+            >
+            <input
+              class="shadow-inner border rounded-lg w-full py-2 px-3 text-gray-700 text-sm"
+              type="text"
+              name="address2"
+              id="address2"
+              placeholder="Address"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-gray-700 text-base font-bold mb-2"
+              for="city"
+              >City</label
+            >
+            <input
+              class="shadow-inner border rounded-lg w-full py-2 px-3 text-gray-700 text-sm"
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Oslo"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-gray-700 text-base font-bold mb-2"
+              for="postal-code"
+              >Postal Code</label
+            >
+            <input
+              class="shadow-inner border rounded-lg w-full py-2 px-3 text-gray-700 text-sm"
+              type="number"
+              name="postal-code"
+              id="postal-code"
+              placeholder="0000"
+              required
+            />
+          </div>
+          <div class="text-center mb-4">
+            <button
+              class="bg-green-500 hover:bg-green-700 text-white font-semibold text-base py-2.5 px-5 rounded-md"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
     </main>
     <footer></footer>
   </body>
