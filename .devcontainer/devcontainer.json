@@ -2,8 +2,8 @@
   "name": "Node. js & TypeScript",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
   // "features": (),
-  //"forwardPorts": [],
-  // "postCreateCommand": "yarn install",
+  "forwardPorts": [3000],
+  "postCreateCommand": "python3 -m http.server 3000",
   "customizations": {
     "vscode": {
       "extensions": [
