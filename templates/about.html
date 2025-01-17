@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../dist/output.css">
     <title>About</title>
 </head>
 <body class="bg-neutral-light-gray">
-    <header>
-        <nav>
+    <header class="bg-neutral-light-gray text-neutral-dark-gray p-4">
+        <nav class="max-w-7x1 mx-auto flex justify-between">
             <img src="../public/img/logo-header.png" alt="logo">
-            <ul>
+            <ul class="flex gap-4">
                 <li><a href="#" class="font-heading hover:underline"></a>Dashboard</li>
                 <li><a href="#" class="font-heading hover:underline"></a>About</li>
                 <li><a href="#" class="font-heading hover:underline"></a>Contact</li>
@@ -20,18 +21,18 @@
     </header>
     <main>
         <section>
-            <h1 class="font-heading">About</h1>
+            <h1 class="font-heading  text-neutral-dark-gray text-2xl font-bold font-heading p-4 mb-4">About</h1>
             <p class="font-body">Edugate was built to provide students with an easier way to access their exam results.</p>
-            <p>Schools can sign up, quickly register their students & create private accounts for them to access their results.</p>
+            <p class="font-body">Schools can sign up, quickly register their students & create private accounts for them to access their results.</p>
         </section>
-        <section>
-            <button>Sign Up</button>
-            <button>Log In</button>
+        <section class="px-64 -mt-40">
+            <button class="bg-secondary py-4 w-24 rounded-md text-neutral-light-gray">Sign Up</button>
+            <button class="border-b-secondary w-24 rounded-md text-secondary font-semibold">Log In</button>
         </section>
     </main>
-    <footer>
+    <footer class="p-4 ml-10 mr-10">
         <img src="../public/img/circle-footer.png" alt="">
     </footer>
-    
+
 </body>
 </html>
