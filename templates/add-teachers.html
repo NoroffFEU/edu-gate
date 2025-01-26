@@ -1,74 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="A page for adding teacher information" />
-		<link rel="stylesheet" href="../dist/output.css">
-		<title>Add Teachers</title>
-	</head>
-	<body>
-		<!--header to be coded-->
-		<header>
-			<nav>
-				<ul>
-					<li><a href="#">Dashboard</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<main>
-			<h1>Add Teachers</h1>
-
-			<section>
-				<p>To add teachers, upload an Excel spreadsheet with the following format:</p>
-
-				<!-- Table showing the expected format -->
-				<table>
-					<thead>
-						<tr>
-							<th>#</th>
-							<th>First Name</th>
-							<th>Surname</th>
-							<th>ID</th>
-							<th>Date of Birth</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>First Name</td>
-							<td>Second Name</td>
-							<td>School Teacher ID</td>
-							<td>Date of Birth</td>
-						</tr>
-					</tbody>
-				</table>
-
-				<!-- Form for uploading the Excel file to be coded -->
-				<form action="#" method="post" enctype="multipart/form-data">
-					<div>
-						<label for="fileUpload">Upload File:</label>
-						<input type="file" id="fileUpload" name="fileUpload" accept=".xlsx, .xls" />
-					</div>
-
-					<!-- Submit button -->
-					<div>
-						<button type="submit">Upload</button>
-					</div>
-				</form>
-
-				<!-- Link to navigate back to be coded-->
-				<div>
-					<a href="#">Back to Dashboard</a>
-				</div>
-			</section>
-		</main>
-
-		<footer>
-			<p>&copy; 2025 Edgate School. All Rights Reserved.</p>
-		</footer>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ebbe Stankiewicz"/>
+    <meta name="description" content="The Add Teacher page for Edugate. Edugate is a result management system for high schools in Nigeria."/>
+    <title>Edugate | Add Teachers</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+</head>
+<body class="bg-gray-100">
+    <header></header>
+    <main class="max-w-4xl mx-auto p-6 mt-6">
+        <section class="mb-6 flex flex-col justify-cente items-center">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">Add Teachers</h1>
+            <p class="text-gray-600">To add teachers, upload an Excel spreadsheet with this format:</p>
+        </section>
+        <section>
+            <table class="w-full border border-gray-300 text-left text-sm">
+                <thead>
+                    <tr class="bg-gray-200 text-gray-600 uppercase text-xs">
+                        <th class="bg-gray-200 text-gray-600 uppercase text-xs px-4 py-2">#</th>
+                        <th class="border border-gray-300 px-4 py-2">A</th>
+                        <th class="border border-gray-300 px-4 py-2">B</th>
+                        <th class="border border-gray-300 px-4 py-2">C</th>
+                        <th class="border border-gray-300 px-4 py-2">D</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="bg-gray-200 border border-gray-300 px-4 py-2" scope="col">1</th>
+                        <th class="bg-white border border-gray-300 px-4 py-2" scope="col">first_name</th>
+                        <th class="bg-white border border-gray-300 px-4 py-2" scope="col">surname</th>
+                        <th class="bg-white border border-gray-300 px-4 py-2" scope="col">id</th>
+                        <th class="bg-white border border-gray-300 px-4 py-2" scope="col">dob</th>
+                    </tr>
+                    <tr>
+                        <td class="bg-gray-200 border border-gray-300 px-4 py-2">2</td>
+                        <td class="bg-white border border-gray-300 px-4 py-2">First name</td>
+                        <td class="bg-white border border-gray-300 px-4 py-2">Second Name</td>
+                        <td class="bg-white border border-gray-300 px-4 py-2">School Teacher ID Number</td>
+                        <td class="bg-white border border-gray-300 px-4 py-2">Date Of Birth</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-gray-200 border border-gray-300 px-4 py-2">3</td>
+                        <td class="bg-white border border-gray-300 px-4 py-2">#</td>
+                        <td class="bg-white border border-gray-300 px-4 py-2">#</td>
+                        <td class="bg-white border border-gray-300 px-4 py-2">#</td>
+                        <td class="bg-white border border-gray-300 px-4 py-2">#</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-gray-200 border border-gray-300 px-4 py-2">4</td>
+                        <td class="bg-white border border-gray-300 px-4 py-2">#</td>
+                        <td class="bg-white border border-gray-300 px-4 py-2">#</td>
+                        <td class="bg-white border border-gray-300 px-4 py-2">#</td>
+                        <td class="bg-white border border-gray-300 px-4 py-2">#</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="mt-6 flex flex-col gap-4 justify-center items-center">
+            <button type="button" class="px-6 py-2 max-w-xs bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition">Upload +</button>
+            <button type="button" class="px-6 py-2 max-w-xs bg-white text-blue-500 border-2 border-blue-500 font-semibold rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Back to dashboard</button>
+        </section>
+    </main>
+</body>
 </html>
