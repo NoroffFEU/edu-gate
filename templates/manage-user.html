@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage User</title>
+  <link rel="stylesheet" href="../dist/output.css"> <!-- Added stylesheet direction -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex"> 
+  <div class="flex-1 flex-col min-h-screen"> 
+  <header class="flex flex-row justify-between items-center p-4 border-b border-gray-500 border-opacity-50"> <!-- Reduced border width -->
+      <img src="../public/img/logo-header.png" alt="Edugate logo"> <!-- Added icon directions -->
+      <nav>
+        <ul class="flex items-center space-x-6">
+          <li>Dashboard</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li><img src="../public/icons/user-circle.png" alt="Profile button"></li> <!-- Added icon directions -->
+        </ul>
+      </nav>
+  </header>
+
+  <main class="flex flex-col items-center px-4 flex-grow"> 
+      <p class="self-start mb-12">
+        Dashboard > Select user > <span class="text-[#4CAF50]">Manage user</span>
+      </p>
+      <div class="w-full max-w-2xl">
+        <h2 class="text-2xl font-bold text-center mb-2">Manage User</h2>
+        <p class="text-center mb-8">Edit the user info below</p>
+        <form action="" class="space-y-6">
+          <div class="space-y-4">
+            <label class="block font-medium">
+              ID:
+              <input type="text" name="id" placeholder="1921840" class="w-full p-2 border rounded mt-1">
+            </label>
+
+            <label class="block font-medium">
+              First name:
+              <input type="text" name="first-name" placeholder="Joe" class="w-full p-2 border rounded mt-1">
+            </label>
+
+            <label class="block font-medium">
+              Last name:
+              <input type="text" name="last-name" placeholder="Blogs" class="w-full p-2 border rounded mt-1"> <!-- Fixed typing error -->
+            </label>
+
+            <label class="block font-medium">
+              Position:
+              <input type="text" name="position" placeholder="Teacher" class="w-full p-2 border rounded mt-1">
+            </label>
+
+            <label class="block font-medium">
+              Date of Birth:
+              <input type="date" name="dob" class="w-full p-2 border rounded mt-1">
+            </label>
+
+            <label class="block font-medium">
+              Email:
+              <input type="email" name="email" placeholder="joeblog2020@edugate.no"
+                class="w-full p-2 border rounded mt-1">
+            </label>
+
+            <label class="block font-medium">
+              School:
+              <input type="text" name="school" placeholder="The Academy" class="w-full p-2 border rounded mt-1">
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="mt-8 space-x-4">
+        <button class="bg-[#4CAF50] text-white px-6 py-2 rounded hover:bg-[#45a049]">Update</button>
+        <button class="bg-[#FF5722] text-white px-6 py-2 rounded hover:bg-[#f4511e]">Delete user</button>
+      </div>
+  </main>
+  <footer class="p-4 ml-10 mr-10"> <!-- Changed to footer from index.html -->
+      <img src="../public/img/circle-footer.png" alt="">
+  </footer>
+  </div>
+</body>
+
+</html>
