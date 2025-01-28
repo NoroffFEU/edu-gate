@@ -27,6 +27,7 @@
 /* font */
 h1{
     font-size: 32px;
+    
 }
 h2{
     font-size: 24px;
@@ -48,7 +49,6 @@ p{
     border: 2px solid #4CAF50;
     border-radius: 6px;
     padding: 10px 20px;
-    font-family: "Poppins", "sans-serif";
 }
 .primary-button:hover{
     background-color: #388E3C;
@@ -60,7 +60,6 @@ p{
     color: #2196F3;
     border-radius: 6px;
     padding: 10px 20px;
-    font-family: "Poppins", "sans-serif";
 }
 .secondary-button:hover{
     background-color: #BBDEFB;
@@ -72,7 +71,6 @@ p{
     border: 2px solid #FF5722;
     border-radius: 6px;
     padding: 10px 20px;
-    font-family: "Poppins", "sans-serif";
 }
 .alert-button:hover{
     background-color: #E64A19;
