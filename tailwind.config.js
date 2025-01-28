@@ -3,7 +3,6 @@ module.exports = {
   content: ["./**/*.{html,js}", "!./node_modules/**/*"],
   theme: {
     extend: {
-      colors: {
         primary: "#4CAF50",
         "primary-hover": "#388E3C",
         secondary: "#2196F3",
