@@ -1,3 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+
+@theme {
+    --color-primary: #FF5722;
+    --color-primary-hover: #388E3C;
+    --color-secondary: #2196F3;
+    --color-secondary-hover: #BBDEFB;
+    --color-accent: #FF5722;
+    --color-accent-hover: #E64A19;
+    --color-neutral-light-gray: #F5F5F5;
+    --color-neutral-medium-gray: #757575;
+    --color-neutral-dark-gray: #333333;
+    --color-table: #F9F9F9;
+    --color-table-hover: #E9E9E9;
+    --color-table-clicked: #D1D1D1;
+    --color-success: #2D7230;
+    --color-success-background: #E8F5E9;
+    --color-failed: #C62828;
+    --color-failed-background: #FFEBEE;
+    --font-Poppins: "Poppins", "sans-serif";
+    --font-Roboto: "Roboto", "sans-serif";
+}
