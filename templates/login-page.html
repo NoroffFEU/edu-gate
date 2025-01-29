@@ -15,52 +15,60 @@
   <body class="bg-gray-50">
     <header></header>
     <main>
-      <div class="w-full max-w-sm justify-self-center mb-6 mt-6">
+      <div class="w-full max-w-sm sm:max-w-md mx-auto mt-6 px-4 sm:px-0">
         <form
-          class="bg-gray-50 shadow-inner px-12 pt-6 pb-8 mb-4"
+          class="bg-gray-50 border border-gray-300 shadow-inner px-8 sm:px-12 pt-6 sm:pt-8 pb-8 sm:pb-10 mb-4"
           action="submit-form-here"
           method="post"
         >
-          <h1 class="text-3xl text-center text-gray-700 font-bold mt-4 mb-10">
+          <h1
+            class="text-2xl sm:text-3xl text-center font-bold text-gray-700 mt-4 mb-8"
+          >
             Log in
           </h1>
           <div class="mb-6">
             <label
-              class="block text-gray-700 text-base font-bold mb-2"
+              class="block text-gray-700 text-sm sm:text-base font-bold mb-2"
               for="email"
               >Email</label
             >
             <input
-              class="shadow-inner border rounded-lg w-full py-2 px-3 text-gray-700 text-sm"
+              class="bg-white shadow-inner border border-gray-300 rounded-md focus:border-green-600 focus:ring-0 w-full py-2 px-3 sm:px-4 text-gray-700 text-sm sm:text-base"
               type="email"
               name="email"
               id="email"
               placeholder="example@mail.com"
               required
+              autocomplete="email"
+              inputmode="email"
             />
           </div>
           <div class="mb-6">
             <label
-              class="block text-gray-700 text-base font-bold mb-2"
+              class="block text-gray-700 text-sm sm:text-base font-bold mb-2"
               for="password"
               >Password</label
             >
             <input
-              class="shadow-inner border rounded-lg w-full py-2 px-3 text-gray-700 text-sm"
+              class="bg-white shadow-inner border border-gray-300 rounded-md focus:border-green-600 focus:ring-0 w-full py-2 px-3 sm:px-4 text-gray-700 text-sm sm:text-base"
               type="password"
               name="password"
               id="password"
               placeholder="Enter password"
               required
+              autocomplete="current-password"
             />
           </div>
-          <p class="mb-6 text-center text-sm">
-            Forgot your password? Click <a class="font-bold" href="#">here</a>.
+          <p
+            class="mb-6 text-center text-sm sm:text-base font-light sm:font-normal text-gray-700"
+          >
+            Forgot your password? Click
+            <a class="font-bold hover:cursor-pointer" href="#">here</a>.
           </p>
           <div class="text-center mb-4">
             <button
               type="submit"
-              class="bg-green-500 hover:bg-green-700 text-white font-semibold text-base py-2.5 px-5 rounded-md"
+              class="bg-green-600 hover:bg-green-700 hover:cursor-pointer text-white text-base sm:text-xl font-semibold sm:font-bold py-2 sm:py-3 px-5 sm:px-8 rounded-md"
             >
               Submit
             </button>
