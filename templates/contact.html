@@ -8,78 +8,82 @@
     <title>Contact</title>
 </head>
 <body>
-    <header class="bg-neutral-light-gray text-neutral-dark-gray">
-        <nav class="max-w-7x1 flex items-center justify-between px-4 py-4">
-            <img class="pl-5" src="../public/img/logo-header.png" alt="Edugate Logo">
-    
-            <!-- Hamburger Menu -->
-            <div class="relative md:hidden">
-                <!-- Checkbox for Hamburger Toggle -->
-                <input
-                    type="checkbox"
-                    id="menu-toggle"
-                    class="hidden peer"
-                />
-                <!-- Hamburger Icon -->
+<header class="bg-neutral-light-gray text-neutral-dark-gray">
+    <nav class="max-w-7x1 flex items-center justify-between px-4">
+        <img class="pl-5" src="../public/img/logo-header.png" alt="Edugate Logo">
+
+        <!-- Hamburger Menu -->
+        <div class="relative md:hidden">
+            <!-- Checkbox for Hamburger Toggle -->
+            <input
+                type="checkbox"
+                id="menu-toggle"
+                class="hidden peer"
+            />
+            <!-- Hamburger Icon -->
+            <label
+                for="menu-toggle"
+                class="block cursor-pointer focus:outline-none peer-checked:hidden"
+                aria-label="Toggle menu"
+            >
+                <svg class="w-14 h-14 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </label>
+
+            <div
+                class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
+            >
+                <!-- Close Icon -->
                 <label
                     for="menu-toggle"
-                    class="block cursor-pointer focus:outline-none peer-checked:hidden"
-                    aria-label="Toggle menu"
+                    class="absolute top-4 right-4 cursor-pointer focus:outline-none"
+                    aria-label="Close menu"
                 >
-                    <svg class="w-14 h-14 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    <svg class="w-12 h-12 mt-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </label>
-    
-                <div
-                    class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
-                >
-                    <!-- Close Icon -->
-                    <label
-                        for="menu-toggle"
-                        class="absolute top-4 right-4 cursor-pointer focus:outline-none"
-                        aria-label="Close menu"
-                    >
-                        <svg class="w-12 h-12 mt-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </label>
-    
-                    <ul class="flex flex-col items-end justify-start mt-40 h-full gap-16 text-xl mr-8">
-                        <li>
-                            <a href="#" class="flex items-center gap-5 hover:underline">
-                                Login
-                                <img class="w-5 h-5" src="../public/icons/login.png" alt="Login Icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center gap-5 hover:underline">
-                                Signup
-                                <img class="w-5 h-5" src="../public/icons/signup.png" alt="Signup Icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center gap-5 hover:underline">
-                                About
-                                <img class="w-5 h-5" src="../public/icons/about.png" alt="About Icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center gap-5 hover:underline">
-                                Contact
-                                <img class="w-5 h-5" src="../public/icons/contact.png" alt="Contact Icon">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
+                <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
+                    <li>
+                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            Login
+                            <img class="w-5 h-5" src="../public/icons/login.png" alt="Login Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            Signup
+                            <img class="w-5 h-5" src="../public/icons/signup.png" alt="Signup Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../templates/about.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            About
+                            <img class="w-5 h-5" src="../public/icons/about.png" alt="About Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../templates/contact.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            Contact
+                            <img class="w-5 h-5" src="../public/icons/contact.png" alt="Contact Icon">
+                        </a>
+                    </li>
+                </ul>
             </div>
-    
-            <ul class="hidden md:flex gap-16 mr-32">
-                <li><a href="#" class="font-heading hover:underline">About</a></li>
-                <li><a href="#" class="font-heading hover:underline">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        </div>
+
+        <ul class="hidden md:flex mr-10 font-Poppins font-medium text-xl">
+            <li class="py-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
+                <a href="../templates/about.html" class="font-heading ">About</a>
+            </li>
+            <li class="py-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
+                <a href="../templates/contact.html" class="font-heading ">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
     <main>
         <section class="mx-14 sm:mx-24 md:mx-60 lg:mx-72 xl:mx-96">
