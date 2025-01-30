@@ -25,7 +25,10 @@ For development, you will only need Node.js and a node global package, NPM, inst
     $ Change directory to edu-gate `cd  edu-gate`
     $ `npm i`
     $ `npm run build`
-    $ `npm run start-dev`
+    $ `npm run dev`
+
+## Notes during development
+    - one team member tried the `npm run build` command after implementing some css changes, and it messed up the formatting in the css file. everything got deleted and reorganized one class after another in the first line. We don't know what made that happen yet. Can be seen under the third commit in this PR: added pic, button and text to the page #214 
 
     
 

@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #4CAF50;
+    --color-primary-hover: #388E3C;
+    --color-secondary: #2196F3;
+    --color-secondary-hover: #BBDEFB;
+    --color-accent: #FF5722;
+    --color-accent-hover: #E64A19;
+    --color-neutral-light-gray: #F5F5F5;
+    --color-neutral-medium-gray: #757575;
+    --color-neutral-dark-gray: #333333;
+    --color-table: #F9F9F9;
+    --color-table-hover: #E9E9E9;
+    --color-table-clicked: #D1D1D1;
+    --color-success: #2D7230;
+    --color-success-background: #E8F5E9;
+    --color-failed: #C62828;
+    --color-failed-background: #FFEBEE;
+    --font-Poppins: "Poppins", "sans-serif";
+    --font-Roboto: "Roboto", "sans-serif";
+}
+/* CUSTOM CLASSES */
+
+
+/* font */
+h1{
+    font-size: 32px;
+    
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+
+label{
+    font-size: 14px;
+}
+
+/* buttons */
+
+.primary-button{
+    background-color: #4CAF50;
+    color: #ffffff;
+
+    font-family: "Poppins", "sans-serif";
+    font-size: larger;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.primary-button:hover{
+    background-color: #388E3C;
+    border: 2px solid #388E3C;
+}
+
+.secondary-button{
+    border: 2px solid #2196F3;
+    color: #2196F3;
+
+    font-family: "Poppins", "sans-serif";
+    font-size: larger;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+.secondary-button:hover{
+    background-color: #BBDEFB;
+}
+
+.alert-button{
+    background-color: #FF5722;
+    color: #ffffff;
+
+    font-family: "Poppins", "sans-serif";
+    font-size: larger;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    border: 2px solid #FF5722;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.alert-button:hover{
+    background-color: #E64A19;
+    border: 2px solid #E64A19;
+}
