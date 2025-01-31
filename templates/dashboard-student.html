@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student profile page for Edugate webpage.">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Student Dashboard Page</title>
+</head>
+<body>
+    <main>
+        <div class="flex flex-col lg:flex-row">
+
+            <!--Mobile view-->
+            <div class="md:hidden grid gap-4 justify-items-center text-center">
+                <h1 class="font-extrabold">Dashboard</h1>
+                <img src="/public/icons/Student-initials.png" alt="Picture of a green circle with the initials JB">
+                <h2 class="font-bold">Joe Bloggs</h2>
+                <h3>Student at Edugate School</h3>
+                <img src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
+                <h4>Profile</h4>
+                <img src="/public/icons/results.png" alt="Picture of a green results icon">
+                <h4>My results</h4>
+                <img src="/public/icons/logout.png" alt="Picture of a red log out icon">
+                <h4>Log out</h4>
+            </div>
+
+            <!--Desktop view-->
+            <div class="lg:grid hidden grid-cols-1 place-items-center gap-4 w-full">
+                <h1 class="font-extrabold">Dashboard</h1>
+                <img src="/public/icons/Student-initials.png" alt="Picture of a green circle with the initials JB">
+                <h2 class="font-bold">Joe Bloggs</h2>
+                <h3>Admin at Edugate School</h3>
+                <div class="grid grid-cols-3 gap-12 m-4">
+                    <div>
+                        <img class="cursor-pointer" src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
+                        <h4>See profile</h4>
+                    </div>
+                    <div>
+                        <img class="cursor-pointer" src="/public/icons/results.png" alt="Picture of a green results icon">
+                        <h4>My results</h4>
+                    </div>
+                    <div>
+                        <img class="cursor-pointer" src="/public/icons/logout.png" alt="Picture of a red log out icon">
+                        <h4>Log out</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-8 w-full flex">
+        <img class="w-full max-w-md mx-auto" src="/public/img/circle-footer.png" alt="Picture of a blue circle overlapping a green circle">
+    </footer>
+</body>
+</html>
