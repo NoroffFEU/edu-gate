@@ -6,30 +6,10 @@
     <meta name="description" content="Teacher profile page for Edugate webpage.">
     <link rel="stylesheet" href="../dist/output.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Teacher Profile Page</title>
+    <title>Dashboard Teacher Page</title>
 </head>
 <body>
-    <header>
-        <div class="flex justify-between items-center m-4 mb-8 md:mx-12">
-            <img src="/public/img/logo-header.png" alt="Small Edugate logo">
-            <h4 class="hidden lg:block">Dashboard</h4>
-            <h4 class="hidden lg:block">About</h4>
-            <h4 class="hidden lg:block">Contact</h4>
-            <input type="checkbox" id="menu-toggle" class="hidden">
-            <label for="menu-toggle" class="md:hidden"><img src="/public/icons/hamburger-menu.png" alt="Picture of a black hamburger menu"></label>
-            <img class="hidden lg:block" src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
-        </div>
-    </header>
-
-    <main>
-        <!--Hamburger menu-->
-        <div id="mobile-menu" class="gap-6 hidden">
-            <img class="max-h-12" src="/public/icons/Student-initials.png" alt="Picture of a green circle with initials JB">
-            <img src="/public/icons/results.png" alt="Picture of a green results icon">
-            <img src="/public/icons/add-results.png" alt="Picture of a green results icon with an add button">
-            <img src="/public/icons/top-students.png" alt="Picture of a green student with a hat">
-            <img class="max-h-12" src="/public/icons/logout.png" alt="Picture of a red log out icon">
-        </div>
+       <main>
         <div class="flex flex-col lg:flex-row">
             <!--Sidebar-->
             <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-4">
@@ -41,9 +21,9 @@
             </div>
 
             <!--Mobile view-->
-            <div class="md:hidden grid gap-4 justify-items-center text-center">
-                <h1 class="font-extrabold">Dashboard</h1>
-                <img src="/public/icons/Student-initials.png" alt="Picture of a green circle with the initials JB">
+            <div class="lg:hidden grid gap-4 justify-items-center text-center">
+                <h1 class="font-extrabold text-2xl">Dashboard</h1>
+                <img src="/public/img/Student initials mobile.png" alt="Picture of a green circle with the initials JB">
                 <h2 class="font-bold">Joe Bloggs</h2>
                 <h3>Teacher at Edugate School</h3>
                 <img src="/public/icons/results.png" alt="Picture of a green results icon">
@@ -52,17 +32,19 @@
                 <h4>Add results</h4>
                 <img src="/public/icons/top-students.png" alt="Picture og a green student with a hat icon">
                 <h4>Top students</h4>
+                <img src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
+                <h4>See profile</h4>
                 <img src="/public/icons/logout.png" alt="Picture of a red log out icon">
                 <h4>Log out</h4>
-            </div>
+              </div>
 
             <!--Desktop view-->
             <div class="lg:grid hidden grid-cols-1 place-items-center gap-4 w-full">
-                <h1 class="font-extrabold">Dashboard</h1>
-                <img src="/public/icons/Student-initials.png" alt="Picture of a green circle with the initials JB">
+                <h1 class="font-extrabold text-3xl">Dashboard</h1>
+                <img src="/public/img/Student initials.png" alt="Picture of a green circle with the initials JB">
                 <h2 class="font-bold">Joe Bloggs</h2>
                 <h3>Teacher at Edugate School</h3>
-                <div class="grid grid-cols-3 gap-12 m-4">
+                <div class="grid grid-cols-3 gap-12 m-4 pl-24">
                     <div>
                         <img class="cursor-pointer" src="/public/icons/top-students.png" alt="Picture of a green student with a hat icon">
                         <h4>Top students</h4>
@@ -74,15 +56,15 @@
                     <div>
                         <img class="cursor-pointer" src="/public/icons/results.png" alt="Picture of a green results icon">
                         <h4>View results</h4>
-                    </div>
+                    </div>                    
                     <div>
-                        <img class="cursor-pointer" src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
-                        <h4>See profile</h4>
+                        <img class="cursor-pointer ml-24 mr-0" src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
+                        <h4 class="ml-24">See profile</h4>
                     </div>
                     <div>   
-                        <img class="cursor-pointer" src="/public/icons/logout.png" alt="Picture of a red log out icon">
-                        <h4>Log out</h4>
-                    </div>
+                        <img class="cursor-pointer ml-24 mr-0" src="/public/icons/logout.png" alt="Picture of a red log out icon">
+                        <h4 class="ml-24">Log out</h4>
+                    </div>                
                 </div>
             </div>
         </div>
