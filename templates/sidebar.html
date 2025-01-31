@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Collapsible Sidebar</title>
+</head>
+<body class="flex">
+    <div id="sidebar" class="bg-white w-20 md:w-24 h-screen flex flex-col items-center justify-center shadow-lg transition-all duration-300 ease-in-out" style="max-width: 91px;">
+        <a href="#" class="flex items-center justify-center mb-4 sidebar-button" title="Home">
+            <img src="/public/icons/dashboard.png" class="sidebar-icon" alt="Home">
+        </a>
+        <a href="#" class="flex items-center justify-center mb-4 sidebar-button" title="Dashboard">
+            <img src="/public/icons/results.png" class="sidebar-icon" alt="Dashboard">
+        </a>
+        <a href="#" class="flex items-center justify-center mb-4 sidebar-button" title="Profile">
+            <img src="/public/icons/user-circle.png" class="sidebar-icon" alt="Profile">
+        </a>
+        <a href="#" class="flex items-center justify-center sidebar-button" title="Logout">
+            <img src="/public/icons/logout.png" class="sidebar-icon" alt="Logout">
+        </a>
+    </div>
+
+    <div class="flex-grow p-6">
+        <button id="toggle-sidebar" class="mt-4 px-4 py-2 bg-4CAF50 text-white rounded"></button>
+    </div>
+</body>
+</html>
