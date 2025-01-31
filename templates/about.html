@@ -3,41 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="author" content="Kristina Tønnessen"/>
     <link rel="stylesheet" href="../dist/output.css">
-    <title>About</title>
+    <title>Contact</title>
 </head>
-<body class="bg-neutral-light-gray flex-col min-h-screen">
-    <header class="bg-neutral-light-gray text-neutral-dark-gray p-8">
-        <nav class="max-w-7x1 mx-auto flex justify-between">
-            <img src="../public/img/logo-header.png" alt="logo" class="h-10 w-10 object-cover ml-4">
-            <ul class="flex gap-4">
-                <li><a href="../templates/index.html" class="font-heading hover:underline"></a>Dashboard</li>
-                <li><a href="#" class="font-heading hover:underline"></a>About</li>
-                <li><a href="#" class="font-heading hover:underline"></a>Contact</li>
-            </ul>
-            <img src="../public/icons/user-circle.png" alt="user logo" class="h-10 w-10 object-cover ml-4">
-        </nav>
-    </header>
-    <main class="bg-neutral-light-gray flex flex-col justify-center m-">
-        <section class="flex-auto items-center">
-            <div class=text-center>
-                <h1 class="font-heading text-neutral-dark-gray text-2xl font-bold p-4 mb-4">About</h1>
-                <p class="font-body">Edugate was built to provide students with an easier way to access their exam results.</p>
-                <p class="font-body">Schools can sign up, quickly register their students & create private accounts for them to access their results.</p>
+<body>
+<header class="bg-neutral-light-gray text-neutral-dark-gray">
+    <nav class="max-w-7x1 flex items-center justify-between px-4">
+        <img class="pl-5" src="../public/img/logo-header.png" alt="Edugate Logo">
+
+        <!-- Hamburger Menu -->
+        <div class="relative md:hidden">
+            <!-- Checkbox for Hamburger Toggle -->
+            <input
+                type="checkbox"
+                id="menu-toggle"
+                class="hidden peer"
+            />
+            <!-- Hamburger Icon -->
+            <label
+                for="menu-toggle"
+                class="block cursor-pointer focus:outline-none peer-checked:hidden"
+                aria-label="Toggle menu"
+            >
+                <svg class="w-14 h-14 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </label>
+
+            <div
+                class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
+            >
+                <!-- Close Icon -->
+                <label
+                    for="menu-toggle"
+                    class="absolute top-4 right-4 cursor-pointer focus:outline-none"
+                    aria-label="Close menu"
+                >
+                    <svg class="w-12 h-12 mt-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </label>
+
+                <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
+                    <li>
+                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            Login
+                            <img class="w-5 h-5" src="../public/icons/login.png" alt="Login Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            Signup
+                            <img class="w-5 h-5" src="../public/icons/signup.png" alt="Signup Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../templates/about.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            About
+                            <img class="w-5 h-5" src="../public/icons/about.png" alt="About Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../templates/contact.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            Contact
+                            <img class="w-5 h-5" src="../public/icons/contact.png" alt="Contact Icon">
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <button class="bg-secondary py-4 w-24 rounded-md text-neutral-light-gray">Sign Up</button>
-                <button class="border-b-secondary w-24 rounded-md text-secondary font-semibold">Log In</button>
-            </div>
+        </div>
+
+        <ul class="hidden md:flex mr-10 font-Poppins font-medium text-xl">
+            <li class="py-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
+                <a href="../templates/about.html" class="font-heading ">About</a>
+            </li>
+            <li class="py-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
+                <a href="../templates/contact.html" class="font-heading ">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="mx-14 sm:mx-24 md:mx-60 lg:mx-72 xl:mx-96">
+            <h1 class="text-center font-Poppins font-bold tracking-wide mt-10 mb-16">
+                Contact
+            </h1>
+            <p class="pb-4">If you have any questions or feedback, please use the contact form.</p>
+            <p>We would love to hear from you.</p>
         </section>
-        <!-- <section class="px-64 -mt-40">
-            <button class="bg-secondary py-4 w-24 rounded-md text-neutral-light-gray">Sign Up</button>
-            <button class="border-b-secondary w-24 rounded-md text-secondary font-semibold">Log In</button>
-        </section> -->
+
+        <section class="my-2">
+            <form action="#" class="mx-4 sm:mx-14 md:mx-40 lg:mx-60 xl:mx-80 sm:mt-20 sm:border-2 border-zinc-300 p-10 sm:px-28 lg:px-40">
+                <label>Email
+                    <input type="email" name="Email" placeholder="example@gmail.com" required class="w-full mb-8 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
+                </label>
+                <label>Name
+                    <input type="text" name="Name" placeholder="Ola" required class="w-full mb-8 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
+                </label>
+                <label for="">Surname
+                    <input type="text" name="Surname" placeholder="Nordmann" required class="w-full mb-8 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
+                </label>
+                <label for="">Message</label>
+                    <textarea type="message" name="Message" maxlength="2000" placeholder="Your message.." required class="w-full p-2 min-h-40 border-2 border-zinc-300 rounded shadow-inner shadow-gray-600 focus:border-primary mt-1 font-thin"></textarea>
+
+                <div class="flex justify-center">
+                    <button class="primary-button mt-10" src="#">
+                    Submit
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
     </main>
-    <footer class="p-4 ml-10 mr-10">
-        <img src="../public/img/circle-footer.png" alt="" class="mx-auto">
+
+    <footer class="flex justify-end sm:justify-center">
+        <img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles">
+        <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles">
     </footer>
 </body>
 </html>
