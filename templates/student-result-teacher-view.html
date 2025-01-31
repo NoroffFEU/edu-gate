@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcos L. Rodriguez">
+    <title>Edugate | teacher: edit students results</title>
+    <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+
+<body class="bg-neutral-light-gray">
+    <header></header>
+    <main class="flex flex-row justify-center">
+        <nav class="hidden md:flex flex-col w-12 lg:w-16 h-fit border-1 items-center space-y-10 absolute">
+            <a href="#" class="mt-24 w-6 lg:w-8"><img src="../public/icons/dashboard.png" alt="home-icon"></a>
+            <a href="#" class="w-6 lg:w-8"><img src="../public/icons/results.png" alt="results"></a>
+            <a href="#" class="w-6 lg:w-8"><img src="../public/icons/user-management.png" alt="user"></a>
+            <a href="#" class="w-6 lg:w-8"><img src="../public/icons/school-management.png" alt="school management"></a>
+            <a href="#" class="w-6 lg:w-8"><img src="../public/icons/logout.png" alt="log out"></a>
+        </nav>
+
+
+        <section class="flex flex-col text-xs sm:text-sm md:text-base w-fit justify-center">
+            <nav class="mt-2 sm:mt-3 md:m-10 font-Roboto text-xs">
+                <a href="#">Dashboard</a> &gt;
+                <a href="#">Select student</a> &gt;
+                <a href="#" class="text-primary">Student results</a>
+            </nav>
+
+            <div class="flex flex-col items-center mt-10">
+                <h1 class="text-xs md:text-3xl lg:text-4xl xl:text-5xl font-bold font-Poppins">Student results</h1>
+
+                <img src="../public/icons/results.png" class="mt-3 w-10 md:hidden">
+
+                <p class="mt-3 text-xs xl:text-lg">Here are the results for <b>$User</b></p>
+
+                <div class="flex flex-row mt-5 font-Roboto">
+                <input type="search" id="search" name="search" placeholder="Search for results..."
+                class="border-1 border-gray-500 px-1.5 rounded-l-sm">
+
+                <i class="fa-solid fa-magnifying-glass border-1 border-[#4CAF50] text-[#4CAF50] 
+                    rounded-r-sm hover:text-white hover:bg-[#388E3C] hover:border-gray-500
+                    p-1.5 sm:p-2.5 md:p-3.5"></i>
+                </div>
+            </div>
+            
+
+            <div class="flex justify-end mt-10">
+                <div class="flex flex-row items-center md:hidden">
+                    <p class="text-[#4CAF50]">Add results</p>
+                    <img src="../public/icons/add.png" class="h-4 ml-2">
+                </div>
+                
+                <button class="border-1 bg-[#4CAF50] hover:bg-[#388E3C] hidden md:block
+                text-white p-1.5 text-sm lg:text-base rounded-md">Add results</button> 
+            </div>
+
+
+            <div class="flex  justify-center items-center mt-5">
+                <table class="table-auto border-collapse text-left bg-table rounded-lg">
+                    <thead>
+                        <tr class="flex items-center text-[#4CAF50] text-sm sm:text-base lg:text-lg xl:text-2xl w-fit lg:h-15 lg:px-5 font-Poppins">
+                            <th class="hidden md:block  p-2 w-20 xl:w-25">Year</th>
+                            <th class="hidden md:block p-2 w-15">Term</th>
+                            <th class="p-1 sm:p-2 w-25 sm:w-30 lg:w-35 md:ml-10 lg:ml-20 xl:ml-40 2xl:ml-55">Subject</th>
+                            <th class="p-1 sm:p-2 w-15 sm:w-20 md:w-15 lg:w-20">Exam</th>
+                            <th class="hidden md:block p-2 w-25 xl:w-35 ml-10 lg:ml-20 xl:ml-25  2xl:ml-40">Results</th>
+                            <th class="p-1 sm:p-2 w-15 sm:w-25 lg:w-35 xl:w-45">Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="flex items-center text-xs sm:text-sm xl:text-lg lg:h-15 lg:px-5 font-Roboto bg-neutral-light-gray hover:bg-table-hover">
+                            <td class="hidden md:block p-2 w-20 xl:w-25">2019</td>
+                            <td class="hidden md:block p-2 w-15 text-right">3</td>
+                            <td class="p-1 sm:p-2 w-25 sm:w-30 lg:w-35 md:ml-10 lg:ml-20 xl:ml-40 2xl:ml-55">Mathematics</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-20 md:w-15 lg:w-20">M1</td>
+                            <td class="hidden md:block p-2 w-25 xl:w-35 ml-10 lg:ml-20 xl:ml-25 2xl:ml-40">90/120</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-25 lg:w-35 xl:w-45">B</td>
+                            <td class="p-0.5 sm:p-2 w-10 sm:w-20 md:w-10 xl:w-15 flex justify-center xl:ml-20 2xl:ml-35">
+                                <img src="../public/icons/info.png" class="w-5 md:hidden">
+                                <a href="#"><p class="text-[#4CAF50] hidden md:block">Edit</p></a>
+                            </td>
+                            <td class="hidden md:block w-15">
+                                <button class="p-1 lg:p-2 rounded-sm bg-[#FF5722] text-white hover:bg-[#E64A19]">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="flex items-center text-xs sm:text-sm xl:text-lg lg:h-15 lg:px-5 font-Roboto hover:bg-table-hover">
+                            <td class="hidden md:block p-2 w-20 xl:w-25">2019</td>
+                            <td class="hidden md:block p-2 w-15 text-right">3</td>
+                            <td class="p-1 sm:p-2 w-25 sm:w-30 lg:w-35 md:ml-10 lg:ml-20 xl:ml-40 2xl:ml-55">Physics</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-20 md:w-15 lg:w-20">P3</td>
+                            <td class="hidden md:block p-2 w-25 xl:w-35 ml-10 lg:ml-20 xl:ml-25 2xl:ml-40">102/120</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-25 lg:w-35 xl:w-45">A</td>
+                            <td class="p-0.5 sm:p-2 w-10 sm:w-20 md:w-10 xl:w-15 flex justify-center xl:ml-20 2xl:ml-35">
+                                <img src="../public/icons/info.png" class="w-5 md:hidden">
+                                <a href="#"><p class="text-[#4CAF50] hidden md:block">Edit</p></a>
+                            </td>
+                            <td class="hidden md:block w-15">
+                                <button class="p-1 lg:p-2 rounded-sm bg-[#FF5722] text-white hover:bg-[#E64A19]">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="flex items-center text-xs sm:text-sm xl:text-lg lg:h-15 lg:px-5 font-Roboto bg-neutral-light-gray hover:bg-table-hover">
+                            <td class="hidden md:block p-2 w-20 xl:w-25">2019</td>
+                            <td class="hidden md:block p-2 w-15 text-right">3</td>
+                            <td class="p-1 sm:p-2 w-25 sm:w-30 lg:w-35 md:ml-10 lg:ml-20 xl:ml-40 2xl:ml-55">English</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-20 md:w-15 lg:w-20">E2</td>
+                            <td class="hidden md:block p-2 w-25 xl:w-35 ml-10 lg:ml-20 xl:ml-25 2xl:ml-40">80/110</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-25 lg:w-35 xl:w-45">B</td>
+                            <td class="p-0.5 sm:p-2 w-10 sm:w-20 md:w-10 xl:w-15 flex justify-center xl:ml-20 2xl:ml-35">
+                                <img src="../public/icons/info.png" class="w-5 md:hidden">
+                                <a href="#"><p class="text-[#4CAF50] hidden md:block">Edit</p></a>
+                            </td>
+                            <td class="hidden md:block w-15">
+                                <button class="p-1 lg:p-2 rounded-sm bg-[#FF5722] text-white hover:bg-[#E64A19]">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="flex items-center text-xs sm:text-sm xl:text-lg lg:h-15 lg:px-5 font-Roboto hover:bg-table-hover">
+                            <td class="hidden md:block p-2 w-20 xl:w-25">2019</td>
+                            <td class="hidden md:block p-2 w-15 text-right">2</td>
+                            <td class="p-1 sm:p-2 w-25 sm:w-30 lg:w-35 md:ml-10 lg:ml-20 xl:ml-40 2xl:ml-55">English</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-20 md:w-15 lg:w-20">E1</td>
+                            <td class="hidden md:block p-2 w-25 xl:w-35 ml-10 lg:ml-20 xl:ml-25 2xl:ml-40">95/130</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-25 lg:w-35 xl:w-45">B</td>
+                            <td class="p-0.5 sm:p-2 w-10 sm:w-20 md:w-10 xl:w-15 flex justify-center xl:ml-20 2xl:ml-35">
+                                <img src="../public/icons/info.png" class="w-5 md:hidden">
+                                <a href="#"><p class="text-[#4CAF50] hidden md:block">Edit</p></a>
+                            </td>
+                            <td class="hidden md:block w-15">
+                                <button class="p-1 lg:p-2 rounded-sm bg-[#FF5722] text-white hover:bg-[#E64A19]">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="flex items-center text-xs sm:text-sm xl:text-lg lg:h-15 lg:px-5 font-Roboto bg-neutral-light-gray hover:bg-table-hover">
+                            <td class="hidden md:block p-2 w-20 xl:w-25">2019</td>
+                            <td class="hidden md:block p-2 w-15 text-right">3</td>
+                            <td class="p-1 sm:p-2 w-25 sm:w-30 lg:w-35 md:ml-10 lg:ml-20 xl:ml-40 2xl:ml-55">Biology</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-20 md:w-15 lg:w-20">B2</td>
+                            <td class="hidden md:block p-2 w-25 xl:w-35 ml-10 lg:ml-20 xl:ml-25 2xl:ml-40">73/120</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-25 lg:w-35 xl:w-45">C</td>
+                            <td class="p-0.5 sm:p-2 w-10 sm:w-20 md:w-10 xl:w-15 flex justify-center xl:ml-20 2xl:ml-35">
+                                <img src="../public/icons/info.png" class="w-5 md:hidden">
+                                <a href="#"><p class="text-[#4CAF50] hidden md:block">Edit</p></a>
+                            </td>
+                            <td class="hidden md:block w-15">
+                                <button class="p-1 lg:p-2 rounded-sm bg-[#FF5722] text-white hover:bg-[#E64A19]">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="flex items-center text-xs sm:text-sm xl:text-lg lg:h-15 lg:px-5 font-Roboto hover:bg-table-hover">
+                            <td class="hidden md:block p-2 w-20 xl:w-25">2019</td>
+                            <td class="hidden md:block p-2 w-15 text-right">2</td>
+                            <td class="p-1 sm:p-2 w-25 sm:w-30 lg:w-35 md:ml-10 lg:ml-20 xl:ml-40 2xl:ml-55">Physics</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-20 md:w-15 lg:w-20">P2</td>
+                            <td class="hidden md:block p-2 w-25 xl:w-35 ml-10 lg:ml-20 xl:ml-25 2xl:ml-40">110/120</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-25 lg:w-35 xl:w-45">A</td>
+                            <td class="p-0.5 sm:p-2 w-10 sm:w-20 md:w-10 xl:w-15 flex justify-center xl:ml-20 2xl:ml-35">
+                                <img src="../public/icons/info.png" class="w-5 md:hidden">
+                                <a href="#"><p class="text-[#4CAF50] hidden md:block">Edit</p></a>
+                            </td>
+                            <td class="hidden md:block w-15">
+                                <button class="p-1 lg:p-2 rounded-sm bg-[#FF5722] text-white hover:bg-[#E64A19]">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="flex items-center text-xs sm:text-sm xl:text-lg lg:h-15 lg:px-5 font-Roboto bg-neutral-light-gray hover:bg-table-hover">
+                            <td class="hidden md:block p-2 w-20 xl:w-25">2019</td>
+                            <td class="hidden md:block p-2 w-15 text-right">1</td>
+                            <td class="p-1 sm:p-2 w-25 sm:w-30 lg:w-35 md:ml-10 lg:ml-20 xl:ml-40 2xl:ml-55">History</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-20 md:w-15 lg:w-20">H2</td>
+                            <td class="hidden md:block p-2 w-25 xl:w-35 ml-10 lg:ml-20 xl:ml-25 2xl:ml-40">90/110</td>
+                            <td class="p-1 sm:p-2 w-15 sm:w-25 lg:w-35 xl:w-45">A</td>
+                            <td class="p-0.5 sm:p-2 w-10 sm:w-20 md:w-10 xl:w-15 flex justify-center xl:ml-20 2xl:ml-35">
+                                <img src="../public/icons/info.png" class="w-5 md:hidden">
+                                <a href="#"><p class="text-[#4CAF50] hidden md:block">Edit</p></a>
+                            </td>
+                            <td class="hidden md:block w-15">
+                                <button class="p-1 lg:p-2 rounded-sm bg-[#FF5722] text-white hover:bg-[#E64A19]">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="flex flex-row mt-5 md:mt-8 items-center justify-center text-center space-x-2 lg:space-x-4 xl:space-x-6">
+                <i class="fa-solid fa-angles-left border-1 border-gray-300 p-1 md:p-2 w-5 md:w-8"></i>
+                <i class="fa-solid fa-angle-left border-1 border-gray-300 p-1 md:p-2 w-5 md:w-8"></i>
+                <p class="border-1 border-[#4CAF50] p-0.5 md:p-1 w-5 md:w-8">1</p>
+                <p class="border-1 border-gray-300 p-0.5 md:p-1 w-5 md:w-8 hidden md:block">2</p>
+                <p class="border-1 border-gray-300 p-0.5 md:p-1 w-5 md:w-8">...</p>
+                <p class="border-1 border-gray-300 p-0.5 md:p-1 w-5 md:w-8 hidden md:block">7</p>
+                <p class="border-1 border-gray-300 p-0.5 md:p-1 w-5 md:w-8">8</p>
+                <i class="fa-solid fa-angle-right border-1 border-gray-300 p-1 md:p-2 w-5 md:w-8"></i>
+                <i class="fa-solid fa-angles-right border-1 border-gray-300 p-1 md:p-2 w-5 md:w-8"></i>
+            </div>
+
+            <div class="flex justify-center mt-5 md:mt-8">
+                <button class="mt-5 border-2 border-[#2196F3] p-1 w-35 md:w-45 text-[#2196F3] hover:bg-[#BBDEFB]">Back to Dashboard</button>
+            </div>
+            
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
