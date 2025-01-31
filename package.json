@@ -4,7 +4,8 @@
   "description": "The frontend part of edugate",
   "main": "app.js",
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./css/styles.css -o ./dist/output.css --watch"
+    "build": "npx @tailwindcss/cli -i ./css/styles.css -o ./dist/output.css --watch",
+    "compileTailwind": "npx @tailwindcss/cli -i ./css/styles.css -o ./dist/output.css"
   },
   "repository": {
     "type": "git",
