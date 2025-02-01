@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="../dist/output.css">
 		<title>Edit Profile - Student</title>
 	</head>
-	<body>
+	<body class="bg-neutral-light-gray">
 		<header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
 			<nav class="max-w-7x1 flex items-center justify-between px-4">
 				<img class="ml-4 mr-16" src="../public/img/logo-header.png" alt="Edugate Logo">
@@ -122,50 +122,57 @@
 		
 		</header>
 
-		<main>
-			<h1>Edit Profile</h1>
-
-			<div>
-				<!-- <p>JB</p>
-        this is a placeholder for the profile image avatar  -->
+		<main class="mb-10 mx-6">
+			<div class="flex mb-10 gap-4 font-light text-neutral-medium-gray">
+				<p src="#">
+					Dashboard</p>
+				<p>></p>
+				<p src="#" class="text-primary">
+					Profile</p>
 			</div>
 
-			<section>
-				<form action="#" method="post">
-					<!-- Editable fields -->
-					<div>
-						<label for="name">Name:</label>
-						<input type="text" id="name" name="name" placeholder="Enter your name" />
-					</div>
-					<div>
-						<label for="email">Email:</label>
-						<input type="email" id="email" name="email" placeholder="Enter your email" />
-					</div>
-					<div>
-						<label for="dob">Date of Birth:</label>
-						<input type="date" id="dob" name="dob" />
-					</div>
+			<section class="mx-4 md:mx-40 lg:mx-60 xl:mx-80 md:border-2 border-neutral-medium-gray">
 
-					<!-- Read-only fields -->
-					<div>
-						<label for="id">ID</label>
-						<input type="text" id="id" name="id" value="1921840" readonly />
-					</div>
-					<div>
-						<label for="gradYear">Graduation Year</label>
-						<input type="text" id="gradYear" name="gradYear" value="2020" readonly />
-					</div>
-					<div>
-						<label for="school">School</label>
-						<input type="text" id="school" name="school" value="The Academy" readonly />
-					</div>
+				<h1 class="my-4 text-center font-semibold">Edit Profile</h1>
+				<div  class="flex justify-center">
+					<img class="w-28 h-28" src="../public/icons/user-circle-edit-mobile.png" alt="">
+				</div>
+				<section class="">
+					<form action="#" class="p-10 lg:px-40">
+						<!-- Editable fields -->
+						<label>Name:
+							<input type="text" name="Name" placeholder="Ola" required class="w-full mb-4 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
+						</label>
+						<label for="email">Email:
+							<input type="email" name="Email" placeholder="example@gmail.com" required class="w-full mb-4 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
+						</label>
+						<label for="dob">Date of Birth:
+							<input type="date" id="dob" name="dob" required class="w-full mb-4 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
+						</label>
+					
 
-					<!-- Submit button -->
-					<div>
-						<button type="submit">Update</button>
-					</div>
+						<!-- Read-only fields -->
+						<div>
+							<label for="id">ID:</label>
+							<input type="text" id="id" name="id" value="1921840" readonly class="w-full mb-4 p-2 border-2 border-zinc-300 bg-zinc-300 text-neutral-medium-gray rounded shadow-inner shadow-gray-600 mt-1 font-thin"/>
+						</div>
+						<div>
+							<label for="gradYear">Graduation Year:</label>
+							<input type="text" id="gradYear" name="gradYear" value="2020" readonly class="w-full mb-4 p-2 border-2 border-zinc-300 bg-zinc-300 text-neutral-medium-gray rounded shadow-inner shadow-gray-600 mt-1 font-thin"/>
+						</div>
+						<div>
+							<label for="school">School:</label>
+							<input type="text" id="school" name="school" value="The Academy" readonly class="w-full mb-4 p-2 border-2 border-zinc-300 bg-zinc-300 text-neutral-medium-gray rounded shadow-inner shadow-gray-600 mt-1 font-thin"/>
+						</div>
+
+						<div class="flex justify-center">
+							<button class="primary-button mt-4 mb-6" src="#">
+							Update
+							</button>
+						</div>
 				</form>
 			</section>
+		</section>
 		</main>
 
 		<footer class="flex justify-end sm:justify-center">
