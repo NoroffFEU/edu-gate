@@ -5,11 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/output.css">
-  <title>Edugate | Select Manage User</title>
+  <title>Edugate | Select User</title>
 </head>
-<body class="bg-neutral-light-gray">
+<body class="bg-neutral-light-gray font-body">
 
-  <header></header>
+  <header>
+    <div class="relative md:hidden">
+        <!-- Checkbox for Hamburger Toggle -->
+        <input
+            type="checkbox"
+            id="menu-toggle"
+            class="hidden peer"
+        />
+        <!-- Hamburger Icon -->
+        <label
+            for="menu-toggle"
+            class="block cursor-pointer focus:outline-none peer-checked:hidden"
+            aria-label="Toggle menu"
+        >
+            <svg class="w-14 h-14 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </label>
+
+        <div
+            class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
+        >
+            <!-- Close Icon -->
+            <label
+                for="menu-toggle"
+                class="absolute top-4 right-4 cursor-pointer focus:outline-none"
+                aria-label="Close menu"
+            >
+                <svg class="w-12 h-12 mt-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </label>
+
+            <ul class="flex flex-col items-end justify-start mt-40 h-full gap-16 text-xl mr-8">
+                <li>
+                    <a href="#" class="flex items-center gap-5 hover:underline">
+                        Dashboard
+                        <img class="w-5 h-5" src="../public/icons/dashboard.png" alt="Dashboard Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center gap-5 hover:underline">
+                        Profile
+                        <img class="w-5 h-5" src="../public/icons/user-circle.png" alt="Profile Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center gap-5 hover:underline">
+                        Manage results
+                        <img class="w-5 h-5" src="../public/icons/results.png" alt="Manage results Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center gap-5 hover:underline">
+                        About
+                        <img class="w-5 h-5" src="../public/icons/about.png" alt="About Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center gap-5 hover:underline">
+                        Contact
+                        <img class="w-5 h-5" src="../public/icons/contact.png" alt="Contact Icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center mt-20 gap-5 hover:underline">
+                        Log out
+                        <img class="w-5 h-5" src="../public/icons/logout.png" alt="Log out Icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
   
   <main class="flex flex-col gap-12 m-8">
 
@@ -25,7 +98,7 @@
 
     <section class="mx-auto text-center">
       <h1 class="mb-12 text-3xl font-bold capitalize">select user</h1>
-      <p class="mb-6 text-sm">Search for the user below &amp; select to make changes to their info:</p>
+      <p class="mb-6 text-sm mx-4">Search for the user below &amp; select to make changes to their info:</p>
 
       <div class="flex justify-center">
         <input type="text" id="search-bar" placeholder="Search for user..." aria-label="Search for user" class="border border-r-0 border-table-clicked rounded-l-md p-2.5 focus:border focus:border-r-0 focus:border-primary focus:outline-none">
@@ -60,7 +133,7 @@
           <th class="hidden p-4 sm:table-cell">role</th>
           <th class="hidden p-4 uppercase lg:table-cell">dob</th>
         </tr>  
-        <tr class="text-xl text-neutral-dark-gray hover:bg-table-hover hover:cursor-default">
+        <tr class="text-xl text-neutral-dark-gray bg-neutral-light-gray hover:bg-table-hover hover:cursor-default">
           <td class="p-4">1921840</td>
           <td class="hidden p-4 md:table-cell">Joe</td>
           <td class="p-4">Bloggs</td>
@@ -73,7 +146,7 @@
             </a>
           </td>
           <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
-            <input type="checkbox" id="delete-checkbox" aria-label="delete user">
+            <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="hidden">
             <button class="px-4 py-2 text-white rounded-md bg-accent hover:bg-accent-hover">Delete</button>
           </td>
         </tr>
@@ -90,7 +163,24 @@
             </a>
           </td>
           <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
-            <input type="checkbox" id="delete-checkbox" aria-label="delete user">
+            <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="hidden">
+            <button class="px-4 py-2 text-white rounded-md bg-accent hover:bg-accent-hover">Delete</button>
+          </td>
+        </tr>
+        <tr class="text-xl text-neutral-dark-gray bg-neutral-light-gray hover:bg-table-hover hover:cursor-default">
+          <td class="p-4">2035168</td>
+          <td class="hidden p-4 md:table-cell">Leslie</td>
+          <td class="p-4">Swanson</td>
+          <td class="hidden p-4 lg:table-cell">-</td>
+          <td class="hidden p-4 sm:table-cell">Teacher</td>
+          <td class="hidden p-4 lg:table-cell">03/02/1971</td>
+          <td class="pl-8">
+            <a href="#"> <!-- link to manage teacher -->
+              <button class="text-primary">Edit</button>
+            </a>
+          </td>
+          <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
+            <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="hidden">
             <button class="px-4 py-2 text-white rounded-md bg-accent hover:bg-accent-hover">Delete</button>
           </td>
         </tr>
@@ -107,24 +197,24 @@
             </a>
           </td>
           <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
-            <input type="checkbox" id="delete-checkbox" aria-label="delete user">
+            <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="hidden">
             <button class="px-4 py-2 text-white rounded-md bg-accent hover:bg-accent-hover">Delete</button>
           </td>
         </tr>
-        <tr class="text-xl text-neutral-dark-gray hover:bg-table-hover hover:cursor-default">
-          <td class="p-4">2035168</td>
-          <td class="hidden p-4 md:table-cell">Leslie</td>
-          <td class="p-4">Swanson</td>
-          <td class="hidden p-4 lg:table-cell">-</td>
-          <td class="hidden p-4 sm:table-cell">Teacher</td>
-          <td class="hidden p-4 lg:table-cell">03/02/1971</td>
+        <tr class="text-xl text-neutral-dark-gray bg-neutral-light-gray hover:bg-table-hover hover:cursor-default">
+          <td class="p-4">1921840</td>
+          <td class="hidden p-4 md:table-cell">Joe</td>
+          <td class="p-4">Bloggs</td>
+          <td class="hidden p-4 lg:table-cell">2020</td>
+          <td class="hidden p-4 sm:table-cell">Student</td>
+          <td class="hidden p-4 lg:table-cell">01/01/2002</td>
           <td class="pl-8">
-            <a href="#"> <!-- link to manage teacher -->
+            <a href="#"> <!-- link to manage student -->
               <button class="text-primary">Edit</button>
             </a>
           </td>
           <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
-            <input type="checkbox" id="delete-checkbox" aria-label="delete user">
+            <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="hidden">
             <button class="px-4 py-2 text-white rounded-md bg-accent hover:bg-accent-hover">Delete</button>
           </td>
         </tr>
@@ -141,11 +231,11 @@
             </a>
           </td>
           <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
-            <input type="checkbox" id="delete-checkbox" aria-label="delete user">
+            <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="hidden">
             <button class="px-4 py-2 text-white rounded-md bg-accent hover:bg-accent-hover">Delete</button>
           </td>
         </tr>
-        <tr class="text-xl text-neutral-dark-gray hover:bg-table-hover hover:cursor-default">
+        <tr class="text-xl text-neutral-dark-gray bg-neutral-light-gray hover:bg-table-hover hover:cursor-default">
           <td class="p-4">1921840</td>
           <td class="hidden p-4 md:table-cell">Joe</td>
           <td class="p-4">Bloggs</td>
@@ -158,24 +248,7 @@
             </a>
           </td>
           <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
-            <input type="checkbox" id="delete-checkbox" aria-label="delete user">
-            <button class="px-4 py-2 text-white rounded-md bg-accent hover:bg-accent-hover">Delete</button>
-          </td>
-        </tr>
-        <tr class="text-xl text-neutral-dark-gray hover:bg-table-hover hover:cursor-default">
-          <td class="p-4">1921840</td>
-          <td class="hidden p-4 md:table-cell">Joe</td>
-          <td class="p-4">Bloggs</td>
-          <td class="hidden p-4 lg:table-cell">2020</td>
-          <td class="hidden p-4 sm:table-cell">Student</td>
-          <td class="hidden p-4 lg:table-cell">01/01/2002</td>
-          <td class="pl-8">
-            <a href="#"> <!-- link to manage student -->
-              <button class="text-primary">Edit</button>
-            </a>
-          </td>
-          <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
-            <input type="checkbox" id="delete-checkbox" aria-label="delete user">
+            <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="hidden">
             <button class="px-4 py-2 text-white rounded-md bg-accent hover:bg-accent-hover">Delete</button>
           </td>
         </tr>  
@@ -210,7 +283,7 @@
   </main>
 
   <footer>
-    <img src="img/circle-footer.png" alt="" class="mx-auto">
+    <img src="/public/img/circle-footer.png" alt="">
   </footer>
   
 </body>
