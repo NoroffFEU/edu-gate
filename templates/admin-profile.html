@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header class="bg-neutral-light-gray text-neutral-dark-gray">
+        <nav class="max-w-7x1 flex items-center justify-between px-4">
+            <img class="pl-5" src="../public/img/logo-header.png" alt="Edugate Logo">
+    
+            <!-- Hamburger Menu -->
+            <div class="relative md:hidden">
+                <!-- Checkbox for Hamburger Toggle -->
+                <input
+                    type="checkbox"
+                    id="menu-toggle"
+                    class="hidden peer"
+                />
+                <!-- Hamburger Icon -->
+                <label
+                    for="menu-toggle"
+                    class="block cursor-pointer focus:outline-none peer-checked:hidden"
+                    aria-label="Toggle menu"
+                >
+                    <svg class="w-14 h-14 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </label>
+    
+                <div
+                    class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
+                >
+                    <!-- Close Icon -->
+                    <label
+                        for="menu-toggle"
+                        class="absolute top-4 right-4 cursor-pointer focus:outline-none"
+                        aria-label="Close menu"
+                    >
+                        <svg class="w-12 h-12 mt-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </label>
+    
+                    <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
+                        <li>
+                            <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                                Login
+                                <img class="w-6 h-6" src="../public/icons/login.png" alt="Login Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                                Signup
+                                <img class="w-6 h-6" src="../public/icons/signup.png" alt="Signup Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../templates/about.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                                About
+                                <img class="w-6 h-6" src="../public/icons/about.png" alt="About Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../templates/contact.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                                Contact
+                                <img class="w-6 h-6" src="../public/icons/contact.png" alt="Contact Icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <ul class="hidden md:flex mr-10 font-Poppins font-medium text-xl">
+                <li class="py-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
+                    <a href="../templates/about.html" class="font-heading ">About</a>
+                </li>
+                <li class="py-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
+                    <a href="../templates/contact.html" class="font-heading ">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex items-center justify-center min-h-screen bg-neutral-light-gray">
+        <div class="bg-white shadow-lg rounded-lg p-8 w-[361px] sm:w-[612px] sm:h-[771px] text-center mb-8">
+            <h1 class="text-2x1 font-bold text-neutral-dark-gray mb-4">Profile</h1>
+            <div><img class="w-32 h-32 mx-auto rounded-full border-4 border-primary ../public/img/logo-header.png">
+            </div>
+            <div class="mt-4 grid grid-cols-2 gap-y-2 sm:gap-y-4 text-left">
+                <strong class="mb-6">Name:</strong>
+                <span class="text-right sm:text-center">Joe Bloggs</span>
+                <strong class="mb-6">Email:</strong>
+                <span class="text-right sm:text-center">joeblog2020@edugate.no</span>
+                <strong class="mb-6">Date of birth:</strong>
+                <span class="text-right sm:text-center">01.01.1987</span>
+                <strong class="mb-6">Position</strong>
+                <span class="text-right sm:text-center">Administrator</span>
+                <strong class="mb-6">School:</strong>
+                <span class="text-right sm:text-center">The Academy</span>
+            </div>
+            <button class="block mx-auto mt-4 border-2 border-secondary h-[44px] sm:h-[44px] w-[100px] sm:w-[195px] text-secondary text-[18px] sm:text-[26px] rounded-md font-bold hover:bg-secondary-hover">Edit Profile</button>
+        </div>
+    </main>
+    <footer class="flex justify-end sm:justify-center">
+        <img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles">
+        <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles">
+    </footer>
+</body>
+</html>
