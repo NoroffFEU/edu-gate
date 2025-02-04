@@ -4,9 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="Rebecca Våge Husa"/>
-    <meta
-      name="description"
-      content="The add students page for Edugate. Edugate is a result management system for high schools in Nigeria."/>
+    <meta name="description" content="The add students page for Edugate. Edugate is a result management system for high schools in Nigeria."/>
       <link rel="stylesheet" href="../dist/output.css" />
     <script src="" defer></script>
     <title>Edugate | Add students</title>
@@ -20,9 +18,10 @@
         <a href="#" class="text-green-600 font-medium">Add students</a>
       </nav>
     </section>
-    <section class="mb-6 flex flex-col justify-center items-center py-6"></section>
+    <section class="mb-6 flex flex-col justify-center items-center py-6">
     <h1 class="text-3xl font-bold text-gray-800 mb-4">Add students</h1>
     <p class="text-gray-600">To add students, upload an excel spreadsheet with this format:</p>
+    </section>
     <table border="1" class="w-full border border-gray-300 text-left text-sm">
       <thead>
         <tr class="bg-gray-200 text-gray-600 uppercase text-xs">
@@ -69,8 +68,10 @@
         </tr>
       </tbody>
     </table>
-    <button type="button" class="px-6 py-2 max-w-xs bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition mt-6">Upload +</button>
-    <button type="button" class="px-6 py-2 max-w-xs bg-white text-blue-500 border-2 border-blue-500 font-semibold rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Back to dashboard</button>
+    <div class="flex flex-col items-center justify-center space-y-4">
+        <button type="button" class="px-6 py-2 max-w-xs bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition mt-6">Upload +</button>
+        <button type="button" class="px-6 py-2 max-w-xs bg-white text-blue-500 border-2 border-blue-500 font-semibold rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Back to dashboard</button>
+    </div>
   </main>
   <footer></footer>
 </body>
