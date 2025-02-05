@@ -10,10 +10,10 @@
 </head>
 
 
-<body class="bg-neutral-light-gray font-Roboto">
+<body class="bg-neutral-light-gray font-Roboto m-0 p-3">
     <header></header>
-    <main class="flex flex-row justify-center ">
-        <section class="flex flex-col text-xs sm:text-sm md:text-base w-fit justify-center">
+    <main class="flex flex-col w-full border-1 p-2">
+        <section class="flex flex-col text-xs sm:text-sm md:text-base w-full justify-center">
             <nav class="mt-2 sm:mt-3 md:m-10 text-sm md:text-base text-neutral-medium-gray">
                 <a href="#">Dashboard</a> &gt;
                 <a href="#">Select student</a> &gt;
@@ -48,6 +48,63 @@
                 text-white p-1.5 text-sm lg:text-base rounded-md">Add results</button> 
             </div>
 
+
+            <div class="flex w-full justify-center items-center @container">
+                <table class="table-auto text-left border-1 w-full bg-table">
+                    <thead class="text-primary text-xs font-Poppins">
+                        <tr>
+                            <th class="py-3 px-2 font-bold w-6 border-1">Subject</th>
+                            <th class="py-3 px-2 font-bold w-fit">Exam</th>
+                            <th class="py-3 px-2 font-bold w-fit">Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-neutral-light-gray hover:bg-table-hover">
+                            <td class="py-3 px-2 w-6 border-1">Mathematics</td>
+                            <td class="py-3 px-2">M1</td>
+                            <td class="py-3 px-2">B</td>
+                            <td class="py-3 px-2"><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                        <tr class="hover:bg-table-hover">
+                            <td class="">Physics</td>
+                            <td class="">P3</td>
+                            <td class="">A</td>
+                            <td class=""><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                        <tr class="bg-neutral-light-gray hover:bg-table-hover">
+                            <td class="">English</td>
+                            <td class="">E2</td>
+                            <td class="">B</td>
+                            <td class=""><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                        <tr class="hover:bg-table-hover">
+                            <td class="">English</td>
+                            <td class="">E1</td>
+                            <td class="">B</td>
+                            <td class=""><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                        <tr class="bg-neutral-light-gray hover:bg-table-hover">
+                            <td class="">Biology</td>
+                            <td class="">B2</td>
+                            <td class="">C</td>
+                            <td class=""><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                        <tr class="hover:bg-table-hover">
+                            <td class="">Physics</td>
+                            <td class="">P2</td>
+                            <td class="">A</td>
+                            <td class=""><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                        <tr class="bg-neutral-light-gray hover:bg-table-hover">
+                            <td class="">History</td>
+                            <td class="">H2</td>
+                            <td class="">A</td>
+                            <td class=""><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
 
             <div class="flex  justify-center items-center mt-3">
                 <table class="table-auto border-collapse text-left bg-table rounded-lg">
