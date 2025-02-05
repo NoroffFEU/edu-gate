@@ -34,50 +34,63 @@
           <div class="space-y-4">
             <label class="block font-medium">
               ID:
-              <input type="text" name="id" placeholder="1921840" class="w-full p-2 border rounded mt-1">
+              <input type="text" name="id" placeholder="1921840" class="w-full p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
             </label>
 
             <label class="block font-medium">
               First name:
-              <input type="text" name="first-name" placeholder="Joe" class="w-full p-2 border rounded mt-1">
+              <input type="text" name="first-name" placeholder="Joe" class="w-full p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
             </label>
 
             <label class="block font-medium">
               Last name:
-              <input type="text" name="last-name" placeholder="Blogs" class="w-full p-2 border rounded mt-1"> <!-- Fixed typing error -->
+              <input type="text" name="last-name" placeholder="Blogs" class="w-full p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
             </label>
 
             <label class="block font-medium">
               Position:
-              <input type="text" name="position" placeholder="Teacher" class="w-full p-2 border rounded mt-1">
+              <input type="text" name="position" placeholder="Teacher" class="w-full p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
             </label>
 
             <label class="block font-medium">
               Date of Birth:
-              <input type="date" name="dob" class="w-full p-2 border rounded mt-1">
+              <input type="date" name="dob" class="w-full p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
             </label>
 
             <label class="block font-medium">
               Email:
               <input type="email" name="email" placeholder="joeblog2020@edugate.no"
-                class="w-full p-2 border rounded mt-1">
+                class="w-full p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
             </label>
 
             <label class="block font-medium">
               School:
-              <input type="text" name="school" placeholder="The Academy" class="w-full p-2 border rounded mt-1">
+              <input type="text" name="school" placeholder="The Academy" class="w-full p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
             </label>
           </div>
         </form>
       </div>
-      <div class="mt-8 space-x-4">
-        <button class="bg-[#4CAF50] text-white px-6 py-2 rounded hover:bg-[#45a049]">Update</button>
-        <button class="bg-[#FF5722] text-white px-6 py-2 rounded hover:bg-[#f4511e]">Delete user</button>
+      <div class="md:hidden">
+        <button class="flex justify-center primary-button mt-4"> <!-- the custom button styles updated with the new version, will show after merge-->
+          Update
+        </button>
+        <button class="flex justify-center alert-button mt-4"> <!-- the custom button styles updated with the new version, will show after merge-->
+          Delete user
+        </button>
+      </div>
+      <div class="hidden md:flex mt-8 space-x-4">
+        <button class="bg-[#4CAF50] text-white px-6 py-2 rounded hover:bg-[#45a049]">
+          Update
+        </button>
+        <button class="bg-[#FF5722] text-white px-6 py-2 rounded hover:bg-[#f4511e]">
+          Delete user
+        </button>
       </div>
   </main>
-  <footer class="p-4 ml-10 mr-10"> <!-- Changed to footer from index.html -->
-      <img src="../public/img/circle-footer.png" alt="">
-  </footer>
+  <footer class="flex justify-end sm:justify-center">
+    <img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles">
+    <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles">
+</footer> <!-- updated footer from the contact page, now the media works for mobile and desktop versions -->
   </div>
 </body>
 
