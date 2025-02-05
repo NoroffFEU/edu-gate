@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="A page for editing teacher profile information" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A page for editing teacher profile information">
 	<link rel="stylesheet" href="../dist/output.css">
 	<title>Edit Profile - Teacher</title>
 </head>
@@ -129,11 +129,11 @@
 
 <main class="mb-10 mx-6">
 	<div class="flex mb-10 gap-4 font-light text-neutral-medium-gray">
-		<p src="#">
-			Dashboard</p>
+		<a src="#">
+			Dashboard</a>
 		<p>></p>
-		<p src="#" class="text-primary">
-			Profile</p>
+		<a src="#" class="text-primary">
+			Profile</a>
 	</div>
 
 	<section class="mx-4 md:mx-40 lg:mx-60 xl:mx-80 md:border-2 border-neutral-medium-gray">
@@ -149,7 +149,7 @@
 					<input type="text" name="Name" placeholder="Ola" required class="w-full mb-4 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
 				</label>
 				<label for="email">Email:
-					<input type="email" name="Email" placeholder="example@gmail.com" required class="w-full mb-4 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
+					<input id="email" type="email" name="Email" placeholder="example@gmail.com" required class="w-full mb-4 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
 				</label>
 				<label for="dob">Date of Birth:
 					<input type="date" id="dob" name="dob" required class="w-full mb-4 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
@@ -171,7 +171,7 @@
 				</div>
 
 				<div class="flex justify-center">
-					<button class="primary-button mt-4 mb-6" src="#">
+					<button class="primary-button mt-4 mb-6" type="submit>
 					Update
 					</button>
 				</div>
@@ -181,7 +181,7 @@
 </main>
 
 <footer class="flex justify-end sm:justify-center">
-	<img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles">
+	<img class="sm:hidden" src="../public/img/Circles_illustration_mobile.png" alt="Edugate footer circles">
 	<img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles">
 </footer>
 </body>
