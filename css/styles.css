@@ -52,7 +52,6 @@ label{
 .primary-button{
     background-color: #4CAF50;
     color: #ffffff;
-
     font-family: "Poppins", "sans-serif";
     font-size: larger;
     font-weight: 500;
@@ -70,7 +69,6 @@ label{
 .secondary-button{
     border: 2px solid #2196F3;
     color: #2196F3;
-
     font-family: "Poppins", "sans-serif";
     font-size: larger;
     font-weight: 500;
@@ -87,7 +85,6 @@ label{
 .alert-button{
     background-color: #FF5722;
     color: #ffffff;
-
     font-family: "Poppins", "sans-serif";
     font-size: larger;
     font-weight: 500;
