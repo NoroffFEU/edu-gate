@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/output.css">
-    <title>About</title>
+    <title>Profile</title>
 </head>
-<body class="bg-neutral-light-gray flex-col min-h-screen">
+<body>
     <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
         <nav class="max-w-7x1 flex items-center justify-between px-4">
             <img class="ml-4 mr-16" src="../public/img/logo-header.png" alt="Edugate Logo">
-
+    
             <!-- Hamburger Menu -->
             <div class="fixed inset-0 md:hidden">
                 <!-- Checkbox for Hamburger Toggle -->
@@ -29,7 +29,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </label>
-
+    
                 <div
                     class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
                 >
@@ -43,7 +43,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </label>
-
+    
                     <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
                         <li>
                             <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
@@ -78,7 +78,7 @@
                     </ul>
                 </div>
             </div>
-
+    
             <ul class="hidden md:flex justify-end mr-10 font-Poppins font-medium">
                 <li><a href="#" class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
                     Dashboard</a>
@@ -90,52 +90,57 @@
                     Contact</a>
                 </li>
             </ul>
-            <!-- User Dropdown -->
-            <div class="relative">
-                <!-- Hidden Checkbox -->
-                <input type="checkbox" id="dropdown-toggle" class="hidden peer">
-
-                <!-- User Icon (Clickable) -->
-                <label
-                    for="dropdown-toggle"
-                    class="hidden md:flex w-14 h-14 mr-10 cursor-pointer"
-                >
-                    <img src="/public/icons/user-circle.png" alt="User dropdown">
-                </label>
-
-                <!-- Dropdown Menu -->
-                <ul
-                    class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
-                    <li>
-                        <a href="#" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log out</a>
-                    </li>
-                </ul>
+                <!-- User Dropdown -->
+                <div class="relative">
+                  <!-- Hidden Checkbox -->
+                  <input type="checkbox" id="dropdown-toggle" class="hidden peer">
+      
+                  <!-- User Icon (Clickable) -->
+                  <label
+                      for="dropdown-toggle"
+                      class="hidden md:flex w-14 h-14 mr-10 cursor-pointer"
+                  >
+                      <img src="/public/icons/user-circle.png" alt="User dropdown">
+                  </label>
+      
+                  <!-- Dropdown Menu -->
+                  <ul
+                      class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
+                      <li>
+                          <a href="#" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
+                      </li>
+                      <li>
+                          <a href="#" class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
+                      </li>
+                      <li>
+                          <a href="#" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log out</a>
+                      </li>
+                  </ul>
+              </div>
+        </nav>
+    
+    </header>
+    <main class="flex items-center justify-center min-h-screen bg-neutral-light-gray">
+        <div class="bg-white shadow-lg rounded-lg p-8 w-[361px] sm:w-[612px] sm:h-[771px] text-center mb-8">
+            <h1 class="text-2x1 font-bold text-neutral-dark-gray mb-4">Profile</h1>
+            <div><img class="w-32 h-32 mx-auto rounded-full border-4 border-primary" src="../public/icons/user-circle.png"> <!-- placeholder icon for the user initials/img-->
             </div>
-      </nav>
-  </header>
-
-    <main class="bg-neutral-light-gray flex flex-col justify-center pb-8">
-        <section class="flex-auto mx-14 sm:mx-24 md:mx-60 lg:mx-72 xl:mx-96">
-            <h1 class="text-center font-Poppins font-bold tracking-wide mt-10 mb-8">About</h1>
-            <p class="font-body font-Poppins">Edugate was built to provide students with an easier way to access their exam results.</p>
-            <p class="font-body font-Poppins pt-6 pb-6">Schools can sign up, quickly register their students & create private accounts for them to access their results.</p>
-            <div class="pt-6 space-x-4  flex justify-center">
-                <button class="md:hidden primary-button ">Sign Up</button>
+            <div class="mt-4 grid grid-cols-2 gap-y-2 sm:gap-y-4 text-left">
+                <strong class="mb-6">Name:</strong>
+                <span class="text-right sm:text-center">Joe Bloggs</span>
+                <strong class="mb-6">Email:</strong>
+                <span class="text-right sm:text-center">joeblog2020@edugate.no</span>
+                <strong class="mb-6">Date of birth:</strong>
+                <span class="text-right sm:text-center">19.11.1988</span>
+                <strong class="mb-6">ID:</strong>
+                <span class="text-right sm:text-center">1921840</span>
+                <strong class="mb-6">Position:</strong>
+                <span class="text-right sm:text-center">Teacher</span>
+                <strong class="mb-6">School:</strong>
+                <span class="text-right sm:text-center">The Academy</span>
             </div>
-            <div class=" pt-6 space-x-4 flex justify-center">
-                <button class="md:hidden secondary-button">Log In</button>
-            </div>
-            <div class="hidden md:flex justify-center pt-6 space-x-4">
-                <button class="primary-button">Sign Up</button>
-                <button class="secondary-button">Log In</button>
-            </div>
-        </section>
+            <button class="block mx-auto mt-4 border-2 border-secondary h-[44px] sm:h-[44px] w-[100px] sm:w-[195px] text-secondary text-[18px] sm:text-[26px] rounded-md font-bold hover:bg-secondary-hover">Edit Profile</button>
+        </div>
     </main>
     <footer class="flex justify-end sm:justify-center">
         <img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles">
