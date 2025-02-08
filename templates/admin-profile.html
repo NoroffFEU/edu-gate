@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/output.css">
-    <title>Landing page Edugate</title>
+    <title>Profile</title>
 </head>
-<body class="bg-neutral-light-gray">
+<body>
     <header class="bg-neutral-light-gray text-neutral-dark-gray">
         <nav class="max-w-7x1 flex items-center justify-between px-4">
             <img class="pl-5" src="../public/img/logo-header.png" alt="Edugate Logo">
@@ -83,22 +83,29 @@
             </ul>
         </nav>
     </header>
-    <main class="bg-neutral-light-gray">
-        <section class="relative">
-            <img src="../public/img/heroimage-edugate.png" alt="hero">
-            <div class="inset-0 flex flex-col items-center justify-center text-center">
-            <h1 class="text-neutral-dark-gray text-[32px] font-bold font-heading absolute top-[10px] sm:top-[40px]">Edugate</h1>
-            <p class="text-[14px] mx-5 sm:text-[16px] font-medium absolute bottom-[120px] sm:top-[95px]">Welcome to Edugate, the platform that lets you access your exam results online</p>
+    <main class="flex items-center justify-center min-h-screen bg-neutral-light-gray">
+        <div class="bg-white shadow-lg rounded-lg p-8 w-[361px] sm:w-[612px] sm:h-[771px] text-center mb-8">
+            <h1 class="text-2x1 font-bold text-neutral-dark-gray mb-4">Profile</h1>
+            <div><img class="w-32 h-32 mx-auto rounded-full border-4 border-primary" src="../public/icons/user-circle.png"> <!-- just a placeholder icon-->
             </div>
-            <div class="flex flex-col lg:absolute lg:bottom-[60px] lg:left-1/2 lg:transform lg:-translate-x-1/2 items-center lg:flex-row gap-4 mt-4">
-                <button class="bg-primary h-[40px] lg:h-[59px] w-[100px] lg:w-[133px] rounded-md text-neutral-light-gray text-[18px] lg:text-[26px] font-bold flex items-center justify-center hover:bg-primary-hover">Sign up</button>
-                <button class="box-border border-2 border-secondary h-[40px] lg:h-[59px] w-[100px] lg:w-[133px] rounded-md text-secondary text-[18px] lg:text-[26px] font-bold flex items-center justify-center hover:bg-secondary-hover">Log in</button>
+            <div class="mt-4 grid grid-cols-2 gap-y-2 sm:gap-y-4 text-left">
+                <strong class="mb-6">Name:</strong>
+                <span class="text-right sm:text-center">Joe Bloggs</span>
+                <strong class="mb-6">Email:</strong>
+                <span class="text-right sm:text-center">joeblog2020@edugate.no</span>
+                <strong class="mb-6">Date of birth:</strong>
+                <span class="text-right sm:text-center">01.01.1987</span>
+                <strong class="mb-6">Position</strong>
+                <span class="text-right sm:text-center">Administrator</span>
+                <strong class="mb-6">School:</strong>
+                <span class="text-right sm:text-center">The Academy</span>
             </div>
-        </section>
-   </main>
-   <footer class="flex justify-end sm:justify-center mt-35 sm:mt-10">
-    <img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles">
-    <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles">
-</footer>
+            <button class="block mx-auto mt-4 border-2 border-secondary h-[44px] sm:h-[44px] w-[100px] sm:w-[195px] text-secondary text-[18px] sm:text-[26px] rounded-md font-bold hover:bg-secondary-hover">Edit Profile</button>
+        </div>
+    </main>
+    <footer class="flex justify-end sm:justify-center">
+        <img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles">
+        <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles">
+    </footer>
 </body>
 </html>
