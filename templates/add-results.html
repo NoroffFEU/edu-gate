@@ -11,9 +11,9 @@
     <script src="" defer></script>
     <title>Edugate | Add results</title>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 p-5">
   <header></header>
-  <main class="max-w-4xl mx-auto p-6 mt-6">
+  <main class="w-full mx-auto mt-6 border">
     <section class="mb-6">
     <nav class="text-sm">
       <a href="#" class="text-gray-500 hover:text-gray-700">Dashboard</a> &gt;
@@ -24,57 +24,62 @@
     <h1 class="text-3xl font-bold text-gray-800 mb-4">Add results</h1>
     <p class="text-gray-600">To add results, upload an Excel spreadsheet with this format:</p>
   </section>
-    <table border="1" class="w-full border border-gray-300 text-left text-sm">
-      <thead>
-        <tr class="bg-gray-200 text-gray-600 uppercase text-xs">
-          <th class="bg-gray-200 text-gray-600 uppercase text-xs px-4 py-2">#</th>
-          <th class="border border-gray-300 px-4 py-2">A</th>
-          <th class="border border-gray-300 px-4 py-2">B</th>
-          <th class="border border-gray-300 px-4 py-2">C</th>
-          <th class="border border-gray-300 px-4 py-2">D</th>
-          <th class="border border-gray-300 px-4 py-2">E</th>
-          <th class="border border-gray-300 px-4 py-2">F</th>
+    
+  <div class="flex">
+  <table border="1" class="w-full border border-gray-300 text-left">
+      <thead class="bg-gray-200 text-gray-600 uppercase text-xs sm:text-sm lg:text-lg text-center">
+        <tr>
+          <th class="bg-gray-200 text-gray-600 uppercase pl-0.5 md:pl-4 py-1">#</th>
+          <th class="border border-gray-300 pl-0.5 md:pl-4 py-1">A</th>
+          <th class="border border-gray-300 pl-0.5 md:pl-4 py-1">B</th>
+          <th class="border border-gray-300 pl-0.5 md:pl-4 py-1">C</th>
+          <th class="border border-gray-300 pl-0.5 md:pl-4 py-1">D</th>
+          <th class="border border-gray-300 pl-0.5 md:pl-4 py-1">E</th>
+          <th class="border border-gray-300 pl-0.5 md:pl-4 py-1">F</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="text-[10px] sm:text-xs lg:text-base">
         <tr>
-          <td class="bg-gray-200 border border-gray-300 px-4 py-2">1</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">school_id</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">student_id</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">year</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">term</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">result</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">grade</td>
+          <td class="bg-gray-200 border border-gray-300 pl-0.5 md:pl-4 py-1">1</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-1">school_id</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-1">student_id</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-1">year</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-1">term</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-1">result</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-1">grade</td>
         </tr>
         <tr>
-          <td class="bg-gray-200 border border-gray-300 px-4 py-2">2</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">School ID</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">Student ID</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">Year of Exam</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">Term Number (1-3)</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">Number/Number</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">Exam grade</td>
+          <td class="bg-gray-200 border border-gray-300 pl-0.5 md:pl-4 py-2">2</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">School ID</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">Student ID</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">Year of Exam</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">Term Number (1-3)</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">Number / Number</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">Exam grade</td>
         </tr>
         <tr>
-          <td class="bg-gray-200 border border-gray-300 px-4 py-2">3</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">#</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">#</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">#</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">#</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">#</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">#</td>
+          <td class="bg-gray-200 border border-gray-300 pl-0.5 md:pl-4 py-2">3</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">#</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">#</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">#</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">#</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">#</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">#</td>
         </tr>
         <tr>
-          <td class="bg-gray-200 border border-gray-300 px-4 py-2">4</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">#</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">#</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">#</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">#</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">#</td>
-          <td class="bg-white border border-gray-300 px-4 py-2">#</td>
+          <td class="bg-gray-200 border border-gray-300 pl-0.5 md:pl-4 py-2">4</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">#</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">#</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">#</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">#</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">#</td>
+          <td class="bg-white border border-gray-300 pl-0.5 md:pl-4 py-2">#</td>
         </tr>
       </tbody>
     </table>
+  </div>
+
+
     <div class="flex flex-col items-center justify-center space-y-4">
       <button type="button" class="px-6 py-2 max-w-xs bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition mt-6">Upload +</button>
       <button type="button" class="px-6 py-2 max-w-xs bg-white text-blue-500 border-2 border-blue-500 font-semibold rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Back to dashboard</button>
