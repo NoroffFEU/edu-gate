@@ -7,6 +7,16 @@
     <meta name="description" content="The Add School page for Edugate. Edugate is a result management system for high schools in Nigeria."/>
     <title>Edugate | Add School</title>
     <link rel="stylesheet" href="../dist/output.css" />
+    <style>
+        @media screen and (max-width: 640px) {
+            table {
+                font-size: 10px;
+            }
+            th, td {
+                padding: 4px;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
     <header></header>
@@ -19,55 +29,41 @@
         </section>
         <section class="mb-10 text-center">
             <h1 class="text-2xl sm:text-3xl font-bold text-gray-800">Add school</h1>
-            <p class="text-gray-600 text-sm sm:text-base">To add a school, upload an Excel spreadsheet with this format:</p>
+            <p class="text-gray-600 text-sm sm:text-base mt-4">To add a school, upload an Excel spreadsheet with this format:</p>
         </section>
         <section class="overflow-x-auto w-full">
-            <table class="w-full border border-gray-300 text-left text-xs sm:text-sm">
-                <thead>
-                    <tr class="bg-gray-200 text-gray-600 uppercase text-[10px] sm:text-xs">
-                        <th class="px-2 py-1 sm:px-4 sm:py-2">#</th>
-                        <th class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2 text-center">A</th>
-                        <th class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2 text-center">B</th>
-                        <th class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2 text-center">C</th>
-                        <th class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2 text-center">D</th>
-                        <th class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2 text-center">E</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="bg-gray-200 border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">1</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">school_name</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">city</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">postcode</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">address_1</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">contact</td>
-                    </tr>
-                    <tr>
-                        <td class="bg-gray-200 border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">2</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">School name</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">City</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">Postcode</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">Address</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">Number</td>
-                    </tr>
-                    <tr>
-                        <td class="bg-gray-200 border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">3</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">#</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">#</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">#</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">#</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">#</td>
-                    </tr>
-                    <tr>
-                        <td class="bg-gray-200 border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">4</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">#</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">#</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">#</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">#</td>
-                        <td class="border border-gray-300 px-2 py-1 sm:px-4 sm:py-2">#</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="w-full overflow-hidden">
+                <table class="w-full table-auto border border-gray-300 text-left text-xs sm:text-sm">
+                    <thead>
+                        <tr class="bg-gray-200 text-gray-600 uppercase text-[10px] sm:text-xs">
+                            <th class="px-4 py-2">#</th>
+                            <th class="border border-gray-300 px-4 py-2 text-center">A</th>
+                            <th class="border border-gray-300 px-4 py-2 text-center">B</th>
+                            <th class="border border-gray-300 px-4 py-2 text-center">C</th>
+                            <th class="border border-gray-300 px-4 py-2 text-center">D</th>
+                            <th class="border border-gray-300 px-4 py-2 text-center">E</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="bg-gray-200 border border-gray-300 px-4 py-2">1</td>
+                            <td class="border border-gray-300 px-4 py-2">school_name</td>
+                            <td class="border border-gray-300 px-4 py-2">city</td>
+                            <td class="border border-gray-300 px-4 py-2">postcode</td>
+                            <td class="border border-gray-300 px-4 py-2">address_1</td>
+                            <td class="border border-gray-300 px-4 py-2">contact</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-gray-200 border border-gray-300 px-4 py-2">2</td>
+                            <td class="border border-gray-300 px-4 py-2">School name</td>
+                            <td class="border border-gray-300 px-4 py-2">City</td>
+                            <td class="border border-gray-300 px-4 py-2">Postcode</td>
+                            <td class="border border-gray-300 px-4 py-2">Address</td>
+                            <td class="border border-gray-300 px-4 py-2">Number</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
         <section class="mt-6 flex flex-col gap-3 items-center">
             <button type="button" class="primary-button">
