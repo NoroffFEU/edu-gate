@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ingelinn Hallseth" />
+    <meta
+      name="description"
+      content="The Log In page for Edugate. Edugate is a result management system for high schools in Nigeria."
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script src="" defer></script>
+    <title>Edugate | Log In</title>
+  </head>
+  <body class="bg-neutral-light-gray font-Roboto">
+    <header></header>
+    <main>
+      <div class="w-full max-w-sm sm:max-w-md mx-auto mt-6 px-4 sm:px-0">
+        <form
+          class="bg-neutral-light-gray border-0 sm:border-3 sm:border-[#cccccc] shadow-none sm:inset-shadow-sm sm:inset-shadow-[#cccccc] px-10 sm:px-12 pt-6 sm:pt-8 pb-8 sm:pb-10 mb-4"
+          action="submit-form-here"
+          method="post"
+        >
+          <h1
+            class="text-2xl sm:text-3xl text-center font-bold font-Poppins text-neutral-dark-gray mt-4 mb-8"
+          >
+            Log in
+          </h1>
+          <div class="mb-6">
+            <label
+              class="block text-neutral-dark-gray text-sm sm:text-base font-bold mb-2"
+              for="email"
+              >Email</label
+            >
+            <input
+              class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-3 sm:px-4 text-neutral-dark-gray text-sm sm:text-base"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@mail.com"
+              required
+              autocomplete="email"
+              inputmode="email"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-neutral-dark-gray text-sm sm:text-base font-bold mb-2"
+              for="password"
+              >Password</label
+            >
+            <input
+              class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-3 sm:px-4 text-dark-medium-gray text-sm sm:text-base"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter password"
+              required
+              autocomplete="current-password"
+            />
+          </div>
+          <p
+            class="mb-6 text-center text-sm sm:text-base font-light sm:font-normal text-neutral-dark-gray"
+          >
+            Forgot your password? Click
+            <a class="font-bold hover:cursor-pointer" href="#">here</a>.
+          </p>
+          <div class="text-center mb-4">
+            <button type="submit" class="primary-button primary-button:hover">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
