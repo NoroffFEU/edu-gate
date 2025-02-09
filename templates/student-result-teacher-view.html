@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcos L. Rodriguez">
+    <title>Edugate | teacher: edit students results</title>
+    <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+
+<body class="bg-neutral-light-gray font-Roboto m-0 p-3">
+    <header></header>
+    <main class="flex flex-col w-full p-2">
+        <section class="flex flex-col text-xs sm:text-sm md:text-base w-full justify-center">
+            <nav class="mt-2 sm:mt-3 md:m-10 text-sm md:text-base text-neutral-medium-gray">
+                <a href="#">Dashboard</a> &gt;
+                <a href="#">Select student</a> &gt;
+                <a href="#" class="text-primary">Student results</a>
+            </nav>
+
+            <div class="flex flex-col items-center mt-10">
+                <h1 class="text-xs md:text-3xl lg:text-4xl xl:text-5xl font-bold font-Poppins">Student results</h1>
+
+                <img src="../public/icons/results.png" class="mt-3 w-10 md:hidden">
+
+                <p class="mt-3 text-xs xl:text-lg">Here are the results for <b>$user</b></p>
+
+                <div class="flex flex-row mt-5 w-full h-10 items-center justify-center">
+                    <input type="search" id="search" name="search" placeholder="Search for results..."
+                    class="border-1 border-gray-500 px-1.5 rounded-l-sm h-full w-52">
+
+                    <i class="fa-solid fa-magnifying-glass border-1 border-primary text-primary
+                        rounded-r-sm hover:text-white hover:bg-primary-hover hover:border-gray-500
+                        p-3 sm:p-2.5 md:p-3.5 h-full w-10 mx-0 text-sm"></i>
+                </div>
+            </div>
+            
+
+            <div class="flex justify-end mt-5 w-full">
+                <div class="flex flex-row items-center md:hidden mr-5">
+                    <p class="text-primary">Add results</p>
+                    <img src="../public/icons/add.png" class="h-7.5 ml-2">
+                </div>
+                
+                <button class="border-1 bg-primary hover:bg-primary-hover hidden md:block
+                text-white p-1.5 text-sm lg:text-base rounded-md lg:mr-10 xl:mr-25 2xl:mr-40">Add results</button> 
+            </div>
+
+
+            <div class="flex w-full justify-center items-center md:hidden">
+                <table class="table-auto text-left w-full bg-table ">
+                    <thead class="text-primary text-sm sm:text-lg font-Poppins">
+                        <tr class="h-10">
+                            <th class="px-3 sm:px-6 font-bold w-fit">Subject</th>
+                            <th class="px-3 sm:px-6 font-bold w-fit">Exam</th>
+                            <th class="px-3 sm:px-6 font-bold w-fit">Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-xs sm:text-sm">
+                        <tr class="h-10 bg-neutral-light-gray hover:bg-table-hover">
+                            <td class="px-3 sm:px-6 w-fit">Mathematics</td>
+                            <td class="px-3 sm:px-6 w-fit">M1</td>
+                            <td class="px-3 sm:px-6 w-fit">B</td>
+                            <td class="px-3 sm:px-6 w-fit"><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                        <tr class="h-10 hover:bg-table-hover">
+                            <td class="px-3 sm:px-6 w-fit">Physics</td>
+                            <td class="px-3 sm:px-6 w-fit">P3</td>
+                            <td class="px-3 sm:px-6 w-fit">A</td>
+                            <td class="px-3 sm:px-6 w-fit"><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                        <tr class="h-10 bg-neutral-light-gray hover:bg-table-hover">
+                            <td class="px-3 sm:px-6 w-fit">English</td>
+                            <td class="px-3 sm:px-6 w-fit">E2</td>
+                            <td class="px-3 sm:px-6 w-fit">B</td>
+                            <td class="px-3 sm:px-6 w-fit"><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                        <tr class="h-10 hover:bg-table-hover">
+                            <td class="px-3 sm:px-6 w-fit">English</td>
+                            <td class="px-3 sm:px-6 w-fit">E1</td>
+                            <td class="px-3 sm:px-6 w-fit">B</td>
+                            <td class="px-3 sm:px-6 w-fit"><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                        <tr class="h-10 bg-neutral-light-gray hover:bg-table-hover">
+                            <td class="px-3 sm:px-6 w-fit">Biology</td>
+                            <td class="px-3 sm:px-6 w-fit">B2</td>
+                            <td class="px-3 sm:px-6 w-fit">C</td>
+                            <td class="px-3 sm:px-6 w-fit"><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                        <tr class="h-10 hover:bg-table-hover">
+                            <td class="px-3 sm:px-6 w-fit">Physics</td>
+                            <td class="px-3 sm:px-6 w-fit">P2</td>
+                            <td class="px-3 sm:px-6 w-fit">A</td>
+                            <td class="px-3 sm:px-6 w-fit"><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                        <tr class="h-10 bg-neutral-light-gray hover:bg-table-hover">
+                            <td class="px-3 sm:px-6 w-fit">History</td>
+                            <td class="px-3 sm:px-6 w-fit">H2</td>
+                            <td class="px-3 sm:px-6 w-fit">A</td>
+                            <td class="px-3 sm:px-6 w-fit"><img src="../public/icons/info.png" class="w-5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="hidden md:flex justify-center items-center mt-3 ">
+                <table class="table-fixed text-left w-full bg-table rounded-xl">
+                    <thead>
+                        <tr class="text-xl lg:text-2xl h-15 lg:h-20 text-primary">
+                            <th class="pr-10 w-30 text-right">Year</th>
+                            <th class="pl-2 w-fit">Term</th>
+                            <th class="pl-10 lg:pl-20 w-40 lg:w-56">Subject</th>
+                            <th class="pl-2 w-fit">Exam</th>
+                            <th class="pl-2 w-30">Result</th>
+                            <th class="pl-2 w-fit">Grade</th>
+                            <th class="pl-2 w-10"></th>
+                            <th class="pl-2 w-fit"></th> 
+                            </tr>
+                    </thead>
+                    <tbody class="text-neutral-dark-gray">
+                        <tr class="text-base lg:text-lg h-15 lg:h-20 bg-neutral-light-gray">
+                            <td class="pr-10 text-right">2019</td>
+                            <td class="pl-11 lg:pl-13">3</td>
+                            <td class="pl-10 lg:pl-20">Mathematics</td>
+                            <td class="pl-2">M1</td>
+                            <td class="pl-2">90/120</td>
+                            <td class="pl-2">B</td>
+                            <td class="pr-5 text-right text-primary font-bold"><a href=#>Edit</a></td>
+                            <td class="pl-2 text-xs lg:text-sm">
+                                <button class="alert-button w-16 lg:w-20 flex justify-center">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="text-base lg:text-lg h-15 lg:h-20">
+                            <td class="pr-10 text-right">2019</td>
+                            <td class="pl-11 lg:pl-13">3</td>
+                            <td class="pl-10 lg:pl-20">Physics</td>
+                            <td class="pl-2">P3</td>
+                            <td class="pl-2">102/120</td>
+                            <td class="pl-2">A</td>
+                            <td class="pr-5 text-right text-primary font-bold"><a href=#>Edit</a></td>
+                            <td class="pl-2 text-xs lg:text-sm">
+                                <button class="alert-button w-16 lg:w-20 flex justify-center">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="text-base lg:text-lg h-15 lg:h-20 bg-neutral-light-gray">
+                            <td class="pr-10 text-right">2019</td>
+                            <td class="pl-11 lg:pl-13">3</td>
+                            <td class="pl-10 lg:pl-20">English</td>
+                            <td class="pl-2">E2</td>
+                            <td class="pl-2">80/110</td>
+                            <td class="pl-2">B</td>
+                            <td class="pr-5 text-right text-primary font-bold"><a href=#>Edit</a></td>
+                            <td class="pl-2 text-xs lg:text-sm">
+                                <button class="alert-button w-16 lg:w-20 flex justify-center">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="text-base lg:text-lg h-15 lg:h-20">
+                            <td class="pr-10 text-right">2019</td>
+                            <td class="pl-11 lg:pl-13">2</td>
+                            <td class="pl-10 lg:pl-20">English</td>
+                            <td class="pl-2">E1</td>
+                            <td class="pl-2">95/120</td>
+                            <td class="pl-2">B</td>
+                            <td class="pr-5 text-right text-primary font-bold"><a href=#>Edit</a></td>
+                            <td class="pl-2 text-xs lg:text-sm">
+                                <button class="alert-button w-16 lg:w-20 flex justify-center">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="text-base lg:text-lg h-15 lg:h-20 bg-neutral-light-gray">
+                            <td class="pr-10 text-right">2019</td>
+                            <td class="pl-11 lg:pl-13">3</td>
+                            <td class="pl-10 lg:pl-20">Biology</td>
+                            <td class="pl-2">B2</td>
+                            <td class="pl-2">73/120</td>
+                            <td class="pl-2">C</td>
+                            <td class="pr-5 text-right text-primary font-bold"><a href=#>Edit</a></td>
+                            <td class="pl-2 text-xs lg:text-sm">
+                                <button class="alert-button w-16 lg:w-20 flex justify-center">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="text-base lg:text-lg h-15 lg:h-20">
+                            <td class="pr-10 text-right">2019</td>
+                            <td class="pl-11 lg:pl-13">2</td>
+                            <td class="pl-10 lg:pl-20">Physics</td>
+                            <td class="pl-2">P2</td>
+                            <td class="pl-2">110/120</td>
+                            <td class="pl-2">A</td>
+                            <td class="pr-5 text-right text-primary font-bold"><a href=#>Edit</a></td>
+                            <td class="pl-2 text-xs lg:text-sm">
+                                <button class="alert-button w-16 lg:w-20 flex justify-center">Delete</button>
+                            </td>
+                        </tr>
+                        <tr class="text-base lg:text-lg h-15 lg:h-20 bg-neutral-light-gray">
+                            <td class="pr-10 text-right">2019</td>
+                            <td class="pl-11 lg:pl-13">1</td>
+                            <td class="pl-10 lg:pl-20">History</td>
+                            <td class="pl-2">H2</td>
+                            <td class="pl-2">90/110</td>
+                            <td class="pl-2">A</td>
+                            <td class="pr-5 text-right text-primary font-bold"><a href=#>Edit</a></td>
+                            <td class="pl-2 text-xs lg:text-sm">
+                                <button class="alert-button w-16 lg:w-20 flex justify-center">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="flex flex-row mt-3 md:mt-8 items-center justify-center text-center space-x-1 sm:space-x-3 md:space-x-4 xl:space-x-6">
+                <i class="fa-solid fa-angles-left border-1 border-gray-300 p-2.5 w-8 rounded-md text-sm"></i>
+                <i class="fa-solid fa-angle-left border-1 border-gray-300 p-2.5 w-8 rounded-md text-sm"></i>
+                <p class="border-1 border-primary p-1 w-8 rounded-md">1</p>
+                <p class="border-1 border-gray-300 p-1 w-8 hidden md:block rounded-md">2</p>
+                <p class="border-1 border-gray-300 p-1 w-8 rounded-md">...</p>
+                <p class="border-1 border-gray-300 p-1 w-8 hidden md:block rounded-md">7</p>
+                <p class="border-1 border-gray-300 p-1 w-8 rounded-md">8</p>
+                <i class="fa-solid fa-angle-right border-1 border-gray-300 p-2.5 w-8 rounded-md text-sm"></i>
+                <i class="fa-solid fa-angles-right border-1 border-gray-300 p-2.5 w-8 rounded-md text-sm"></i>
+            </div>
+
+            <div class="flex justify-center mt-5 md:mt-8">
+                <button class="secondary-button">Back to Dashboard</button>
+            </div>
+            
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
