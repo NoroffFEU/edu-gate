@@ -120,26 +120,36 @@
         </nav>
     
     </header>
+    <div class="flex bg-neutral-light-gray pl-5">
+        <p class="text-neutral-medium-gray">Dashboad</p>
+        <p class="mx-4">></p>
+        <p class="text-primary">Profile</p>
+    </div>
     <main class="flex items-center justify-center min-h-screen bg-neutral-light-gray">
-        <div class="bg-white shadow-lg rounded-lg p-8 w-[361px] sm:w-[612px] sm:h-[771px] text-center mb-8">
-            <h1 class="text-2x1 font-bold text-neutral-dark-gray mb-4">Profile</h1>
-            <div><img class="w-32 h-32 mx-auto rounded-full border-4 border-primary" src="../public/icons/user-circle.png"> <!-- placeholder icon for the user initials/img-->
+        <div class="bg-neutral-light-gray sm:shadow-none shadow-lg border-2 border-neutral-medium-gray p-8 w-[361px] sm:w-[612px] sm:h-[771px] text-center mb-20 mt-40">
+            <h1 class="text-2x1 font-bold mb-4">Profile</h1>
+            <div class=" mb-8 w-18 h-18 sm:w-32 sm:h-32 mx-auto rounded-full bg-primary flex items-center justify-center text-white sm:text-black text-[32px] font-bold">
+                JB
             </div>
-            <div class="mt-4 grid grid-cols-2 gap-y-2 sm:gap-y-4 text-left">
-                <strong class="mb-6">Name:</strong>
-                <span class="text-right sm:text-center">Joe Bloggs</span>
-                <strong class="mb-6">Email:</strong>
-                <span class="text-right sm:text-center">joeblog2020@edugate.no</span>
-                <strong class="mb-6">Date of birth:</strong>
-                <span class="text-right sm:text-center">19.11.1988</span>
-                <strong class="mb-6">ID:</strong>
-                <span class="text-right sm:text-center">1921840</span>
-                <strong class="mb-6">Position:</strong>
-                <span class="text-right sm:text-center">Teacher</span>
-                <strong class="mb-6">School:</strong>
-                <span class="text-right sm:text-center">The Academy</span>
+            <div class="mt-4 grid sm:grid-cols-2 grid-cols-[1fr_2fr] gap-y-2 sm:gap-y-4 text-left">
+                <strong class="mb-6 sm:ml-35">Name:</strong>
+                <span class="text-left sm:text-left sm:ml-10">Joe Bloggs</span>
+                <strong class="mb-6 sm:ml-35">Email:</strong>
+                <span class="text-left sm:text-left sm:ml-10">joeblog2020@edugate.no</span>
+                <strong class="mb-6 sm:ml-35">
+                    <span class="block sm:hidden">DOB:</span>
+                    <span class="hidden sm:block">Date og birth:</span>
+                </strong>
+                
+                <span class="text-left sm:text-left sm:ml-10">19.11.1988</span>
+                <strong class="mb-6 sm:ml-35">ID:</strong>
+                <span class="text-left sm:text-left sm:ml-10">1921840</span>
+                <strong class="mb-6 sm:ml-35">Position:</strong>
+                <span class="text-left sm:text-left sm:ml-10">Teacher</span>
+                <strong class="mb-6 sm:ml-35">School:</strong>
+                <span class="text-left sm:text-left sm:ml-10">The Academy</span>
             </div>
-            <button class="block mx-auto mt-4 border-2 border-secondary h-[44px] sm:h-[44px] w-[100px] sm:w-[195px] text-secondary text-[18px] sm:text-[26px] rounded-md font-bold hover:bg-secondary-hover">Edit Profile</button>
+            <button class="block mx-auto mt-4 border-2 border-secondary h-[44px] sm:h-[59px] w-[195px] sm:w-[190px] text-secondary text-[18px] sm:text-[26px] rounded-md font-bold hover:bg-secondary-hover">Edit Profile</button>
         </div>
     </main>
     <footer class="flex justify-end sm:justify-center">
