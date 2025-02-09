@@ -8,6 +8,14 @@
     <title>Edugate | Add School</title>
     <link rel="stylesheet" href="../dist/output.css" />
     <style>
+        @media screen and (max-width: 320px) {
+            table {
+                font-size: 8px;
+            }
+            th, td {
+                padding: 0.5rem 0.5rem;
+            }
+        }
         @media screen and (max-width: 640px) {
             .primary-button, .secondary-button {
                 padding: 4px 10px;
@@ -31,7 +39,8 @@
         </section>
         <section class="w-full overflow-hidden">
             <div class="w-full overflow-hidden">
-                <table class="w-full table-auto border border-gray-300 text-left text-xs sm:text-sm">
+                <!-- Table that scales up on larger screens -->
+                <table class="w-full max-w-full table-auto border border-gray-300 text-left text-xs sm:text-sm">
                     <thead>
                         <tr class="bg-gray-200 text-gray-600 uppercase text-[10px] sm:text-xs">
                             <th class="px-1 sm:px-4 py-1">#</th>
@@ -74,4 +83,5 @@
     </main>
 </body>
 </html>
+
 
