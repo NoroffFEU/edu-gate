@@ -24,29 +24,6 @@
 }
 /* CUSTOM CLASSES */
 
-
-/* font */
-h1{
-    font-size: 32px;
-}
-
-h2{
-    font-size: 24px;
-}
-h3{
-    font-size: 20px;
-}
-p{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-}
-
-
-label{
-    font-size: 14px;
-}
-
 /* buttons */
 
 .primary-button{
