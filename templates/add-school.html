@@ -230,6 +230,58 @@
       </nav>
     </header>
     <main class="w-full mx-auto p-4 sm:p-6">
+        <section class="mb-4 text-sm">
+            <nav>
+                <a href="#" class="text-gray-500 hover:text-gray-700">Dashboard</a> &gt;
+                <a href="#" class="text-green-600 font-medium">Add school</a>
+            </nav>
+        </section>
+        <section class="mb-10 text-center">
+            <h1 class="text-black text-center font-Poppins text-[32px] font-bold tracking-wide sm:mb-12 mb-6">Add school</h1>
+            <p class="text-neutral-dark-gray font-Roboto sm:text-xl text-sm font-normal sm:tracking-wide sm:mb-12 mb-4">To add a school, upload an Excel spreadsheet with this format:</p>
+        </section>
+        <section class="w-full overflow-hidden">
+            <div class="w-full overflow-hidden">
+                <table class="w-full table-auto border border-gray-300 text-left text-xs sm:text-sm">
+                    <thead>
+                        <tr class="bg-gray-200 text-gray-600 uppercase text-[10px] sm:text-xs">
+                            <th class="px-0.5 sm:px-4 py-1">#</th>
+                            <th class="border border-gray-300 px-0.5 sm:px-4 py-1 text-center">A</th>
+                            <th class="border border-gray-300 px-0.5 sm:px-4 py-1 text-center">B</th>
+                            <th class="border border-gray-300 px-0.5 sm:px-4 py-1 text-center">C</th>
+                            <th class="border border-gray-300 px-0.5 sm:px-4 py-1 text-center">D</th>
+                            <th class="border border-gray-300 px-0.5 sm:px-4 py-1 text-center">E</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="bg-gray-200 border border-gray-300 px-0.5 sm:px-4 py-1">1</td>
+                            <td class="border border-gray-300 px-0.5 sm:px-4 py-1">school_name</td>
+                            <td class="border border-gray-300 px-0.5 sm:px-4 py-1">city</td>
+                            <td class="border border-gray-300 px-0.5 sm:px-4 py-1">postcode</td>
+                            <td class="border border-gray-300 px-0.5 sm:px-4 py-1">address_1</td>
+                            <td class="border border-gray-300 px-0.5 sm:px-4 py-1">contact</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-gray-200 border border-gray-300 px-0.5 sm:px-4 py-1">2</td>
+                            <td class="border border-gray-300 px-0.5 sm:px-4 py-1">School name</td>
+                            <td class="border border-gray-300 px-0.5 sm:px-4 py-1">City</td>
+                            <td class="border border-gray-300 px-0.5 sm:px-4 py-1">Postcode</td>
+                            <td class="border border-gray-300 px-0.5 sm:px-4 py-1">Address</td>
+                            <td class="border border-gray-300 px-0.5 sm:px-4 py-1">Number</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="mt-6 flex flex-col gap-3 items-center">
+            <button type="button" class="primary-button py-2 px-6 text-sm">
+                Upload +
+            </button>
+            <button type="button" class="secondary-button py-2 px-6 text-sm">
+                Back to dashboard
+            </button>
+        </section>
       <section class="mb-4 text-sm">
         <nav>
           <a href="#" class="text-gray-500 hover:text-gray-700">Dashboard</a>
