@@ -75,3 +75,10 @@
     background-color: #E64A19;
     border: 2px solid #E64A19;
 }
+
+.sideBar-icon:hover{
+    opacity: .5;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
