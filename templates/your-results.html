@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="" defer></script>
+    <title>Edugate | Your results</title>
+
+</head>
+</head>
+
+<body>
+    <header class="border-solid border border-gray-300 h-36">
+        <nav class="flex items-center justify-end" >
+            <img src="../public/img/logo-header.png" alt="header logo for Edugate." class="mr-auto">
+
+            <button class="pr-4 md:hidden" >
+                <img src="../public/icons/hamburger-menu.png" alt="a hamburger icon used for menu">
+            </button>
+
+            <ul class="hidden md:flex font-Poppins font-medium ml-auto gap-8">
+                <li class="">
+                    <a href="#" class="py-8 md:px-8 px-16">
+                    Dashboard</a>
+                </li>
+                <li>
+                    <a href="../templates/about.html" class="py-8 md:px-8">
+                    About</a>
+                </li>
+                <li>
+                    <a href="../templates/contact.html" class="py-8 md:px-8">
+                    Contact</a>
+                </li>
+                </ul>
+                <label
+                for="dropdown-toggle"
+                class="hidden md:flex w-14 h-14 mr-10 cursor-pointer"
+                >
+                <input type="checkbox" id="dropdown-toggle" class="hidden peer">
+                    <img src="/public/icons/user-circle.png" alt="User dropdown">
+                </label>
+        </nav>
+
+    </header>
+    <main class="flex flex-col w-full font-Roboto self-center px-8 gap-5 pb-8">
+        <div class="text-neutral-medium-gray flex h-10 items-center mt-5 gap-6 text-xs sm:text-base pl-5">
+            <a href="#">Dashboard</a>&gt;
+            <p class="text-primary">Your Results</p>
+        </div>
+
+        <div class="flex flex-col gap-5 items-center">
+            <div class="flex flex-row w-full justify-center">
+                <h1 class="w-fit font-bold text-2xl font-Poppins">Your Results</h1>
+            </div>
+
+            <img src="../public/icons/results.png" class="w-10 sm:w-15 md:hidden">
+            <p class="w-fit text-sm">View your results</p>
+
+            <div class="flex flex-row items-center justify-center w-full h-12">
+                <input
+                    class="w-55 sm:w-72 h-10 p-2 rounded-l-md text-neutral-medium-gray border border-[#CCCCCC] text-xs sm:text-sm"
+                    type="text" placeholder="Search for student...">
+                <i class="fa-solid fa-magnifying-glass border h-10 w-10 text-center py-2.5 
+                rounded-r-md text-primary hover:bg-primary-hover hover:text-white"><img
+                        src="../public/icons/search.png" alt="search icon image"
+                        class="h-[18px] w-[22px] flex justify-center m-auto"></i>
+            </div>
+        </div>
+
+
+        <table class="w-full bg-table rounded-md md:hidden text-left">
+            <thead class="text-primary text-sm sm:text-xl">
+                <tr class="h-10">
+                    <div>
+                        <th class="pl-2 w-fit">Subject</th>
+                        <button><img src="../public/icons/" alt=""> </button>
+                    </div>
+                    <div>
+                        <th class="pl-2 w-fit">Exam</th>
+                    </div>
+                    <div>
+                        <th class="pl-2 w-fit">Grade</th>
+                    </div>
+
+                </tr>
+            </thead>
+            <tbody class="text-xs sm:text-base">
+                <tr class="h-10 bg-neutral-light-gray">
+                    <td class="pl-2 w-fit">Mathematics</td>
+                    <td class="pl-2 w-fit">M1</td>
+                    <td class="pl-2 w-fit">B</td>
+                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5"></td>
+                </tr>
+                <tr class="h-10">
+                    <td class="pl-2 w-fit">Physics</td>
+                    <td class="pl-2 w-fit">P3</td>
+                    <td class="pl-2 w-fit">A</td>
+                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5"></td>
+                </tr>
+                <tr class="h-10 bg-neutral-light-gray">
+                    <td class="pl-2 w-fit">English</td>
+                    <td class="pl-2 w-fit">E2</td>
+                    <td class="pl-2 w-fit">B</td>
+                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5"></td>
+                </tr>
+                <tr class="h-10">
+                    <td class="pl-2 w-fit">English</td>
+                    <td class="pl-2 w-fit">E1</td>
+                    <td class="pl-2 w-fit">B</td>
+                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5"></td>
+                </tr>
+                <tr class="h-10 bg-neutral-light-gray">
+                    <td class="pl-2 w-fit">Biology</td>
+                    <td class="pl-2 w-fit">B2</td>
+                    <td class="pl-2 w-fit">C</td>
+                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5"></td>
+                </tr>
+                <tr class="h-10">
+                    <td class="pl-2 w-fit">Physics</td>
+                    <td class="pl-2 w-fit">p2</td>
+                    <td class="pl-2 w-fit">A</td>
+                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5"></td>
+                </tr>
+                <tr class="h-10 bg-neutral-light-gray">
+                    <td class="pl-2 w-fit">History</td>
+                    <td class="pl-2 w-fit">H2</td>
+                    <td class="pl-2 w-fit">A</td>
+                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="hidden md:flex justify-center w-full ">
+            <table class="table-auto bg-table rounded-md w-full items-center  text-left">
+                <thead class="w-full ">
+                    <tr class="text-primary text-xl lg:text-2xl text-left">
+                        <th class="p-4 w-fit">Year</th>
+                        <th class="p-4 w-fit">Term</th>
+                        <th class="p-4 w-fit">Subject</th>
+                        <th class="p-4 w-fit">Exam</th>
+                        <th class="p-4 w-fit">Result</th>
+                        <th class="p-4 w-fit">Grade</th>
+                    </tr>
+                </thead>
+                <tbody class="text-base lg:text-xl text-neutral-dark-gray">
+                    <tr class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray">
+                        <td class="p-4 w-fit">2019</td>
+                        <td class="p-4 w-fit">3</td>
+                        <td class="p-4 w-fit">Matheamtics</td>
+                        <td class="p-4 w-fit">M1</td>
+                        <td class="p-4 w-fit">90/120</td>
+                        <td class="p-4 w-fit">B</td>
+                    </tr>
+                    <tr class="hover:bg-table-hover hover:cursor-default">
+                        <td class="p-4 w-fit">2019</td>
+                        <td class="p-4 w-fit">3</td>
+                        <td class="p-4 w-fit">Physics</td>
+                        <td class="p-4 w-fit">P3</td>
+                        <td class="p-4 w-fit">102/120</td>
+                        <td class="p-4 w-fit">A</td>
+                    </tr>
+                    <tr class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray">
+                        <td class="p-4 w-fit">2019</td>
+                        <td class="p-4 w-fit">3</td>
+                        <td class="p-4 w-fit">English</td>
+                        <td class="p-4 w-fit">E2</td>
+                        <td class="p-4 w-fit">80/110</td>
+                        <td class="p-4 w-fit">B</td>
+                    </tr>
+                    <tr class="hover:bg-table-hover hover:cursor-default">
+                        <td class="p-4 w-fit">2019</td>
+                        <td class="p-4 w-fit">2</td>
+                        <td class="p-4 w-fit">English</td>
+                        <td class="p-4 w-fit">E1</td>
+                        <td class="p-4 w-fit">95/130</td>
+                        <td class="p-4 w-fit">B</td>
+                    </tr>
+                    <tr class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray">
+                        <td class="p-4 w-fit">2019</td>
+                        <td class="p-4 w-fit">3</td>
+                        <td class="p-4 w-fit">Biology</td>
+                        <td class="p-4 w-fit">B2</td>
+                        <td class="p-4 w-fit">73/120</td>
+                        <td class="p-4 w-fit">C</td>
+                    </tr>
+                    <tr class="hover:bg-table-hover hover:cursor-default">
+                        <td class="p-4 w-fit">2019</td>
+                        <td class="p-4 w-fit">2</td>
+                        <td class="p-4 w-fit">Physics</td>
+                        <td class="p-4 w-fit">P2</td>
+                        <td class="p-4 w-fit">110/120</td>
+                        <td class="p-4 w-fit">A</td>
+                    </tr>
+                    <tr class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray">
+                        <td class="p-4 w-fit">2019</td>
+                        <td class="p-4 w-fit">1</td>
+                        <td class="p-4 w-fit">History</td>
+                        <td class="p-4 w-fit">H2</td>
+                        <td class="p-4 w-fit">90/110</td>
+                        <td class="p-4 w-fit">A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <ul class="flex flex-row gap-2 justify-center self-center text-base md:text-xl text-neutral-medium-gray">
+        <li class="rounded-md border w-8 h-fit flex place-content-center p-1"><a href="#">&laquo;</a></li>
+        <li class="rounded-md border w-8 h-fit flex place-content-center p-1"><a href="#">&lsaquo;</a></li>
+        <li class="rounded-md text-primary border border-y-primary w-8 h-fit flex place-content-center p-1"><a
+                href="#">1</a></li>
+        <li class="rounded-md border w-8 h-fit place-content-center p-1 hidden md:flex"><a href="#">2</a></li>
+        <li class="rounded-md border w-8 h-fit flex place-content-center p-1"><a href="#">...</a></li>
+        <li class="rounded-md border w-8 h-fit place-content-center p-1 hidden md:flex"><a href="#">7</a></li>
+        <li class="rounded-md border w-8 h-fit flex place-content-center p-1"><a href="#">8</a></li>
+        <li class="rounded-md border w-8 h-fit flex place-content-center p-1"><a href="#">&rsaquo;</a></li>
+        <li class="rounded-md border w-8 h-fit flex place-content-center p-1"><a href="#">&raquo;</a></li>
+    </ul>
+    <button
+        class="border-2 border-s-secondary rounded-md text-secondary py-2 px-5 w-fit flex mt-16 mx-auto self-center text-base sm:text-lg md:text-2xl font-semibold"
+        href="#">Back to dashboard</button>
+
+    <footer class="flex justify-center">
+        <img src="../public/img/circle-footer.png" alt="two colorful circles where one is blue and one is green"
+            class="mt-12">
+    </footer>
+</body>
+
+</html>
