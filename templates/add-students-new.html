@@ -123,13 +123,22 @@
     </nav>
 
 </header>
-  <main class="w-full mx-auto mt-6 font-Poppins">
-    <section class="mb-6">
-      <nav class="text-sm">
-        <a href ="#" class="text-gray-500 hover:text-gray-700">Dashboard</a> &gt;
-        <a href="#" class="text-green-600 font-medium">Add students</a>
-      </nav>
-    </section>
+<section class="mb-6">
+    <nav class="text-sm">
+      <a href ="#" class="text-gray-500 hover:text-gray-700">Dashboard</a> &gt;
+      <a href="#" class="text-green-600 font-medium">Add students</a>
+    </nav>
+  </section>
+<div class="flex">
+    <!--Sidebar-->
+    <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-1/4">
+     <img class="cursor-pointer w-12" src="/public/icons/dashboard.png" alt="Picutre of a green home icon">
+     <img class="cursor-pointer w-12" src="/public/icons/results.png" alt="Picture of a green results icon">
+     <img class="cursor-pointer w-12" src="/public/icons/user-circle.png" alt="Picture of a green user icon">
+     <img class="cursor-pointer w-12" src="/public/icons/school-management.png" alt="Picture of a green school icon">
+     <img class="cursor-pointer w-12" src="/public/icons/logout.png" alt="Picture of a red log out icon">
+ </div>
+  <main class="w-full mx-auto mt-6 font-Poppins flex-1">
     <section class="mb-4 flex flex-col justify-center text-center items-center mt-24 md:mt-10 py-6">
     <h1 class="text-black text-center font-Poppins text-[32px] font-bold tracking-wide sm:mb-12 mb-6">Add students</h1>
     <p class="text-neutral-dark-gray font-Roboto sm:text-xl text-sm font-normal sm:tracking-wide sm:mb-12 mb-4">To add students, upload an excel spreadsheet with this format:</p>
@@ -187,6 +196,7 @@
         <button type="button" class="px-6 py-2 max-w-xs bg-white text-blue-500 border-2 border-blue-500 font-semibold rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Back to dashboard</button>
     </div>
   </main>
+  </div>
   <footer class="flex justify-end sm:justify-center mt-35 sm:mt-10">
     <img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles">
     <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles">
