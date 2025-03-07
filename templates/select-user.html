@@ -130,12 +130,12 @@
   </section> 
 
   <section class="mx-auto text-center">
-    <h1 class="mb-12 text-3xl font-bold capitalize">select user</h1>
-    <p class="mb-6 text-sm mx-4">Search for the user below &amp; select to make changes to their info:</p>
+    <h1 class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4">Select user</h1>
+    <p class="text-center text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-12 sm:mb-4">Search for the user below &amp; select to make changes to their info:</p>
 
     <div class="flex justify-center">
-      <input type="text" id="search-bar" placeholder="Search for user..." aria-label="Search for user" class="border border-r-0 border-table-clicked rounded-l-md p-2.5 focus:border focus:border-r-0 focus:border-primary focus:outline-none">
-      <button class="px-3 border border-primary rounded-r-md hover:bg-primary group">
+      <input type="text" id="search-bar" placeholder="Search for user..." aria-label="Search for user" class="border border-r-0 !border-table-clicked rounded-l-md p-2.5 focus:border focus:border-r-0 focus:!border-primary focus:outline-none">
+      <button class="px-3 border !border-primary rounded-r-md hover:!bg-primary group">
         <img src="../public/icons/search.png" alt="" class="h-5 group-hover:hidden">
         <img src="../public/icons/search-on-hover.png" alt="" class="hidden h-5 group-hover:block">
       </button>
@@ -143,16 +143,16 @@
 
   </section> 
   <div class="flex justify-end mr-14">
-    <button class="primary-button">Add user</button>
+    <a href="./admin-add-user.html"><button class="primary-button">Add user</button></a>
   </div>
   <section class="flex flex-col max-w-full gap-6 mx-auto">
     <!-- Overlay that will be hidden in css, and shown when checkbox checked -->
     <div class="hidden">
-      <h2>Delete selected user?</h2>
+      <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete selected user?</h2>
       <button>
         <img src="../public/icons/x.png">
       </button>
-      <p>Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
+      <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
       <button>Yes, delete user</button>
       <button>Cancel</button>
     </div>
@@ -175,7 +175,7 @@
         <td class="hidden p-4 lg:table-cell">01/01/2002</td>
         <td class="pl-8">
           <a href="#"> <!-- link to manage student -->
-            <button class="text-primary">Edit</button>
+            <button class="!text-primary">Edit</button>
           </a>
         </td>
         <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
@@ -192,7 +192,7 @@
         <td class="hidden p-4 lg:table-cell">01/01/2002</td>
         <td class="pl-8">
           <a href="#"> <!-- link to manage student -->
-            <button class="text-primary">Edit</button>
+            <button class="!text-primary">Edit</button>
           </a>
         </td>
         <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
@@ -209,7 +209,7 @@
         <td class="hidden p-4 lg:table-cell">03/02/1971</td>
         <td class="pl-8">
           <a href="#"> <!-- link to manage teacher -->
-            <button class="text-primary">Edit</button>
+            <button class="!text-primary">Edit</button>
           </a>
         </td>
         <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
@@ -226,7 +226,7 @@
         <td class="hidden p-4 lg:table-cell">03/02/1971</td>
         <td class="pl-8">
           <a href="#"> <!-- link to manage teacher -->
-            <button class="text-primary">Edit</button>
+            <button class="!text-primary">Edit</button>
           </a>
         </td>
         <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
@@ -243,7 +243,7 @@
         <td class="hidden p-4 lg:table-cell">01/01/2002</td>
         <td class="pl-8">
           <a href="#"> <!-- link to manage student -->
-            <button class="color-promary">Edit</button>
+            <button class="!text-primary">Edit</button>
           </a>
         </td>
         <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
@@ -260,7 +260,7 @@
         <td class="hidden p-4 lg:table-cell">01/01/2002</td>
         <td class="pl-8">
           <a href="#"> <!-- link to manage student -->
-            <button class="text-primary">Edit</button>
+            <button class="!text-primary">Edit</button>
           </a>
         </td>
         <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
@@ -277,7 +277,7 @@
         <td class="hidden p-4 lg:table-cell">01/01/2002</td>
         <td class="pl-8">
           <a href="#"> <!-- link to manage student -->
-            <button class="text-primary">Edit</button>
+            <button class="!text-primary">Edit</button>
           </a>
         </td>
         <td class="hidden p-4 sm:table-cell"> <!--Need to style the checkbox:checked to show the modal overlay-->
@@ -287,22 +287,22 @@
       </tr>  
     </table>  
 
-    <div class="flex max-w-full text-neutral-medium-gray gap-4 mx-auto">
-      <button class="w-10 h-10 border rounded-md border-neutral-medium-gray">
+    <div class="flex max-w-full !text-neutral-medium-gray gap-4 mx-auto">
+      <button class="w-10 h-10 border rounded-md !border-neutral-medium-gray">
         <img src="../public/icons/chevron-double-left.png" alt="" class="justify-center h-4 mx-auto">
       </button>
-      <button class="w-10 h-10 border rounded-md border-neutral-medium-gray">
+      <button class="w-10 h-10 border rounded-md !border-neutral-medium-gray">
         <img src="../public/icons/chevron-left.png" alt="" class="h-4 mx-auto">
       </button>
-      <button class="w-10 h-10 text-xl border-2 rounded-md border-primary">1</button>
-      <button class="w-10 h-10 text-xl border rounded-md border-neutral-medium-gray">2</button>
-      <button class="w-10 h-10 text-xl border rounded-md border-neutral-medium-gray">...</button>
-      <button class="w-10 h-10 text-xl border rounded-md border-neutral-medium-gray">7</button>
-      <button class="w-10 h-10 text-xl border rounded-md border-neutral-medium-gray">8</button>
-      <button class="w-10 h-10 border rounded-md border-neutral-medium-gray">
+      <button class="w-10 h-10 text-xl border-2 rounded-md !border-primary">1</button>
+      <button class="w-10 h-10 text-xl border rounded-md !border-neutral-medium-gray">2</button>
+      <button class="w-10 h-10 text-xl border rounded-md !border-neutral-medium-gray">...</button>
+      <button class="w-10 h-10 text-xl border rounded-md !border-neutral-medium-gray">7</button>
+      <button class="w-10 h-10 text-xl border rounded-md !border-neutral-medium-gray">8</button>
+      <button class="w-10 h-10 border rounded-md !border-neutral-medium-gray">
         <img src="../public/icons/chevron-right.png" alt="" class="h-4 mx-auto">
       </button>
-      <button class="w-10 h-10 border rounded-md border-neutral-medium-gray">
+      <button class="w-10 h-10 border rounded-md !border-neutral-medium-gray">
         <img src="../public/icons/chevron-double-right.png" alt="" class="h-4 mx-auto">
       </button>
     </div> 
