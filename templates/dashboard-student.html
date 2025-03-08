@@ -6,11 +6,10 @@
     <meta name="description" content="Student profile page for Edugate webpage.">
     <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="../css/global.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Student Dashboard Page</title>
 </head>
 <body>
-    <header class="text-neutral-dark-gray">
+    <header class="text-neutral-dark-gray font-Poppins">
         <nav class="max-w-7x1 flex items-center justify-between">
             <img class="HeaderLogo" src="../public/img/logo-header.png" alt="Edugate Logo">
     
@@ -36,6 +35,7 @@
                 <div
                     class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
                 >
+                    <img class="HeaderLogo left-4" src="../public/img/logo-header.png" alt="Edugate Logo">
                     <!-- Close Icon -->
                     <label
                         for="menu-toggle"
@@ -49,36 +49,44 @@
     
                     <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
                         <li>
-                            <a href="" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
-                                Login
-                                <img class="w-6 h-6" src="../public/icons/login.png" alt="Login Icon">
+                            <a href="./dashboard-student.html" class="flex items-center gap-5 p-3 border-b-2 border-primary hover:border-primary font-medium">
+                                Dashboard
+                                <img class="w-6 h-6" src="../public/icons/dashboard.png" alt="Login Icon">
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
-                                Signup
-                                <img class="w-6 h-6" src="../public/icons/signup.png" alt="Signup Icon">
+                            <a href="./student-profile.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary font-medium">
+                                Profile
+                                <img class="w-6 h-6" src="../public/icons/user-circle.png" alt="Login Icon">
                             </a>
                         </li>
                         <li>
-                            <a href="../templates/about.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            <a href="./about.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary font-medium">
                                 About
-                                <img class="w-6 h-6" src="../public/icons/about.png" alt="About Icon">
+                                <img class="w-6 h-6" src="../public/icons/about.png" alt="Login Icon">
                             </a>
                         </li>
                         <li>
-                            <a href="../templates/contact.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            <a href="./contact.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary font-medium">
                                 Contact
-                                <img class="w-6 h-6" src="../public/icons/contact.png" alt="Contact Icon">
+                                <img class="w-6 h-6" src="../public/icons/contact.png" alt="Login Icon">
                             </a>
                         </li>
+                        <div>
+                            <li class="pt-6 border-t-2 border-neutral-medium-gray">
+                                <a href="" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary font-medium">
+                                    Log Out
+                                    <img class="w-6 h-6" src="../public/icons/logout.png" alt="Login Icon">
+                                </a>
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>
     
             <ul class="hidden md:flex mr-10 font-Poppins font-medium text-xl">
                 <li class="py-8 px-16 hover:border-primary">
-                    <a href="../templates/dashboard-student.html" class="font-heading ">Dashboard</a>
+                    <a class="border-b-2 border-primary" href="../templates/dashboard-student.html" class="font-heading ">Dashboard</a>
                 </li>
                 <li class="py-8 px-16 hover:border-primary">
                     <a href="../templates/about.html" class="font-heading ">About</a>
@@ -86,7 +94,9 @@
                 <li class="py-8 px-16 hover:border-primary">
                     <a href="../templates/contact.html" class="font-heading ">Contact</a>
                 </li>
-                <img class="w-14 h-14" src="../public/icons/user-circle.png">
+                <li>
+                    <img class="w-14 h-14 mt-4" src="../public/icons/user-circle.png">
+                </li>
             </ul>
         </nav>
     </header>
@@ -95,16 +105,20 @@
 
             <!--Mobile view-->
             <div class="md:hidden grid gap-4 justify-items-center text-center">
-                <h1 class="text-neutral-dark-gray text-center font-Poppins font-bold tracking-wide mb-4 text-5xl">Dashboard</h1>
+                <h1 class="text-neutral-dark-gray text-center font-Poppins font-bold tracking-wide mb-4 text-[60px]">Dashboard</h1>
                 <img class="w-25" src="../public/icons/Student-initials.png" alt="Picture of a green circle with the initials JB">
-                <h2 class="text-neutral-dark-gray text-center font-Poppins text-xl font-extrabold tracking-wide mt-4 mb-4 text-2xl">Joe Bloggs</h2>
+                <h2 class="text-neutral-dark-gray text-center font-Poppins font-extrabold tracking-wide mt-4 mb-4 text-2xl">Joe Bloggs</h2>
                 <h3 class="text-neutral-dark-gray text-center font-Poppins font-sm tracking-wide mb-4 text-xl">Student at Edugate School</h3>
-                <img src="../public/icons/user-circle.png" alt="Picture of a green profile icon">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm tracking-wide font-extrabold text-xl pb-10">Profile</h4>
-                <img class="h-16 w-20" src="../public/icons/results.png" alt="Picture of a green results icon">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-extrabold tracking-wide text-xl pb-10">My results</h4>
-                <img class="h-16" src="../public/icons/logout.png" alt="Picture of a red log out icon">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-extrabold tracking-wide text-xl">Log out</h4>
+
+                <a href="./student-profile.html"><img src="../public/icons/user-circle.png" alt="Picture of a green profile icon">
+                <h4 class="text-neutral-dark-gray text-center font-Poppins tracking-wide font-extrabold text-xl pb-10">Profile</h4></a>
+
+                <a class="justify-items-center text-center" href="./student-result.html"><img class="h-16 w-20" src="../public/icons/results.png" alt="Picture of a green results icon">
+                <h4 class="text-neutral-dark-gray text-center font-Poppins font-extrabold tracking-wide text-xl pb-10">My results</h4></a>
+
+                <a class="justify-items-center text-center" href="./index.html"><img class="h-16" src="../public/icons/logout.png" alt="Picture of a red log out icon">
+                <h4 class="text-neutral-dark-gray text-center font-Poppins font-extrabold tracking-wide text-xl">Log out</h4></a>
+
             </div>
 
             <!--Desktop view-->
@@ -113,18 +127,18 @@
                 <img class="w-35" src="../public/icons/Student-initials.png" alt="Picture of a green circle with the initials JB">
                 <h2 class="text-neutral-dark-gray text-center font-Poppins text-2xl font-extrabold tracking-wide mt-6 mb-6">Joe Bloggs</h2>
                 <h3 class="text-neutral-dark-gray text-center font-Roboto text-base tracking-wide mb-12 font-extrabold">Student at Edugate School</h3>
-                <div class="grid grid-cols-3 gap-12 m-4">
-                    <div class="justify-items-center">
-                        <img class="cursor-pointer" src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
-                        <h4 class="text-neutral-dark-gray text-center font-Roboto text-2xl tracking-wide mt-4 font-semibold">See profile</h4>
+                <div class="grid grid-cols-3 gap-12 m-4 justify-items-center text-center">
+                    <div>
+                        <a href="./student-profile.html"><img class="cursor-pointer" src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
+                        <h4 class="text-neutral-dark-gray text-center font-Roboto text-2xl tracking-wide mt-4 font-semibold">See profile</h4></a>
                     </div>
-                    <div class="justify-items-center">
-                        <img class="cursor-pointer" src="/public/icons/results.png" alt="Picture of a green results icon">
-                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">My results</h4>
+                    <div>
+                        <a href="./student-result.html"><img class="cursor-pointer" src="/public/icons/results.png" alt="Picture of a green results icon">
+                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">My results</h4></a>
                     </div>
-                    <div class="justify-items-center">
-                        <img class="cursor-pointer" src="/public/icons/logout.png" alt="Picture of a red log out icon">
-                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">Log out</h4>
+                    <div>
+                        <a href="./index.html"><img class="cursor-pointer" src="/public/icons/logout.png" alt="Picture of a red log out icon">
+                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">Log out</h4></a>
                     </div>
                 </div>
             </div>
