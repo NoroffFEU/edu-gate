@@ -10,8 +10,120 @@
     <title>Edugate | Add students</title>
 </head>
 <body class="bg-gray-100 p-5">
-  <header></header>
-  <main class="w-full mx-auto mt-6">
+  <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
+    <nav class="max-w-7x1 flex items-center justify-between px-4">
+        <img class="ml-4 mr-16" src="../public/img/logo-header.png" alt="Edugate Logo">
+
+        <!-- Hamburger Menu -->
+        <div class="fixed inset-0 md:hidden">
+            <!-- Checkbox for Hamburger Toggle -->
+            <input
+                type="checkbox"
+                id="menu-toggle"
+                class="hidden peer"
+            />
+            <!-- Hamburger Icon -->
+            <label
+                for="menu-toggle"
+                class="absolute top-14 right-4 cursor-pointer focus:outline-none peer-checked:hidden"
+                aria-label="Toggle menu"
+            >
+                <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </label>
+
+            <div
+                class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
+            >
+                <!-- Close Icon -->
+                <label
+                    for="menu-toggle"
+                    class="absolute top-4 right-4 cursor-pointer focus:outline-none"
+                    aria-label="Close menu"
+                >
+                    <svg class="w-12 h-12 mt-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </label>
+
+                <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
+                    <li>
+                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            Dashboard
+                            <img class="w-6 h-6" src="../public/icons/dashboard.png" alt="Dashboard Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            Profile
+                            <img class="w-6 h-6" src="../public/icons/user-circle.png" alt="Profile Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            About
+                            <img class="w-6 h-6" src="../public/icons/about.png" alt="About Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                            Contact
+                            <img class="w-6 h-6" src="../public/icons/contact.png" alt="Contact Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-accent-hover">
+                            Log out
+                            <img class="w-6 h-6" src="../public/icons/logout.png" alt="Log out Icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="hidden md:flex justify-end mr-10 font-Poppins font-medium">
+            <li><a href="#" class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
+                Dashboard</a>
+            </li>
+            <li><a href="../templates/about.html" class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary">
+                About</a>
+            </li>
+            <li><a href="../templates/contact.html" class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary">
+                Contact</a>
+            </li>
+        </ul>
+            <!-- User Dropdown -->
+            <div class="relative">
+              <!-- Hidden Checkbox -->
+              <input type="checkbox" id="dropdown-toggle" class="hidden peer">
+  
+              <!-- User Icon (Clickable) -->
+              <label
+                  for="dropdown-toggle"
+                  class="hidden md:flex w-14 h-14 mr-10 cursor-pointer"
+              >
+                  <img src="/public/icons/user-circle.png" alt="User dropdown">
+              </label>
+  
+              <!-- Dropdown Menu -->
+              <ul
+                  class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
+                  <li>
+                      <a href="#" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
+                  </li>
+                  <li>
+                      <a href="#" class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
+                  </li>
+                  <li>
+                      <a href="#" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log out</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>
+
+</header>
+  <main class="w-full mx-auto mt-6 font-Poppins">
     <section class="mb-6">
       <nav class="text-sm">
         <a href ="#" class="text-gray-500 hover:text-gray-700">Dashboard</a> &gt;
@@ -75,6 +187,9 @@
         <button type="button" class="px-6 py-2 max-w-xs bg-white text-blue-500 border-2 border-blue-500 font-semibold rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Back to dashboard</button>
     </div>
   </main>
-  <footer></footer>
+  <footer class="flex justify-end sm:justify-center mt-35 sm:mt-10">
+    <img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles">
+    <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles">
+</footer>
 </body>
 </html>
