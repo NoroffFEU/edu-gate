@@ -191,31 +191,29 @@
         </ul>
         <!-- User Dropdown -->
         <div class="relative">
-          <!-- Hidden Checkbox -->
-          <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
-
           <!-- User Icon (Clickable) -->
-          <label
-            for="dropdown-toggle"
+          <div
+            id="dropdown-button"
             class="hidden md:flex w-14 h-14 mr-10 cursor-pointer"
           >
             <img src="/public/icons/user-circle.png" alt="User dropdown" />
-          </label>
+          </div>
 
           <!-- Dropdown Menu -->
           <ul
-            class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200"
+            id="dropdown-menu"
+            class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible transition-opacity duration-200"
           >
             <li>
               <a
-                href="#"
+                href="../templates/add-results.html"
                 class="block px-8 py-4 hover:bg-white hover:text-green-600"
                 >See results</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="../templates/student-profile.html"
                 class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600"
                 >Profile</a
               >
@@ -229,29 +227,58 @@
             </li>
           </ul>
         </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const dropdownButton = document.getElementById("dropdown-button");
+            const dropdownMenu = document.getElementById("dropdown-menu");
+
+            dropdownButton.addEventListener("click", function (event) {
+              dropdownMenu.classList.toggle("opacity-100");
+              dropdownMenu.classList.toggle("visible");
+              dropdownMenu.classList.toggle("opacity-0");
+              dropdownMenu.classList.toggle("invisible");
+              event.stopPropagation();
+            });
+
+            document.addEventListener("click", function (event) {
+              if (
+                !dropdownMenu.contains(event.target) &&
+                !dropdownButton.contains(event.target)
+              ) {
+                dropdownMenu.classList.add("opacity-0", "invisible");
+                dropdownMenu.classList.remove("opacity-100", "visible");
+              }
+            });
+          });
+        </script>
       </nav>
     </header>
     <!--Sidebar-->
     <div id="sidebar" class="fixed h-full hidden lg:flex flex-col gap-12">
-      <a href="../templates/dashboard-admin.html"><img
-        class="cursor-pointer w-12"
-        src="/public/icons/dashboard.png"
-        alt="Picutre of a green home icon"
+      <a href="../templates/dashboard-admin.html"
+        ><img
+          class="cursor-pointer w-12"
+          src="/public/icons/dashboard.png"
+          alt="Picutre of a green home icon"
       /></a>
-      <a href="../templates/add-results.html"><img
-        class="cursor-pointer w-12"
-        src="/public/icons/results.png"
-        alt="Picture of a green results icon"
+      <a href="../templates/add-results.html"
+        ><img
+          class="cursor-pointer w-12"
+          src="/public/icons/results.png"
+          alt="Picture of a green results icon"
       /></a>
-      <a href="../templates/teacher-profile.html"><img
-        class="cursor-pointer w-12"
-        src="/public/icons/user-circle.png"
-        alt="Picture of a green user icon"
+      <a href="../templates/teacher-profile.html"
+        ><img
+          class="cursor-pointer w-12"
+          src="/public/icons/user-circle.png"
+          alt="Picture of a green user icon"
       /></a>
-      <a href="../templates/add-school.html"><img
-        class="cursor-pointer w-12"
-        src="/public/icons/school-management.png"
-        alt="Picture of a green school icon"
+      <a href="../templates/add-school.html"
+        ><img
+          class="cursor-pointer w-12"
+          src="/public/icons/school-management.png"
+          alt="Picture of a green school icon"
       /></a>
       <img
         class="cursor-pointer w-12"
