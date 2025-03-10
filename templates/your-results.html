@@ -12,7 +12,7 @@
 
 <body class="bg-[rgb(245,245,245)]
 ">
-    <header class="border-solid border border-gray-300 md:h-40 h-[4.375rem]">
+    <header class="border border-gray-300 border-l-0 border-r-0 border-t-0 md:h-40 h-[4.375rem]">
         <nav class="flex items-center" >
             <img src="../public/img/logo-header.png" alt="header logo for Edugate." class="md:w-40 md:h-40 w-16 h-16 ml-8" >
 
@@ -46,7 +46,7 @@
 
     </header>
     <main class="flex flex-col w-full font-Roboto self-center px-8 gap-5 pb-8">
-        <div class="text-neutral-medium-gray flex h-10 items-center gap-3 md:gap-6 md:mt-6 text-xs sm:text-base -ml-5 md:pl-8 tracking-wide">
+        <div class="text-neutral-medium-gray flex h-10 items-center gap-3 md:gap-6 md:mt-6 text-[1rem] sm:text-base -ml-5 md:pl-8 tracking-wide">
             <a href="#">Dashboard</a>&gt;
             <p class="text-primary">Your Results</p>
         </div>
@@ -61,7 +61,7 @@
 
             <div class="flex flex-row items-center justify-center w-full h-12">
                 <input
-                    class="bg-white w-[18.97rem] md:w-[16.56rem] h-13 p-2 rounded-l-md text-neutral-medium-gray border border-[#CCCCCC] text-xs sm:text-sm cursor-pointer placeholder:text-gray-600 placeholder:text-lg"
+                    class="bg-white w-[18.97rem] md:w-[16.56rem] h-13 p-2 rounded-l-md text-neutral-medium-gray border border-[#CCCCCC] text-xs sm:text-sm cursor-pointer placeholder:text-[rgba(51,51,51,0.8)] placeholder:text-[1rem]"
                     type="text" placeholder="Search for results...">
                 <i class="group fa-solid fa-magnifying-glass border w-13 h-13 py-2.5 
                 rounded-r-md text-primary hover:bg-primary-hover hover:text-white flex bg-white">
@@ -74,70 +74,70 @@
         </div>
 
 
-        <table class="w-full bg-table rounded-md md:hidden text-left -mt-12">
+        <table class="rounded-md md:hidden text-left -mt-12">
             <thead class="text-primary text-sm sm:text-xl">
-                <tr class="h-14">
+                <tr class="h-14 bg-[rgba(255,255,255)]">
                     <div>
-                        <th class="w-90 h-14 pl-4">Subject</th>
+                        <th class="h-14 pl-4">Subject</th>
                         <button><img src="../public/icons/" alt=""> </button>
                     </div>
                     <div>
-                        <th class="w-90 h-14 pl-4">Exam</th>
+                        <th class="h-14 pl-4">Exam</th>
                     </div>
                     <div>
-                        <th class="w-90 h-14 pl-4">Grade</th>
+                        <th class="h-14 pl-4">Grade</th>
                     </div>
 
                 </tr>
             </thead>
-            <tbody class="text-xs sm:text-base">
+            <tbody class="text-xs sm:text-base ">
+                <tr class="h-14">
+                    <td class="w-fit h-14 pl-4">Mathematics</td>
+                    <td class="w-fit h-14 pl-4">M1</td>
+                    <td class="w-fit h-14 pl-4">B</td>
+                    <td class="w-fit h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 ml-auto"></td>
+                </tr>
                 <tr class="h-14 bg-[rgb(255,255,255)]">
-                    <td class="w-90 h-14 pl-4">Mathematics</td>
-                    <td class="w-90 h-14 pl-4">M1</td>
-                    <td class="w-90 h-14 pl-4">B</td>
-                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
+                    <td class="w-fit h-14 pl-4">Physics</td>
+                    <td class="w-fit h-14 pl-4">P3</td>
+                    <td class="w-fit h-14 pl-4">A</td>
+                    <td class="w-fit h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 ml-auto"></td>
+                </tr>
+                <tr class="h-14 ">
+                    <td class="w-fit h-14 pl-4">English</td>
+                    <td class="w-fit h-14 pl-4">E2</td>
+                    <td class="w-fit h-14 pl-4">B</td>
+                    <td class="w-fit h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 ml-auto"></td>
+                </tr>
+                <tr class="h-14 bg-[rgb(255,255,255)]">
+                    <td class="w-fit h-14 pl-4">English</td>
+                    <td class="w-fit h-14 pl-4">E1</td>
+                    <td class="w-fit h-14 pl-4">B</td>
+                    <td class="w-fit h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 ml-auto"></td>
                 </tr>
                 <tr class="h-14">
-                    <td class="w-90 h-14 pl-4">Physics</td>
-                    <td class="w-90 h-14 pl-4">P3</td>
-                    <td class="w-90 h-14 pl-4">A</td>
-                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
+                    <td class="w-fit h-14 pl-4">Biology</td>
+                    <td class="w-fit h-14 pl-4">B2</td>
+                    <td class="w-fit h-14 pl-4">C</td>
+                    <td class="w-fit h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 ml-auto"></td>
                 </tr>
                 <tr class="h-14 bg-[rgb(255,255,255)]">
-                    <td class="w-90 h-14 pl-4">English</td>
-                    <td class="w-90 h-14 pl-4">E2</td>
-                    <td class="w-90 h-14 pl-4">B</td>
-                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
+                    <td class="w-fit h-14 pl-4">Physics</td>
+                    <td class="w-fit h-14 pl-4">p2</td>
+                    <td class="w-fit h-14 pl-4">A</td>
+                    <td class="w-fit h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 ml-auto"></td>
                 </tr>
                 <tr class="h-14">
-                    <td class="w-90 h-14 pl-4">English</td>
-                    <td class="w-90 h-14 pl-4">E1</td>
-                    <td class="w-90 h-14 pl-4">B</td>
-                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
-                </tr>
-                <tr class="h-14 bg-[rgb(255,255,255)]">
-                    <td class="w-90 h-14 pl-4">Biology</td>
-                    <td class="w-90 h-14 pl-4">B2</td>
-                    <td class="w-90 h-14 pl-4">C</td>
-                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
-                </tr>
-                <tr class="h-14">
-                    <td class="w-90 h-14 pl-4">Physics</td>
-                    <td class="w-90 h-14 pl-4">p2</td>
-                    <td class="w-90 h-14 pl-4">A</td>
-                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
-                </tr>
-                <tr class="h-14 bg-[rgb(255,255,255)]">
-                    <td class="w-90 h-14 pl-4">History</td>
-                    <td class="w-90 h-14 pl-4">H2</td>
-                    <td class="w-90 h-14 pl-4">A</td>
-                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
+                    <td class="w-fit h-14 pl-4">History</td>
+                    <td class="w-fit h-14 pl-4">H2</td>
+                    <td class="w-fit h-14 pl-4">A</td>
+                    <td class="w-fit h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
                 </tr>
             </tbody>
         </table>
 
-        <div class="hidden md:flex w-fit m-auto -mt-10">
-            <table class="table-auto bg-table rounded-md w-full text-left">
+        <div class="hidden md:flex w-fit m-auto -mt-1">
+            <table class="table-auto bg-table rounded-md w-full text-left ">
                 <thead class="w-full">
                     <tr class="text-primary text-xl lg:text-2xl text-left">
                         <th class="h-18 pl-4 w-50">Year</th>
@@ -149,7 +149,7 @@
                     </tr>
                 </thead>
                 <tbody class="text-base lg:text-xl text-neutral-dark-gray">
-                    <tr class="hover:bg-table-hover hover:cursor-default bg-[rgb(255,255,255)]">
+                    <tr class="hover:bg-table-hover hover:cursor-default">
                         <td class="h-18 pl-4 align-top font-normal">2019</td>
                         <td class="h-18 pl-4 align-top">3</td>
                         <td class="h-18 pl-4 align-top">Mathematics</td>
@@ -165,7 +165,7 @@
                         <td class="h-18 pl-4 align-top">102/120</td>
                         <td class="h-18 pl-4 align-top">A</td>
                     </tr>
-                    <tr class="hover:bg-table-hover hover:cursor-default bg-[rgb(255,255,255)]">
+                    <tr class="hover:bg-table-hover hover:cursor-default">
                         <td class="h-18 pl-4 align-top">2019</td>
                         <td class="h-18 pl-4 align-top">3</td>
                         <td class="h-18 pl-4 align-top">English</td>
@@ -181,7 +181,7 @@
                         <td class="h-18 pl-4 align-top">95/130</td>
                         <td class="h-18 pl-4 align-top">B</td>
                     </tr>
-                    <tr class="hover:bg-table-hover hover:cursor-default bg-[rgb(255,255,255)]">
+                    <tr class="hover:bg-table-hover hover:cursor-default">
                         <td class="h-18 pl-4 align-top">2019</td>
                         <td class="h-18 pl-4 align-top">3</td>
                         <td class="h-18 pl-4 align-top">Biology</td>
@@ -197,7 +197,7 @@
                         <td class="h-18 pl-4 align-top">110/120</td>
                         <td class="h-18 pl-4 align-top">A</td>
                     </tr>
-                    <tr class="hover:bg-table-hover hover:cursor-default bg-[rgb(255,255,255)]">
+                    <tr class="hover:bg-table-hover hover:cursor-default">
                         <td class="h-18 pl-4 align-top">2019</td>
                         <td class="h-18 pl-4 align-top">1</td>
                         <td class="h-18 pl-4 align-top">History</td>
