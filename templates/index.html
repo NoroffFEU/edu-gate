@@ -9,7 +9,7 @@
 </head>
 
 <body class="bg-neutral-light-gray">
-    <header class="bg-neutral-light-gray text-neutral-dark-gray">
+    <header class="bg-neutral-light-gray text-neutral-dark-gray xl:mb-[3.8125rem] 2xl:mb-0 ">
         <nav class="flex items-center justify-between pr-20 pl-12 max-w-[1440px] mx-auto">
             <img class="" src="../public/img/logo-header.png" alt="Edugate Logo" />
 
@@ -85,32 +85,33 @@
         </nav>
     </header>
     <main class="bg-neutral-light-gray">
-        <section class="relative flex flex-col items-center justify-between">
-            <img src="../public/img/heroimage-edugate.png" alt="hero" />
-            <div class="inset-0 flex flex-col items-center justify-center text-center">
-                <h1 class="text-neutral-dark-gray font-heading absolute top-[10px] text-[32px] font-bold sm:top-[40px]">
+        <section class="flex flex-col items-center justify-between lg:h-[45rem] lg:bg-[url(../public/img/heroimage-edugate.png)] bg-top bg-cover bg-no-repeat lg:bg-center lg:bg-cover xl:bg-contain lg:bg-no-repeat">
+            <div class="flex flex-col items-center justify-between lg:justify-start text-center h-[18.75rem] lg:h-[8.375rem] bg-[url(../public/img/heroimage-edugate.png)] lg:bg-none bg-cover bg-no-repeat bg-center lg:mt-[0.8125rem] lg:p-10">
+                <h1 class="text-neutral-dark-gray font-Poppins font-bold">
                     Edugate
                 </h1>
-                <p class="absolute bottom-[120px] mx-5 text-[14px] font-medium sm:top-[95px] sm:text-[16px]">
+                <p class="mx-5 lg:font-medium font-Roboto">
                     Welcome to Edugate, the platform that lets you access your exam
                     results online
                 </p>
             </div>
             <div
-                class="flex flex-col items-center gap-6 lg:absolute lg:bottom-[60px] lg:left-1/2 lg:-translate-x-1/2 lg:transform lg:flex-row">
+                class="flex flex-col items-center gap-6 mt-4 lg:mb-16 lg:flex-row">
+                <a href = "../templates/sign-up.html">
                 <button
-                    class="bg-primary text-neutral-light-gray hover:bg-primary-hover flex h-[40px] w-[100px] items-center justify-center rounded-md text-[18px] font-bold lg:h-[3.69rem] lg:w-[8.315rem] lg:px-2.5 lg:py-5 lg:text-[26px]">
-                    Sign up
-                </button>
+                    class="bg-primary text-neutral-light-gray hover:bg-primary-hover flex h-[40px] w-[100px] items-center justify-center rounded-md text-[18px] font-Poppins font-bold lg:h-[3.69rem] lg:w-[8.315rem] lg:px-2.5 lg:py-5 lg:text-[24px]">
+                    Sign Up
+                </button></a>
+                <a href = "../templates/login-page.html">
                 <button
-                    class="border-secondary text-secondary hover:bg-secondary-hover box-border flex h-[40px] w-[100px] items-center justify-center rounded-md border-2 text-[18px] font-bold lg:h-[59px] lg:w-[133px] lg:text-[26px]">
-                    Log in
-                </button>
+                    class="border-secondary text-secondary hover:bg-secondary-hover box-border flex h-[40px] w-[100px] items-center justify-center rounded-md border-2 text-[18px] font-Poppins font-bold lg:h-[59px] lg:w-[100px] lg:text-[24px]">
+                    Log In
+                </button></a>
             </div>
         </section>
     </main>
-    <footer class="mt-35 flex justify-end sm:mt-10 sm:justify-center lg:mt-[3.812rem]">
-        <img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles" />
+    <footer class="mt-35 flex justify-end sm:mt-10 sm:justify-center xl:mt-[3.8125rem] 2xl:mt-10">
+        <img class="sm:hidden" src="../public/img/Circles_illustration_mobile.png" alt="Edugate footer circles" />
         <img class="hidden shrink-0 sm:block" src="../public/img/circle-footer.png"
             alt="Edugate footer circles" />
     </footer>
