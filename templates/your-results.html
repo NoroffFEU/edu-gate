@@ -10,11 +10,13 @@
 
 </head>
 
-<body class="bg-gray-100">
-    <header class="border-solid border border-gray-300 h-40">
+<body class="bg-[rgb(245,245,245)]
+">
+    <header class="border-solid border border-gray-300 md:h-40 h-[4.375rem]">
         <nav class="flex items-center" >
-                <img src="../public/img/logo-header.png" alt="header logo for Edugate." class="w-40 ml-8" >
+            <img src="../public/img/logo-header.png" alt="header logo for Edugate." class="md:w-40 md:h-40 w-16 h-16 ml-8" >
 
+            
             <button class="pr-4 md:hidden flex justify-end ml-auto" >
                 <img src="../public/icons/hamburger-menu.png" alt="a hamburger icon used for menu">
             </button>
@@ -44,29 +46,29 @@
 
     </header>
     <main class="flex flex-col w-full font-Roboto self-center px-8 gap-5 pb-8">
-        <div class="text-neutral-medium-gray flex h-10 items-center mt-5 gap-6 text-xs sm:text-base pl-5">
+        <div class="text-neutral-medium-gray flex h-10 items-center gap-3 md:gap-6 md:mt-6 text-xs sm:text-base -ml-5 md:pl-8 tracking-wide">
             <a href="#">Dashboard</a>&gt;
             <p class="text-primary">Your Results</p>
         </div>
 
-        <div class="flex flex-col gap-5 items-center">
+        <div class="flex flex-col items-center">
             <div class="flex flex-row w-full justify-center">
-                <h1 class="w-fit font-bold text-2xl font-Poppins mb-12">Your Results</h1>
+                <h1 class="w-fit font-bold text-[2rem] font-Poppins mb-4 md:mb-12 tracking-wide -mt-2">Your Results</h1>
             </div>
 
-            <img src="../public/icons/results.png" class="w-10 h-11 ml-4-15 md:hidden">
-            <p class="w-fit text-sm">View your results</p>
+            <img src="../public/icons/results.png" class="w-10 h-11 m-auto md:hidden mb-6">
+            <p class="w-fit text-sm mb-6 md:mb-12">View your results</p>
 
             <div class="flex flex-row items-center justify-center w-full h-12">
                 <input
-                    class="bg-white w-60 sm:w-72 h-13 p-2 rounded-l-md text-neutral-medium-gray border border-[#CCCCCC] text-xs sm:text-sm cursor-pointer"
+                    class="bg-white w-[18.97rem] md:w-[16.56rem] h-13 p-2 rounded-l-md text-neutral-medium-gray border border-[#CCCCCC] text-xs sm:text-sm cursor-pointer placeholder:text-gray-600 placeholder:text-lg"
                     type="text" placeholder="Search for results...">
                 <i class="group fa-solid fa-magnifying-glass border w-13 h-13 py-2.5 
-                rounded-r-md text-primary hover:bg-primary-hover hover:text-white flex ">
+                rounded-r-md text-primary hover:bg-primary-hover hover:text-white flex bg-white">
                 <img
                         src="../public/icons/search.png" alt="search icon image"
                         class="h-[18px] w-[22px] flex m-auto group-hover:hidden cursor-pointer">
-                <img src="../public/icons/search-on-hover.png" alt="search icon image in hover state" class="h-[18px] w-[22px] m-auto hidden group-hover:block cursor-pointer">
+                <img src="../public/icons/search-on-hover.png" alt="search icon image in hover state" class="h-[18px] w-[22px] m-auto hidden group-hover:block cursor-pointer ">
                     </i>
             </div>
         </div>
@@ -76,156 +78,155 @@
             <thead class="text-primary text-sm sm:text-xl">
                 <tr class="h-14">
                     <div>
-                        <th class="pl-2 w-fit">Subject</th>
+                        <th class="w-90 h-14 pl-4">Subject</th>
                         <button><img src="../public/icons/" alt=""> </button>
                     </div>
                     <div>
-                        <th class="pl-2 w-fit">Exam</th>
+                        <th class="w-90 h-14 pl-4">Exam</th>
                     </div>
                     <div>
-                        <th class="pl-2 w-fit">Grade</th>
+                        <th class="w-90 h-14 pl-4">Grade</th>
                     </div>
 
                 </tr>
             </thead>
             <tbody class="text-xs sm:text-base">
-                <tr class="h-14 bg-neutral-light-gray">
-                    <td class="pl-2 w-fit">Mathematics</td>
-                    <td class="pl-2 w-fit">M1</td>
-                    <td class="pl-2 w-fit">B</td>
-                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
+                <tr class="h-14 bg-[rgb(255,255,255)]">
+                    <td class="w-90 h-14 pl-4">Mathematics</td>
+                    <td class="w-90 h-14 pl-4">M1</td>
+                    <td class="w-90 h-14 pl-4">B</td>
+                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
                 </tr>
                 <tr class="h-14">
-                    <td class="pl-2 w-fit">Physics</td>
-                    <td class="pl-2 w-fit">P3</td>
-                    <td class="pl-2 w-fit">A</td>
-                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
+                    <td class="w-90 h-14 pl-4">Physics</td>
+                    <td class="w-90 h-14 pl-4">P3</td>
+                    <td class="w-90 h-14 pl-4">A</td>
+                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
                 </tr>
-                <tr class="h-14 bg-neutral-light-gray">
-                    <td class="pl-2 w-fit">English</td>
-                    <td class="pl-2 w-fit">E2</td>
-                    <td class="pl-2 w-fit">B</td>
-                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
-                </tr>
-                <tr class="h-14">
-                    <td class="pl-2 w-fit">English</td>
-                    <td class="pl-2 w-fit">E1</td>
-                    <td class="pl-2 w-fit">B</td>
-                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
-                </tr>
-                <tr class="h-14 bg-neutral-light-gray">
-                    <td class="pl-2 w-fit">Biology</td>
-                    <td class="pl-2 w-fit">B2</td>
-                    <td class="pl-2 w-fit">C</td>
-                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
+                <tr class="h-14 bg-[rgb(255,255,255)]">
+                    <td class="w-90 h-14 pl-4">English</td>
+                    <td class="w-90 h-14 pl-4">E2</td>
+                    <td class="w-90 h-14 pl-4">B</td>
+                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
                 </tr>
                 <tr class="h-14">
-                    <td class="pl-2 w-fit">Physics</td>
-                    <td class="pl-2 w-fit">p2</td>
-                    <td class="pl-2 w-fit">A</td>
-                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
+                    <td class="w-90 h-14 pl-4">English</td>
+                    <td class="w-90 h-14 pl-4">E1</td>
+                    <td class="w-90 h-14 pl-4">B</td>
+                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
                 </tr>
-                <tr class="h-14 bg-neutral-light-gray">
-                    <td class="pl-2 w-fit">History</td>
-                    <td class="pl-2 w-fit">H2</td>
-                    <td class="pl-2 w-fit">A</td>
-                    <td class="pl-2 w-fit"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
+                <tr class="h-14 bg-[rgb(255,255,255)]">
+                    <td class="w-90 h-14 pl-4">Biology</td>
+                    <td class="w-90 h-14 pl-4">B2</td>
+                    <td class="w-90 h-14 pl-4">C</td>
+                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
+                </tr>
+                <tr class="h-14">
+                    <td class="w-90 h-14 pl-4">Physics</td>
+                    <td class="w-90 h-14 pl-4">p2</td>
+                    <td class="w-90 h-14 pl-4">A</td>
+                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
+                </tr>
+                <tr class="h-14 bg-[rgb(255,255,255)]">
+                    <td class="w-90 h-14 pl-4">History</td>
+                    <td class="w-90 h-14 pl-4">H2</td>
+                    <td class="w-90 h-14 pl-4">A</td>
+                    <td class="w-90 h-14 pl-4 pr-2"><img src="../public/icons/info.png" alt="info-icon" class="w-5 flex ml-auto"></td>
                 </tr>
             </tbody>
         </table>
 
-        <div class="hidden md:flex items-center m-auto w-fit ">
-            <table class="table-auto bg-table rounded-md w-full items-center  text-left">
-                <thead class="w-full ">
+        <div class="hidden md:flex w-fit m-auto -mt-10">
+            <table class="table-auto bg-table rounded-md w-full text-left">
+                <thead class="w-full">
                     <tr class="text-primary text-xl lg:text-2xl text-left">
-                        <th class="p-4 w-50">Year</th>
-                        <th class="p-4 w-50">Term</th>
-                        <th class="p-4 w-50">Subject</th>
-                        <th class="p-4 w-50">Exam</th>
-                        <th class="p-4 w-50">Result</th>
-                        <th class="p-4 w-50">Grade</th>
+                        <th class="h-18 pl-4 w-50">Year</th>
+                        <th class="h-18 pl-4 w-50">Term</th>
+                        <th class="h-18 pl-4 w-50">Subject</th>
+                        <th class="h-18 pl-4 w-50">Exam</th>
+                        <th class="h-18 pl-4 w-50">Result</th>
+                        <th class="h-18 pl-4 w-50">Grade</th>
                     </tr>
                 </thead>
                 <tbody class="text-base lg:text-xl text-neutral-dark-gray">
-                    <tr class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray">
-                        <td class="p-4 w-fit">2019</td>
-                        <td class="p-4 w-fit">3</td>
-                        <td class="p-4 w-fit">Mathematics</td>
-                        <td class="p-4 w-fit">M1</td>
-                        <td class="p-4 w-fit">90/120</td>
-                        <td class="p-4 w-fit">B</td>
+                    <tr class="hover:bg-table-hover hover:cursor-default bg-[rgb(255,255,255)]">
+                        <td class="h-18 pl-4 align-top font-normal">2019</td>
+                        <td class="h-18 pl-4 align-top">3</td>
+                        <td class="h-18 pl-4 align-top">Mathematics</td>
+                        <td class="h-18 pl-4 align-top">M1</td>
+                        <td class="h-18 pl-4 align-top">90/120</td>
+                        <td class="h-18 pl-4 align-top">B</td>
                     </tr>
                     <tr class="hover:bg-table-hover hover:cursor-default">
-                        <td class="p-4 w-fit">2019</td>
-                        <td class="p-4 w-fit">3</td>
-                        <td class="p-4 w-fit">Physics</td>
-                        <td class="p-4 w-fit">P3</td>
-                        <td class="p-4 w-fit">102/120</td>
-                        <td class="p-4 w-fit">A</td>
+                        <td class="h-18 pl-4 align-top">2019</td>
+                        <td class="h-18 pl-4 align-top">3</td>
+                        <td class="h-18 pl-4 align-top">Physics</td>
+                        <td class="h-18 pl-4 align-top">P3</td>
+                        <td class="h-18 pl-4 align-top">102/120</td>
+                        <td class="h-18 pl-4 align-top">A</td>
                     </tr>
-                    <tr class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray">
-                        <td class="p-4 w-fit">2019</td>
-                        <td class="p-4 w-fit">3</td>
-                        <td class="p-4 w-fit">English</td>
-                        <td class="p-4 w-fit">E2</td>
-                        <td class="p-4 w-fit">80/110</td>
-                        <td class="p-4 w-fit">B</td>
-                    </tr>
-                    <tr class="hover:bg-table-hover hover:cursor-default">
-                        <td class="p-4 w-fit">2019</td>
-                        <td class="p-4 w-fit">2</td>
-                        <td class="p-4 w-fit">English</td>
-                        <td class="p-4 w-fit">E1</td>
-                        <td class="p-4 w-fit">95/130</td>
-                        <td class="p-4 w-fit">B</td>
-                    </tr>
-                    <tr class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray">
-                        <td class="p-4 w-fit">2019</td>
-                        <td class="p-4 w-fit">3</td>
-                        <td class="p-4 w-fit">Biology</td>
-                        <td class="p-4 w-fit">B2</td>
-                        <td class="p-4 w-fit">73/120</td>
-                        <td class="p-4 w-fit">C</td>
+                    <tr class="hover:bg-table-hover hover:cursor-default bg-[rgb(255,255,255)]">
+                        <td class="h-18 pl-4 align-top">2019</td>
+                        <td class="h-18 pl-4 align-top">3</td>
+                        <td class="h-18 pl-4 align-top">English</td>
+                        <td class="h-18 pl-4 align-top">E2</td>
+                        <td class="h-18 pl-4 align-top">80/110</td>
+                        <td class="h-18 pl-4 align-top">B</td>
                     </tr>
                     <tr class="hover:bg-table-hover hover:cursor-default">
-                        <td class="p-4 w-fit">2019</td>
-                        <td class="p-4 w-fit">2</td>
-                        <td class="p-4 w-fit">Physics</td>
-                        <td class="p-4 w-fit">P2</td>
-                        <td class="p-4 w-fit">110/120</td>
-                        <td class="p-4 w-fit">A</td>
+                        <td class="h-18 pl-4 align-top">2019</td>
+                        <td class="h-18 pl-4 align-top">2</td>
+                        <td class="h-18 pl-4 align-top">English</td>
+                        <td class="h-18 pl-4 align-top">E1</td>
+                        <td class="h-18 pl-4 align-top">95/130</td>
+                        <td class="h-18 pl-4 align-top">B</td>
                     </tr>
-                    <tr class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray">
-                        <td class="p-4 w-fit">2019</td>
-                        <td class="p-4 w-fit">1</td>
-                        <td class="p-4 w-fit">History</td>
-                        <td class="p-4 w-fit">H2</td>
-                        <td class="p-4 w-fit">90/110</td>
-                        <td class="p-4 w-fit">A</td>
+                    <tr class="hover:bg-table-hover hover:cursor-default bg-[rgb(255,255,255)]">
+                        <td class="h-18 pl-4 align-top">2019</td>
+                        <td class="h-18 pl-4 align-top">3</td>
+                        <td class="h-18 pl-4 align-top">Biology</td>
+                        <td class="h-18 pl-4 align-top">B2</td>
+                        <td class="h-18 pl-4 align-top">73/120</td>
+                        <td class="h-18 pl-4 align-top">C</td>
+                    </tr>
+                    <tr class="hover:bg-table-hover hover:cursor-default">
+                        <td class="h-18 pl-4 align-top">2019</td>
+                        <td class="h-18 pl-4 align-top">2</td>
+                        <td class="h-18 pl-4 align-top">Physics</td>
+                        <td class="h-18 pl-4 align-top">P2</td>
+                        <td class="h-18 pl-4 align-top">110/120</td>
+                        <td class="h-18 pl-4 align-top">A</td>
+                    </tr>
+                    <tr class="hover:bg-table-hover hover:cursor-default bg-[rgb(255,255,255)]">
+                        <td class="h-18 pl-4 align-top">2019</td>
+                        <td class="h-18 pl-4 align-top">1</td>
+                        <td class="h-18 pl-4 align-top">History</td>
+                        <td class="h-18 pl-4 align-top">H2</td>
+                        <td class="h-18 pl-4 align-top">90/110</td>
+                        <td class="h-18 pl-4 align-top">A</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
     </main>
-    <ul class="flex flex-row gap-2 justify-center self-center text-base md:text-xl text-neutral-medium-gray">
-        <li class="rounded-md border w-10 h-11 ml-4 flex place-content-center p-1"><a href="#">&laquo;</a></li>
-        <li class="rounded-md border w-10 h-11 ml-4 flex place-content-center p-1"><a href="#">&lsaquo;</a></li>
-        <li class="rounded-md text-primary border border-y-primary w-10 h-11 ml-4 flex place-content-center p-1"><a
+    <ul class="flex flex-row md:gap-1 justify-center self-center mt-4 md:mt-8 text-base md:text-xl text-neutral-medium-gray">
+        <li class="font-Roboto rounded-md border w-10 h-10 ml-2 md:ml-4 flex place-content-center p-2.5"><a href="# pr-2"><img src="../public/icons/chevron-dubble-left.png" alt="double arrows pointing to the right" class="h-4 opacity-35"></a></li>
+        <li class="font-Roboto rounded-md border w-10 h-10 ml-2 md:ml-4 flex place-content-center p-2.5"><a href="# pr-2"><img src="../public/icons/chevron-single-left.png" alt="a single arrow pointing to the right" class="h-4 opacity-35"></a></li>
+        <li class="font-Roboto rounded-md text-primary border border-y-primary w-10 h-10 ml-2 md:ml-4 flex place-content-center p-2.5"><a
                 href="#">1</a></li>
-        <li class="rounded-md border w-10 h-11 ml-4 place-content-center p-1 hidden md:flex"><a href="#">2</a></li>
-        <li class="rounded-md border w-10 h-11 ml-4 flex place-content-center p-1"><a href="#">...</a></li>
-        <li class="rounded-md border w-10 h-11 ml-4 place-content-center p-1 hidden md:flex"><a href="#">7</a></li>
-        <li class="rounded-md border w-10 h-11 ml-4 flex place-content-center p-1"><a href="#">8</a></li>
-        <li class="rounded-md border w-10 h-11 ml-4 flex place-content-center p-1"><a href="#"><span class="text-gray-700 font-bold text-xl">&rsaquo;</span></a></li>
-        <li class="rounded-md border w-10 h-11 ml-4 flex place-content-center p-1 "><a href="#"><span class="text-gray-700 font-bold text-xl">&raquo;</span></a></li>
+        <li class="font-Roboto rounded-md border w-10 h-10 ml-2 md:ml-4 place-content-center p-2.5 hidden md:flex"><a href="#">2</a></li>
+        <li class="font-Roboto rounded-md border w-10 h-10 ml-2 md:ml-4 flex place-content-center p-2.5"><a href="#">...</a></li>
+        <li class="font-Roboto rounded-md border w-10 h-10 ml-2 md:ml-4 place-content-center p-2.5 hidden md:flex"><a href="#">7</a></li>
+        <li class="font-Roboto rounded-md border w-10 h-10 ml-2 md:ml-4 flex place-content-center p-2.5"><a href="#">8</a></li>
+        <li class="font-Roboto rounded-md border w-10 h-10 ml-2 md:ml-4 flex place-content-center p-2.5"><a href="# pr-2"><img src="../public/icons/chevron-single-right.png" alt="a single arrow pointing to the right" class="h-4 "></a></li>
+        <li class="font-Roboto rounded-md border w-10 h-10 ml-2 md:ml-4 flex place-content-center p-2.5 "><a href="# pr-2"><img src="../public/icons/chevron-double-right.png" alt="double arrows pointing to the right" class="h-4"></a></li>
     </ul>
     <button
-        class="border-2 border-s-secondary rounded-md text-secondary hover:bg-blue-200 py-2 px-5 w-fit flex mt-16 mx-auto self-center text-base sm:text-lg md:text-2xl font-semibold"
-        href="#">Back to dashboard</button>
+        class="border-2 border-s-secondary rounded-md text-secondary hover:bg-blue-200 py-2 px-5 w-[18.69rem] flex mt-8 mx-auto self-center text-base sm:text-lg md:text-2xl font-semibold "><a href="#" class="m-auto">Back to dashboard</a></button>
 
         <footer class="flex justify-center -mt-8">
-            <img src="../public/img/circle-footer.png" alt="two colorful circles where one is blue and one is green" class="mt-12 hidden md:flex">
+            <img src="../public/img/circle-footer.png" alt="two colorful circles where one is blue and one is green" class="mt-20 hidden md:flex">
             <img src="../public/img/Circles_illustration_mobile.png" alt="two colorful circles where one is blue and one is green" class="mt-12 md:hidden flex ml-auto  ">
         </footer>
 </body>
