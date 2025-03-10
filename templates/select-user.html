@@ -76,15 +76,15 @@
 
     <ul class="hidden md:flex justify-end mr-10 font-Poppins font-medium">
       <li>
-        <a href="#" class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
+        <a href="#" class="py-8 md:px-8 px-16">
           Dashboard</a>
       </li>
       <li>
-        <a href="../templates/about.html" class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary">
+        <a href="../templates/about.html" class="py-8 md:px-8">
           About</a>
       </li>
       <li>
-        <a href="../templates/contact.html" class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary">
+        <a href="../templates/contact.html" class="py-8 md:px-8">
           Contact</a>
       </li>
     </ul>
@@ -117,8 +117,18 @@
   </nav>
 </header>
   
-<main class="flex flex-col gap-12 m-8">
-
+<main class="flex flex-row gap-0 m-0">
+  <section class="flex flex-col box-border border-r-2 border-gray-400 p-5 hidden sm:table-cell pt-20">
+    <input type="checkbox" id="nav-right-checkbox" aria-label="nav-right" class="hidden">
+    <ul class="flex flex-col justify gap-[41px] justify-around">
+    <li><img src="../public/icons/dashboard.png" alt="" class="w-[41px]"></li>
+    <li><img src="../public/icons/results.png" alt="" class="w-[41px]"></li>
+    <li><img src="../public/icons/user-management.png" alt="" class="w-[41px]"></li>
+    <li><img src="../public/icons/top-students.png" alt="" class="w-[41px]"></li>
+    <li><img src="../public/icons/logout.png" alt="" class="w-[41px]"></li>
+  </ul>
+  </section>
+<section class="flex flex-col gap-12 m-0 w-full pr-[80px] border-t-2 border-gray-400 pl-4 pt-5">
   <section>
     <nav>
       <ul class="flex text-neutral-medium-gray gap-4 capitalize">
@@ -142,10 +152,10 @@
     </div>
 
   </section> 
-  <div class="flex justify-end mr-14">
+  <div class="flex justify-end">
     <a href="./admin-add-user.html"><button class="primary-button">Add user</button></a>
   </div>
-  <section class="flex flex-col max-w-full gap-6 mx-auto">
+  <section class="flex flex-col max-w-full gap-6">
     <!-- Overlay that will be hidden in css, and shown when checkbox checked -->
     <div class="hidden">
       <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete selected user?</h2>
@@ -312,6 +322,7 @@
     </a>
 
   </section> 
+</section>
 </main>
 
 <footer class="flex justify-end sm:justify-center">
