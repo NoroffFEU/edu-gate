@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "The frontend part of edugate",
   "engines": {
-        "node": ">=18.17.1",
-        "npm": ">=10.8.2"
-      },
+    "node": ">=18.17.1",
+    "npm": ">=10.8.2"
+  },
   "main": "app.js",
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./css/styles.css -o ./dist/output.css --watch"
+    "dev": "npx tailwindcss -i ./css/styles.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./css/styles.css -o ./dist/output.css --minify"
   },
   "repository": {
     "type": "git",
@@ -21,11 +22,9 @@
   },
   "homepage": "https://github.com/sulenchy/edu-gate#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.1",
-    "tailwindcss": "^4.0.1"
+    "@tailwindcss/cli": "^4.0.1"
   },
-  "directories": {
-    "doc": "docs"
-  },
-  "keywords": []
+  "devDependencies": {
+    "tailwindcss": "^4.0.12"
+  }
 }

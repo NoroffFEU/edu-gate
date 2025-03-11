@@ -4,49 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Teacher profile page for Edugate webpage.">
-    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./css/output.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Dashboard Teacher Page</title>
 </head>
 <body>
+    <!-- Header -->
+    <header class="w-full bg-white shadow-md py-4 px-6 flex items-center">
+        <img class="h-12" src="/public/img/logo-header.png" alt="Edugate School Logo">
+    </header>
        <main>
         <div class="flex flex-col lg:flex-row">
             <!--Sidebar-->
-            <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-4">
-                <img class="cursor-pointer w-12" src="/public/icons/dashboard.png" alt="Picture of a green home icon">
-                <img class="cursor-pointer w-12" src="/public/icons/results.png" alt="Picture of a green results icon">
-                <img class="cursor-pointer w-12" src="/public/icons/user-management.png" alt="Picture of a green user icon">
-                <img class="cursor-pointer w-12" src="/public/icons/top-students.png" alt="Picture of a green student with a hat icon">
-                <img class="cursor-pointer w-12" src="/public/icons/logout.png" alt="Picture of a red log out icon">
+            <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-4 mt-32 border-r border-gray-300 pr-4">
+                <a href="#" tabindex="0"><img class="cursor-pointer w-10" src="/public/icons/dashboard.png"
+                        alt="Picture of a green home icon"></a>
+                <a href="#" tabindex="0"><img class="cursor-pointer w-10" src="/public/icons/results.png"
+                        alt="Picture of a green results icon"></a>
+                <a href="#" tabindex="0"><img class="cursor-pointer w-10" src="/public/icons/user-management.png"
+                        alt="Picture of a green user icon"></a>
+                <a href="#" tabindex="0"><img class="cursor-pointer w-10" src="/public/icons/top-students.png"
+                        alt="Picture of a green student with a hat icon"></a>
+                <a href="#" tabindex="0"><img class="cursor-pointer w-10" src="/public/icons/logout.png"
+                        alt="Picture of a red log out icon"></a>
             </div>
 
             <!--Mobile view-->
             <div class="lg:hidden grid gap-4 justify-items-center text-center">
                 <h1 class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-4">Dashboard</h1>
-                <img src="/public/img/Student initials mobile.png" alt="Picture of a green circle with the initials JB">
+                <a href="#" tabindex="0"><img src="/public/img/Student-initials-mobile.png"
+                        alt="Picture of a green circle with the initials JB"></a>
                 <h2 class="text-neutral-dark-gray text-center font-Poppins text-xl font-bold tracking-wide mt-4 mb-4">Joe Bloggs</h2>
                 <h3 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide mb-4">Teacher at Edugate School</h3>
-                <img src="/public/icons/results.png" alt="Picture of a green results icon">
+                <a href="#" tabindex="0"><img src="/public/icons/results.png" alt="Picture of a green results icon"></a>
                 <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide">View results</h4>
-                <img src="/public/icons/add-results.png" alt="Picture of a green results icon with an add button">
+                <a href="#" tabindex="0"><img src="/public/icons/add-results.png"
+                        alt="Picture of a green results icon with an add button"></a>
                 <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide">Add results</h4>
-                <img src="/public/icons/top-students.png" alt="Picture og a green student with a hat icon">
+                <a href="#" tabindex="0"><img src="/public/icons/top-students.png" alt="Picture og a green student with a hat icon"></a>
                 <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide">Top students</h4>
-                <img src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
+                <a href="#" tabindex="0"><img src="/public/icons/user-circle.png" alt="Picture of a green profile icon"></a>
                 <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide">See profile</h4>
-                <img src="/public/icons/logout.png" alt="Picture of a red log out icon">
+                <a href="#" tabindex="0"><img src="/public/icons/logout.png" alt="Picture of a red log out icon"></a>
                 <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide">Log out</h4>
               </div>
 
             <!--Desktop view-->
             <div class="lg:grid hidden grid-cols-1 place-items-center gap-4 w-full">
                 <h1 class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mt-12 mb-12">Dashboard</h1>
-                <img src="/public/img/Student initials.png" alt="Picture of a green circle with the initials JB">
+                <a href="#" tabindex="0"><img src="/public/img/Student-initials.png"
+                        alt="Picture of a green circle with the initials JB"></a>
                 <h2 class="text-neutral-dark-gray text-center font-Poppins text-2xl font-bold tracking-wide mt-6 mb-6">Joe Bloggs</h2>
                 <h3 class="text-neutral-dark-gray text-center font-Roboto text-base font-bold tracking-wide mb-12">Teacher at Edugate School</h3>
                 <div class="grid grid-cols-3 gap-12 m-4 pl-24">
                     <div>
-                        <img class="cursor-pointer" src="/public/icons/top-students.png" alt="Picture of a green student with a hat icon">
+                        <a href="#" tabindex="0"><img class="cursor-pointer" src="/public/icons/top-students.png"
+                                alt="Picture of a green student with a hat icon"></a>
                         <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">Top students</h4>
                     </div>
                     <div>
@@ -54,24 +67,46 @@
                         <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">Add results</h4>
                     </div>
                     <div>
-                        <img class="cursor-pointer" src="/public/icons/results.png" alt="Picture of a green results icon">
+                        <a href="#" tabindex="0"><img class="cursor-pointer" src="/public/icons/results.png"
+                                alt="Picture of a green results icon"></a>
                         <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">View results</h4>
                     </div>                    
                     <div>
-                        <img class="cursor-pointer ml-24 mr-0" src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
+                        <img class="cursor-pointer max-h-24" src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
                         <h4 class="text-neutral-dark-gray text-center font-Roboto text-2xl font-normal tracking-wide mt-4">See profile</h4>
                     </div>
                     <div>   
-                        <img class="cursor-pointer ml-24 mr-0" src="/public/icons/logout.png" alt="Picture of a red log out icon">
+                        <img class="cursor-pointer max-h-24" src="/public/icons/logout.png" alt="Picture of a red log out icon">
                         <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">Log out</h4>
                     </div>                
                 </div>
             </div>
         </div>
-    </main>
-
-    <footer class="mt-8 w-full flex">
-        <img class="w-full max-w-md mx-auto" src="/public/img/circle-footer.png" alt="Picture of a blue circle overlapping a green circle">
-    </footer>
-</body>
-</html>
+<!-- Task 3: Grading Tools Integration -->
+<section class="grading-tools mt-12 p-4">
+    <h2 class="text-2xl font-bold text-center">Grading Tools</h2>
+    <div class="flex justify-center mt-4">
+        <img class="h-16" src="/public/icons/add-user.png" alt="Grading tool icon">
+    </div>
+    <div class="flex flex-col md:flex-row justify-center gap-8 mt-4">
+        <div class="flex flex-col items-center">
+            <img class="h-16" src="/public/icons/user-management.png" alt="Upload Grades icon">
+            <button aria-label="Upload student grades"
+                class="primary-button mt-2 transition duration-300 hover:bg-primaryHover hover:text-white">
+                Upload Grades
+            </button>
+        </div>
+        <div class="flex flex-col items-center">
+            <button class="secondary-button mt-2 transition duration-300 hover:bg-secondary hover:text:text-white">
+                View Past Grades
+            </button>
+        </div>
+        <div class="flex flex-col items-center">
+            <img class="h-16" src="/public/icons/add-teacher.png" alt="Generate Reports icon">
+            <button class="alert-button mt-2 transition duration-300 hover:bg-accentHover hover:text-white">
+                Generate Reports
+            </button>
+        </div>
+    </div>
+</section>
+</main>
