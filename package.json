@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "The frontend part of edugate",
   "engines": {
-        "node": ">=18.17.1",
-        "npm": ">=10.8.2"
-      },
+    "node": ">=18.17.1",
+    "npm": ">=10.8.2"
+  },
   "main": "app.js",
   "scripts": {
     "build": "npx @tailwindcss/cli -i ./css/styles.css -o ./dist/output.css --watch"
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/sulenchy/edu-gate#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.0.1",
+    "edu-gate": "file:",
     "tailwindcss": "^4.0.1"
   },
   "directories": {
