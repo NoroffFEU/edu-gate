@@ -107,52 +107,77 @@
             <div class="md:hidden grid gap-4 justify-items-center text-center">
                 <h1 class="text-neutral-dark-gray text-center font-Poppins font-bold tracking-wide mb-4 text-[60px]">Dashboard</h1>
                 <img class="w-25" src="../public/icons/Student-initials.png" alt="Picture of a green circle with the initials JB">
-                <h2 class="text-neutral-dark-gray text-center font-Poppins font-extrabold tracking-wide mt-4 mb-4 text-2xl">Joe Bloggs</h2>
+                <h2 class="text-neutral-dark-gray text-center font-Poppins font-bold tracking-wide mt-4 mb-4 text-2xl">Joe Bloggs</h2>
                 <h3 class="text-neutral-dark-gray text-center font-Poppins font-sm tracking-wide mb-4 text-xl">Student at Edugate School</h3>
 
-                <a href="./student-profile.html"><img src="../public/icons/user-circle.png" alt="Picture of a green profile icon">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins tracking-wide font-extrabold text-xl pb-10">Profile</h4></a>
+                <a class="flex flex-col items-center" href="./student-profile.html">
+                    <img src="../public/icons/user-circle.png" alt="Picture of a green profile icon">
+                    <h4 class="text-neutral-dark-gray text-center justify-items-center font-Poppins font-semibold tracking-wide text-xl pb-10">Profile</h4>
+                </a>
 
-                <a class="justify-items-center text-center" href="./student-courses.html"><img class="h-16 w-20" src="../public/icons/results.png" alt="Picture of a green results icon">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins font-extrabold tracking-wide text-xl pb-10">Courses</h4></a>
+                <a class="flex flex-col items-center" href="./student-profile.html">
+                    <img src="../public/icons/results.png" alt="Picture of a green profile icon">
+                    <h4 class="text-neutral-dark-gray text-center justify-items-center font-Poppins font-semibold tracking-wide text-xl pb-10">My Courses</h4>
+                </a>
 
-                <a class="justify-items-center text-center" href="./student-assignments.html"><img class="h-16 w-20" src="../public/icons/results.png" alt="Picture of a green results icon">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins font-extrabold tracking-wide text-xl pb-10">Assignments</h4></a>
+                <a class="flex flex-col items-center" href="./student-profile.html">
+                    <img src="../public/icons/results.png" alt="Picture of a green profile icon">
+                    <h4 class="text-neutral-dark-gray text-center justify-items-center font-Poppins font-semibold tracking-wide text-xl pb-10">My Assignments</h4>
+                </a>
 
-                <a class="justify-items-center text-center" href="./student-result.html"><img class="h-16 w-20" src="../public/icons/results.png" alt="Picture of a green results icon">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins font-extrabold tracking-wide text-xl pb-10">My results</h4></a>
+                <a class="flex flex-col items-center" href="./student-result.html">
+                    <img src="../public/icons/results.png" alt="Picture of a green results icon">
+                    <h4 class="text-neutral-dark-gray text-center justify-items-center font-Poppins font-semibold tracking-wide text-xl pb-10">My results</h4>
+                </a>
 
-                <a class="justify-items-center text-center" href="./index.html"><img class="h-16" src="../public/icons/logout.png" alt="Picture of a red log out icon">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins font-extrabold tracking-wide text-xl">Log out</h4></a>
-
+                <a class="flex flex-col items-center" href="./index.html">
+                    <img src="../public/icons/logout.png" alt="Picture of a red log out icon">
+                    <h4 class="text-neutral-dark-gray text-center justify-items-center font-Poppins font-semibold tracking-wide text-xl">Log out</h4>
+                </a>
             </div>
 
             <!--Desktop view-->
             <div class="md:grid hidden grid-cols-1 place-items-center gap-4 w-full">
-                <h1 class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-extrabold tracking-wide mt-12 mb-7 text-3xl">Dashboard</h1>
-                <img class="w-35" src="../public/icons/Student-initials.png" alt="Picture of a green circle with the initials JB">
-                <h2 class="text-neutral-dark-gray text-center font-Poppins text-2xl font-extrabold tracking-wide mt-6 mb-6">Joe Bloggs</h2>
-                <h3 class="text-neutral-dark-gray text-center font-Roboto text-base tracking-wide mb-12 font-extrabold">Student at Edugate School</h3>
-                <div class="NavigationStudent grid grid-cols-3 gap-12 m-4 justify-items-center text-center">
+                <h1 class="text-neutral-dark-gray text-center font-Roboto font-bold text-[32px] tracking-wide mt-12 mb-7 text-3xl">Dashboard</h1>
+                <img class="w-35" src="../public/img/Student initials.png" alt="Picture of a green circle with the initials JB">
+                <h2 class="text-neutral-dark-gray text-center font-Poppins text-2xl font-bold tracking-wide mt-6 mb-6">Joe Bloggs</h2>
+                <h3 class="text-neutral-dark-gray text-center font-Roboto font-medium text-base tracking-wide mb-12">Student at Edugate School</h3>
+
+                <!--Top Row Desktop-->
+                <div class="grid grid-cols-3 gap-12 m-4 justify-items-center text-center">
                     <div>
-                        <a href="./student-profile.html"><img class="cursor-pointer" src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
-                        <h4 class="text-neutral-dark-gray text-center font-Roboto text-2xl tracking-wide mt-4 font-semibold">See profile</h4></a>
+                        <a class="flex flex-col items-center" href="./student-profile.html">
+                            <img class="cursor-pointer" src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
+                            <h4 class="text-neutral-dark-gray text-center font-Roboto text-2xl tracking-wide mt-4">See profile</h4>
+                        </a>
                     </div>
                     <div>
-                        <a href="./student-courses.html"><img class="cursor-pointer pl-4" src="/public/icons/results.png" alt="Picture of a green results icon">
-                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">My Courses</h4></a>
+                        <a class="flex flex-col items-center" href="./student-courses.html">
+                            <img class="cursor-pointer" src="/public/icons/results.png" alt="Picture of a green profile icon">
+                            <h4 class="text-neutral-dark-gray text-center font-Roboto text-2xl tracking-wide mt-4">My Courses</h4>
+                        </a>
                     </div>
                     <div>
-                        <a href="./student-assignments.html"><img class="cursor-pointer pl-8" src="/public/icons/results.png" alt="Picture of a green results icon">
-                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">My Assignments</h4></a>
+                        <a class="flex flex-col items-center" href="./student-assignments.html">
+                            <img class="cursor-pointer" src="/public/icons/results.png" alt="Picture of a green profile icon">
+                            <h4 class="text-neutral-dark-gray text-center font-Roboto text-2xl tracking-wide mt-4">My Assignments</h4>
+                        </a>
+                    </div>
+                </div>
+
+                <!--Bottom Row Desktop-->
+                <div class="flex flex-row m-5 justify-items-center text-center" style="gap: 150px;">
+                    <div>
+                        <a class="flex flex-col items-center" href="./student-result.html">
+                            <img class="cursor-pointer" src="/public/icons/results.png" alt="Picture of a green results icon">
+                            <h4 class="text-neutral-dark-gray text-center font-Roboto text-xl tracking-wide mt-4">My results</h4>
+                        </a>
                     </div>
                     <div>
-                        <a href="./student-result.html"><img class="cursor-pointer" src="/public/icons/results.png" alt="Picture of a green results icon">
-                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">My results</h4></a>
-                    </div>
-                    <div>
-                        <a href="./index.html"><img class="cursor-pointer" src="/public/icons/logout.png" alt="Picture of a red log out icon">
-                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">Log out</h4></a>
+                        <a class="flex flex-col items-center" href="./index.html">
+                            <img class="cursor-pointer" src="/public/icons/logout.png" alt="Picture of a red log out icon">
+                            <h4 class="text-neutral-dark-gray text-center font-Roboto text-xl tracking-wide mt-4">Log out</h4>
+                        </a>
                     </div>
                 </div>
             </div>
