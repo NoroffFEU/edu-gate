@@ -247,18 +247,66 @@
         class="mx-4 md:mx-40 md:p-10 xl:mx-80 lg:border-3 border-neutral-medium-gray"
       >
         <h1
-          class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4"
+          class="text-neutral-dark-gray text-center font-Poppins text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-bold mb-4"
         >
           Edit Profile
         </h1>
-        <div class="flex justify-center">
+        <!-- <div class="flex justify-center">
           <div
-            class="flex items-center justify-center w-[74px] h-[74px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[129px] lg:h-[129px] rounded-full bg-primary"
+            class="group relative flex items-center justify-center w-[74px] h-[74px] sm:w-[100px]
+             sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[129px] lg:h-[129px] rounded-full bg-primary"
           >
-            <p class="text-white font-bold font-Poppins text-[32px]">JB</p>
+       
+            <p
+              class="text-white font-bold font-Poppins text-[32px] group-hover:hidden"
+            >
+              JB
+            </p>
+
+         
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <img
+                src="/public/icons/camera-icon.png"
+                alt="Camera Icon"
+                class="w-[20px] h-[18px] mb-1"
+              />
+              <p
+                class="text-white font-Poppins font-bold text-[14px] text-center"
+              >
+                CHANGE<br />PICTURE
+              </p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="relative w-[100px] h-[100px] cursor-pointer group">
+          <div
+            class="absolute inset-0 bg-primary w-[100px] h-[100px] rounded-full flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0"
+          >
+            <p
+              class="text-center text-white font-bold font-Poppins text-[32px]"
+            >
+              JB
+            </p>
+          </div>
+
+          <div
+            class="absolute inset-0 bg-primary w-[100px] h-[100px] rounded-full flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+            <img
+              src="../public/icons/camera-icon.png"
+              alt="Camera Icon"
+              class="w-[20px] h-[18px] mb-1"
+            />
+            <p
+              class="text-white font-Poppins font-bold text-[10px] text-center"
+            >
+              CHANGE<br />PICTURE
+            </p>
           </div>
         </div>
-
         <section class="flex items-center justify-center">
           <form action="#" class="xl:w-[315px]">
             <!-- Editable fields -->
