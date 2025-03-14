@@ -247,16 +247,38 @@
         class="mx-4 md:mx-40 md:p-10 xl:mx-80 lg:border-3 border-neutral-medium-gray"
       >
         <h1
-          class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4"
+          class="text-neutral-dark-gray text-center font-Poppins text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-bold mb-4"
         >
           Edit Profile
         </h1>
-        <div class="flex justify-center">
+
+        <div class="flex justify-center relative">
           <div
-            class="flex items-center justify-center w-[74px] h-[74px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[129px] lg:h-[129px] rounded-full bg-primary"
+            class="relative w-[129px] h-[129px] group cursor-pointer hidden md:block"
           >
-            <p class="text-white font-bold font-Poppins text-[32px]">JB</p>
+            <!-- Default profile icon -->
+            <img
+              src="../public/icons/profile-icon.png"
+              alt="Profile icon"
+              class="w-full h-full transition-opacity duration-300 group-hover:opacity-0"
+            />
+
+            <!-- Hover state -->
+            <img
+              src="../public/icons/profile-icon-hover.png"
+              alt="Change Picture"
+              class="w-full h-full absolute top-0 left-0 right-0 bottom-0 m-auto transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+            />
           </div>
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            src="../public/icons/user-circle-edit-mobile.png"
+            alt="Change
+          Picture"
+            class="w-[74px] h-[74px] md:hidden block m-2"
+          />
         </div>
 
         <section class="flex items-center justify-center">
