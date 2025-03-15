@@ -25,7 +25,39 @@
         .primary-button,
         .secondary-button {
           padding: 4px 10px;
-          font-size: 10px;
+          font-size: 15px;
+        }
+
+        main {
+          margin-left: 0px;
+        }
+
+        header {
+          margin-left: 0px;
+        }
+      }
+
+      @media screen and (max-width: 1020px) {
+        .primary-button,
+        .secondary-button {
+          padding: 4px 10px;
+          font-size: 15px;
+        }
+
+        main {
+          margin-left: 0px;
+        }
+
+        header {
+          margin-left: 0px;
+        }
+
+        #header-dashboard {
+          margin-right: 2px;
+        }
+
+        #header-about {
+          margin-right: 2px;
         }
       }
     </style>
@@ -170,7 +202,8 @@
           <li>
             <a
               href="../templates/dashboard-admin.html"
-              class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary mr-40"
+              class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary mr-36"
+              id="header-dashboard"
             >
               Dashboard</a
             >
@@ -178,7 +211,8 @@
           <li>
             <a
               href="../templates/about.html"
-              class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary mr-40"
+              class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary mr-36"
+              id="header-about"
             >
               About</a
             >
@@ -187,6 +221,7 @@
             <a
               href="../templates/contact.html"
               class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary mr-8"
+              id="header-contact"
             >
               Contact</a
             >
@@ -260,7 +295,7 @@
     <!--Sidebar-->
     <div
       id="sidebar"
-      class="fixed h-full hidden lg:flex flex-col gap-12 border-r-1 border-gray-300 px-4 top-44 left-0 pt-28"
+      class="fixed h-full hidden lg:flex flex-col gap-12 border-r-1 border-gray-300 px-4 top-44 left-0 pt-28 h-screen"
     >
       <a href="../templates/dashboard-admin.html"
         ><img
@@ -425,7 +460,7 @@
         </button>
       </section>
     </main>
-    <footer class="flex justify-end sm:justify-center mt-35 sm:mt-10">
+    <footer class="flex justify-center sm:justify-center mt-35 sm:mt-10">
       <img
         class="sm:hidden"
         src="../public/img/Circles illustration mobile.png"
