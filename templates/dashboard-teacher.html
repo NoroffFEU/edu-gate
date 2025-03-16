@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,16 +9,16 @@
     <title>Dashboard Teacher Page</title>
 </head>
 <body class="bg-neutral-light-gray">
-    <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins relative">
-        <nav class="max-w-100 max-h-32 mb-8 flex items-center justify-between px-4 border border-[#d0d0d0]">
-            <img class="w-32 h-32" src="../public/img/logo-header.png" alt="Edugate Logo">
+    <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins border-b-1 border-[#cccccc]">
+        <nav class="max-w-7x1 h-[70px] md:h-40 px-4 py-[3px] flex items-center justify-between border-b border-[#d0d0d0] md:border-0">
+            <img class="w-16 h-16 md:w-44 md:h-44" src="../public/img/logo-header.png" alt="Edugate Logo">
              <!-- Hamburger Menu -->
              <div class="relative md:hidden">
                 <!-- Checkbox for Hamburger Toggle -->
                 <input type="checkbox" id="menu-toggle" class="hidden peer"/>
                 <!-- Hamburger Icon -->
                 <label for="menu-toggle" class="block cursor-pointer focus:outline-none peer-checked:hidden" aria-label="Toggle menu">
-                    <svg class="w-14 h-14 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="w-[25px] h-12 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </label>
@@ -73,17 +72,17 @@
                 </div>
             </div>
 
-            <ul class="hidden md:flex justify-end mr-10 font-Poppins font-medium">
+            <ul class="hidden md:flex justify-end ml-auto mr-10 font-Poppins font-medium">
                 <li>
-                    <a href="templates/dashboard-teacher.html" class="py-8 md:px-8 px-16 border-b-2 text-xl font-bold border-neutral-light-gray hover:border-b-2 hover:border-green-600">
+                    <a href="templates/dashboard-teacher.html" class="py-8 md:px-8 px-16 border-b-2 text-xl font-bold border-neutral-light-gray hover:border-b-2 hover:border-green-600 w-[247.67px] h-[74px] justify-center items-center inline-flex">
                         Dashboard</a>
                 </li>
                 <li>
-                    <a href="/templates/about.html" class="py-8 md:px-8 px-16 border-b-2 text-xl font-bold border-neutral-light-gray hover:border-b-2 hover:border-green-600">
+                    <a href="/templates/about.html" class="py-8 md:px-8 px-16 border-b-2 text-xl font-bold border-neutral-light-gray hover:border-b-2 hover:border-green-600 w-[247.67px] h-[74px] justify-center items-center inline-flex">
                         About</a>
                 </li>
                 <li>
-                    <a href="/templates/contact.html" class="py-8 md:px-8 px-16 border-b-2 text-xl font-bold border-neutral-light-gray hover:border-b-2 hover:border-green-600">
+                    <a href="/templates/contact.html" class="py-8 md:px-8 px-16 border-b-2 text-xl font-bold border-neutral-light-gray hover:border-b-2 hover:border-green-600 w-[247.67px] h-[74px] justify-center items-center inline-flex">
                         Contact</a>
                 </li>
             </ul>
@@ -117,7 +116,7 @@
         </nav>
     </header>
     <main class="bg-neutral-light-gray">
-        <div class="flex flex-col lg:flex-row">
+        <div class="flex flex-col lg:flex-row justify-center items-center lg:w-full mx-auto">
             <!--Sidebar-->
             <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-4 ">
                 <a href="templates/dashboard-teacher.html" class="flex items-center gap-4 hover:bg-neutral-light-gray p-3 rounded-lg">
@@ -139,74 +138,74 @@
 
             <!--Mobile view-->
             <div class="md:hidden grid self-stretch h-[659px] flex-col gap-4 justify-items-center text-center">
-                <h1 class="font-extrabold text-2xl">Dashboard</h1>
+                <h1 class="font-extrabold text-[32px]">Dashboard</h1>
                 <div class="flex flex-col items-center gap-2">
-                    <a href="/templates/teacher-profile.html" class="flex flex-col items-center gap-2">
-                        <img class="w-[71px] h-[71px]" src="/public/img/Student initials mobile.png" alt="Picture of a green circle with the initials JB">
+                    <a href="/templates/teacher-profile.html" class="flex flex-col items-center">
+                        <img class="w-[71px] h-[71px] mb-4 gap-4" src="/public/img/Student initials mobile.png" alt="Picture of a green circle with the initials JB">
                         <h2 class="font-bold text-xl">Joe Bloggs</h2>
                     </a>
                 </div>
                 <h3 class="text-sm">Teacher at Edugate School</h3>
-                <a href="/templates/select-user.html" class="flex flex-col items-center gap-2">
-                    <img class="w-[42px] h-[42px]" src="/public/icons/results.png" alt="Picture of a green results icon">
-                    <h4 class="text-sm">View results</h4>
-                </a>
-                <a href="/templates/add-results.html" class="flex flex-col items-center gap-2">
-                    <img class="w-[48.73px] h-[46.08px]" src="/public/icons/add-results.png" alt="Picture of a green results icon with an add button">
-                    <h4 class="text-sm">Add results</h4>
-                </a>
-                <a href="/templates/top-performing-students.html" class="flex flex-col items-center gap-2">
-                    <img class="w-[42px] h-[42px]" src="/public/icons/top-students.png" alt="Picture og a green student with a hat icon">
-                    <h4 class="text-sm">Top students</h4>
-                </a>
-                <a href="#" class="flex flex-col items-center gap-2">
-                    <img class="w-[42px] h-[42px]" src="/public/icons/logout.png" alt="Picture of a red log out icon">
-                    <h4 class="w-[90px] h-[30px] text-sm">Log out</h4>
-                </a>
+                    <a href="/templates/select-user.html" class="flex flex-col items-center gap-2">
+                        <img class="w-[42px] h-[42px]" src="/public/icons/results.png" alt="Picture of a green results icon">
+                        <h4 class="text-sm">View results</h4>
+                    </a>
+                    <a href="/templates/add-results.html" class="flex flex-col items-center gap-2">
+                        <img class="w-[48px] h-[46px]" src="/public/icons/add-results.png" alt="Picture of a green results icon with an add button">
+                        <h4 class="text-sm">Add results</h4>
+                    </a>
+                    <a href="/templates/top-performing-students.html" class="flex flex-col items-center gap-2">
+                        <img class="w-[42px] h-[42px]" src="/public/icons/top-students.png" alt="Picture og a green student with a hat icon">
+                        <h4 class="text-sm">Top students</h4>
+                    </a>
+                    <a href="#" class="flex flex-col items-center gap-2">
+                        <img class="w-[42px] h-[42px]" src="/public/icons/logout.png" alt="Picture of a red log out icon">
+                        <h4 class="w-[90px] h-[30px] text-sm">Log out</h4>
+                    </a>
             </div>
 
             <!--Desktop view-->
-            <div class="md:grid hidden grid-cols-1 place-items-center gap-4 w-full">
-                <h1 class="font-extrabold text-3xl">Dashboard</h1>
-                <img src="/public/img/Student initials mobile.png" alt="Picture of a green circle with the initials JB">
-                <h2 class="font-bold">Joe Bloggs</h2>
-                <h3>Teacher at Edugate School</h3>
+            <div class="md:grid hidden grid-cols-1 place-items-center w-full">
+                <h1 class="font-extrabold text-3xl m-24">Dashboard</h1>
+                <img class="mx-auto w-32 h-32" src="/public/img/Student initials.png" alt="Picture of a green circle with the initials JB">
+                <h2 class="font-bold text-2xl m-12">Joe Bloggs</h2>
+                <h3 class="h-[30px] text-center text-black text-base font-bold font-['Roboto'] leading-[1.50px]">Teacher at Edugate School</h3>
                 <div class="grid grid-cols-3 gap-12 m-4 pl-24">
                     <div>
                         <a href="/templates/top-performing-students.html">
                             <img class="w-24 h-24 cursor-pointer" src="/public/icons/top-students.png" alt="Picture of a green student with a hat icon">
-                            <h4>Top students</h4>
+                            <h4 class=" text-black text-xl font-semibold font-['Poppins'] leading-[1.50px] tracking-wide mt-8">Top students</h4>
                         </a>
                     </div>
                     <div>
                         <a href="/templates/add-results.html">
-                            <img class="cursor-pointer w-24 h-24" src="/public/icons/results.png" alt="Picture of a green results icon with an add button">
-                            <h4>Add results</h4>
+                            <img class="cursor-pointer w-24 h-28" src="/public/icons/add-results.png" alt="Picture of a green results icon with an add button">
+                            <h4 class="text-black text-xl font-semibold font-['Poppins'] leading-[1.50px] tracking-wide mt-4">Add results</h4>
                         </a>
                     </div>
                     <div>
                         <a href="/templates/select-user.html">
                             <img class="w-24 h-24 cursor-pointer" src="/public/icons/results.png" alt="Picture of a green results icon">
-                            <h4 class="mx-2">View results</h4>
+                            <h4 class="text-black text-xl font-semibold font-['Poppins'] leading-[1.50px] tracking-wide mt-8">View results</h4>
                         </a>
                     </div>
                     <div>
                         <a href="/templates/teacher-profile.html">
                             <img class="w-24 h-24 cursor-pointer ml-24 mr-0" src="/public/icons/user-circle.png" alt="Picture of a green profile icon">
-                            <h4 class="ml-24 text-center">See profile</h4>
+                            <h4 class="ml-24 text-center text-black text-2xl font-normal font-['Roboto'] leading-[1.50px] tracking-wide mt-8">See profile</h4>
                         </a>
                     </div>
                     <div>
                         <a href="#">
                             <img class="w-24 h-24 cursor-pointer ml-24 mr-0" src="/public/icons/logout.png" alt="Picture of a red log out icon">
-                            <h4 class="ml-24 text-center">Log out</h4>
+                            <h4 class="ml-24 text-center text-black text-xl font-semibold font-['Poppins'] leading-[1.50px] tracking-wide mt-8">Log out</h4>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="flex justify-end sm:justify-center mt-10 sm:mt-10">
+    <footer class="flex justify-end sm:justify-center sm:mt-10">
         <img class="sm:hidden" src="/public/img/Circles_illustration_mobile.png" alt="Educate footer circles">
         <img class="hidden sm:block shrink-0 mx-4 mt-8" src="/public/img/circle-footer.png" alt="Picture of a blue circle overlapping a green circle">
     </footer>    
