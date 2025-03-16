@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="author" content="Thea" />
@@ -13,12 +12,10 @@
     rel="stylesheet" />
   <script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
 </head>
-
 <body class="mx-auto bg-neutral-light-gray max-w-[1440px] w-full">
   <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins h-[160px]">
     <nav class="flex items-center h-[176px]">
       <img class="ml-12 mr-[329px]" src="../public/img/logo-header.png" alt="Edugate Logo" />
-
       <!-- Hamburger Menu -->
       <div class="fixed inset-0 md:hidden">
         <!-- Checkbox for Hamburger Toggle -->
@@ -31,7 +28,6 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
         </label>
-
         <div
           class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
           <!-- Close Icon -->
@@ -44,33 +40,33 @@
           </label>
           <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
             <li>
-              <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+              <a href="#" aria-label="Go to dashboard" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                 Dashboard
-                <img class="w-6 h-6" src="../public/icons/dashboard.png" alt="Dashboard Icon" />
+                <img class="w-6 h-6" src="../public/icons/dashboard.png" alt="Dashboard icon" />
               </a>
             </li>
             <li>
-              <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+              <a href="#" aria-label="Go to your profile" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                 Profile
-                <img class="w-6 h-6" src="../public/icons/user-circle.png" alt="Profile Icon" />
+                <img class="w-6 h-6" src="../public/icons/user-circle.png" alt="Profile icon" />
               </a>
             </li>
             <li>
-              <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+              <a href="#" aria-label="About us" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                 About
-                <img class="w-6 h-6" src="../public/icons/about.png" alt="About Icon" />
+                <img class="w-6 h-6" src="../public/icons/about.png" alt="About icon" />
               </a>
             </li>
             <li>
-              <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+              <a href="#" aria-label="Contact us" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                 Contact
-                <img class="w-6 h-6" src="../public/icons/contact.png" alt="Contact Icon" />
+                <img class="w-6 h-6" src="../public/icons/contact.png" alt="Contact icon" />
               </a>
             </li>
             <li>
-              <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-accent-hover">
+              <a href="#" aria-label="log out" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-accent-hover">
                 Log out
-                <img class="w-6 h-6" src="../public/icons/logout.png" alt="Log out Icon" />
+                <img class="w-6 h-6" src="../public/icons/logout.png" alt="Log out icon" />
               </a>
             </li>
           </ul>
@@ -81,16 +77,16 @@
         <!-- Cannot link Href as there are several dashboard.html files -->
         <li
           class="w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
-          <a href="#" class="tracking-[0.5px]"> Dashboard</a>
+          <a href="#" aria-label="Go to dashboard" class="tracking-[0.5px]"> Dashboard</a>
         </li>
         <li
           class="w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
-          <a href="../templates/about.html" class="tracking-[0.5px]">
+          <a href="../templates/about.html" aria-label="About us" class="tracking-[0.5px]">
             About</a>
         </li>
         <li
           class="w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
-          <a href="../templates/contact.html" class="tracking-[0.5px]">
+          <a href="../templates/contact.html" aria-label="Contact us" class="tracking-[0.5px]">
             Contact</a>
         </li>
       </ul>
@@ -98,74 +94,73 @@
       <div class="relative">
         <!-- Hidden Checkbox -->
         <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
-
         <!-- User Icon (Clickable) -->
         <label for="dropdown-toggle" class="hidden md:flex cursor-pointer">
           <img src="/public/icons/user-circle.png" alt="User dropdown" class="w-[64px] h-[64px]" />
         </label>
-
-        <!-- Dropdown Menu -->
-        <ul
-          class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
+        <!-- Dropdown Menu, you need to fix links here-->
+        <ul class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
           <li>
-            <a href="#" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
+            <a href="#" aria-label="View results" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
           </li>
           <li>
-            <a href="#" class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
+            <a href="#" aria-label="Go to your profile" class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
           </li>
           <li>
-            <a href="#" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log out</a>
+            <a href="#" aria-label="Log out" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log out</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <div class="flex">
+    <!--Sidebar, you need to fix links here-->
     <div class="flex flex-col lg:flex-row w-[91px] min-h-screen border-r-1 border-[#CCCCCC]">
-      <!--Sidebar, you need to put in links here-->
       <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-6 mt-[135px]">
-        <a href="#" aria-label="Go to dashboard"><img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/dashboard.png" alt="Dashboard icon"/></a>
-        <a href="#" aria-label="View results"><img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/results.png" alt="Results icon"/></a>
-        <a href="#" aria-label="Manage user"><img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/user-management.png" alt="User-management icon"/></a>
-        <a href="#" aria-label="Manage schol"><img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/school-management.png" alt="School-management icon"/></a>
-        <a href="#" aria-label="Log out"><img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/logout.png" alt="red log out button"/></a>
+        <a href="#" aria-label="Go to dashboard">
+          <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/dashboard.png" alt="Dashboard icon" />
+        </a>
+        <a href="#" aria-label="View results">
+          <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/results.png" alt="Results icon" />
+        </a>
+        <a href="#" aria-label="Manage user">
+          <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/user-management.png" alt="User-management icon" />
+        </a>
+        <a href="#" aria-label="Manage schol">
+          <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/school-management.png" alt="School-management icon" />
+        </a>
+        <a href="#" aria-label="Log out">
+          <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/logout.png" alt="red log out icon" />
+        </a>
       </div>
     </div>
-
     <div class="flex flex-col w-full">
       <main>
         <div class="flex flex-col font-Roboto self-center px-4 gap-5 pb-8">
           <div class="text-neutral-medium-gray flex h-10 items-center mt-[48px] gap-6 text-base">
-            <a href="#">Dashboard</a>&gt;
+            <a href="#" aria-label="Go to dashboard">Dashboard</a>&gt;
             <p class="text-primary">Top Performing Students</p>
           </div>
-
           <div class="flex flex-col gap-[48px] mt-8 items-center">
             <div class="flex flex-row w-full justify-center">
-              <img src="../public/icons/green-double-arrows-right.png" alt="arrows" class="w-12 h-12 md:hidden" />
-              <h1
-                class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4">
-                Top Performing Students
-              </h1>
+              <img src="../public/icons/green-double-arrows-right.png" alt="" aria-hidden="true" class="w-12 h-12 md:hidden" />
+              <h1 class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4">
+                Top Performing Students</h1>
             </div>
-
             <p class="text-center text-neutral-dark-gray font-Roboto text-base font-normal tracking-wide">
-              View the top performing students in your classes
-            </p>
-
+              View the top performing students in your classes</p>
             <img src="../public/icons/results.png" alt="Search icon" class="w-10 sm:w-15 md:hidden" />
-
             <div class="flex flex-row items-center justify-center w-[314px] h-12">
               <input
                 class="w-55 sm:w-72 h-[50px] p-2 rounded-l-md text-neutral-dark-gray border border-[#CCCCCC] text-xs sm:text-sm bg-[#FFFFFF]"
-                type="text" placeholder="Search for student..." />
-              <span
-                class="border h-[50px] w-[50px] flex items-center justify-center rounded-r-md text-primary hover:bg-primary-hover hover:text-white">
+                type="text" placeholder="Search for student..." aria-label="Search for a student"/>
+              <button
+                aria-label="Search" class="border h-[50px] w-[50px] flex items-center justify-center rounded-r-md text-primary hover:bg-primary-hover hover:text-white">
                 <i class="fa-solid fa-magnifying-glass"></i>
-              </span>
+              </button>
             </div>
           </div>
-
+          <!--Mobil table-->
           <table class="w-full bg-table rounded-md md:hidden text-left">
             <thead class="text-primary text-sm sm:text-xl">
               <tr class="h-10">
@@ -234,7 +229,7 @@
               </tr>
             </tbody>
           </table>
-
+          <!--Desktop table-->
           <div class="hidden md:flex justify-center w-full mt-[48px]">
             <table class="table-auto bg-table rounded-md w-full items-center text-left">
               <thead class="w-full">
@@ -308,62 +303,58 @@
               </tbody>
             </table>
           </div>
-
+          <!--Pagination component-->
           <ul class="flex flex-row gap-2 self-center text-base md:text-xl text-neutral-medium-gray">
             <li class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] flex justify-center items-center">
-              <a href="#">
+              <a href="#" aria-label="Go to first page">
                 <img src="../public/icons/chevron-double-left.png" class="w-[19.47px] h-[15.63px]" />
               </a>
             </li>
             <li class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] flex justify-center items-center">
-              <a href="#">
+              <a href="#" aria-label="Go to previous page">
                 <img src="../public/icons/chevron-left.png" class="w-[10.09px] h-[15.63px]" />
               </a>
             </li>
             <li
               class="rounded-md text-primary border-2 border-y-primary w-[40px] h-[40px] flex justify-center items-center font-medium">
-              <a href="#">1</a>
+              <a href="#" aria-current="current page">1</a>
             </li>
             <li
               class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] justify-center items-center hidden md:flex">
-              <a href="#">2</a>
+              <a href="#" aria-label="page 2">2</a>
             </li>
             <li class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] flex justify-center items-center">
               <a href="#">...</a>
             </li>
             <li
               class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] justify-center items-center hidden md:flex">
-              <a href="#">7</a>
+              <a href="#" aria-label="page 7">7</a>
             </li>
             <li class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] flex justify-center items-center">
-              <a href="#">8</a>
+              <a href="#" aria-label="page 8">8</a>
             </li>
             <li class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] flex justify-center items-center">
-              <a href="#">
+              <a href="#" aria-label="Go to next page">
                 <img src="../public/icons/chevron-right.png" class="w-[10.09px] h-[15.63px]" />
               </a>
             </li>
             <li class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] flex justify-center items-center">
-              <a href="#">
+              <a href="#" aria-label="Go to last page">
                 <img src="../public\icons\chevron-double-right.png" class="w-[19.46px] h-[15.63px]" />
               </a>
             </li>
           </ul>
-
           <button
             class="border-2 border-s-secondary rounded-md text-secondary py-2 px-5 w-fit self-center text-2xl font-semibold font-Poppins mt-[44px] tracking-[0.5px] cursor-pointer hover:bg-secondary-hover"
-            href="#">
-            Back to dashboard
+            href="#" aria-label="Back to dashboard">Back to dashboard
           </button>
         </div>
       </main>
       <footer class="flex justify-end sm:justify-center">
         <img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles" />
-        <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png"
-          alt="Edugate footer circles" />
+        <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles" />
       </footer>
     </div>
   </div>
 </body>
-
 </html>
