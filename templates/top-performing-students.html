@@ -98,19 +98,17 @@
         </li>
       </ul>
       <!-- User Dropdown -->
-      <div class="relative">
-        <!-- Hidden Checkbox -->
-        <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
+      <div class="relative group">
         <!-- User Icon (Clickable) -->
-        <label for="dropdown-toggle" class="hidden md:flex cursor-pointer">
+        <button aria-expanded="false" class="cursor-pointer p-2 rounded-md focus:ring-2">
           <img src="/public/icons/user-circle.png" alt="User dropdown" class="w-[64px] h-[64px]" />
-        </label>
+        </button>       
         <!-- Dropdown Menu, you need to fix links here-->
         <ul
-          class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
+          class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible group-focus-within:opacity-100 group-focus-within:visible transition-opacity duration-200">
           <li>
-            <a href="#" aria-label="View results" class="block px-8 py-4 hover:bg-white hover:text-green-600">See
-              results</a>
+            <a href="#" aria-label="View results" class="block px-8 py-4 hover:bg-white hover:text-green-600">
+              See results</a>
           </li>
           <li>
             <a href="#" aria-label="Go to your profile"
