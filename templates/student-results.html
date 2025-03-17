@@ -57,6 +57,7 @@
 				</div>
 			</div>
 
+<<<<<<< Updated upstream
 			<table class="w-full bg-table rounded-md md:hidden text-left">
 				<thead class="text-primary text-sm sm:text-xl">
 					<tr class="h-10">
@@ -125,6 +126,92 @@
 					</tr>
 				</tbody>
 			</table>
+=======
+		</section> 
+		<div class="flex justify-end">
+		<a href="./admin-add-user.html"><button class="primary-button">Add result</button></a>
+		</div>
+		<section class="flex flex-col max-w-full gap-6">
+		<!-- Overlay that will be hidden in css, and shown when checkbox checked -->
+		<div class="hidden">
+			<h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete selected user?</h2>
+			<button>
+			<img src="../public/icons/x.png">
+			</button>
+			<p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
+			<button>Yes, delete result</button>
+			<button>Cancel</button>
+		</div>
+
+		<table class="w-full bg-table rounded-md md:hidden text-left">
+			<thead class="text-primary text-sm sm:text-xl">
+				<tr class="h-10">
+					<th class="pl-2 w-fit">Subject</th>
+					<th class="pl-2 w-fit">Exam</th>
+					<th class="pl-2 w-fit">Grade</th>
+					<th class="pl-2 w-fit"></th>
+				</tr>
+			</thead>
+			<tbody class="text-xs sm:text-base">
+				<tr class="h-10 bg-neutral-light-gray">
+					<td class="pl-2 w-fit">Mathematics</td>
+					<td class="pl-2 w-fit">M1</td>
+					<td class="pl-2 w-fit">B</td>
+					<td class="pl-2 w-fit">
+						<img src="../public/icons/info.png" alt="info-icon" class="w-5" />
+					</td>
+				</tr>
+				<tr class="h-10">
+					<td class="pl-2 w-fit">Physics</td>
+					<td class="pl-2 w-fit">P3</td>
+					<td class="pl-2 w-fit">A</td>
+					<td class="pl-2 w-fit">
+						<img src="../public/icons/info.png" alt="info-icon" class="w-5" />
+					</td>
+				</tr>
+				<tr class="h-10 bg-neutral-light-gray">
+					<td class="pl-2 w-fit">English</td>
+					<td class="pl-2 w-fit">E2</td>
+					<td class="pl-2 w-fit">B</td>
+					<td class="pl-2 w-fit">
+						<img src="../public/icons/info.png" alt="info-icon" class="w-5" />
+					</td>
+				</tr>
+				<tr class="h-10">
+					<td class="pl-2 w-fit">English</td>
+					<td class="pl-2 w-fit">E1</td>
+					<td class="pl-2 w-fit">B</td>
+					<td class="pl-2 w-fit">
+						<img src="../public/icons/info.png" alt="info-icon" class="w-5" />
+					</td>
+				</tr>
+				<tr class="h-10 bg-neutral-light-gray">
+					<td class="pl-2 w-fit">Biology</td>
+					<td class="pl-2 w-fit">B2</td>
+					<td class="pl-2 w-fit">C</td>
+					<td class="pl-2 w-fit">
+						<img src="../public/icons/info.png" alt="info-icon" class="w-5" />
+					</td>
+				</tr>
+				<tr class="h-10">
+					<td class="pl-2 w-fit">Physics</td>
+					<td class="pl-2 w-fit">P2</td>
+					<td class="pl-2 w-fit">A</td>
+					<td class="pl-2 w-fit">
+						<img src="../public/icons/info.png" alt="info-icon" class="w-5" />
+					</td>
+				</tr>
+				<tr class="h-10 bg-neutral-light-gray">
+					<td class="pl-2 w-fit">History</td>
+					<td class="pl-2 w-fit">H2</td>
+					<td class="pl-2 w-fit">A</td>
+					<td class="pl-2 w-fit">
+						<img src="../public/icons/info.png" alt="info-icon" class="w-5" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+>>>>>>> Stashed changes
 
 			<div class="hidden md:flex justify-center w-full">
 				<table
@@ -150,6 +237,15 @@
 							<td class="p-4 w-fit">M1</td>
 							<td class="p-4 w-fit">90/120</td>
 							<td class="p-4 w-fit">B</td>
+							<td class="p-4" style="text-align: right; ">
+								<a href="#"> <!-- link to manage student -->
+								<button class="!text-primary">Edit</button>
+								</a>
+							</td>
+							<td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
+								<input type="checkbox" id="delete-checkbox" aria-label="delete result" class="hidden">
+								<button class="alert-button text-[16px]">Delete</button>
+							</td>
 						</tr>
 						<tr class="hover:bg-table-hover hover:cursor-default">
 							<td class="p-4 w-fit">2019</td>
@@ -158,6 +254,15 @@
 							<td class="p-4 w-fit">P3</td>
 							<td class="p-4 w-fit">102/120</td>
 							<td class="p-4 w-fit">A</td>
+							<td class="p-4" style="text-align: right; ">
+								<a href="#"> <!-- link to manage student -->
+								<button class="!text-primary">Edit</button>
+								</a>
+							</td>
+							<td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
+								<input type="checkbox" id="delete-checkbox" aria-label="delete result" class="hidden">
+								<button class="alert-button text-[16px]">Delete</button>
+							</td>
 						</tr>
 						<tr
 							class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
@@ -168,6 +273,15 @@
 							<td class="p-4 w-fit">E2</td>
 							<td class="p-4 w-fit">80/110</td>
 							<td class="p-4 w-fit">B</td>
+							<td class="p-4" style="text-align: right; ">
+								<a href="#"> <!-- link to manage student -->
+								<button class="!text-primary">Edit</button>
+								</a>
+							</td>
+							<td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
+								<input type="checkbox" id="delete-checkbox" aria-label="delete result" class="hidden">
+								<button class="alert-button text-[16px]">Delete</button>
+							</td>
 						</tr>
 						<tr class="hover:bg-table-hover hover:cursor-default">
 							<td class="p-4 w-fit">2019</td>
@@ -176,6 +290,15 @@
 							<td class="p-4 w-fit">E1</td>
 							<td class="p-4 w-fit">95/130</td>
 							<td class="p-4 w-fit">B</td>
+							<td class="p-4" style="text-align: right; ">
+								<a href="#"> <!-- link to manage student -->
+								<button class="!text-primary">Edit</button>
+								</a>
+							</td>
+							<td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
+								<input type="checkbox" id="delete-checkbox" aria-label="delete result" class="hidden">
+								<button class="alert-button text-[16px]">Delete</button>
+							</td>
 						</tr>
 						<tr
 							class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
@@ -186,6 +309,15 @@
 							<td class="p-4 w-fit">B2</td>
 							<td class="p-4 w-fit">73/120</td>
 							<td class="p-4 w-fit">C</td>
+							<td class="p-4" style="text-align: right; ">
+								<a href="#"> <!-- link to manage student -->
+								<button class="!text-primary">Edit</button>
+								</a>
+							</td>
+							<td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
+								<input type="checkbox" id="delete-checkbox" aria-label="delete result" class="hidden">
+								<button class="alert-button text-[16px]">Delete</button>
+							</td>
 						</tr>
 						<tr class="hover:bg-table-hover hover:cursor-default">
 							<td class="p-4 w-fit">2019</td>
@@ -194,6 +326,15 @@
 							<td class="p-4 w-fit">P2</td>
 							<td class="p-4 w-fit">110/120</td>
 							<td class="p-4 w-fit">A</td>
+							<td class="p-4" style="text-align: right; ">
+								<a href="#"> <!-- link to manage student -->
+								<button class="!text-primary">Edit</button>
+								</a>
+							</td>
+							<td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
+								<input type="checkbox" id="delete-checkbox" aria-label="delete result" class="hidden">
+								<button class="alert-button text-[16px]">Delete</button>
+							</td>
 						</tr>
 						<tr
 							class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
@@ -204,6 +345,15 @@
 							<td class="p-4 w-fit">H2</td>
 							<td class="p-4 w-fit">90/110</td>
 							<td class="p-4 w-fit">A</td>
+							<td class="p-4" style="text-align: right; ">
+								<a href="#"> <!-- link to manage student -->
+								<button class="!text-primary">Edit</button>
+								</a>
+							</td>
+							<td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
+								<input type="checkbox" id="delete-checkbox" aria-label="delete result" class="hidden">
+								<button class="alert-button text-[16px]">Delete</button>
+							</td>
 						</tr>
 					</tbody>
 				</table>
