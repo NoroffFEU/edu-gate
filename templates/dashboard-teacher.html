@@ -11,91 +11,121 @@
 </head>
 
 <body>
+<!-- Include the header from header.html -->
+<header>
+    <?php include '../header.html'; ?>
+</header>
+
     <main>
         <div class="flex flex-col lg:flex-row">
             <!-- Sidebar -->
             <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-4">
-                <img class="cursor-pointer w-12" src="../public/icons/dashboard.png" alt="Picture of a green home icon">
-                <img class="cursor-pointer w-12" src="../public/icons/results.png" alt="Picture of a green results icon">
-                <img class="cursor-pointer w-12" src="../public/icons/user-management.png" alt="Picture of a green user icon">
-                <img class="cursor-pointer w-12" src="../public/icons/top-students.png"
-                    alt="Picture of a green student with a hat icon">
-                <img class="cursor-pointer w-12" src="../public/icons/logout.png" alt="Picture of a red log out icon">
+                <img class="cursor-pointer w-12" src="../public/icons/dashboard.png" alt="Dashboard Icon">
+                <img class="cursor-pointer w-12" src="../public/icons/results.png" alt="Results Icon">
+                <img class="cursor-pointer w-12" src="../public/icons/user-management.png" alt="User Management Icon">
+                <img class="cursor-pointer w-12" src="../public/icons/top-students.png" alt="Top Students Icon">
+                <img class="cursor-pointer w-12" src="../public/icons/logout.png" alt="Logout Icon">
             </div>
 
             <!-- Mobile View -->
             <div class="lg:hidden grid gap-4 justify-items-center text-center">
-                <img src="../public/img/Student initials mobile.png" alt="Picture of a green circle with the initials JB">
-                <h1 class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mt-4">Dashboard</h1>
-                <h3 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide mb-4">Teacher at Edugate School</h3>
-<!-- Existing Mobile Buttons -->
-<img src="../public/icons/results.png" alt="Picture of a green results icon">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide">View results</h4>
-                <img src="../public/icons/add-results.png" alt="Picture of a green results icon with an add button">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide">Add results</h4>
-                <img src="../public/icons/top-students.png" alt="Picture of a green student with a hat icon">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide">Top students</h4>
-                <img src="../public/icons/user-circle.png" alt="Picture of a green profile icon">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide">See profile</h4>
-                <img src="../public/icons/logout.png" alt="Picture of a red log out icon">
-                <h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide">Log out</h4>
-<!-- New Grading Tools for Mobile -->
-<img src="../public/icons/grade-assignments.png" alt="Picture of a grading icon">
-<h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide">Grade Assignments</h4>
-<img src="../public/icons/review-submissions.png" alt="Picture of a submissions review icon">
-<h4 class="text-neutral-dark-gray text-center font-Poppins text-sm font-normal tracking-wide">Review Submissions</h4>
+                <img src="../public/img/Student initials mobile.png" alt="User Profile">
+                <h1 class="text-neutral-dark-gray font-Poppins text-[32px] font-bold tracking-wide mt-4">Dashboard</h1>
+                <h3 class="text-neutral-dark-gray font-Poppins text-sm font-normal tracking-wide mb-4">Teacher at Edugate School</h3>
+                
+                <!-- Existing Mobile Buttons (Centered) -->
+                <div class="flex flex-col items-center">
+                    <img src="../public/icons/results.png" alt="Results Icon">
+                    <h4 class="text-neutral-dark-gray font-Poppins text-sm font-normal tracking-wide">View results</h4>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <img src="../public/icons/add-results.png" alt="Add Results Icon">
+                    <h4 class="text-neutral-dark-gray font-Poppins text-sm font-normal tracking-wide">Add results</h4>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <img src="../public/icons/top-students.png" alt="Top Students Icon">
+                    <h4 class="text-neutral-dark-gray font-Poppins text-sm font-normal tracking-wide">Top students</h4>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <img src="../public/icons/user-circle.png" alt="See Profile Icon">
+                    <h4 class="text-neutral-dark-gray font-Poppins text-sm font-normal tracking-wide">See profile</h4>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <img src="../public/icons/logout.png" alt="Logout Icon">
+                    <h4 class="text-neutral-dark-gray font-Poppins text-sm font-normal tracking-wide">Log out</h4>
+                </div>
+                
+                <!-- New Grading Tools for Mobile -->
+                <div class="flex flex-col items-center">
+                    <img src="../public/icons/grade-assignments.png" alt="Grade Assignments Icon">
+                    <h4 class="text-neutral-dark-gray font-Poppins text-sm font-normal tracking-wide">Grade Assignments</h4>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <img src="../public/icons/review-submissions.png" alt="Review Submissions Icon">
+                    <h4 class="text-neutral-dark-gray font-Poppins text-sm font-normal tracking-wide">Review Submissions</h4>
+                </div>
             </div>
 
             <!-- Desktop View -->
             <div class="lg:grid hidden grid-cols-1 place-items-center gap-4 w-full">
-                <img src="../public/img/Student initials.png" alt="Picture of a green circle with the initials JB">
+                <img src="../public/img/Student initials.png" alt="User Profile">
                 <h1 class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mt-6">Dashboard</h1>
                 <h3 class="text-neutral-dark-gray text-center font-Roboto text-base font-bold tracking-wide mb-12">Teacher at Edugate School</h3>
 
                 <div class="grid grid-cols-3 gap-12 m-4 pl-24">
-                    <!-- Existing Buttons -->
-                    <div>
-                        <img class="cursor-pointer" src="../public/icons/top-students.png" alt="Picture of a green student with a hat icon">
-                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">Top students</h4>
-                    </div>
-                    <div>
-                        <img class="cursor-pointer max-h-24" src="../public/icons/add-results.png"
-                            alt="Picture of a green results icon with an add button">
-                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">Add results</h4>
-                    </div>
-                    <div>
-                        <img class="cursor-pointer" src="../public/icons/results.png" alt="Picture of a green results icon">
-                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">View results</h4>
-                    </div>
-<!-- New Grading Buttons -->
-                    <div>
-                        <img class="cursor-pointer max-h-24" src="../public/icons/results.png" alt="Picture of a grading icon">
-                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">Grade Assignments
+                    <!-- Existing Desktop Buttons (Centered) -->
+                    <div class="flex flex-col items-center">
+                        <img class="cursor-pointer max-h-24" src="../public/icons/top-students.png" alt="Top Students Icon">
+                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-2">Top students
                         </h4>
                     </div>
-                    <div>
-                        <img class="cursor-pointer max-h-24" src="../public/icons/add-results.png" alt="Picture of a submissions review icon">
-                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">Review Submissions
-                        </h4>
-                        </div>
-<!-- Fixed "See Profile" Alignment -->
-<div>
-    <img class="cursor-pointer" src="../public/icons/user-circle.png" alt="Picture of a green profile icon">
-    <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">See profile
+<div class="flex flex-col items-center">
+    <img class="cursor-pointer max-h-24" src="../public/icons/add-results.png" alt="Add Results Icon">
+    <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-2">Add results
     </h4>
                     </div>
-<div>
-    <img class="cursor-pointer" src="../public/icons/logout.png" alt="Picture of a red log out icon">
-    <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-4">Log out</h4>
+<div class="flex flex-col items-center">
+    <img class="cursor-pointer max-h-24" src="../public/icons/results.png" alt="View Results Icon">
+    <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-2">View results
+    </h4>
+                    </div>
+
+                    <!-- New Grading Buttons -->
+                    <div class="flex flex-col items-center">
+                        <img class="cursor-pointer max-h-24" src="../public/icons/results.png" alt="Grade Assignments Icon">
+                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-2">Grade
+                            Assignments</h4>
+                    </div>
+<div class="flex flex-col items-center">
+    <img class="cursor-pointer max-h-24" src="../public/icons/add-results.png" alt="Review Submissions Icon">
+    <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-2">Review
+        Submissions</h4>
+</div>
+
+                    <!-- Fixed "See Profile" Alignment -->
+                    <div class="flex flex-col items-center">
+                        <img class="cursor-pointer" src="../public/icons/user-circle.png" alt="See Profile Icon">
+                        <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-2">See profile
+                        </h4>
+                    </div>
+<div class="flex flex-col items-center">
+    <img class="cursor-pointer" src="../public/icons/logout.png" alt="Logout Icon">
+    <h4 class="text-neutral-dark-gray text-center font-Poppins text-xl font-semibold tracking-wide mt-2">Log out</h4>
 </div>
                 </div>
             </div>
-            </div>
+        </div>
     </main>
-<footer class="mt-8 w-full flex">
-    <img class="w-full max-w-md mx-auto" src="../public/img/circle-footer.png"
-        alt="Picture of a blue circle overlapping a green circle">
-</footer>
+
+    <footer class="mt-8 w-full flex">
+        <img class="w-full max-w-md mx-auto" src="../public/img/circle-footer.png" alt="Footer Design">
+        </footer>
+
 </body>
 
 </html>
