@@ -11,7 +11,9 @@
     <title>Edit Profile - Teacher</title>
   </head>
   <body class="bg-neutral-light-gray">
-    <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
+    <header
+      class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins border-b-1 border-[#cccccc]"
+    >
       <nav class="max-w-7x1 flex items-center justify-between px-4">
         <img
           class="ml-4 mr-16"
@@ -154,11 +156,13 @@
           </div>
         </div>
 
-        <ul class="hidden md:flex justify-end mr-10 font-Poppins font-medium">
+        <ul
+          class="hidden md:flex ml-auto mr-10 space-x-20 font-Poppins font-medium"
+        >
           <li>
             <a
               href="#"
-              class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary"
+              class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary font-Poppins font-semibold md:text-[20px] text-neutral-dark-gray"
             >
               Dashboard</a
             >
@@ -166,7 +170,7 @@
           <li>
             <a
               href="../templates/about.html"
-              class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary"
+              class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary font-Poppins font-semibold md:text-[20px] text-neutral-dark-gray"
             >
               About</a
             >
@@ -174,7 +178,7 @@
           <li>
             <a
               href="../templates/contact.html"
-              class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary"
+              class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary font-Poppins font-semibold md:text-[20px] text-neutral-dark-gray"
             >
               Contact</a
             >
@@ -224,48 +228,64 @@
     </header>
 
     <main class="mb-10 mx-6">
-      <div
-        class="flex mb-10 gap-4 font-light text-neutral-medium-gray font-Roboto font-normal text-[16px]"
-      >
-        <a src="#"> Dashboard</a>
-        <p>></p>
+      <div class="flex mb-10 mt-10 gap-4">
+        <a
+          src="#"
+          class="text-neutral-medium-gray font-Roboto font-normal text-[16px]"
+        >
+          Dashboard</a
+        >
+        <p class="text-neutral-medium-gray font-Roboto font-bold text-[16px]">
+          >
+        </p>
         <a src="#" class="text-primary font-Roboto font-medium text-[16px]">
           Profile</a
         >
       </div>
 
       <section
-        class="mx-4 md:mx-40 md:p-10 xl:mx-80 lg:border-2 border-neutral-medium-gray"
+        class="mx-4 md:mx-40 md:p-10 xl:mx-80 lg:border-3 border-neutral-medium-gray"
       >
-        <h3
-          class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4"
-        >
-          Edit Profile
-        </h3>
         <h1
-          class="hidden text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4"
+          class="text-neutral-dark-gray text-center font-Poppins text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-bold mb-4"
         >
           Edit Profile
         </h1>
-        <div class="flex justify-center">
+
+        <div class="flex justify-center relative">
           <div
-            class="flex items-center justify-center w-[74px] h-[74px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[129px] lg:h-[129px] rounded-full bg-primary md:w-28 md:h-28"
+            class="relative w-[129px] h-[129px] group cursor-pointer hidden md:block"
           >
-            <p class="text-white font-bold font-Poppins text-[32px]">JB</p>
+            <!-- Default profile icon -->
+            <img
+              src="../public/icons/profile-icon.png"
+              alt="Profile icon"
+              class="w-full h-full transition-opacity duration-300 group-hover:opacity-0"
+            />
+
+            <!-- Hover state -->
+            <img
+              src="../public/icons/profile-icon-hover.png"
+              alt="Change Picture"
+              class="w-full h-full absolute top-0 left-0 right-0 bottom-0 m-auto transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+            />
           </div>
         </div>
-        <!--  <div class="flex justify-center">
+
+        <div class="flex justify-center">
           <img
-            class="w-[74px] h-[74px] md:w-28 md:h-28"
             src="../public/icons/user-circle-edit-mobile.png"
-            alt="user profile icon and initials"
+            alt="Change
+          Picture"
+            class="w-[74px] h-[74px] md:hidden block m-2"
           />
-        </div> -->
+        </div>
+
         <section class="flex items-center justify-center">
           <form action="#" class="xl:w-[315px]">
             <!-- Editable fields -->
             <label
-              class="text-neutral-dark-gray text-[16px] font-Roboto font-bold sm:text-sm font-bold tracking-wide"
+              class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
               >Name:
               <input
                 type="text"
@@ -276,7 +296,7 @@
               />
             </label>
             <label
-              class="text-neutral-dark-gray text-[16px] font-Roboto font-bold sm:text-sm font-bold tracking-wide"
+              class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
               for="email"
               >Email:
               <input
@@ -289,7 +309,7 @@
               />
             </label>
             <label
-              class="text-neutral-dark-gray text-[16px] font-Roboto font-bold sm:text-sm font-bold tracking-wide"
+              class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
               for="dob"
               >Date of Birth:
               <input
@@ -305,7 +325,7 @@
             <!-- Read-only fields -->
             <div>
               <label
-                class="text-neutral-dark-gray text-[16px] font-Roboto font-bold sm:text-sm font-bold tracking-wide"
+                class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
                 for="id"
                 >ID:</label
               >
@@ -320,7 +340,7 @@
             </div>
             <div>
               <label
-                class="text-neutral-dark-gray text-[16px] font-Roboto font-bold sm:text-sm font-bold tracking-wide"
+                class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
                 for="position"
                 >Position:</label
               >
@@ -335,7 +355,7 @@
             </div>
             <div>
               <label
-                class="text-neutral-dark-gray text-[16px] font-Roboto font-bold sm:text-sm font-bold tracking-wide"
+                class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
                 for="school"
                 >School:</label
               >
