@@ -15,9 +15,11 @@
 <body class="bg-neutral-light-gray font-Roboto">
   <!-- not logged in -->
 
-  <header class="bg-neutral-light-gray text-neutral-dark-gray">
-    <nav class="max-w-7x1 flex items-center justify-between px-4">
-      <img class="pl-5" src="../public/img/logo-header.png" alt="Edugate Logo">
+  <header class="bg-neutral-light-gray text-neutral-dark-gray max-lg:border max-lg:border-table-clicked">
+    <nav class="max-w-7x1 flex items-center justify-between px-4 py-[0.1875rem] md:py-0">
+      <img class="pl-5 max-lg:hidden" src="../public/img/logo-header.png" alt="Edugate Logo">
+      <img class="h-16 w-16 lg:hidden" src="../public/img/logo-header-small-screen.png" alt="Edugate Logo">
+
 
       <!-- Hamburger Menu -->
       <div class="relative md:hidden">
@@ -26,10 +28,7 @@
         <!-- Hamburger Icon -->
         <label for="menu-toggle" class="block cursor-pointer focus:outline-none peer-checked:hidden"
           aria-label="Toggle menu">
-          <svg class="w-14 h-14 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
+          <img class="w-[1.5625rem] h-[1.5625rem]" src="../public/icons/hamburger-menu.png" alt="Hamburger Menu">
         </label>
 
         <div
