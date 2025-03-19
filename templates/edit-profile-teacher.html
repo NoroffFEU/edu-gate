@@ -202,19 +202,11 @@
 				<section class="flex items-center justify-center w-full">
 					<form action="#" class="w-full max-w-md mt-5">
 						<!-- Editable fields -->
-						<label
-							class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide">
+						<label class="sm:text-sm font-bold tracking-wide">
 							Name:
-							<input
-								type="text"
-								name="Name"
-								placeholder="Joe Bloggs"
-								required
-								class="bg-white w-full h-[51.04px] mb-4 p-2 border border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" />
+							<input type="text" name="Name" placeholder="Joe Bloggs" required class="input-field" />
 						</label>
-						<label
-							class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
-							for="email">
+						<label class="sm:text-sm font-bold tracking-wide" for="email">
 							Email:
 							<input
 								id="email"
@@ -222,11 +214,9 @@
 								name="Email"
 								placeholder="joeblog2024@edugate.no"
 								required
-								class="bg-white w-full h-[51.04px] mb-4 p-2 border border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" />
+								class="input-field" />
 						</label>
-						<label
-							class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
-							for="dob">
+						<label class="sm:text-sm font-bold tracking-wide" for="dob">
 							Date of Birth:
 							<input
 								type="text"
@@ -234,50 +224,38 @@
 								name="dob"
 								placeholder="19/11/1988"
 								required
-								class="bg-white w-full h-[51.04px] mb-4 p-2 border border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-black opacity-100 font-Roboto" />
+								class="input-field" />
 						</label>
 						<!-- Read-only fields -->
 						<div>
-							<label
-								class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
-								for="id">
-								ID:
-							</label>
+							<label class="sm:text-sm font-bold tracking-wide" for="id">ID:</label>
 							<input
 								type="text"
 								id="id"
 								name="id"
 								value="1921840"
 								readonly
-								class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-2 border border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto" />
+								class="input-field readonly-input-field" />
 						</div>
 						<div>
-							<label
-								class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
-								for="position">
-								Position:
-							</label>
+							<label class="sm:text-sm font-bold tracking-wide" for="position">Position:</label>
 							<input
 								type="text"
 								id="position"
 								name="position"
 								value="Teacher"
 								readonly
-								class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-2 border border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto" />
+								class="input-field readonly-input-field" />
 						</div>
 						<div>
-							<label
-								class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
-								for="school">
-								School:
-							</label>
+							<label class="sm:text-sm font-bold tracking-wide" for="school">School:</label>
 							<input
 								type="text"
 								id="school"
 								name="school"
 								value="The Academy"
 								readonly
-								class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-2 border border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto" />
+								class="input-field readonly-input-field" />
 						</div>
 						<div class="flex justify-center">
 							<button class="primary-button mt-4 mb-10" type="submit">Update</button>
