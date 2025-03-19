@@ -132,7 +132,7 @@
    </nav>
   </header>
   <main class="flex">
-	<div class="pt-8 flex flex-col lg:flex-row w-[91px]">
+	<div class="pt-8 flex flex-col lg:flex-row w-[91px] pt-24">
 	 <!--Sidebar-->
 	 <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-4">
 	   <img
@@ -172,7 +172,7 @@
 	  <p class="text-primary">Student results</p>
 	 </div>
  
-	 <div class="flex flex-col items-center mt-6 gap-8">
+	 <div class="flex flex-col items-center mt-8 gap-10">
 	  <div class="flex gap-5 w-full justify-center">
 	   <img
 		src="../public/icons/green-double-arrows-right.png"
@@ -198,8 +198,11 @@
 	  </div>
 	 </div>
 	 <div class="w-full flex justify-end pr-6">
-		<button class="justify-end text-end bottom-5 w-auto bg-green-500 text-white px-2 py-1 rounded-md">Add Results</button>
-		<button class="text-green-600 :hover text-green-500">Add Result</button>
+		<button class=" hidden sm:block bottom-5 w-auto bg-green-500 hover: bg-green-700 text-white px-2 py-1 rounded-md">Add Results</button>
+		<div>
+			<button class="block sm:hidden text-green-600">Add Result</button>
+		</div>
+			
 	 </div>
 
 
@@ -220,6 +223,7 @@
 		<td class="pl-2 w-fit">
 		 <img src="../public/icons/info.png" alt="info-icon" class="w-5" />
 		</td>
+		<button class="bg-red-500 text-white">Delete</button>
 	   </tr>
 	   <tr class="h-10">
 		<td class="pl-2 w-fit">Physics</td>
@@ -296,6 +300,11 @@
 		 <td class="p-4 w-fit">M1</td>
 		 <td class="p-4 w-fit">90/120</td>
 		 <td class="p-4 w-fit">B</td>
+		 <td class="p-4 w-fit">
+			<button class="text-green-700">Edit</button>
+			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
+		 </td>
+
 		</tr>
 		<tr class="hover:bg-table-hover hover:cursor-default">
 		 <td class="p-4 w-fit">2019</td>
@@ -304,6 +313,10 @@
 		 <td class="p-4 w-fit">P3</td>
 		 <td class="p-4 w-fit">102/120</td>
 		 <td class="p-4 w-fit">A</td>
+		 <td class="p-4 w-fit">
+			<button class="text-green-700">Edit</button>
+			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
+		 </td>
 		</tr>
 		<tr
 		 class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
@@ -314,6 +327,10 @@
 		 <td class="p-4 w-fit">E2</td>
 		 <td class="p-4 w-fit">80/110</td>
 		 <td class="p-4 w-fit">B</td>
+		 <td class="p-4 w-fit">
+			<button class="text-green-700">Edit</button>
+			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
+		 </td>
 		</tr>
 		<tr class="hover:bg-table-hover hover:cursor-default">
 		 <td class="p-4 w-fit">2019</td>
@@ -322,6 +339,10 @@
 		 <td class="p-4 w-fit">E1</td>
 		 <td class="p-4 w-fit">95/130</td>
 		 <td class="p-4 w-fit">B</td>
+		 <td class="p-4 w-fit">
+			<button class="text-green-700">Edit</button>
+			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
+		 </td>
 		</tr>
 		<tr
 		 class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
@@ -332,6 +353,10 @@
 		 <td class="p-4 w-fit">B2</td>
 		 <td class="p-4 w-fit">73/120</td>
 		 <td class="p-4 w-fit">C</td>
+		 <td class="p-4 w-fit">
+			<button class="text-green-700">Edit</button>
+			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
+		 </td>
 		</tr>
 		<tr class="hover:bg-table-hover hover:cursor-default">
 		 <td class="p-4 w-fit">2019</td>
@@ -340,6 +365,10 @@
 		 <td class="p-4 w-fit">P2</td>
 		 <td class="p-4 w-fit">110/120</td>
 		 <td class="p-4 w-fit">A</td>
+		 <td class="p-4 w-fit">
+			<button class="text-green-700">Edit</button>
+			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
+		 </td>
 		</tr>
 		<tr
 		 class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
@@ -350,6 +379,10 @@
 		 <td class="p-4 w-fit">H2</td>
 		 <td class="p-4 w-fit">90/110</td>
 		 <td class="p-4 w-fit">A</td>
+		 <td class="p-4 w-fit gap-2">
+			<button class="text-green-700">Edit</button>
+			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
+		 </td>
 		</tr>
 	   </tbody>
 	  </table>
@@ -400,6 +433,9 @@
     </button>
    </div>
   </main>
-  <footer></footer>
+  <footer class="w-full justify-center">
+	<img class="hidden sm:block mx-auto w-32" src="../public/img/circle-footer.png">
+	<img class="block sm:hidden ml-auto w-32 " src="../public/img/Circles_illustration_mobile.png">
+  </footer>
  </body>
 </html> 
