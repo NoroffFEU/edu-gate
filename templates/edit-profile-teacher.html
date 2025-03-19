@@ -16,7 +16,6 @@
 					class="w-[90px] -ml-3 -mt-2 mr-1 -mb-3 md:w-[150px] md:ml-2"
 					src="../public/img/logo-header.png"
 					alt="Edugate Logo" />
-
 				<div class="relative md:hidden">
 					<!-- Checkbox for Hamburger Toggle -->
 					<input type="checkbox" id="menu-toggle" class="hidden peer" />
@@ -38,7 +37,6 @@
 								d="M4 6h16M4 12h16M4 18h16" />
 						</svg>
 					</label>
-
 					<div
 						class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
 						<!-- Close Icon -->
@@ -59,7 +57,6 @@
 									d="M6 18L18 6M6 6l12 12" />
 							</svg>
 						</label>
-
 						<ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
 							<li>
 								<a
@@ -115,7 +112,6 @@
 						</ul>
 					</div>
 				</div>
-
 				<ul class="hidden md:flex ml-auto space-x-20 max-[900px]:space-x-9 font-Poppins font-medium">
 					<li>
 						<a
@@ -143,12 +139,10 @@
 				<div class="relative">
 					<!-- Hidden Checkbox -->
 					<input type="checkbox" id="dropdown-toggle" class="hidden peer" />
-
 					<!-- User Icon (Clickable) -->
 					<label for="dropdown-toggle" class="hidden md:flex w-14 h-14 mr-10 cursor-pointer">
 						<img src="../public/icons/user-circle.png" alt="User dropdown" />
 					</label>
-
 					<!-- Dropdown Menu -->
 					<ul
 						class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
@@ -169,7 +163,6 @@
 				</div>
 			</nav>
 		</header>
-
 		<main class="mb-10 mx-6">
 			<div class="flex mb-6 mt-4 gap-4 md:mt-10 md:ml-10">
 				<a src="#" class="text-neutral-medium-gray font-Roboto font-normal text-[16px] md:text-[14px]">
@@ -180,14 +173,12 @@
 					Profile
 				</a>
 			</div>
-
 			<section
-				class="mx-4 md:mx-40 md:p-10 xl:mx-80 p-0 lg:border-3 border-neutral-medium-gray md:border-2 md:border-black">
+				class="md:p-10 p-0 lg:border-[3px] border-neutral-medium-gray md:border-2 md:border-black w-full max-w-[902px] lg:max-w-lg mx-auto md:max-w-[512px]">
 				<h1
 					class="text-neutral-dark-gray text-center font-Poppins text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-bold mb-4">
 					Edit Profile
 				</h1>
-
 				<div class="flex justify-center relative">
 					<div class="relative w-[129px] h-[129px] group cursor-pointer hidden md:block">
 						<!-- Default profile icon -->
@@ -195,7 +186,6 @@
 							src="../public/icons/profile-icon.png"
 							alt="Profile icon"
 							class="w-full h-full transition-opacity duration-300 group-hover:opacity-0" />
-
 						<!-- Hover state -->
 						<img
 							src="../public/icons/profile-icon-hover.png"
@@ -203,17 +193,14 @@
 							class="w-full h-full absolute top-0 left-0 right-0 bottom-0 m-auto transition-opacity duration-300 opacity-0 group-hover:opacity-100" />
 					</div>
 				</div>
-
 				<div class="flex justify-center">
 					<img
 						src="../public/icons/user-circle-edit-mobile.png"
-						alt="Change
-          Picture"
+						alt="Change Picture"
 						class="w-[74px] h-[74px] md:hidden block m-2" />
 				</div>
-
-				<section class="flex items-center justify-center">
-					<form action="#" class="xl:w-[315px] mt-5">
+				<section class="flex items-center justify-center w-full">
+					<form action="#" class="w-full max-w-md mt-5">
 						<!-- Editable fields -->
 						<label
 							class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide">
@@ -223,7 +210,7 @@
 								name="Name"
 								placeholder="Joe Bloggs"
 								required
-								class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" />
+								class="bg-white w-full h-[51.04px] mb-4 p-2 border border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" />
 						</label>
 						<label
 							class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
@@ -235,7 +222,7 @@
 								name="Email"
 								placeholder="joeblog2024@edugate.no"
 								required
-								class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" />
+								class="bg-white w-full h-[51.04px] mb-4 p-2 border border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" />
 						</label>
 						<label
 							class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
@@ -247,9 +234,8 @@
 								name="dob"
 								placeholder="19/11/1988"
 								required
-								class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-black opacity-100 font-Roboto" />
+								class="bg-white w-full h-[51.04px] mb-4 p-2 border border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-black opacity-100 font-Roboto" />
 						</label>
-
 						<!-- Read-only fields -->
 						<div>
 							<label
@@ -263,7 +249,7 @@
 								name="id"
 								value="1921840"
 								readonly
-								class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto" />
+								class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-2 border border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto" />
 						</div>
 						<div>
 							<label
@@ -277,7 +263,7 @@
 								name="position"
 								value="Teacher"
 								readonly
-								class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto" />
+								class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-2 border border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto" />
 						</div>
 						<div>
 							<label
@@ -291,9 +277,8 @@
 								name="school"
 								value="The Academy"
 								readonly
-								class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto" />
+								class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-2 border border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto" />
 						</div>
-
 						<div class="flex justify-center">
 							<button class="primary-button mt-4 mb-10" type="submit">Update</button>
 						</div>
@@ -301,7 +286,6 @@
 				</section>
 			</section>
 		</main>
-
 		<footer class="flex justify-end sm:justify-center">
 			<img class="sm:hidden" src="../public/img/Circles_illustration_mobile.png" alt="Edugate footer circles" />
 			<img
