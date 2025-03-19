@@ -8,8 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Dashboard Teacher Page</title>
 </head>
-<body class="bg-neutral-light-gray">
-    <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins border-b-1 border-[#cccccc]">
+<body class="bg-neutral-light-gray max-w-[1440px]">
+    <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins border-b-1 border-[#cccccc] h-auto min-h-[80px] md:h-[160px]">
         <nav class="max-w-7x1 h-[70px] md:h-40 px-4 py-[3px] flex items-center justify-between border-b border-[#d0d0d0] md:border-0">
             <img class="w-16 h-16 md:w-44 md:h-44" src="../public/img/logo-header.png" alt="Edugate Logo">
              <!-- Hamburger Menu -->
@@ -72,17 +72,17 @@
                 </div>
             </div>
 
-            <ul class="hidden md:flex justify-end ml-auto mr-10 font-Poppins font-medium">
-                <li>
-                    <a href="templates/dashboard-teacher.html" class="py-8 md:px-8 px-16 border-b-2 text-xl font-bold border-neutral-light-gray hover:border-b-2 hover:border-green-600 w-[247.67px] h-[74px] justify-center items-center inline-flex">
+            <ul class="hidden md:flex font-Poppins font-semibold text-xl space-x-4 sm:space-x-2 md:space-x-2 lg:space-x-6 ml-auto">
+                <li  class="w-[120px] lg:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
+                    <a href="templates/dashboard-teacher.html" class="py-8 md:px-8 px-16 text-xl font-bold border-neutral-light-gray hover:border-b-2 hover:border-green-600 w-[247.67px] h-[74px] justify-center items-center inline-flex tracking-[0.5px]">
                         Dashboard</a>
                 </li>
-                <li>
-                    <a href="/templates/about.html" class="py-8 md:px-8 px-16 border-b-2 text-xl font-bold border-neutral-light-gray hover:border-b-2 hover:border-green-600 w-[247.67px] h-[74px] justify-center items-center inline-flex">
+                <li  class="w-[120px] lg:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
+                    <a href="/templates/about.html" class="py-8 md:px-8 px-16 text-xl font-bold border-neutral-light-gray hover:border-b-2 hover:border-green-600 w-[247.67px] h-[74px] justify-center items-center inline-flex tracking-[0.5px]">
                         About</a>
                 </li>
-                <li>
-                    <a href="/templates/contact.html" class="py-8 md:px-8 px-16 border-b-2 text-xl font-bold border-neutral-light-gray hover:border-b-2 hover:border-green-600 w-[247.67px] h-[74px] justify-center items-center inline-flex">
+                <li  class="w-[120px] lg:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
+                    <a href="/templates/contact.html" class="py-8 md:px-8 px-16 text-xl font-bold border-neutral-light-gray hover:border-b-2 hover:border-green-600 w-[247.67px] h-[74px] justify-center items-center inline-flex tracking-[0.5px]">
                         Contact</a>
                 </li>
             </ul>
@@ -94,7 +94,7 @@
                
                 <!-- User Icon (Clickable) -->
                 <label for="dropdown-toggle" class="hidden md:flex w-14 h-14 mr-10 cursor-pointer">
-                    <img class="w-16 h-16 relative" src="/public/icons/user-circle.png" alt="User dropdown">
+                    <img class="w-16 h-16 left-[1.16px] top-[1.01px] absolute" src="/public/icons/user-circle.png" alt="User dropdown">
                 </label>
 
                 <!-- Dropdown Menu-->
