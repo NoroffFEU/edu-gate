@@ -49,8 +49,7 @@
           <div class="pt-2 bg-gray-100">
             <img class="mml-4 mr-4  w-[100px] -mb-7 -mt-5" src="../public/img/logo-header.png" alt="Edugate Logo" />
           </div>
-
-
+          <!--Header for Desktop, need to fix links here-->
           <ul class="flex flex-col items-end justify-start md:mt-40 h-full gap-10 text-xl mr-8">
             <li class="mt-10">
               <a href="#" aria-label="Go to dashboard"
@@ -99,7 +98,7 @@
           </ul>
         </div>
       </div>
-
+      <!--header for mobile?!, need to fix links here-->
       <ul
         class="hidden md:flex font-Poppins font-semibold text-xl space-x-4 sm:space-x-2 md:space-x-2 lg:space-x-6 ml-auto ">
         <!-- Cannot link Href as there are several dashboard.html files -->
@@ -119,18 +118,14 @@
         </li>
       </ul>
       <!-- User Dropdown -->
-      <div class="relative">
-        <!-- Hidden Checkbox -->
-        <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
-
+      <div class="relative group">
         <!-- User Icon (Clickable) -->
-        <label for="dropdown-toggle" class="hidden md:flex cursor-pointer">
+        <button aria-expanded="false" class="cursor-pointer p-2 rounded-md focus:ring-2">
           <img src="/public/icons/user-circle.png" alt="User dropdown" class="w-[64px] h-[64px]" />
-        </label>
-
-        <!-- Dropdown Menu -->
+        </button>
+        <!-- Dropdown Menu, you need t ofix the links here-->
         <ul
-          class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
+          class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible group-focus-within:opacity-100 group-focus-within:visible transition-opacity duration-200">
           <li>
             <a href="#" aria-label="View results" class="block px-8 py-4 hover:bg-white hover:text-green-600">See
               results</a>
@@ -147,16 +142,26 @@
     </nav>
   </header>
   <div class="flex">
-    <div class="hidden lg:flex flex-col lg:flex-row w-[91px] min-h-screen lg:border-r-1 border-[#CCCCCC]">
-      <!--Sidebar-->
+    <!--Sidebar, need to fix links here-->
+    <div class="flex flex-col lg:flex-row w-[91px] min-h-screen border-r-1 border-[#CCCCCC]">
       <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-6 mt-[135px]">
-        <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/dashboard.png" alt="Dashboard icon" />
-        <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/results.png" alt="Results icon" />
-        <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/user-management.png"
-          alt="User-management icon" />
-        <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/school-management.png"
-          alt="School-management icon" />
-        <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/logout.png" alt="red log out icon" />
+        <a href="#" aria-label="Go to dashboard">
+          <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/dashboard.png" alt="Dashboard icon" />
+        </a>
+        <a href="#" aria-label="View results">
+          <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/results.png" alt="Results icon" />
+        </a>
+        <a href="#" aria-label="Manage user">
+          <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/user-management.png"
+            alt="User-management icon" />
+        </a>
+        <a href="#" aria-label="Manage schol">
+          <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/school-management.png"
+            alt="School-management icon" />
+        </a>
+        <a href="#" aria-label="Log out">
+          <img class="cursor-pointer w-[41px] h-[41px]" src="/public/icons/logout.png" alt="red log out icon" />
+        </a>
       </div>
     </div>
     <div class="flex flex-col w-full">
@@ -194,6 +199,7 @@
               </button>
             </div>
           </div>
+          <!--Mobil table-->
           <table class="w-full bg-table rounded-md md:hidden text-left">
             <thead class="text-primary font-bold text-[16px] sm:text-xl tracking-[0.05em] ">
               <tr class="h-14 md:h-10">
