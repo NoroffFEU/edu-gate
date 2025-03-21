@@ -14,18 +14,18 @@
   <!-- Suggestex fix for header!-->
 
   <header class="w-full bg-neutral-light-gray text-neutral-dark-gray font-Poppins border-b-1 border-[#cccccc]">
-    <div class="w-full max-w-7xl mx-auto px-6">
+    <div class="w-full max-w-7xl mx-auto px-2 lg:px-6">
       <nav class="flex w-full items-center justify-between">
-        <img class="" src="../public/img/logo-header.png" alt="Edugate Logo" />
+        <img class="w-16 h-16 lg:w-30 lg:h-30" src="../public/img/logo-header.png" alt="Edugate Logo" />
         <div class="relative lg:hidden ml-auto">
           <!--Checkbox for Hamburger Toggle-->
           <input type="checkbox" id="menu-toggle" class="hidden peer" />
           <!--Hamburger Icon-->
           <label for="menu-toggle" class="block cursor-pointer focus:outline-none peer-checked:hidden"
             aria-label="Toggle menu">
-            <svg class="w-14 h-14 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            <svg class="w-8 h-8 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16 M4 12h16 M4 18h16" />
             </svg>
           </label>
           <div
@@ -124,8 +124,8 @@
     </div>
   </header>
 
-  <main class="w-full max-w-7xl mx-auto mb-12 px-6">
-    <div class="flex mb-12 mt-12 gap-6">
+  <main class="w-full max-w-7xl mx-auto mb-4 lg:mb-12 px-6">
+    <div class="flex mb-4 mt-4 lg:mb-12 lg:mt-12 gap-6">
       <a src="#" class="text-neutral-medium-gray font-Roboto font-normal text-[16px]">
         <!--add link to breadcrumbs-->
         Dashboard</a>
@@ -188,7 +188,7 @@
               class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto" />
           </div>
           <div class="flex justify-center">
-            <button class="primary-button mt-4 mb-12" type="submit">
+            <button class="primary-button mt-4 mb-4 lg:mb-12" type="submit">
               Update
             </button>
           </div>
