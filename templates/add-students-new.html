@@ -49,25 +49,25 @@
 
                 <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
                     <li>
-                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                        <a href="../templates/dashboard-student.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                             Dashboard
                             <img class="w-6 h-6" src="../public/icons/dashboard.png" alt="Dashboard Icon">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                        <a href="../templates/edit-profile-student.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                             Profile
                             <img class="w-6 h-6" src="../public/icons/user-circle.png" alt="Profile Icon">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                        <a href="../templates/about.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                             About
                             <img class="w-6 h-6" src="../public/icons/about.png" alt="About Icon">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                        <a href="../templates/contact.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                             Contact
                             <img class="w-6 h-6" src="../public/icons/contact.png" alt="Contact Icon">
                         </a>
@@ -82,8 +82,8 @@
             </div>
         </div>
 
-        <ul class="hidden md:flex justify-end mr-10 font-Poppins font-medium">
-            <li><a href="#" class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
+        <ul class="hidden md:flex justify-end mr-10 w-full pr-10 font-Poppins font-medium gap-12">
+            <li><a href="../templates/dashboard-student.html" class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
                 Dashboard</a>
             </li>
             <li><a href="../templates/about.html" class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary">
@@ -121,21 +121,31 @@
               </ul>
           </div>
     </nav>
-
+<!-- Horizontal line -->
+<hr class="border-t border-gray-300 my-4"></hr>
 </header>
-  <main class="w-full mx-auto mt-6 font-Poppins">
-    <section class="mb-6">
-      <nav class="text-sm">
-        <a href ="#" class="text-gray-500 hover:text-gray-700">Dashboard</a> &gt;
-        <a href="#" class="text-green-600 font-medium">Add students</a>
-      </nav>
-    </section>
+<section class="mb-6 mt-6">
+    <nav class="text-sm">
+      <a href ="#" class="text-gray-500 hover:text-gray-700">Dashboard</a> &gt;
+      <a href="#" class="text-green-600 font-medium">Add students</a>
+    </nav>
+  </section>
+<div class="flex">
+    <!--Sidebar-->
+    <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-1/4">
+     <a href="../templates/index.html"><img class="cursor-pointer w-12" src="/public/icons/dashboard.png" alt="Picutre of a green home icon"></a>
+     <a href="#"><img class="cursor-pointer w-12" src="/public/icons/results.png" alt="Picture of a green results icon"></a>
+     <a href="../templates/student-profile.html"><img class="cursor-pointer w-12" src="/public/icons/user-circle.png" alt="Picture of a green user icon"></a>
+     <a href="#"><img class="cursor-pointer w-12" src="/public/icons/school-management.png" alt="Picture of a green school icon"></a>
+     <a href="#"><img class="cursor-pointer w-12" src="/public/icons/logout.png" alt="Picture of a red log out icon"></a>
+ </div>
+  <main class="w-full mx-auto mt-6 font-Poppins flex-1">
     <section class="mb-4 flex flex-col justify-center text-center items-center mt-24 md:mt-10 py-6">
     <h1 class="text-black text-center font-Poppins text-[32px] font-bold tracking-wide sm:mb-12 mb-6">Add students</h1>
     <p class="text-neutral-dark-gray font-Roboto sm:text-xl text-sm font-normal sm:tracking-wide sm:mb-12 mb-4">To add students, upload an excel spreadsheet with this format:</p>
     </section>
-    <div class=" w-full">
-    <table border="1" class="w-full border border-gray-300 text-left text-sm md:text-base">
+    <div class=" w-full px-8">
+    <table border="1" class="w-full mx-auto border border-gray-300 text-left text-sm md:text-base">
       <thead class="bg-gray-200 text-gray-600 uppercase text-center text-xs sm:text-sm md:base">
         <tr>
           <th class="bg-gray-200 text-gray-600 uppercase pl-0.5 md:px-4 py-2">#</th>
@@ -184,9 +194,10 @@
   </div>
     <div class="flex flex-col items-center justify-center space-y-4">
         <button type="button" class="px-6 py-2 max-w-xs bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition mt-6">Upload +</button>
-        <button type="button" class="px-6 py-2 max-w-xs bg-white text-blue-500 border-2 border-blue-500 font-semibold rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Back to dashboard</button>
+        <a href="../templates/dashboard-student.html"><button type="button" class="px-6 py-2 max-w-xs bg-white text-blue-500 border-2 border-blue-500 font-semibold rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Back to dashboard</button></a>
     </div>
   </main>
+  </div>
   <footer class="flex justify-end sm:justify-center mt-35 sm:mt-10">
     <img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles">
     <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles">
