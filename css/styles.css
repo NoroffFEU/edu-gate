@@ -67,10 +67,22 @@
   letter-spacing: 0.05em;
   border: 2px solid #ff5722;
   border-radius: 6px;
-  padding: 10px 20px;
+  padding: 7px 20px;
   cursor: pointer;
 }
 .alert-button:hover {
   background-color: #e64a19;
   border: 2px solid #e64a19;
+}
+
+.table-line {
+  background-color: rgb(249,249,249);
+}
+
+.table-line {
+  background-color: rgb(209,209,209);
+}
+
+.edit-button {
+  color: var(--color-primary);
 }

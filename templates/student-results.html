@@ -132,7 +132,7 @@
    </nav>
   </header>
   <main class="flex">
-	<div class="pt-8 flex flex-col lg:flex-row w-[91px] pt-24">
+	<div class="pt-8 flex flex-col lg:flex-row w-[91px] pt-12">
 	 <!--Sidebar-->
 	 <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-4">
 	   <img
@@ -162,17 +162,29 @@
 	   />
 	 </div>
 	</div>
+
 	<div class="flex flex-col w-full font-Roboto self-center px-8 gap-5 pb-8 m-5">
-	 <div
-	  class="text-neutral-medium-gray flex h-10 items-center mt-5 gap-6 text-xs sm:text-base pl-5"
+
+	<div
+	  class="text-neutral-medium-gray flex h-10 items-center mt-5 gap-6 text-xs sm:text-base pl-5 hidden sm:flex"
 	 >
 	  <a href="#">Dashboard</a>&gt;
 	  <a href="#">Select student</a>
 	  &gt;
 	  <p class="text-primary">Student results</p>
 	 </div>
- 
-	 <div class="flex flex-col items-center mt-8 gap-10">
+
+	 <div
+	 class="justify-start bg-red-500 text-neutral-medium-gray flex h-10 items-center mt-5 gap-6 text-lg sm:text-2xl pl-5 sm:hidden"
+	>
+	 <a href="#">Dashboard</a>
+	 <a href="#">Select student</a>
+	 <p class="text-primary">Student results</p>
+	</div>
+
+
+
+	 <div class="flex flex-col justify-center items-center mt-8 gap-10">
 	  <div class="flex gap-5 w-full justify-center">
 	   <img
 		src="../public/icons/green-double-arrows-right.png"
@@ -182,7 +194,8 @@
 	   <h1 class="w-fit font-bold text-2xl font-Poppins">Student results</h1>
 	  </div>
  
-	  <p class="w-fit text-sm">Here are the results for $user</p>
+	  <p class="w-fit text-sm hidden sm:block">Here are the results for $user</p>
+	  <p class="w-fit text-sm sm:hidden tracking-0.5px">Here are the results for <strong>$user</strong></p>
  
 	  <img src="../public/icons/results.png" class="w-10 sm:w-15 md:hidden" />
  
@@ -198,7 +211,7 @@
 	  </div>
 	 </div>
 	 <div class="w-full flex justify-end pr-6">
-		<button class=" hidden sm:block bottom-5 w-auto bg-green-500 hover: bg-green-700 text-white px-2 py-1 rounded-md">Add Results</button>
+		<button class="hidden sm:block primary-button">Add Results</button>
 		<div>
 			<button class="block sm:hidden text-green-600">Add Result</button>
 		</div>
@@ -281,7 +294,7 @@
 	   class="table-auto bg-table rounded-md w-full items-center text-left"
 	  >
 	   <thead class="w-full">
-		<tr class="text-primary text-xl lg:text-2xl text-left">
+		<tr class="text-primary text-xl lg:text-2xl text-left ">
 		 <th class="p-4 w-fit">Year</th>
 		 <th class="p-4 w-fit">Term</th>
 		 <th class="p-4 w-fit">Subject</th>
@@ -292,57 +305,64 @@
 	   </thead>
 	   <tbody class="text-base lg:text-xl text-neutral-dark-gray">
 		<tr
-		 class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
+		 class="table-line"
 		>
-		 <td class="p-4 w-fit">2019</td>
-		 <td class="p-4 w-fit">3</td>
-		 <td class="p-4 w-fit">Mathematics</td>
-		 <td class="p-4 w-fit">M1</td>
-		 <td class="p-4 w-fit">90/120</td>
-		 <td class="p-4 w-fit">B</td>
-		 <td class="p-4 w-fit">
-			<button class="text-green-700">Edit</button>
-			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
+		 <td class="p-4 w-fit tracking-[0.5px].">2019</td>
+		 <td class="p-4 w-fit tracking-[0.5px].">3</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">Mathematics</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">M1</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">90/120</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">B</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">
+			<div class="flex flex-row gap-4 justify-end">
+				<button class="edit-button">Edit</button>
+				<button class="alert-button">Delete</button>
+			</div>
 		 </td>
-
 		</tr>
 		<tr class="hover:bg-table-hover hover:cursor-default">
-		 <td class="p-4 w-fit">2019</td>
-		 <td class="p-4 w-fit">3</td>
-		 <td class="p-4 w-fit">Physics</td>
-		 <td class="p-4 w-fit">P3</td>
-		 <td class="p-4 w-fit">102/120</td>
-		 <td class="p-4 w-fit">A</td>
-		 <td class="p-4 w-fit">
-			<button class="text-green-700">Edit</button>
-			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
+		 <td class="p-4 w-fit tracking-[0.5px]">2019</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">3</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">Physics</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">P3</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">102/120</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">A</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">
+			<div class="flex flex-row gap-4 justify-end">
+				<button class="edit-button">Edit</button>
+				<button class="alert-button">Delete</button>
+			</div>
 		 </td>
 		</tr>
 		<tr
 		 class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
 		>
-		 <td class="p-4 w-fit">2019</td>
-		 <td class="p-4 w-fit">3</td>
-		 <td class="p-4 w-fit">English</td>
-		 <td class="p-4 w-fit">E2</td>
-		 <td class="p-4 w-fit">80/110</td>
-		 <td class="p-4 w-fit">B</td>
-		 <td class="p-4 w-fit">
-			<button class="text-green-700">Edit</button>
-			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
-		 </td>
+		 <td class="p-4 w-fit tracking-[0.5px]">2019</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">3</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">English</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">E2</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">80/110</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">B</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">
+			<div class="flex flex-row gap-4 justify-end">
+				<button class="edit-button">Edit</button>
+				<button class="alert-button">Delete</button>
+			</div>
+		</td>
 		</tr>
 		<tr class="hover:bg-table-hover hover:cursor-default">
-		 <td class="p-4 w-fit">2019</td>
-		 <td class="p-4 w-fit">2</td>
-		 <td class="p-4 w-fit">English</td>
-		 <td class="p-4 w-fit">E1</td>
-		 <td class="p-4 w-fit">95/130</td>
-		 <td class="p-4 w-fit">B</td>
-		 <td class="p-4 w-fit">
-			<button class="text-green-700">Edit</button>
-			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
-		 </td>
+		 <td class="p-4 w-fit tracking-[0.5px]">2019</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">2</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">English</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">E1</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">95/130</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">B</td>
+		 <td class="p-4 w-fit tracking-[0.5px]">
+			<div class="flex flex-row gap-4 justify-end">
+				<button class="edit-button">Edit</button>
+				<button class="alert-button">Delete</button>
+			</div>
+		</td>
 		</tr>
 		<tr
 		 class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
@@ -354,9 +374,11 @@
 		 <td class="p-4 w-fit">73/120</td>
 		 <td class="p-4 w-fit">C</td>
 		 <td class="p-4 w-fit">
-			<button class="text-green-700">Edit</button>
-			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
-		 </td>
+			<div class="flex flex-row gap-4 justify-end">
+				<button class="edit-button">Edit</button>
+				<button class="alert-button">Delete</button>
+			</div>
+		</td>
 		</tr>
 		<tr class="hover:bg-table-hover hover:cursor-default">
 		 <td class="p-4 w-fit">2019</td>
@@ -366,9 +388,11 @@
 		 <td class="p-4 w-fit">110/120</td>
 		 <td class="p-4 w-fit">A</td>
 		 <td class="p-4 w-fit">
-			<button class="text-green-700">Edit</button>
-			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
-		 </td>
+			<div class="flex flex-row gap-4 justify-end">
+				<button class="edit-button">Edit</button>
+				<button class="alert-button">Delete</button>
+			</div>
+		</td>
 		</tr>
 		<tr
 		 class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
@@ -380,9 +404,11 @@
 		 <td class="p-4 w-fit">90/110</td>
 		 <td class="p-4 w-fit">A</td>
 		 <td class="p-4 w-fit gap-2">
-			<button class="text-green-700">Edit</button>
-			<button class="bg-green-500 hover:bg-red-700 text-white px-4 py-2 rounded-md">Delete</button>
-		 </td>
+			<div class="flex flex-row gap-4 justify-end">
+				<button class="edit-button">Edit</button>
+				<button class="alert-button">Delete</button>
+			</div>
+		</td>
 		</tr>
 	   </tbody>
 	  </table>
