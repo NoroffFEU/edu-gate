@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Dashboard Teacher Page</title>
 </head>
-<body class="bg-neutral-light-gray">
+<body class="bg-neutral-light-gray flex flex-col min-h-screen">
 <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
     <nav class="max-w-7x1 flex items-center justify-between px-4">
         <img class="ml-4 mr-16" src="../../public/img/logo-header.png" alt="Edugate Logo">
@@ -115,7 +115,8 @@
         </div>
     </nav>
     </header>
-    <main class="bg-neutral-light-gray">
+    <main class="flex-grow">
+    </main>
         <div class="flex flex-col lg:flex-row justify-center items-center lg:w-full mx-auto">
             <!--Sidebar-->
             <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-4 ">
@@ -237,9 +238,48 @@
             </div>
         </div>
     </main>
-    <footer class="flex justify-end sm:justify-center sm:mt-10">
-        <img class="sm:hidden" src="../../public/img/Circles_illustration_mobile.png" alt="Educate footer circles">
-        <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../../public/img/circle-footer.png" alt="Picture of a blue circle overlapping a green circle">
-    </footer>    
+    <footer class="bg-neutral-light-gray px-4 pt-8 mt-12" role="contentinfo">
+        <!-- Row: Contact Info (left), Image (center), Social Icons (right) -->
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-end justify-between text-neutral-dark-gray">
+    
+            <!-- Left: Contact Info -->
+            <div class="text-left">
+                <p class="text-sm md:text-base">&copy; 2025 <strong>Edugate School</strong>. All rights reserved.</p>
+                <p class="text-sm mt-1">
+                    📧 <a href="mailto:support@edugateschool.com" class="underline hover:text-primary"
+                        aria-label="Email Edugate School support">support@edugateschool.com</a> |
+                    📞 <a href="tel:+123456789" class="underline hover:text-primary"
+                        aria-label="Call Edugate School at +123 456 789">+123 456 789</a>
+                </p>
+            </div>
+    
+            <!-- Center: Decorative Image -->
+            <div class="my-6 md:my-0">
+                <img src="../../public/img/circle-footer.png" alt="Overlapping green and blue circles"
+                    class="w-full max-w-lg mx-auto">
+            </div>
+    
+            <!-- Right: Bigger Social Icons -->
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Edugate School on Instagram">
+                    <img src="../../public/img/instagram.png" alt="Instagram"
+                        class="w-8 h-8 hover:scale-110 transition-transform">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Edugate School on LinkedIn">
+                    <img src="../../public/img/linkedin.png" alt="LinkedIn"
+                        class="w-8 h-8 hover:scale-110 transition-transform">
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Edugate School on YouTube">
+                    <img src="../../public/img/youtube.png" alt="YouTube"
+                        class="w-8 h-8 hover:scale-110 transition-transform">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
