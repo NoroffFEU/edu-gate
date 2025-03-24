@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Student profile page for Edugate webpage.">
     <link rel="stylesheet" href="../../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Student Dashboard Page</title>
 </head>
 <body>
@@ -97,20 +98,25 @@
                 <div class="relative">
                   <!-- Hidden Checkbox -->
                   <input type="checkbox" id="dropdown-toggle" class="hidden peer">
-      
+
+
                   <!-- User Icon (Clickable) -->
-                  <label
-                      for="dropdown-toggle"
-                      class="hidden md:flex w-14 h-14 mr-10 cursor-pointer"
-                  >
-                      <img src="../../public/icons/user-circle.png" alt="User dropdown">
-                  </label>
+                  <div class="hidden md:flex items-center gap-6 mr-10">
+                    <div class="relative cursor-pointer">
+                        <i class="fa-solid fa-bell text-2xl hover:text-primary-green transition-colors"></i>
+                        <span class="absolute top-0 -right-1 bg-red-500 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center">0</span>
+                    </div>
+                    <label for="dropdown-toggle" class="cursor-pointer">
+                        <img class="w-14 h-14" src="../../public/icons/user-circle.png" alt="User dropdown">
+                    </label>
+                </div>
       
+                  
                   <!-- Dropdown Menu -->
                   <ul
                       class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
                       <li>
-                          <a href="#" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
+                          <a href="student-results.html" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
                       </li>
                       <li>
                           <a href="#" class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
