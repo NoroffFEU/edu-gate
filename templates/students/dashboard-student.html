@@ -14,9 +14,9 @@
             <img class="ml-4 mr-16" src="../../public/img/logo-header.png" alt="Edugate Logo">
     
             <!-- Hamburger Menu -->
-            <div class="fixed inset-0 md:hidden">
+            <div class="relative md:hidden ml-auto">
                 <!-- Mobile Icons Container -->
-                <div class="absolute top-14 right-4 flex items-center gap-8">
+                <div class="flex items-center gap-8 mr-4">
                     <!-- Notification Bell -->
                     <div class="relative cursor-pointer">
                         <i class="fa-solid fa-bell text-2xl hover:text-primary-green transition-colors"></i>
@@ -41,7 +41,8 @@
                     id="menu-toggle"
                     class="hidden peer"
                 />
-                <!-- Hamburger Icon -->
+
+                <!-- Mobile Menu -->
                 <div
                     class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
                 >
@@ -79,7 +80,16 @@
                         <li>
                             <a href="../contact.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                                 Contact
-                                <img class="w-6 h-6" src="../../public/icons/contact.png" alt="Contact Icon">
+                                <img 
+                                    class="w-6 h-6 object-contain" 
+                                    src="../../public/icons/contact.png" 
+                                    alt="Contact Icon" 
+                                    width="24" 
+                                    height="24" 
+                                    loading="lazy" 
+                                    decoding="async"
+                                    style="aspect-ratio: 1/1;"
+                                >
                             </a>
                         </li>
                         <li>
