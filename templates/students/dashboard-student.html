@@ -15,6 +15,25 @@
     
             <!-- Hamburger Menu -->
             <div class="fixed inset-0 md:hidden">
+                <!-- Mobile Icons Container -->
+                <div class="absolute top-14 right-4 flex items-center gap-8">
+                    <!-- Notification Bell -->
+                    <div class="relative cursor-pointer">
+                        <i class="fa-solid fa-bell text-2xl hover:text-primary-green transition-colors"></i>
+                        <span class="absolute top-0 -right-1 bg-red-500 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center">0</span>
+                    </div>
+
+                    <!-- Hamburger Icon -->
+                    <label
+                        for="menu-toggle"
+                        class="cursor-pointer focus:outline-none peer-checked:hidden"
+                        aria-label="Toggle menu"
+                    >
+                        <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </label>
+                </div>
 
                 <!-- Checkbox for Hamburger Toggle -->
                 <input
@@ -23,16 +42,6 @@
                     class="hidden peer"
                 />
                 <!-- Hamburger Icon -->
-                <label
-                    for="menu-toggle"
-                    class="absolute top-14 right-4 cursor-pointer focus:outline-none peer-checked:hidden"
-                    aria-label="Toggle menu"
-                >
-                    <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </label>
-    
                 <div
                     class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
                 >
@@ -106,8 +115,8 @@
                         <i class="fa-solid fa-bell text-2xl hover:text-primary-green transition-colors"></i>
                         <span class="absolute top-0 -right-1 bg-red-500 text-white rounded-full w-4 h-4 text-xs flex items-center justify-center">0</span>
                     </div>
-                    <label for="dropdown-toggle" class="cursor-pointer">
-                        <img class="w-14 h-14" src="../../public/icons/user-circle.png" alt="User dropdown">
+                    <label for="dropdown-toggle" class="cursor-pointer flex-shrink-0">
+                        <img class="w-[56px] h-[56px] min-w-[56px] min-h-[56px]" src="../../public/icons/user-circle.png" alt="User dropdown" width="56" height="56">
                     </label>
                 </div>
       
