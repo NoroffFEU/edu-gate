@@ -208,17 +208,21 @@
         <!-- User Dropdown -->
         <div class="relative">
           <!-- Hidden Checkbox -->
-          <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
+          <button>
+            <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
 
-          <!-- User Icon (Clickable) -->
-          <label
-            for="dropdown-toggle"
-            aria-expanded="false"
-            class="hidden md:flex w-[50px] h-[50px] lg:w-[64px] lg:h-[64px] mr-4 lg:mr-10 cursor-pointer focus:outline-2 focus:outline-offset-2"
-          >
-            <img src="../../public/icons/user-circle.png" alt="User dropdown" />
-          </label>
-
+            <!-- User Icon (Clickable) -->
+            <label
+              for="dropdown-toggle"
+              aria-expanded="false"
+              class="hidden md:flex w-[50px] h-[50px] lg:w-[64px] lg:h-[64px] mr-4 lg:mr-10 cursor-pointer focus:outline-2 focus:outline-offset-2"
+            >
+              <img
+                src="../../public/icons/user-circle.png"
+                alt="User dropdown"
+              />
+            </label>
+          </button>
           <!-- Dropdown Menu -->
           <ul
             class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200"
@@ -341,6 +345,7 @@
                   aria-label="Search for a student"
                 />
                 <span
+                  aria-label="Search button"
                   class="border h-[50px] w-[50px] flex items-center justify-center rounded-r-md text-primary bg-[#FFFFFF] hover:bg-primary-hover group transition-all duration-600 ease-in-out"
                 >
                   <svg
@@ -358,6 +363,8 @@
                 </span>
               </div>
             </div>
+
+            <!--Mobile table-->
             <table class="w-full bg-table rounded-md md:hidden text-left">
               <thead
                 class="text-primary font-bold text-[16px] sm:text-xl tracking-[0.05em]"
@@ -456,6 +463,7 @@
                 </tr>
               </tbody>
             </table>
+            <!--Desktop table-->
             <div class="hidden md:flex justify-center w-full mt-[48px]">
               <table
                 class="table-auto bg-table rounded-md w-full items-center text-left border-collapse"
@@ -553,7 +561,7 @@
               <li
                 class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] flex justify-center items-center bg-white"
               >
-                <a href="#">
+                <a href="#" aria-label="Go to first page">
                   <img
                     src="../../public/icons/chevron-double-left.png"
                     class="w-[19.47px] h-[15.63px]"
@@ -563,7 +571,7 @@
               <li
                 class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] flex justify-center items-center bg-white"
               >
-                <a href="#">
+                <a href="#" aria-label="Go to previous page">
                   <img
                     src="../../public/icons/chevron-left.png"
                     class="w-[10.09px] h-[15.63px]"
@@ -573,12 +581,12 @@
               <li
                 class="rounded-md text-primary border-2 border-y-primary w-[40px] h-[40px] flex justify-center items-center font-medium bg-white"
               >
-                <a href="#">1</a>
+                <a href="#" aria-current="current page">1</a>
               </li>
               <li
                 class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] justify-center items-center hidden md:flex bg-white"
               >
-                <a href="#">2</a>
+                <a href="#" aria-label="page 2">2</a>
               </li>
               <li
                 class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] flex justify-center items-center bg-white"
@@ -588,17 +596,17 @@
               <li
                 class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] justify-center items-center hidden md:flex bg-white"
               >
-                <a href="#">7</a>
+                <a href="#" aria-label="page 7">7</a>
               </li>
               <li
                 class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] flex justify-center items-center bg-white"
               >
-                <a href="#">8</a>
+                <a href="#" aria-label="page 8">8</a>
               </li>
               <li
                 class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] flex justify-center items-center bg-white"
               >
-                <a href="#">
+                <a href="#" aria-label="Go to next page">
                   <img
                     src="../../public/icons/chevron-right.png"
                     class="w-[10.09px] h-[15.63px]"
@@ -608,7 +616,7 @@
               <li
                 class="rounded-md border-1 border-[#D9D9D9] w-[40px] h-[40px] flex justify-center items-center bg-white"
               >
-                <a href="#">
+                <a href="#" aria-label="Go to last page">
                   <img
                     src="../../public/icons/chevron-double-right.png"
                     class="w-[19.46px] h-[15.63px]"
@@ -620,6 +628,7 @@
             <button
               class="border-2 border-s-secondary rounded-md text-secondary py-2 px-5 w-fit self-center text-lg md:text-2xl font-semibold font-Poppins mt-[44px] tracking-[0.5px] cursor-pointer hover:bg-secondary-hover"
               href="#"
+              aria-label="Back to dashboard"
             >
               Back to dashboard
             </button>
