@@ -1,62 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="author" content="Arnt Helge" />
-		<meta lang="en" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Select student</title>
-		<meta name="description" content="" />
-		<link href="../../dist/output.css" rel="stylesheet" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<script
-			src="https://kit.fontawesome.com/8908c40066.js"
-			crossorigin="anonymous"
-		></script>
-	</head>
-
-	<body class="w-full bg-neutral-light-gray p-5">
-		<header></header>
-
-		<main class="flex flex-col w-full font-Roboto self-center px-8 gap-5 pb-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teacher profile page for Edugate webpage.">
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Edugate | Select Student</title>
+</head>
+<body class="bg-neutral-light-gray">
+  <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
+      <nav class="max-w-7x1 flex items-center justify-between px-4">
+        <img class="ml-4 mr-16" src="../../public/img/logo-header.png" alt="Edugate Logo">
+    
+        <!-- Hamburger Menu -->
+        <div class="inset-0 md:hidden">
+        <!-- Checkbox for Hamburger Toggle -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer"/>
+        <!-- Hamburger Icon -->
+        <label for="menu-toggle" class="absolute top-14 right-4 cursor-pointer focus:outline-none peer-checked:hidden" aria-label="Toggle menu">
+            <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+            </svg>
+        </label>
+    
+        <div class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
+            <!-- Close Icon -->
+            <label for="menu-toggle" class="absolute top-4 right-4 cursor-pointer focus:outline-none" aria-label="Close menu">
+            <svg class="w-12 h-12 mt-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            </label>
+    
+            <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
+            <li>
+                <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                Dashboard
+                <img class="w-6 h-6" src="../../public/icons/dashboard.png" alt="Dashboard Icon">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                Profile
+                <img class="w-6 h-6" src="../../public/icons/user-circle.png" alt="Profile Icon">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                Manage user
+                <img class="w-6 h-6" src="../../public/icons/user-management.png" alt="Manage user icon">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                About
+                <img class="w-6 h-6" src="../../public/icons/about.png" alt="About Icon">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                Contact
+                <img class="w-6 h-6" src="../../public/icons/contact.png" alt="Contact Icon">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-accent-hover">
+                Log out
+                <img class="w-6 h-6" src="../../public/icons/logout.png" alt="Log out Icon">
+                </a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    
+        <ul class="hidden md:flex justify-end mr-10 font-Poppins font-medium">
+        <li>
+            <a href="#" class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
+            Dashboard</a>
+        </li>
+        <li>
+            <a href="../templates/about.html" class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary">
+            About</a>
+        </li>
+        <li>
+            <a href="../templates/contact.html" class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary">
+            Contact</a>
+        </li>
+        </ul>
+        <!-- User Dropdown -->
+        <div class="relative">
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" id="dropdown-toggle" class="hidden peer">
+    
+        <!-- User Icon (Clickable) -->
+        <label
+            for="dropdown-toggle"
+            class="hidden md:flex w-14 h-14 mr-10 cursor-pointer"
+        >
+            <img src="../../public/icons/user-circle.png" alt="User dropdown">
+        </label>
+    
+        <!-- Dropdown Menu -->
+        <ul class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
+            <li>
+            <a href="#" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
+            </li>
+            <li>
+            <a href="#" class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
+            </li>
+            <li>
+            <a href="#" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log out</a>
+            </li>
+        </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="flex flex-col w-full font-Roboto self-center px-8 gap-5 pb-8">
 			<div
-				class="text-neutral-medium-gray flex h-10 items-center mt-5 gap-6 text-xs sm:text-base pl-5"
-			>
-				<a href="#">Dashboard</a>&gt;
-				<p class="text-primary">Select student</p>
+				class="text-neutral-medium-gray flex h-10 items-center mt-5 gap-6 text-xs sm:text-base">
+				<a href="/templates/dashboard-teacher.html">Dashboard</a>&gt;
+				<p class="text-green-500 font-medium">Select student</p>
 			</div>
 
-			<div class="flex flex-col gap-5 items-center">
-				<div class="flex flex-row w-full justify-center">
-					<img
-						src="../../public/icons/green-double-arrows-right.png"
-						alt="arrows"
-						class="w-12 h-12 md:hidden"
-					/>
-					<h1 class="w-fit font-bold text-2xl font-Poppins">Select Student</h1>
+			<div class="flex flex-col gap-8 items-center">
+				<div class="flex flex-row w-full justify-center items-center">
+					<img src="../../public/icons/green-double-arrows-right.png" alt="arrows" class="w-12 h-12 md:hidden left-0"/>
+					<h1 class="w-fit font-bold text-3xl font-Poppins">Select Student</h1>
 				</div>
 
 				<p class="w-fit text-sm">Select student to view results</p>
 
 				<img src="../../public/icons/results.png" class="w-10 sm:w-15 md:hidden" />
-
-				<div class="flex flex-row items-center justify-center w-full h-12">
-					<input
-						class="w-55 sm:w-72 h-10 p-2 rounded-l-md text-neutral-medium-gray border border-[#CCCCCC] text-xs sm:text-sm"
-						type="text"
-						placeholder="Search for results..."
-					/>
-					<i
-						class="fa-solid fa-magnifying-glass border h-10 w-10 text-center py-2.5 rounded-r-md text-primary hover:bg-primary-hover hover:text-white"
-					></i>
+				<div class="flex justify-center">
+					<input type="text" id="search-bar" placeholder="Search for student..." aria-label="Search for user" class="w-64 h-12 bg-white border border-r-0 !border-table-clicked rounded-l-md p-2.5 focus:border focus:border-r-0 focus:!border-primary focus:outline-none">
+					<button class="px-3 border bg-white
+					 !border-primary rounded-r-md hover:!bg-green-500 group">
+						<img src="../../public/icons/search.png" alt="" class="h-5 group-hover:hidden">
+						<img src="../../public/icons/search-on-hover.png" alt="" class="hidden h-5 group-hover:block">
+					</button>
 				</div>
 			</div>
 
+			<div class="flex justify-end mb-4">
+				<button class="px-5 py-2.5 bg-green-500 rounded-md text-white font-semibold tracking-wide">
+						Add User
+				</button>
+		  </div>
+		
 			<table class="w-full bg-table rounded-md md:hidden text-left">
-				<thead class="text-primary text-sm sm:text-xl">
+				<thead class="text-green-500 text-sm sm:text-xl bg-white">
 					<tr class="h-10">
 						<th class="pl-2 w-fit">ID</th>
 						<th class="pl-2 w-fit">F.Name</th>
@@ -65,7 +157,60 @@
 					</tr>
 				</thead>
 				<tbody class="text-xs sm:text-base">
-					<tr class="h-10 bg-neutral-light-gray">
+
+					<tr class="h-10 bg-stone-50">
+							<td class="pl-2 w-fit">1921840</td>
+							<td class="pl-2 w-fit">Joe</td>
+							<td class="pl-2 w-fit">Bloggs</td>
+							<td class="pl-2 w-fit">
+									<!-- Hidden checkbox to toggle overlay -->
+									<input type="checkbox" id="student-1" class="hidden peer" />
+									<!-- Info icon to open the overlay -->
+									<label for="student-1" class="cursor-pointer">
+											<img src="../../public/icons/info.png" alt="info-icon" class="w-5" />
+									</label>
+			
+									<!-- Overlay -->
+									<div id="overlay-1" class="fixed inset-0 bg-black bg-opacity-50 justify-center items-center hidden peer-checked:flex">
+									<div class="bg-white p-6 rounded-lg shadow-lg w-96 relative">
+											<!-- Close button to hide the overlay -->
+											<label for="student-1" class="absolute top-4 right-4 text-gray-500 text-2xl cursor-pointer">×</label>
+											
+											<div class="grid grid-cols-2 gap-4 mt-4">
+													<!-- Student ID -->
+													<div>
+															<p class="text-green-500 text-xl font-bold font-Poppins">Student ID</p>
+															<p class="text-zinc-800 text-base font-normal font-Roboto">1921840</p>
+													</div>
+													<!-- Year -->
+													<div class="text-right">
+															<p class="text-green-500 text-xl font-bold font-Poppins">Year</p>
+															<p class="text-zinc-800 text-base font-normal font-Roboto">2020</p>
+													</div>
+											</div>
+
+											<div class="grid grid-cols-2 gap-4 mt-4">
+													<!-- First Name -->
+													<div>
+															<p class="text-green-500 text-xl font-bold font-Poppins">First Name</p>
+															<p class="text-zinc-800 text-base font-normal font-Roboto">Joe</p>
+													</div>
+													<!-- Last Name -->
+													<div class="text-right">
+															<p class="text-green-500 text-xl font-bold font-Poppins">Last Name</p>
+															<p class="text-zinc-800 text-base font-normal font-Roboto">Bloggs</p>
+													</div>
+											</div>
+
+											<div class="mt-6 flex gap-4">
+													<button class="w-32 px-5 py-2.5 bg-green-500 rounded-md inline-flex justify-center items-center gap-2.5 text-white font-semibold text-base">Edit</button>
+													<button class="w-32 px-5 py-2.5 bg-orange-600 rounded-md inline-flex justify-center items-center gap-2.5 text-white font-semibold text-base">Delete</button>
+											</div>
+									</div>
+							</div>
+							</td>
+					</tr>
+					<tr class="h-10 bg-white">
 						<td class="pl-2 w-fit">1921840</td>
 						<td class="pl-2 w-fit">Joe</td>
 						<td class="pl-2 w-fit">Bloggs</td>
@@ -73,7 +218,7 @@
 							<img src="../../public/icons/info.png" alt="info-icon" class="w-5" />
 						</td>
 					</tr>
-					<tr class="h-10">
+					<tr class="h-10 bg-stone-50">
 						<td class="pl-2 w-fit">1921840</td>
 						<td class="pl-2 w-fit">Joe</td>
 						<td class="pl-2 w-fit">Bloggs</td>
@@ -81,7 +226,7 @@
 							<img src="../../public/icons/info.png" alt="info-icon" class="w-5" />
 						</td>
 					</tr>
-					<tr class="h-10 bg-neutral-light-gray">
+					<tr class="h-10 bg-white">
 						<td class="pl-2 w-fit">1921840</td>
 						<td class="pl-2 w-fit">Joe</td>
 						<td class="pl-2 w-fit">Bloggs</td>
@@ -89,7 +234,7 @@
 							<img src="../../public/icons/info.png" alt="info-icon" class="w-5" />
 						</td>
 					</tr>
-					<tr class="h-10">
+					<tr class="h-10 bg-stone-50">
 						<td class="pl-2 w-fit">1921840</td>
 						<td class="pl-2 w-fit">Joe</td>
 						<td class="pl-2 w-fit">Bloggs</td>
@@ -97,7 +242,7 @@
 							<img src="../../public/icons/info.png" alt="info-icon" class="w-5" />
 						</td>
 					</tr>
-					<tr class="h-10 bg-neutral-light-gray">
+					<tr class="h-10 bg-white">
 						<td class="pl-2 w-fit">1921840</td>
 						<td class="pl-2 w-fit">Joe</td>
 						<td class="pl-2 w-fit">Bloggs</td>
@@ -105,15 +250,7 @@
 							<img src="../../public/icons/info.png" alt="info-icon" class="w-5" />
 						</td>
 					</tr>
-					<tr class="h-10">
-						<td class="pl-2 w-fit">1921840</td>
-						<td class="pl-2 w-fit">Joe</td>
-						<td class="pl-2 w-fit">Bloggs</td>
-						<td class="pl-2 w-fit">
-							<img src="../../public/icons/info.png" alt="info-icon" class="w-5" />
-						</td>
-					</tr>
-					<tr class="h-10 bg-neutral-light-gray">
+					<tr class="h-10 bg-stone-50">
 						<td class="pl-2 w-fit">1921840</td>
 						<td class="pl-2 w-fit">Joe</td>
 						<td class="pl-2 w-fit">Bloggs</td>
@@ -123,119 +260,190 @@
 					</tr>
 				</tbody>
 			</table>
+			
+			<div class="flex flex-col lg:flex-row justify-center items-center lg:w-full mx-auto">
+				<!--Sidebar-->
+				<div id="sidebar" class="hidden lg:flex flex-col gap-12 pr-8">
+						<a href="templates/dashboard-teacher.html" class="flex items-center gap-4 hover:bg-neutral-light-gray p-3 rounded-lg">
+								<img class="cursor-pointer w-12" src="/public/icons/dashboard.png" alt="Picture of a green home icon">
+						</a>
+						<a href="/templates/add-results.html" class="flex items-center gap-4 hover:bg-neutral-light-gray p-3 rounded-lg">
+								<img class="cursor-pointer w-12" src="/public/icons/results.png" alt="Picture of a green results icon">
+						</a>
+						<a href="/templates/teacher-profile.html" class="flex items-center gap-4 hover:bg-neutral-light-gray p-3 rounded-lg">
+								<img class="cursor-pointer w-12" src="/public/icons/user-management.png" alt="Picture of a green user icon">
+						</a>
+						<a href="/templates/add-school.html" class="flex items-center gap-4 hover:bg-neutral-light-gray p-3 rounded-lg">
+								<img class="cursor-pointer w-12" src="/public/icons/school-management.png" alt="Picture of a green student with a hat icon">
+						</a>
+						<a href="#" class="flex items-center gap-4 hover:bg-neutral-light-gray p-3 rounded-lg">
+								<img class="cursor-pointer w-12" src="/public/icons/logout.png" alt="Picture of a red log out icon">
+						</a>
+				</div>
 
-			<div class="hidden md:flex justify-center w-full">
-				<table
-					class="table-auto bg-table rounded-md w-full items-center text-left"
-				>
-					<thead class="w-full">
-						<tr class="text-primary text-xl lg:text-2xl text-left">
-							<th class="p-4 w-fit">Student ID</th>
-							<th class="p-4 w-fit">First Name</th>
-							<th class="p-4 w-fit">Last Name</th>
-							<th class="p-4 w-fit">Year</th>
-						</tr>
-					</thead>
-					<tbody class="text-base lg:text-xl text-neutral-dark-gray">
-						<tr
-							class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
-						>
-							<td class="p-4 w-fit">1921840</td>
-							<td class="p-4 w-fit">Joe</td>
-							<td class="p-4 w-fit">Bloggs</td>
-							<td class="p-4 w-fit">2020</td>
-						</tr>
-						<tr class="hover:bg-table-hover hover:cursor-default">
-							<td class="p-4 w-fit">1921840</td>
-							<td class="p-4 w-fit">Joe</td>
-							<td class="p-4 w-fit">Bloggs</td>
-							<td class="p-4 w-fit">2020</td>
-						</tr>
-						<tr
-							class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
-						>
-							<td class="p-4 w-fit">1921840</td>
-							<td class="p-4 w-fit">Joe</td>
-							<td class="p-4 w-fit">Bloggs</td>
-							<td class="p-4 w-fit">2020</td>
-						</tr>
-						<tr class="hover:bg-table-hover hover:cursor-default">
-							<td class="p-4 w-fit">1921840</td>
-							<td class="p-4 w-fit">Joe</td>
-							<td class="p-4 w-fit">Bloggs</td>
-							<td class="p-4 w-fit">2020</td>
-						</tr>
-						<tr
-							class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
-						>
-							<td class="p-4 w-fit">1921840</td>
-							<td class="p-4 w-fit">Joe</td>
-							<td class="p-4 w-fit">Bloggs</td>
-							<td class="p-4 w-fit">2020</td>
-						</tr>
-						<tr class="hover:bg-table-hover hover:cursor-default">
-							<td class="p-4 w-fit">1921840</td>
-							<td class="p-4 w-fit">Joe</td>
-							<td class="p-4 w-fit">Bloggs</td>
-							<td class="p-4 w-fit">2020</td>
-						</tr>
-						<tr
-							class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray"
-						>
-							<td class="p-4 w-fit">1921840</td>
-							<td class="p-4 w-fit">Joe</td>
-							<td class="p-4 w-fit">Bloggs</td>
-							<td class="p-4 w-fit">2020</td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="hidden md:flex justify-center w-full">
+					<table
+						class="table-auto bg-table rounded-md w-full items-center text-left"
+					>
+						<thead class="w-full bg-white">
+							<tr class="text-primary text-xl lg:text-2xl text-left">
+								<th class="p-4 w-fit text-green-500 text-2xl">Student ID</th>
+								<th class="p-4 w-fit text-green-500 text-2xl">First Name</th>
+								<th class="p-4 w-fit text-green-500 text-2xl">Last Name</th>
+								<th class="p-4 w-fit text-green-500 text-2xl">Year</th>
+								<th class="p-4 w-fit text-green-500 text-2xl">Role</th>
+								<th class="p-4 w-fit text-green-500 text-2xl">DOB</th>
+								<th class="p-4 w-fit text-green-500 text-2xl"> </th>
+								<th class="p-4 w-fit text-green-500 text-2xl"> </th>
+							</tr>
+						</thead>
+						<tbody class="text-base lg:text-xl text-neutral-dark-gray">
+							<tr
+								class="hover:bg-table-hover hover:cursor-default bg-stone-50 text-xl"
+							>
+								<td class="p-4 w-fit">1921840</td>
+								<td class="p-4 w-fit">Joe</td>
+								<td class="p-4 w-fit">Bloggs</td>
+								<td class="p-4 w-fit">2020</td>
+								<td class="p-4 w-fit">Student</td>
+								<td class="p-4 w-fit">01/01/2002</td>
+								<td class="p-4 w-fit text-green-500 text-xl font-medium tracking-wide">Edit</td>
+								<td>
+									<button class="p-4 w-fit px-5 py-2.5 bg-orange-600 rounded-md text-white font-semibold tracking-wide">Delete</button>
+								</td>
+
+							</tr>
+							<tr class="hover:bg-table-hover hover:cursor-default bg-white text-xl">
+								<td class="p-4 w-fit">1921840</td>
+								<td class="p-4 w-fit">Joe</td>
+								<td class="p-4 w-fit">Bloggs</td>
+								<td class="p-4 w-fit">2020</td>
+								<td class="p-4 w-fit">Student</td>
+								<td class="p-4 w-fit">01/01/2002</td>
+								<td class="p-4 w-fit text-green-500 text-xl font-medium tracking-wide">Edit</td>
+								<td>
+									<button class="p-4 w-fit px-5 py-2.5 bg-orange-600 rounded-md text-white font-semibold tracking-wide">Delete</button>
+								</td>
+							</tr>
+							<tr
+								class="hover:bg-table-hover hover:cursor-default bg-stone-50 text-xl"
+							>
+								<td class="p-4 w-fit">1921840</td>
+								<td class="p-4 w-fit">Joe</td>
+								<td class="p-4 w-fit">Bloggs</td>
+								<td class="p-4 w-fit">2020</td>
+								<td class="p-4 w-fit">Teacher</td>
+								<td class="p-4 w-fit">03/02/1971</td>
+								<td class="p-4 w-fit text-green-500 text-xl font-medium tracking-wide">Edit</td>
+								<td>
+									<button class="p-4 w-fit px-5 py-2.5 bg-orange-600 rounded-md text-white font-semibold tracking-wide">Delete</button>
+								</td>
+							</tr>
+							<tr class="hover:bg-table-hover hover:cursor-default bg-white text-xl">
+								<td class="p-4 w-fit">1921840</td>
+								<td class="p-4 w-fit">Joe</td>
+								<td class="p-4 w-fit">Bloggs</td>
+								<td class="p-4 w-fit">2020</td>
+								<td class="p-4 w-fit">Teacher</td>
+								<td class="p-4 w-fit">03/02/1971</td>
+								<td class="p-4 w-fit text-green-500 text-xl font-medium tracking-wide">Edit</td>
+								<td>
+									<button class="p-4 w-fit px-5 py-2.5 bg-orange-600 rounded-md text-white font-semibold tracking-wide">Delete</button>
+								</td>
+							</tr>
+							<tr
+								class="hover:bg-table-hover hover:cursor-default bg-stone-50 text-xl"
+							>
+								<td class="p-4 w-fit">1921840</td>
+								<td class="p-4 w-fit">Joe</td>
+								<td class="p-4 w-fit">Bloggs</td>
+								<td class="p-4 w-fit">2020</td>
+								<td class="p-4 w-fit">Student</td>
+								<td class="p-4 w-fit">01/01/2002</td>
+								<td class="p-4 w-fit text-green-500 text-xl font-medium tracking-wide">Edit</td>
+								<td>
+									<button class="p-4 w-fit px-5 py-2.5 bg-orange-600 rounded-md text-white font-semibold tracking-wide">Delete</button>
+								</td>
+							</tr>
+							<tr class="hover:bg-table-hover hover:cursor-default bg-white text-xl">
+								<td class="p-4 w-fit">1921840</td>
+								<td class="p-4 w-fit">Joe</td>
+								<td class="p-4 w-fit">Bloggs</td>
+								<td class="p-4 w-fit">2020</td>
+								<td class="p-4 w-fit">Student</td>
+								<td class="p-4 w-fit">01/01/2002</td>
+								<td class="p-4 w-fit text-green-500 text-xl font-medium tracking-wide">Edit</td>
+								<td>
+									<button class="p-4 w-fit px-5 py-2.5 bg-orange-600 rounded-md text-white font-semibold tracking-wide">Delete</button>
+								</td>
+							</tr>
+							<tr
+								class="hover:bg-table-hover hover:cursor-default bg-stone-50 text-xl"
+							>
+								<td class="p-4 w-fit">1921840</td>
+								<td class="p-4 w-fit">Joe</td>
+								<td class="p-4 w-fit">Bloggs</td>
+								<td class="p-4 w-fit">2020</td>
+								<td class="p-4 w-fit">Student</td>
+								<td class="p-4 w-fit">01/01/2002</td>
+								<td class="p-4 w-fit text-green-500 text-xl font-medium tracking-wide">Edit</td>
+								<td>
+									<button class="p-4 w-fit px-5 py-2.5 bg-orange-600 rounded-md text-white font-semibold tracking-wide">Delete</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 
 			<ul
-				class="flex flex-row gap-2 self-center text-base md:text-xl text-neutral-medium-gray"
+				class="flex flex-row gap-4 self-center text-base md:text-xl text-neutral-500"
 			>
-				<li class="rounded-md border w-8 h-fit flex place-content-center p-1">
+				<li class="rounded-md border w-8 h-fit flex place-content-center p-1 text-zinc-300 bg-white">
 					<a href="#">&laquo;</a>
 				</li>
-				<li class="rounded-md border w-8 h-fit flex place-content-center p-1">
+				<li class="rounded-md border w-8 h-fit flex place-content-center p-1 text-zinc-300 bg-white">
 					<a href="#">&lsaquo;</a>
 				</li>
 				<li
-					class="rounded-md text-primary border border-y-primary w-8 h-fit flex place-content-center p-1"
+					class="w-10 h-10 rounded-md text-green-500 border border-green-500 w-8 h-fit flex place-content-center p-1 bg-white"
 				>
 					<a href="#">1</a>
 				</li>
 				<li
-					class="rounded-md border w-8 h-fit place-content-center p-1 hidden md:flex"
+					class="rounded-md border w-8 h-fit place-content-center p-1 hidden md:flex bg-white"
 				>
 					<a href="#">2</a>
 				</li>
-				<li class="rounded-md border w-8 h-fit flex place-content-center p-1">
+				<li class="rounded-md border w-8 h-fit flex place-content-center p-1 bg-white">
 					<a href="#">...</a>
 				</li>
 				<li
-					class="rounded-md border w-8 h-fit place-content-center p-1 hidden md:flex"
+					class="rounded-md border w-8 h-fit place-content-center p-1 hidden md:flex bg-white"
 				>
 					<a href="#">7</a>
 				</li>
-				<li class="rounded-md border w-8 h-fit flex place-content-center p-1">
+				<li class="rounded-md border w-8 h-fit flex place-content-center p-1 bg-white">
 					<a href="#">8</a>
 				</li>
-				<li class="rounded-md border w-8 h-fit flex place-content-center p-1">
+				<li class="rounded-md border w-8 h-fit flex place-content-center p-1 text-neutral-500 bg-white">
 					<a href="#">&rsaquo;</a>
 				</li>
-				<li class="rounded-md border w-8 h-fit flex place-content-center p-1">
+				<li class="rounded-md border w-8 h-fit flex place-content-center p-1 text-neutral-500 bg-white">
 					<a href="#">&raquo;</a>
 				</li>
 			</ul>
 
 			<button
-				class="border-2 border-s-secondary rounded-md text-secondary py-2 px-5 w-fit self-center text-base sm:text-lg md:text-2xl font-semibold"
-				href="#"
-			>
+				class="border-2 border-sky-500 rounded-md text-sky-500 mt-10 py-2 px-5 w-fit self-center text-base sm:text-lg md:text-2xl font-semibold"
+				href="../templates/teachers/dashboard-teacher.html">
 				Back to dashboard
 			</button>
 		</main>
-		<footer></footer>
-	</body>
+    
+    <footer class="flex justify-end sm:justify-center mt-10 sm:mt-10">
+      <img class="sm:hidden" src="/public/img/Circles_illustration_mobile.png" alt="Educate footer circles">
+      <img class="hidden sm:block shrink-0 mx-4 mt-8" src="/public/img/circle-footer.png" alt="Picture of a blue circle overlapping a green circle">
+    </footer>          
+</body>
 </html>
