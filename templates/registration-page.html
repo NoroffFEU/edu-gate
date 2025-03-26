@@ -17,7 +17,7 @@
 <body class="bg-neutral-light-gray font-Roboto">
   <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins h-17.5 md:h-44">
     <nav class="flex items-center justify-between px-4">
-      <img class="ml-4 mr-16 w-16 h-16 md:w-44 md:h-44 " src="../public/img/logo-header.png" alt="Edugate Logo">
+      <a href="index.html"><img class="ml-4 mr-16 w-16 h-16 md:w-44 md:h-44 " src="../public/img/logo-header.png" alt="Edugate Logo"></a>
 
       <div class="md:hidden">
         <input type="checkbox" id="menu-toggle" class="hidden peer"/>
@@ -59,11 +59,11 @@
       </div>
       <ul class="hidden md:flex font-Poppins font-semibold ml-auto text-[1.25rem] items-center justify-center text-center">
         <li>
-          <a href="about.html" class="p-31 py-8 border-b-1 border-transparent hover:border-primary cursor-pointer">
+          <a href="about.html" class="md:p-20 lg:p-31 py-8 border-b-1 border-transparent hover:border-primary cursor-pointer">
             About</a>
         </li>
         <li>
-          <a href="contact.html" class="p-31 py-8 border-b-1 border-transparent hover:border-primary cursor-pointer">
+          <a href="contact.html" class="md:p-20 lg:p-31 py-8 border-b-1 border-transparent hover:border-primary cursor-pointer">
             Contact</a>
         </li>
       </ul>
@@ -71,51 +71,58 @@
   </header>
   
     <main>
-      <div class="w-full max-w-md md:max-w-md mx-auto mt-6 px-4 md:px-0">
+      <div class="w-125.75 mx-auto mt-6 px-4 md:px-0 text-left flex flex-col ">
         <form
           class="bg-neutral-light-gray border-0 md:border-3 md:border-[#cccccc] shadow-none md:inset-shadow-md md:inset-shadow-[#cccccc] flex flex-col justify-center items-center"
           action="submit-form-here" method="post">
-          <h1 class="text-neutral-dark-gray text-center font-Poppins text-[2rem] font-bold tracking-wide mb-6 md:mb-4">
+          <h1 class="text-neutral-dark-gray text-center font-Poppins text-[2rem] font-bold tracking-wide hidden md:flex md:mb-4 md:mt-4">
+            Register
+          </h1>
+          <h1 class="text-neutral-dark-gray text-center font-Poppins text-[2rem] font-bold tracking-wide mb-12 md:hidden">
             Registration
           </h1>
-          <div class="mb-6 md:flex md:flex-col">
-            <label class=" text-neutral-dark-gray font-Roboto text-base md:text-md font-bold tracking-wide md:mb-0 "
+          <div class="flex flex-col">
+            <label class=" text-neutral-dark-gray font-Roboto text-base md:text-md font-bold tracking-wide mb-3 "
               for="school">School</label>
             <input
-              class="w-90.25 h-12.5 bg-white border border-[#cccccc] shadow-[inset_0_4px_4px_rgba(0,0,0,0.3)] rounded-md focus:border-primary focus:ring-0 text-neutral-dark-gray text-md md:text-base placeholder:text-gray-600 mt-4 p-2"
+              class="w-90.25 h-12.5 md:w-78.75 bg-white border border-[#cccccc] shadow-[inset_0_4px_4px_rgba(0,0,0,0.3)] rounded-md focus:border-primary focus:ring-0 text-neutral-dark-gray text-md md:text-base placeholder:text-gray-600 p-2 mb-[2rem]"
               type="text" name="school" id="school" placeholder="Edugate" required />
           </div>
-          <div class="mb-6 md:flex md:flex-col">
-            <label class=" text-neutral-dark-gray font-Roboto text-base md:text-md font-bold tracking-wide mb-6 md:mb-0"
+          <div class="flex flex-col">
+            <label class=" text-neutral-dark-gray font-Roboto text-base md:text-md font-bold tracking-wide mb-3"
               for="address1">Address line 1</label>
             <input
-              class="w-90.25 h-12.5 bg-white border border-[#cccccc] shadow-[inset_0_4px_4px_rgba(0,0,0,0.3)] rounded-md focus:border-primary focus:ring-0 text-neutral-dark-gray text-md md:text-base placeholder:text-gray-600 mt-4 p-2"
+              class="w-90.25 h-12.5 md:w-78.75 bg-white border border-[#cccccc] shadow-[inset_0_4px_4px_rgba(0,0,0,0.3)] rounded-md focus:border-primary focus:ring-0 text-neutral-dark-gray text-md md:text-base placeholder:text-gray-600 p-2 mb-[2rem]"
               type="text" name="address1" id="address1" placeholder="Address" required />
           </div>
-          <div class="mb-6 md:flex md:flex-col">
-            <label class=" text-neutral-dark-gray font-Roboto text-base md:text-md font-bold tracking-wide mb-6 md:mb-0"
+          <div class="flex flex-col">
+            <label class=" text-neutral-dark-gray font-Roboto text-base md:text-md font-bold tracking-wide mb-3"
               for="address2">Address line 2</label>
             <input
-              class="w-90.25 h-12.5 bg-white border border-[#cccccc] shadow-[inset_0_4px_4px_rgba(0,0,0,0.3)] rounded-md focus:border-primary focus:ring-0 text-neutral-dark-gray text-md md:text-base placeholder:text-gray-600 mt-4 p-2"
+              class="w-90.25 h-12.5 md:w-78.75 bg-white border border-[#cccccc] shadow-[inset_0_4px_4px_rgba(0,0,0,0.3)] rounded-md focus:border-primary focus:ring-0 text-neutral-dark-gray text-md md:text-base placeholder:text-gray-600 p-2 mb-[2rem]"
               type="text" name="address2" id="address2" placeholder="Address" />
           </div>
-          <div class="flex flex-col md:flex-row gap-6 mb-6">
-            <div class="md:flex md:flex-col mr-6">
-              <label class="text-neutral-dark-gray font-Roboto text-base md:text-md font-bold tracking-wide mb-6 md:mb-0"
-                for="city">City</label>
-              <input
-                class="md:w-36.5 md:h-12.5 w-90.25 h-12.5 bg-white border border-[#cccccc] shadow-[inset_0_4px_4px_rgba(0,0,0,0.3)] rounded-md focus:border-primary focus:ring-0 text-neutral-dark-gray text-md md:text-base placeholder:text-gray-600 mt-4 p-2"
-                type="text" name="city" id="city" placeholder="Oslo" required />
-            </div>
-            <div class="md:flex md:flex-col ">
-              <label class=" text-neutral-dark-gray font-Roboto text-base md:text-md font-bold tracking-wide mb-6 md:mb-0"
+          <!-- city and postal code -->
+           <div class="md:flex-row md:flex md:gap-6">
+            <!-- city -->
+             <div class="flex flex-col">
+               <label class="text-neutral-dark-gray font-Roboto text-base md:text-md font-bold tracking-wide mb-3 md:p-2"
+               for="city">City</label>
+               <input
+               class="md:w-36.5 md:h-12.5 w-90.25 h-12.5 bg-white border border-[#cccccc] shadow-[inset_0_4px_4px_rgba(0,0,0,0.3)] rounded-md focus:border-primary focus:ring-0 text-neutral-dark-gray text-md md:text-base placeholder:text-gray-600 p-2 mb-[2rem] md:mb-0"
+               type="text" name="city" id="city" placeholder="Oslo" required />
+              </div>
+              <!-- postal code -->
+              <div class="flex flex-col">
+                <label class=" text-neutral-dark-gray font-Roboto text-base md:text-md font-bold tracking-wide mb-3 md:p-2"
                 for="postal-code">Postal Code</label>
-              <input
-                class="md:w-36.5 md:h-12.5 w-90.25 h-12.5 bg-white border border-[#cccccc] shadow-[inset_0_4px_4px_rgba(0,0,0,0.3)] rounded-md focus:border-primary focus:ring-0 text-neutral-dark-gray text-md md:text-base placeholder:text-gray-600 mt-4 p-2"
+                <input
+                class="md:w-36.5 md:h-12.5 w-90.25 h-12.5 bg-white border border-[#cccccc] shadow-[inset_0_4px_4px_rgba(0,0,0,0.3)] rounded-md focus:border-primary focus:ring-0 text-neutral-dark-gray text-md md:text-base placeholder:text-gray-600 p-2 mb-[2rem] md:mb-0"
                 type="text" name="postal-code" id="postal-code" placeholder="0000" required inputmode="numeric" />
+              </div>
             </div>
-          </div>
-          <div class="text-center mb-4 -mt-2">
+            <!-- submit button -->
+          <div class="text-center mb-4 -mt-2 md:mt-8 md:mb-9.5">
             <button type="submit" class="primary-button primary-button:hover shadow-[inset_0_4px_4px_rgba(0,0,0,0.2)]">
               Submit
             </button>
@@ -128,7 +135,7 @@
       <img src="../public/img/circle-footer.png" alt="two colorful circles where one is blue and one is green"
         class="mt-12 hidden md:flex">
       <img src="../public/img/Circles_illustration_mobile.png"
-        alt="two colorful circles where one is blue and one is green" class="md:hidden flex ml-auto mt-4 ">
+        alt="two colorful circles where one is blue and one is green" class="md:hidden mt-4 flex ml-auto justify-baseline ">
     </footer>
 
 </body>
