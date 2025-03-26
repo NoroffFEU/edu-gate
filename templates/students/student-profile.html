@@ -1,172 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../dist/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../dist/output.css" />
     <title>Profile</title>
-</head>
-<body class="mx-auto bg-neutral-light-gray max-w-[1440px] w-full pl-[16px] pr-[16px] md:pl-[80px] md:pr-[80px]">
-    <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins border-b-1 border-[#cccccc]">
-        <nav class="max-w-7x1 flex items-center justify-between px-4">
-            <img class="ml-4 md:ml-10 md:mr-auto w-[100px] md:w-auto -mb-3.5 -mt-3.5 md:-mb-0 md:-mt-0" src="../../public/img/logo-header.png" alt="Edugate Logo">
-    
-            <!-- Hamburger Menu -->
-            <div class="md:hidden">
-                <!-- Checkbox for Hamburger Toggle -->
-                <input
-                    type="checkbox"
-                    id="menu-toggle"
-                    class="hidden peer"
-                />
-                <!-- Hamburger Icon -->
-                <label
-                    for="menu-toggle"
-                    class="absolute top-2 right-2 cursor-pointer focus:outline-none peer-checked:hidden"
-                    aria-label="Toggle menu"
-                >
-                    <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </label>
-    
-                <div
-                    class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
-                >
-                    <!-- Close Icon -->
-                    <label
-                        for="menu-toggle"
-                        class="absolute top-4 right-4 cursor-pointer focus:outline-none"
-                        aria-label="Close menu"
-                    >
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </label>
-                    
-                     <!-- Logo top left -->
-                    <div class="h-[70px] bg-gray-100 flex items-center px-4">
-                        <img
-                        class="mml-4 mr-4  w-[100px] -mb-5 -mt-5"
-                        src="../../public/img/logo-header.png"
-                        alt="Edugate Logo"
-                        />
-                    </div>
+  </head>
+  <body
+    class="mx-auto bg-neutral-light-gray max-w-[1440px] w-full pl-[16px] pr-[16px] md:pl-[80px] md:pr-[80px]"
+  >
+    <header
+      class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins border-b-1 border-[#cccccc]"
+    >
+      <nav class="max-w-7x1 flex items-center justify-between px-4">
+        <img
+          class="ml-4 md:ml-10 md:mr-auto w-[100px] md:w-auto -mb-3.5 -mt-3.5 md:-mb-0 md:-mt-0"
+          src="../../public/img/logo-header.png"
+          alt="Edugate Logo"
+        />
 
-                    <!-- Hamburger Menu -->
-                    <ul class="flex flex-col items-end justify-start mt-8 h-full gap-10 text-xl mr-2">
-                        <li>
-                            <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
-                                Dashboard
-                                <img class="w-8 h-8" src="../../public/icons/dashboard.png" alt="Dashboard Icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
-                                Profile
-                                <img class="w-8 h-8" src="../../public/icons/user-circle.png" alt="Profile Icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
-                                About
-                                <img class="w-8 h-8" src="../../public/icons/about.png" alt="About Icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
-                                Contact
-                                <img class="w-8 h-7" src="../../public/icons/contact.png" alt="Contact Icon">
-                            </a>
-                        </li>
-                        <div class="w-full border-t border-gray-200 mt-23"></div>
-                        <li>
-                            <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-accent-hover">
-                                Log out
-                                <img class="w-8 h-8" src="../../public/icons/logout.png" alt="Log out Icon">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <!-- Hamburger Menu -->
+        <div class="md:hidden">
+          <!-- Checkbox for Hamburger Toggle -->
+          <input type="checkbox" id="menu-toggle" class="hidden peer" />
+          <!-- Hamburger Icon -->
+          <label
+            for="menu-toggle"
+            class="absolute top-2 right-2 cursor-pointer focus:outline-none peer-checked:hidden"
+            aria-label="Toggle menu"
+          >
+            <svg
+              class="w-12 h-12"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </label>
+
+          <div
+            class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
+          >
+            <!-- Close Icon -->
+            <label
+              for="menu-toggle"
+              class="absolute top-4 right-4 cursor-pointer focus:outline-none"
+              aria-label="Close menu"
+            >
+              <svg
+                class="w-10 h-10"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </label>
+
+            <!-- Logo top left -->
+            <div class="h-[70px] bg-gray-100 flex items-center px-4">
+              <img
+                class="mml-4 mr-4 w-[100px] -mb-5 -mt-5"
+                src="../../public/img/logo-header.png"
+                alt="Edugate Logo"
+              />
             </div>
-            
-            <!-- Desktop Nav -->
-            <ul class="hidden md:flex justify-end font-Poppins text-[20px] font-semibold">
-                <li><a href="#" class=" md:w-[200px] lg:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
-                    Dashboard</a>
-                </li>
-                <li><a href="../about.html" class=" md:w-[200px] lg:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
-                    About</a>
-                </li>
-                <li><a href="../contact.html" class=" md:w-[200px] lg:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
-                    Contact</a>
-                </li>
+
+            <!-- Hamburger Menu -->
+            <ul
+              class="flex flex-col items-end justify-start mt-8 h-full gap-10 text-xl mr-2"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary"
+                >
+                  Dashboard
+                  <img
+                    class="w-8 h-8"
+                    src="../../public/icons/dashboard.png"
+                    alt="Dashboard Icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary"
+                >
+                  Profile
+                  <img
+                    class="w-8 h-8"
+                    src="../../public/icons/user-circle.png"
+                    alt="Profile Icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary"
+                >
+                  About
+                  <img
+                    class="w-8 h-8"
+                    src="../../public/icons/about.png"
+                    alt="About Icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary"
+                >
+                  Contact
+                  <img
+                    class="w-8 h-7"
+                    src="../../public/icons/contact.png"
+                    alt="Contact Icon"
+                  />
+                </a>
+              </li>
+              <div class="w-full border-t border-gray-200 mt-23"></div>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-accent-hover"
+                >
+                  Log out
+                  <img
+                    class="w-8 h-8"
+                    src="../../public/icons/logout.png"
+                    alt="Log out Icon"
+                  />
+                </a>
+              </li>
             </ul>
-                <!-- User Dropdown -->
-                <div class="relative">
-                  <!-- Hidden Checkbox -->
-                  <input type="checkbox" id="dropdown-toggle" class="hidden peer">
-      
-                  <!-- User Icon (Clickable) -->
-                  <label
-                      for="dropdown-toggle"
-                      class="hidden md:flex w-[64px] h-[64px] mr-10 cursor-pointer"
-                  >
-                      <img src="../../public/icons/user-circle.png" alt="User dropdown">
-                  </label>
-      
-                  <!-- Dropdown Menu -->
-                  <ul
-                      class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
-                      <li>
-                          <a href="#" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
-                      </li>
-                      <li>
-                          <a href="#" class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
-                      </li>
-                      <li>
-                          <a href="#" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log out</a>
-                      </li>
-                  </ul>
-              </div>
-        </nav>
-    
+          </div>
+        </div>
+
+        <!-- Desktop Nav -->
+        <ul
+          class="hidden md:flex justify-end font-Poppins text-[20px] font-semibold"
+        >
+          <li>
+            <a
+              href="#"
+              class="md:w-[200px] lg:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out"
+            >
+              Dashboard</a
+            >
+          </li>
+          <li>
+            <a
+              href="../about.html"
+              class="md:w-[200px] lg:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out"
+            >
+              About</a
+            >
+          </li>
+          <li>
+            <a
+              href="../contact.html"
+              class="md:w-[200px] lg:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out"
+            >
+              Contact</a
+            >
+          </li>
+        </ul>
+        <!-- User Dropdown -->
+        <div class="relative">
+          <!-- Hidden Checkbox -->
+          <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
+
+          <!-- User Icon (Clickable) -->
+          <label
+            for="dropdown-toggle"
+            class="hidden md:flex w-[64px] h-[64px] mr-10 cursor-pointer"
+          >
+            <img src="../../public/icons/user-circle.png" alt="User dropdown" />
+          </label>
+
+          <!-- Dropdown Menu -->
+          <ul
+            class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200"
+          >
+            <li>
+              <a
+                href="#"
+                class="block px-8 py-4 hover:bg-white hover:text-green-600"
+                >See results</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-8 py-4 hover:bg-white hover:text-red-600"
+                >Log out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <div class="flex bg-neutral-light-gray pt-4 sm:pt-20 pl-4 md:pl-0">
-        <p class="text-neutral-medium-gray font-Roboto text-base font-normal">Dashboard</p>
-        <p class="text-neutral-medium-gray font-Roboto text-base font-normal mx-4">></p>
-        <p class="text-primary font-Roboto text-base font-medium">Profile</p>
+      <p class="text-neutral-medium-gray font-Roboto text-base font-normal">
+        Dashboard
+      </p>
+      <p
+        class="text-neutral-medium-gray font-Roboto text-base font-normal mx-4"
+      >
+        >
+      </p>
+      <p class="text-primary font-Roboto text-base font-medium">Profile</p>
     </div>
-    <main class="flex items-center justify-center bg-neutral-light-gray pt-[60px] sm:pt-[80px] pb-[50px]">
-        <div class="bg-neutral-light-gray sm:shadow-none shadow-lg border-2 border-neutral-medium-gray opacity-80 p-8 w-[361px] sm:w-[612px] sm:h-[771px] text-center">
-            <h1 class="text-neutral-dark-gray text-center font-Poppins text-[32px] sm:text-xl font-bold tracking-wide mb-4 sm:mb-2 sm:mt-8">Profile</h1>
-            <div class=" mb-8 w-18 h-18 sm:w-32 sm:h-32 mx-auto rounded-full bg-primary flex items-center justify-center text-white sm:text-black text-[32px] font-bold">
-                JB
-            </div>
-            <div class="mt-4 grid sm:grid-cols-2 grid-cols-[1fr_2fr] gap-y-2 sm:gap-y-4 text-left">
-                <strong class="mb-6 sm:ml-35">Name:</strong>
-                <span class="text-left sm:text-left sm:ml-10">Joe Bloggs</span>
-                <strong class="mb-6 sm:ml-35">Email:</strong>
-                <span class="text-left sm:text-left sm:ml-10">joeblog2020@edugate.no</span>
-                <strong class="mb-6 sm:ml-35">
-                    <span class="block sm:hidden">DOB:</span>
-                    <span class="hidden sm:block">Date og birth:</span>
-                </strong>
-                
-                <span class="text-left sm:text-left sm:ml-10">01.01.2002</span>
-                <strong class="mb-6 sm:ml-35">ID:</strong>
-                <span class="text-left sm:text-left sm:ml-10">1921840</span>
-                <strong class="mb-6 sm:ml-35">Grad year:</strong>
-                <span class="text-left sm:text-left sm:ml-10">2020</span>
-                <strong class="mb-6 sm:ml-35">School:</strong>
-                <span class="text-left sm:text-left sm:ml-10">The Academy</span>
-            </div>
-            <button class="block mx-auto mt-4 border-2 border-secondary h-[44px] sm:h-[59px] w-[195px] sm:w-[190px] sm:tracking-[0.5px] text-secondary text-[16px] sm:text-[26px] rounded-md font-bold hover:bg-secondary-hover">Edit Profile</button>
+    <main class="flex items-center justify-center">
+      <div
+        class="sm:shadow-none shadow-lg border-[0.188rem] border-[#cccccccc] sm:w-[38.25rem] w-[22.56rem] text-center sm:mb-20 sm:mt-20 mt-[3.78rem] mb-[2.781rem]"
+        role="region"
+        aria-label="Student Profile"
+      >
+        <h1
+          class="text-neutral-dark-gray text-center font-Poppins sm:text-[2rem] text-[1.25rem] sm:font-bold font-semibold sm:tracking-[0.01rem] tracking-[0.03125rem] sm:mt-24 mt-8 sm:mb-2 mb-2"
+        >
+          Profile
+        </h1>
+        <div
+          class="mb-[1rem] mx-auto rounded-full bg-primary flex items-center justify-center sm:text-black text-white text-[2rem] font-bold sm:w-[8.0625rem] sm:h-[8.0625rem] w-[4.4375rem] h-[4.4375rem]"
+        >
+          JB
         </div>
+
+        <div class="sm:mt-6 mt-4 flex justify-center">
+          <div
+            class="grid sm:grid-cols-[43%_1fr] grid-cols-[40%_1fr] sm:gap-y-5 gap-y-2 sm:gap-12 text-left font-Roboto sm:text-base text-sm sm:w-[80%] w-[90%]"
+          >
+            <dl class="contents">
+              <dt class="font-bold sm:ml-16 ml-6 tracking-[0.03125rem]">
+                Name:
+              </dt>
+              <dd class="font-medium tracking-[0.03125rem]">Joe Bloggs</dd>
+              <dt class="font-bold sm:ml-16 ml-6 tracking-[0.03125rem]">
+                Email:
+              </dt>
+              <dd class="font-medium tracking-[0.03125rem]">
+                joeblog2020@edugate.no
+              </dd>
+              <dt>
+                <span
+                  class="block sm:hidden font-bold tracking-[0.03125rem] ml-6"
+                  >DOB:</span
+                >
+                <span
+                  class="hidden sm:block font-bold ml-16 tracking-[0.03125rem]"
+                  >Date of birth:</span
+                >
+              </dt>
+              <dd class="font-medium tracking-[0.03125rem]">01/01/2002</dd>
+              <dt class="font-bold sm:ml-16 ml-6 tracking-[0.03125rem]">ID:</dt>
+              <dd class="font-medium tracking-[0.03125rem]">1921840</dd>
+              <dt class="font-bold sm:ml-16 ml-6 tracking-[0.03125rem]">
+                Grad year:
+              </dt>
+              <dd class="font-medium tracking-[0.03125rem]">2020</dd>
+              <dt class="font-bold sm:ml-16 ml-6 tracking-[0.03125rem]">
+                School:
+              </dt>
+              <dd class="font-medium tracking-[0.03125rem]">The Academy</dd>
+            </dl>
+          </div>
+        </div>
+
+        <button
+          class="block mx-auto sm:mt-[3.3125rem] sm:mb-[6.88rem] mt-4 mb-8 border-2 border-secondary sm:h-[3.68rem] sm:w-[11.88rem] w-[12.1875rem] h-11 text-secondary sm:text-[1.625rem] sm:tracking-[0.03125rem] text-base rounded-md font-semibold hover:bg-secondary-hover focus:border-secondary focus:ring-1 focus:ring-secondary"
+        >
+          Edit Profile
+        </button>
+      </div>
     </main>
     <footer class="flex justify-end sm:justify-center bg-neutral-light-gray">
-        <img class="sm:hidden " src="../../public/img/Circles_illustration_mobile.png" alt="Edugate footer circles">
-        <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../../public/img/circle-footer.png" alt="Edugate footer circles">
+      <img
+        class="sm:hidden"
+        src="../../public/img/Circles_illustration_mobile.png"
+        alt="Edugate footer circles"
+      />
+      <img
+        class="hidden sm:block shrink-0 mx-4 mt-8"
+        src="../../public/img/circle-footer.png"
+        alt="Edugate footer circles"
+      />
     </footer>
-</body>
+  </body>
 </html>
