@@ -10,7 +10,7 @@
       name="description"
       content="Teachers dashboard to view top performing students"
     />
-    <link href="../dist/output.css" rel="stylesheet" />
+    <link href="../../dist/output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -20,28 +20,28 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="mx-auto bg-neutral-light-gray max-w-[1440px] w-full">
-    <header
-      class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins h-[160px]"
+  
+  <body class="mx-auto bg-neutral-light-gray max-w-[1440px] w-full pl-0 pr-0 md:pl-[80px] md:pr-[80px]">
+    <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins"
     >
-      <nav class="flex items-center h-[176px]">
+      <nav class="max-w-7x1 flex items-center justify-between px-4 border-b border-[#75757548] md:border-0" >
         <img
-          class="ml-12 mr-[329px]"
-          src="../public/img/logo-header.png"
+          class="-ml-4 md:ml-10 md:mr-auto w-25 md: lg:w-auto -mb-3.5 -mt-4 md:-mb-0 md:-mt-0"
+          src="../../public/img/logo-header.png"
           alt="Edugate Logo"
         />
         <!-- Hamburger Menu -->
-        <div class="fixed inset-0 md:hidden">
+        <div class="md:hidden">
           <!-- Checkbox for Hamburger Toggle -->
           <input type="checkbox" id="menu-toggle" class="hidden peer" />
           <!-- Hamburger Icon -->
           <label
             for="menu-toggle"
-            class="absolute top-14 right-4 cursor-pointer focus:outline-none peer-checked:hidden"
+            class="absolute top-2 right-2 cursor-pointer focus:outline-none peer-checked:hidden"
             aria-label="Toggle menu"
           >
             <svg
-              class="w-16 h-16"
+              class="w-12 h-12"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -65,7 +65,7 @@
               aria-label="Close menu"
             >
               <svg
-                class="w-12 h-12 mt-8"
+                class="w-10 h-10"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -74,13 +74,25 @@
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
+                  stroke-width="4"
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
             </label>
+
+            <!-- Logo top left -->
+            <div class="h-[70px] bg-gray-100 flex items-center px-4">
+              <img
+              class="mml-4 mr-4  w-[100px] -mb-5 -mt-5"
+              src="../../public/img/logo-header.png"
+              alt="Edugate Logo"
+              />
+            </div>
+
+
+            <!-- Hamburger Menu -->
             <ul
-              class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8"
+              class="flex flex-col items-end justify-start mt-8 h-full gap-10 text-xl mr-2"
             >
               <li>
                 <a
@@ -89,8 +101,8 @@
                 >
                   Dashboard
                   <img
-                    class="w-6 h-6"
-                    src="../public/icons/dashboard.png"
+                    class="w-8 h-8"
+                    src="../../public/icons/dashboard.png"
                     alt="Dashboard Icon"
                   />
                 </a>
@@ -102,8 +114,8 @@
                 >
                   Profile
                   <img
-                    class="w-6 h-6"
-                    src="../public/icons/user-circle.png"
+                    class="w-8 h-8"
+                    src="../../public/icons/user-circle.png"
                     alt="Profile Icon"
                   />
                 </a>
@@ -115,8 +127,8 @@
                 >
                   About
                   <img
-                    class="w-6 h-6"
-                    src="../public/icons/about.png"
+                    class="w-8 h-8"
+                    src="../../public/icons/about.png"
                     alt="About Icon"
                   />
                 </a>
@@ -128,21 +140,22 @@
                 >
                   Contact
                   <img
-                    class="w-6 h-6"
-                    src="../public/icons/contact.png"
+                    class="w-8 h-8"
+                    src="../../public/icons/contact.png"
                     alt="Contact Icon"
                   />
                 </a>
               </li>
+              <div class="w-full border-t border-gray-200 mt-23"></div>
               <li>
                 <a
                   href="#"
-                  class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-accent-hover"
+                  class="flex items-center gap-5 pl-3 border-b-2 border-white hover:border-accent-hover"
                 >
                   Log out
                   <img
-                    class="w-6 h-6"
-                    src="../public/icons/logout.png"
+                    class="w-8 h-8"
+                    src="../../public/icons/logout.png"
                     alt="Log out Icon"
                   />
                 </a>
@@ -150,24 +163,25 @@
             </ul>
           </div>
         </div>
-        <ul class="hidden md:flex font-Poppins font-semibold text-xl">
-          <!-- Cannot link Href as there are several dashboard.html files -->
+       
+       <!-- Dashboard Nav -->
+        <ul class="hidden md:flex font-Poppins font-semibold text-base lg:text-xl">
           <li
-            class="w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out"
+            class="md:w-[140px] lg:w-[200px] xl:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out"
           >
             <a href="#" class="tracking-[0.5px]"> Dashboard</a>
           </li>
           <li
-            class="w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out"
+            class="md:w-[140px] lg:w-[200px] xl:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out"
           >
-            <a href="../templates/about.html" class="tracking-[0.5px]">
+            <a href="../about.html" class="tracking-[0.5px]">
               About</a
             >
           </li>
           <li
-            class="w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out"
+            class="md:w-[140px] lg:w-[200px] xl:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out"
           >
-            <a href="../templates/contact.html" class="tracking-[0.5px]">
+            <a href="../contact.html" class="tracking-[0.5px]">
               Contact</a
             >
           </li>
@@ -178,13 +192,12 @@
           <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
 
           <!-- User Icon (Clickable) -->
-          <label for="dropdown-toggle" class="hidden md:flex cursor-pointer">
-            <img
-              src="/public/icons/user-circle.png"
-              alt="User dropdown"
-              class="w-[64px] h-[64px]"
-            />
-          </label>
+          <label
+          for="dropdown-toggle"
+          class="hidden md:flex w-[50px] h-[50px] lg:w-[64px] lg:h-[64px] mr-4 lg:mr-10 cursor-pointer"
+      >
+          <img src="../../public/icons/user-circle.png" alt="User dropdown">
+      </label>
           <!-- Dropdown Menu -->
           <ul
             class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200"
@@ -214,80 +227,91 @@
         </div>
       </nav>
     </header>
+    
     <div class="flex">
       <div
-        class="flex flex-col lg:flex-row w-[98px] min-h-screen border-r-1 border-[#CCCCCC]"
+        class="hidden lg:block lg:w-[91px] min-h-screen border-r border-[#CCCCCC]"
       >
         <!--Sidebar-->
         <div
           id="sidebar"
-          class="hidden lg:flex flex-col gap-14 ml-6 mt-[135px]"
+          class="flex flex-col items-center gap-14 pt-[135px]"
         >
+        <a href="#" class="cursor-pointer">
           <img
-            class="cursor-pointer w-[41px] h-[41px]"
-            src="/public/icons/dashboard.png"
-            alt="Picutre of a green home icon"
+            class="w-[41px] h-[41px]"
+            src="../../public/icons/dashboard.png"
+            alt="Dashboard icon"
           />
+        </a>
+        <a href="#" class="cursor-pointer">
           <img
-            class="cursor-pointer w-[41px] h-[41px]"
-            src="/public/icons/results.png"
-            alt="Picture of a green results icon"
+            class="w-[41px] h-[41px]"
+            src="../../public/icons/results.png"
+            alt="Results icon"
           />
+        </a>
+        <a href="#" class="cursor-pointer">
           <img
-            class="cursor-pointer w-[41px] h-[41px]"
-            src="/public/icons/user-management.png"
-            alt="Picture of a green user icon"
+            class="w-[41px] h-[41px]"
+            src="../../public/icons/user-management.png"
+            alt="User management icon"
           />
+        </a>
+        <a href="#" class="cursor-pointer">
           <img
-            class="cursor-pointer w-[41px] h-[41px]"
-            src="/public/icons/school-management.png"
-            alt="Picture of a green school icon"
+            class="w-[41px] h-[41px]"
+            src="../../public/icons/school-management.png"
+            alt="School management icon"
           />
+        </a>
+        <a href="#" class="cursor-pointer">
           <img
-            class="cursor-pointer w-[41px] h-[41px]"
-            src="/public/icons/logout.png"
-            alt="Picture of a red log out icon"
+            class="w-[41px] h-[41px]"
+            src="../../public/icons/logout.png"
+            alt="Logout icon"
           />
+        </a>
         </div>
       </div>
       <div class="flex flex-col w-full">
+
         <main>
           <div class="flex flex-col font-Roboto self-center px-4 gap-5 pb-8">
-            <div
-              class="text-neutral-medium-gray flex h-10 items-center mt-[48px] gap-6 text-base"
+            <div class="text-neutral-medium-gray flex h-10 items-center mt-0 md:mt-[48px] -mb-4 gap-6 text-base"
             >
               <a href="#">Dashboard</a>&gt;
-              <p class="text-primary">Top Performing Students</p>
+              <p class="text-primary font-medium">Top Performing Students</p>
             </div>
 
-            <div class="flex flex-col gap-[48px] mt-8 items-center">
+            <div class="flex flex-col gap-[16px] md:gap-[48px] md:mt-8 items-center">
               <div class="flex flex-row w-full justify-center">
                 <img
-                  src="../public/icons/green-double-arrows-right.png"
+                  src="../../public/icons/green-double-arrows-right.png"
                   alt="arrows"
-                  class="w-12 h-12 md:hidden"
+                  class="w-auto h-15 -m-1 -mr-4 md:hidden"
                 />
                 <h1
-                  class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4"
+                  class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-0 md:mb-4"
                 >
                   Top Performing Students
                 </h1>
               </div>
               <p
-                class="text-center text-neutral-dark-gray font-Roboto text-base font-normal tracking-wide"
+                class="text-center text-neutral-dark-gray font-Roboto text-base text-[14px] md:text-[16px] font-normal tracking-wide"
               >
                 View the top performing students in your classes
               </p>
 
               <img
-                src="../public/icons/results.png"
-                class="w-10 sm:w-15 md:hidden"
+                src="../../public/icons/results.png"
+                class="w-[32px] md:hidden"
               />
               <div
-                class="flex flex-row items-center justify-center w-[314px] h-12"
+                class="flex flex-row items-center justify-center w-[314px] h-12 md:mb-0"
               >
                 <input
-                  class="w-55 sm:w-72 h-[50px] p-2 rounded-l-md text-neutral-dark-gray border border-[#CCCCCC] text-xs sm:text-sm bg-[#FFFFFF]"
+                  class="w-62 sm:w-72 h-[50px] p-2 rounded-l-md text-neutral-dark-gray border border-[#CCCCCC] text-[14px] sm:text-sm bg-[#FFFFFF]"
                   type="text"
                   placeholder="Search for student..."
                 />
@@ -310,96 +334,96 @@
               </div>
             </div>
             <table class="w-full bg-table rounded-md md:hidden text-left">
-              <thead class="text-primary text-sm sm:text-xl">
-                <tr class="h-10">
+              <thead class="text-primary font-bold text-[16px] sm:text-xl tracking-[0.05em]">
+                <tr class="h-14 md:h-10">
                   <th class="pl-2 w-fit">L.name</th>
                   <th class="pl-2 w-fit">Subject</th>
                   <th class="pl-2 w-fit">Grade</th>
                   <th class="pl-2 w-fit"></th>
                 </tr>
               </thead>
-              <tbody class="text-xs sm:text-base">
-                <tr class="h-10 bg-neutral-light-gray">
+              <tbody class="text-[16px] sm:text-base">
+                <tr class="h-14 md:h-10 bg-neutral-light-gray">
                   <td class="pl-2 w-fit">Bloggs</td>
                   <td class="pl-2 w-fit">Mathematics</td>
                   <td class="pl-2 w-fit">A</td>
                   <td class="pl-2 w-fit">
                     <img
-                      src="../public/icons/info.png"
+                      src="../../public/icons/info.png"
                       alt="info-icon"
-                      class="w-5"
+                      class="w-6"
                     />
                   </td>
                 </tr>
-                <tr class="h-10">
+                <tr class="h-14 md:h-10">
                   <td class="pl-2 w-fit">Bloggs</td>
                   <td class="pl-2 w-fit">Mathematics</td>
                   <td class="pl-2 w-fit">A</td>
                   <td class="pl-2 w-fit">
                     <img
-                      src="../public/icons/info.png"
+                      src="../../public/icons/info.png"
                       alt="info-icon"
-                      class="w-5"
+                      class="w-6"
                     />
                   </td>
                 </tr>
-                <tr class="h-10 bg-neutral-light-gray">
+                <tr class="h-14 md:h-10 bg-neutral-light-gray">
                   <td class="pl-2 w-fit">Bloggs</td>
                   <td class="pl-2 w-fit">Mathematics</td>
                   <td class="pl-2 w-fit">A</td>
                   <td class="pl-2 w-fit">
                     <img
-                      src="../public/icons/info.png"
+                      src="../../public/icons/info.png"
                       alt="info-icon"
-                      class="w-5"
+                      class="w-6"
                     />
                   </td>
                 </tr>
-                <tr class="h-10">
+                <tr class="h-14 md:h-10">
                   <td class="pl-2 w-fit">Bloggs</td>
                   <td class="pl-2 w-fit">Mathematics</td>
                   <td class="pl-2 w-fit">A</td>
                   <td class="pl-2 w-fit">
                     <img
-                      src="../public/icons/info.png"
+                      src="../../public/icons/info.png"
                       alt="info-icon"
-                      class="w-5"
+                      class="w-6"
                     />
                   </td>
                 </tr>
-                <tr class="h-10 bg-neutral-light-gray">
+                <tr class="h-14 md:h-10 bg-neutral-light-gray">
                   <td class="pl-2 w-fit">Bloggs</td>
                   <td class="pl-2 w-fit">Mathematics</td>
                   <td class="pl-2 w-fit">A</td>
                   <td class="pl-2 w-fit">
                     <img
-                      src="../public/icons/info.png"
+                      src="../../public/icons/info.png"
                       alt="info-icon"
-                      class="w-5"
+                      class="w-6"
                     />
                   </td>
                 </tr>
-                <tr class="h-10">
+                <tr class="h-14 md:h-10">
                   <td class="pl-2 w-fit">Bloggs</td>
                   <td class="pl-2 w-fit">Mathematics</td>
                   <td class="pl-2 w-fit">A</td>
                   <td class="pl-2 w-fit">
                     <img
-                      src="../public/icons/info.png"
+                      src="../../public/icons/info.png"
                       alt="info-icon"
-                      class="w-5"
+                      class="w-6"
                     />
                   </td>
                 </tr>
-                <tr class="h-10 bg-neutral-light-gray">
+                <tr class="h-14 md:h-10 bg-neutral-light-gray">
                   <td class="pl-2 w-fit">Bloggs</td>
                   <td class="pl-2 w-fit">Mathematics</td>
                   <td class="pl-2 w-fit">A</td>
                   <td class="pl-2 w-fit">
                     <img
-                      src="../public/icons/info.png"
+                      src="../../public/icons/info.png"
                       alt="info-icon"
-                      class="w-5"
+                      class="w-6"
                     />
                   </td>
                 </tr>
@@ -504,7 +528,7 @@
               >
                 <a href="#">
                   <img
-                    src="../public/icons/chevron-double-left.png"
+                    src="../../public/icons/chevron-double-left.png"
                     class="w-[19.47px] h-[15.63px]"
                   />
                 </a>
@@ -514,7 +538,7 @@
               >
                 <a href="#">
                   <img
-                    src="../public/icons/chevron-left.png"
+                    src="../../public/icons/chevron-left.png"
                     class="w-[10.09px] h-[15.63px]"
                   />
                 </a>
@@ -549,7 +573,7 @@
               >
                 <a href="#">
                   <img
-                    src="../public/icons/chevron-right.png"
+                    src="../../public/icons/chevron-right.png"
                     class="w-[10.09px] h-[15.63px]"
                   />
                 </a>
@@ -559,7 +583,7 @@
               >
                 <a href="#">
                   <img
-                    src="../public\icons\chevron-double-right.png"
+                    src="../../public/icons/chevron-double-right.png"
                     class="w-[19.46px] h-[15.63px]"
                   />
                 </a>
@@ -567,7 +591,7 @@
             </ul>
 
             <button
-              class="border-2 border-s-secondary rounded-md text-secondary py-2 px-5 w-fit self-center text-2xl font-semibold font-Poppins mt-[44px] tracking-[0.5px] cursor-pointer hover:bg-secondary-hover"
+              class="border-2 border-s-secondary rounded-md text-secondary py-2 px-5 w-fit self-center text-lg md:text-2xl font-semibold font-Poppins mt-[44px] tracking-[0.5px] cursor-pointer hover:bg-secondary-hover"
               href="#"
             >
               Back to dashboard
@@ -577,12 +601,12 @@
         <footer class="flex justify-end sm:justify-center">
           <img
             class="sm:hidden"
-            src="../public/img/Circles illustration mobile.png"
+            src="../../public/img/Circles_illustration_mobile.png"
             alt="Edugate footer circles"
           />
           <img
             class="hidden sm:block shrink-0 mx-4 mt-8"
-            src="../public/img/circle-footer.png"
+            src="../../public/img/circle-footer.png"
             alt="Edugate footer circles"
           />
         </footer>
