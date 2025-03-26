@@ -9,8 +9,8 @@
   "main": "app.js",
   "scripts": {
     "build": "npx @tailwindcss/cli -i ./css/styles.css -o ./dist/output.css --watch",
-    "lint": "npx prettier . --write",
-    "prepare": "husky install"
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "repository": {
     "type": "git",
