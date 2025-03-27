@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../../dist/output.css">
+
 <!-- Overlays that will be hidden in css, and shown when checkbox checked -->
 
 <!-- Delete User - used on manage user pages -->
@@ -152,40 +154,51 @@
 </div>
 
 <!-- Student Results Edit  - used when clicking "Edit" on  Student Results -->
-<div>
-  <button><img src="../../public/icons/x.png" /></button>
-  <div>
-    <div>
-      <h2>Year</h2>
-      <p>2020</p>
-    </div>
-    <div>
-      <h2>Term</h2>
-      <p>3</p>
-    </div>
-  </div>
-  <div>
-    <div>
-      <h2>Subject</h2>
-      <p>Mathematics</p>
-    </div>
-    <div>
-      <h2>Exam</h2>
-      <p>M1</p>
-    </div>
-  </div>
-  <div>
-    <div>
-      <h2>Results</h2>
-      <p>90/120</p>
-    </div>
-    <div>
-      <h2>Grade</h2>
-      <input type="text" maxlength="1" name="grade" value="B" />
-    </div>
-  </div>
-  <div>
-    <button>Update</button>
-    <button>Cancel</button>
-  </div>
-</div>
+ <section class="w-140 h-90.75 border-2 ml-8 mb-8 rounded-md">
+
+   <div class="flex flex-col -mt-4">
+     <button class="flex justify-end mr-8 mt-8"><img src="../../public/icons/x.png" /></button>
+
+     <div class="flex flex-row gap-16.75 ml-8">
+       <div class="flex flex-col">
+         <h2 class="w-47.5 font-Poppins font-bold tracking-[1.2px] text-[1.5rem] text-[#4CAF50]">Year</h2>
+         <p class="border border-[rgba(204,204,204,1)] rounded-md w-47.5 p-2 text-[1rem] font-Roboto font-normal text-[rgb(51,51,51)]">2020</p>
+        </div>
+
+        <div class="flex flex-col">
+          <h2 class="w-47.5 font-Poppins font-bold tracking-[1.2px] text-[1.5rem] text-[#4CAF50]">Term</h2>
+          <p class="border border-[rgba(204,204,204,1)] rounded-md w-47.5 p-2 text-[1rem] font-Roboto font-normal text-[rgb(51,51,51)]">3</p>
+        </div>
+      </div>
+
+      <div class="flex flex-row gap-16.75 ml-8">
+        <div class="flex flex-col">
+          <h2 class="w-47.5 font-Poppins font-bold tracking-[1.2px] text-[1.5rem] text-[#4CAF50]">Subject</h2>
+          <p class="border border-[rgba(204,204,204,1)] rounded-md w-47.5 p-2 text-[1rem] font-Roboto font-normal text-[rgb(51,51,51)]">Mathematics</p>
+        </div>
+
+        <div class="flex flex-col">
+          <h2 class="w-47.5 font-Poppins font-bold tracking-[1.2px] text-[1.5rem] text-[#4CAF50]">Exam</h2>
+          <p class="border border-[rgba(204,204,204,1)] rounded-md w-47.5 p-2 text-[1rem] font-Roboto font-normal text-[rgb(51,51,51)]">M1</p>
+        </div>
+      </div>
+
+      <div class="flex flex-row gap-16.75 ml-8">
+        <div class="flex flex-col">
+          <h2 class="w-47.5 font-Poppins font-bold tracking-[1.2px] text-[1.5rem] text-[#4CAF50]">Results</h2>
+          <p class="border border-[rgba(204,204,204,1)] rounded-md w-47.5 p-2 text-[1rem] font-Roboto font-normal text-[rgb(51,51,51)]">90/120</p>
+        </div>
+
+        <div class="flex flex-col">
+          <h2 class="w-47.5 font-Poppins font-bold tracking-[1.2px] text-[1.5rem] text-[#4CAF50]">Grade</h2>
+          <input type="text" maxlength="1" name="grade" value="B" required class="border border-[rgba(204,204,204,1)] rounded-md w-47.5 p-2 text-[1rem] font-Roboto font-normal text-[rgb(51,51,51)]"/>
+        </div>
+      </div>
+
+        <div class="text-center flex justify-center gap-16.75 mt-4 mr-12">
+          <button class="bg-[#4CAF50] hover:bg-[#388E3C] cursor-pointer font-Poppins font-semibold text-[1.5rem] text-[#FFF] py-2.5 px-5 rounded-md w-47.5">Update</button>
+          <button class="hover:bg-[#BBDEFB] cursor-pointer border-2 border-[#2196F3] font-Poppins font-semibold text-[1.5rem] text-[#2196F3] py-2.5 px-5 rounded-md w-47.5">Cancel</button>
+        </div>
+
+      </div>
+  </section>
