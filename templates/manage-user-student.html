@@ -13,7 +13,7 @@
   <div class="flex-1 flex-col min-h-screen"> 
     <header class="flex items-center justify-between px-6 h-[176px] border-b border-gray-300">
       <!-- Logo -->
-      <img src="../public/img/logo-header.png" class="pointer h-[176px]" alt="Edugate logo">
+      <img src="../public/img/logo-header.png" class="h-[176px]" alt="Edugate logo">
   
       <!-- Navigation -->
       <nav class="w-full flex justify-end">
@@ -22,7 +22,7 @@
               <li class="li-items cursor-pointer">About</li>
               <li class="li-items cursor-pointer">Contact</li>
               <li>
-                  <img src="../public/icons/user-circle.png" class="pointer h-[64px] w-[64px]" alt="Profile button">
+                  <img src="../public/icons/user-circle.png" class="h-[64px] w-[64px]" alt="Profile button">
               </li>
           </ul>
       </nav>
@@ -74,11 +74,11 @@
       <div class="w-[315px] max-w-2xl m-auto flex flex-col">
         <h2 class="text-neutral-dark-gray text-center font-Poppins m-auto text-[32px] font-bold tracking-wide mb-12 sm:mb-4 pb-4">Manage Student</h2>
         <p class="text-center text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-12 sm:mb-4 pb-8">Edit the user info below</p>
-        <form action="" class="manage-user-form space-y-6 flex m-auto justify-center">
+        <form action="" class="space-y-6 flex m-auto justify-center">
           <div class="space-y-4 w-[315px]">
             <label class="block text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide outline-none">
               ID:
-              <input type="text" name="id" placeholder="1921840" class="placeholder-gray-500 w-full p-2 border-2 !border-zinc-300 focus:outline-none focus:!border-primary rounded shadow-inner mt-1 font-thin bg-white h-11">
+              <input type="text" name="id" placeholder="1921840" class="w-full p-2 border-2 !border-zinc-300 focus:outline-none focus:!border-primary rounded shadow-inner mt-1 font-thin bg-white h-11">
             </label>
 
             <label class="block text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide">
@@ -103,7 +103,7 @@
 
             <label class="block text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide">
               DOB:
-              <input type="text" name="dob" placeholder="01/01/2002" class="w-full p-2 border-2 !border-zinc-300 focus:outline-none focus:!border-primary rounded shadow-inner mt-1 font-thin bg-white h-11">
+              <input type="date" name="dob" value="01/01/2002" class="w-full p-2 border-2 !border-zinc-300 focus:outline-none focus:!border-primary rounded shadow-inner mt-1 font-thin bg-white h-11">
             </label>
 
             <label class="block text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide">
@@ -131,18 +131,54 @@
         <button class="bg-[#4CAF50] text-white px-6 py-2 rounded hover:bg-[#45a049] w-[177px] h-[56px] text-3xl">
           Update
         </button>
-        <button class="bg-[#FF5722] text-white px-6 py-2 rounded hover:bg-[#f4511e] w-[220px] h-[56px] text-3xl">
+        <button id="openModal" class="bg-[#FF5722] text-white px-6 py-2 rounded hover:bg-[#f4511e] w-[177px] h-[56px] text-3xl">
           Delete user
         </button>
         
       </div>
     </section>
   </main>
-  <footer class="flex justify-end sm:justify-center"> 
+  <footer class="flex justify-end sm:justify-center">
     <img class="sm:hidden p-4 pb-0 w-full" src="../public/img/Circles_illustration_mobile.png" alt="Edugate footer circles mobile">
     <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles desktop">
   </footer> <!-- updated footer from the contact page, now the media works for mobile and desktop versions -->
   </div>
+
+  
+  <!-- Delete Confirmation Modal -->
+<div id="deleteModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+  <div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
+    <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
+    <button id="closeModal" class="absolute top-4 right-4 cursor-pointer">
+      <img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
+    </button>
+    <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">
+      Are you sure you want to delete selected user? This action is permanent and cannot be undone.
+    </p>
+    <div class="flex justify-around gap-2">
+      <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
+      <button id="cancelDelete" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- JavaScript for Modal Functionality -->
+<script>
+  document.getElementById("openModal").addEventListener("click", function() {
+    document.getElementById("deleteModal").classList.remove("hidden");
+    document.getElementById("deleteModal").classList.add("flex");
+  });
+
+  document.getElementById("closeModal").addEventListener("click", function() {
+    document.getElementById("deleteModal").classList.add("hidden");
+  });
+
+  document.getElementById("cancelDelete").addEventListener("click", function() {
+    document.getElementById("deleteModal").classList.add("hidden");
+  });
+</script>
+
 </body>
 
 </html>
