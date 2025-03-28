@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../dist/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <title>Edugate | Select User</title>
 </head>
 <body class="bg-neutral-light-gray font-roboto">
 
-<header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
+<header class="bg-neutral-light-gray border border-gray-300 border-l-0 border-r-0 border-t-0 text-neutral-dark-gray font-Poppins">
   <nav class="max-w-7x1 flex items-center justify-between px-4">
     <img class="ml-4 mr-16" src="../public/img/logo-header.png" alt="Edugate Logo">
 
@@ -34,7 +35,7 @@
         </label>
 
         <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
-          <li>
+          <li class="" >
             <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
               Dashboard
               <img class="w-6 h-6" src="../public/icons/dashboard.png" alt="Dashboard Icon">
@@ -74,20 +75,20 @@
       </div>
     </div>
 
-    <ul class="hidden md:flex justify-end mr-10 font-Poppins font-medium">
+    <ul class="hidden md:flex font-Poppins font-medium items-center ml-auto mr-20">
       <li>
-        <a href="#" class="py-8 md:px-8 px-16">
+          <a href="#" class="py-8 md:px-12 lg:px-20 text-[1.25rem] hover:border hover:border-[#4CAF50] hover:border-l-0 hover:border-r-0 hover:border-t-0 ">
           Dashboard</a>
       </li>
       <li>
-        <a href="about.html" class="py-8 md:px-8">
+          <a href="about.html" class="py-8 md:px-12 lg:px-20 text-[1.25rem] hover:border hover:border-[#4CAF50] hover:border-l-0 hover:border-r-0 hover:border-t-0">
           About</a>
       </li>
       <li>
-        <a href="contact.html" class="py-8 md:px-8">
+          <a href="contact.html" class="py-8 md:px-12 lg:px-20 text-[1.25rem] hover:border hover:border-[#4CAF50] hover:border-l-0 hover:border-r-0 hover:border-t-0">
           Contact</a>
       </li>
-    </ul>
+      </ul>
     <!-- User Dropdown -->
     <div class="relative">
       <!-- Hidden Checkbox -->
@@ -118,17 +119,32 @@
 </header>
   
 <main class="flex flex-row gap-0 m-0">
-  <section class="flex flex-col box-border border-r-2 border-gray-400 p-5 hidden sm:table-cell pt-20">
-    <input type="checkbox" id="nav-right-checkbox" aria-label="nav-right" class="hidden">
-    <ul class="flex flex-col justify gap-[41px] justify-around">
-    <li><img src="../public/icons/dashboard.png" alt="" class="w-[41px]"></li>
-    <li><img src="../public/icons/results.png" alt="" class="w-[41px]"></li>
-    <li><img src="../public/icons/user-management.png" alt="" class="w-[41px]"></li>
-    <li><img src="../public/icons/top-students.png" alt="" class="w-[41px]"></li>
-    <li><img src="../public/icons/logout.png" alt="" class="w-[41px]"></li>
-  </ul>
-  </section>
-<section class="flex flex-col gap-12 m-0 w-full sm:pr-[80px] pr-[16px] border-t-2 border-gray-400 pl-4 pt-5">
+  <div id="sidebar" class="sidebar teacher-sidebar hidden lg:flex flex-col gap-12 ml-4">
+    <img src="/public/icons/dashboard.png" class="w-[41px]">
+    <img src="/public/icons/results.png" class="w-[41px]">
+    <img src="/public/icons/user-circle.png" class="w-[41px]">
+    <img src="/public/icons/school-management.png" class="w-[41px]">
+    <img src="/public/icons/logout.png" class="w-[41px]">
+</div>
+<!--Sidebar-->
+<div id="sidebar-hov" class="teacher-sidebar hidden lg:flex flex-col gap-12 ">
+<a href="dashboard-admin.html" class=" rounded-md">
+    <img src="/public/icons/dashboard.png" class="w-[41px]"><span>Home</span>
+</a>
+<a href="add-results.html" class=" rounded-md">
+    <img src="/public/icons/results.png" class="w-[41px]"><span>Results Management</span>
+</a>
+<a href="manage-user.html" class="rounded-md">
+    <img src="/public/icons/user-circle.png" class="w-[41px]"><span>User Management</span>
+</a>
+<a href="add-school.html" class="rounded-md">
+    <img src="/public/icons/school-management.png" class="w-[41px]"><span>Top Students</span>
+</a>
+<a href="/templates" class="rounded-md">
+    <img src="/public/icons/logout.png" class="w-[41px]"><span>Logout</span>
+</a>
+</div>
+<section class="flex flex-col gap-12 m-0 w-full sm:pr-[80px] pr-[16px] border-gray-400 pl-4 pt-5">
   <section>
     <nav>
       <ul class="flex text-neutral-medium-gray gap-6 capitalize">
