@@ -16,9 +16,12 @@
 						<!--Checkbox for Hamburger Toggle-->
 						<input type="checkbox" id="menu-toggle" class="hidden peer" />
 						<!--Hamburger Icon-->
-						<label for="menu-toggle" class="block cursor-pointer focus:outline-none peer-checked:hidden" aria-label="Toggle menu">
-							<svg class="w-14 h-14 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+						<label for="menu-toggle" class="block cursor-pointer focus:outline-none peer-checked:hidden w-[35px] h-[35px]" aria-label="Toggle menu">
+							<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 35 35" stroke="currentColor">
+								<rect y="2" width="35" height="3" rx="1.5" ry="1.5" class="fill-black" />
+        						<rect y="10" width="35" height="3" rx="1.5" ry="1.5" class="fill-black" />
+        						<rect y="18" width="35" height="3" rx="1.5" ry="1.5" class="fill-black" />
+        						<rect y="26" width="35" height="3" rx="1.5" ry="1.5" class="fill-black" />
 							</svg>
 						</label>
 						<div class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
@@ -106,27 +109,27 @@
 						<!-- Editable fields -->
 						<label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide">Name:
 							<input type="text" name="Name" placeholder="Joe Bloggs" required
-							  class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" />
+							  class="bg-white w-full h-[51.04px] mb-2 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" />
 						</label>
 						<label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide" for="email">Email:
 						  	<input id="email" type="email" name="Email" placeholder="joeblog2024@edugate.no" required
-							class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" />
+							class="bg-white w-full h-[51.04px] mb-2 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" />
 						</label>
 						<label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide" for="dob">Date of Birth:
-            				<input itemid="dob" type="text" id="dob" name="dob" placeholder="01/01/1987" required class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-[#000000] opacity-100 font-Roboto" />
+            				<input itemid="dob" type="text" id="dob" name="dob" placeholder="01/01/1987" required class="bg-white w-full h-[51.04px] mb-2 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-[#000000] opacity-100 font-Roboto" />
           				</label>
 						<!-- Read-only fields -->
 						<div>
 							<label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide" for="id">ID:</label>
-							<input type="text" id="id" name="id" placeholder="1921840" readonly class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto" />
+							<input type="text" id="id" name="id" placeholder="1921840" readonly class="bg-[#d9d9d9] w-full h-[51.04px] mb-2 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto" />
 						</div>
 						<div>
 							<label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide" for="position">Position:</label>
-							<input type="text" id="position" name="position" placeholder="Teacher" readonly class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto" />
+							<input type="text" id="position" name="position" placeholder="Teacher" readonly class="bg-[#d9d9d9] w-full h-[51.04px] mb-2 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto" />
 						</div>
 						<div>
 							<label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide" for="school">School:</label>
-							<input type="text" id="school" name="school" placeholder="The Academy" readonly class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto" />
+							<input type="text" id="school" name="school" placeholder="The Academy" readonly class="bg-[#d9d9d9] w-full h-[51.04px] mb-2 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto" />
 						</div>
 						<div class="flex justify-center">
 							<button class="primary-button mt-4 mb-12" type="submit">Update</button>
