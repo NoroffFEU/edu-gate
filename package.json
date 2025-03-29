@@ -29,6 +29,6 @@
   },
   "keywords": [],
   "devDependencies": {
-    "tailwindcss": "^4.0.15"
+    "tailwindcss": "^4.0.17"
   }
 }
