@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../dist/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <title>Edugate | Select User</title>
 </head>
 <body class="bg-neutral-light-gray font-roboto">
 
-<header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
+<header class="bg-neutral-light-gray border border-gray-300 border-l-0 border-r-0 border-t-0 text-neutral-dark-gray font-Poppins">
   <nav class="max-w-7x1 flex items-center justify-between px-4">
     <img class="ml-4 mr-16" src="../public/img/logo-header.png" alt="Edugate Logo">
 
@@ -34,7 +35,7 @@
         </label>
 
         <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
-          <li>
+          <li class="" >
             <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
               Dashboard
               <img class="w-6 h-6" src="../public/icons/dashboard.png" alt="Dashboard Icon">
@@ -74,20 +75,20 @@
       </div>
     </div>
 
-    <ul class="hidden md:flex justify-end mr-10 font-Poppins font-medium">
+    <ul class="hidden md:flex font-Poppins font-medium items-center ml-auto mr-20">
       <li>
-        <a href="#" class="py-8 md:px-8 px-16">
+          <a href="#" class="py-8 md:px-12 lg:px-20 text-[1.25rem] hover:border hover:border-[#4CAF50] hover:border-l-0 hover:border-r-0 hover:border-t-0 ">
           Dashboard</a>
       </li>
       <li>
-        <a href="about.html" class="py-8 md:px-8">
+          <a href="about.html" class="py-8 md:px-12 lg:px-20 text-[1.25rem] hover:border hover:border-[#4CAF50] hover:border-l-0 hover:border-r-0 hover:border-t-0">
           About</a>
       </li>
       <li>
-        <a href="contact.html" class="py-8 md:px-8">
+          <a href="contact.html" class="py-8 md:px-12 lg:px-20 text-[1.25rem] hover:border hover:border-[#4CAF50] hover:border-l-0 hover:border-r-0 hover:border-t-0">
           Contact</a>
       </li>
-    </ul>
+      </ul>
     <!-- User Dropdown -->
     <div class="relative">
       <!-- Hidden Checkbox -->
@@ -283,6 +284,6 @@ const deleteClickHandler = (index)=>{
   populate(defaultUser)  
 }
 </script>
-  
+
 </body>
 </html>
