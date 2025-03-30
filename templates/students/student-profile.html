@@ -8,13 +8,11 @@
   <title>Profile</title>
 </head>
 
-<body class="bg-neutral-light-gray mx-auto md:pl-20 md:pr-20">
-  <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins border-b-1 border-[#cccccc]">
-    <!--max-w-7x1 -->
-    <nav class="flex items-center justify-between px-4">
-      <img class="ml-4 md:ml-10 md:mr-auto w-[100px] md:w-auto -mb-3.5 -mt-3.5 md:-mb-0 md:-mt-0"
+<body class="mx-auto bg-neutral-light-gray max-w-[1440px] w-full pl-0 pr-0 md:pl-[80px] md:pr-[80px]">
+  <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
+    <nav class="max-w-7x1 flex items-center justify-between px-4 border-b border-[#75757548] md:border-0">
+      <img class="-ml-4 md:ml-10 md:mr-auto w-25 md: lg:w-auto -mb-3.5 -mt-4 md:-mb-0 md:-mt-0"
         src="../../public/img/logo-header.png" alt="Edugate Logo" />
-
       <!-- Hamburger Menu -->
       <div class="md:hidden">
         <!-- Checkbox for Hamburger Toggle -->
@@ -27,7 +25,6 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
         </label>
-
         <div
           class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
           <!-- Close Icon -->
@@ -44,7 +41,7 @@
             <img class="mml-4 mr-4 w-[100px] -mb-5 -mt-5" src="../../public/img/logo-header.png" alt="Edugate Logo" />
           </div>
 
-          <!-- Hamburger Menu need to fix links here -->
+          <!-- Hamburger Menu -->
           <ul class="flex flex-col items-end justify-start mt-8 h-full gap-10 text-xl mr-2">
             <li>
               <a href="#" aria-label="Go to dashboard"
@@ -71,13 +68,13 @@
               <a href="#" aria-label="Contact us"
                 class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                 Contact
-                <img class="w-8 h-7" src="../../public/icons/contact.png" alt="Contact Icon" />
+                <img class="w-8 h-8" src="../../public/icons/contact.png" alt="Contact Icon" />
               </a>
             </li>
             <div class="w-full border-t border-gray-200 mt-23"></div>
             <li>
-              <a href="#" aria-label="log out"
-                class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-accent-hover">
+              <a href="#" aria-label="Log out"
+                class="flex items-center gap-5 pl-3 border-b-2 border-white hover:border-accent-hover">
                 Log out
                 <img class="w-8 h-8" src="../../public/icons/logout.png" alt="Log out Icon" />
               </a>
@@ -85,22 +82,21 @@
           </ul>
         </div>
       </div>
-
-      <!-- Desktop Nav, need to fix links here-->
-      <ul class="hidden md:flex justify-end font-Poppins text-[20px] font-semibold">
-        <li>
-          <a href="#" aria-label="Go to dashboard"
-            class="md:w-[200px] lg:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
+      <!-- Dashboard Nav -->
+      <ul class="hidden md:flex font-Poppins font-semibold text-base lg:text-xl">
+        <li
+          class="md:w-[140px] lg:w-[200px] xl:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
+          <a href="#" aria-label="Go to dashboard" class="tracking-[0.5px]">
             Dashboard</a>
         </li>
-        <li>
-          <a href="../about.html" aria-label="About us"
-            class="md:w-[200px] lg:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
+        <li
+          class="md:w-[140px] lg:w-[200px] xl:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
+          <a href="../about.html" aria-label="About us" class="tracking-[0.5px]">
             About</a>
         </li>
-        <li>
-          <a href="../contact.html" aria-label="Contact us"
-            class="md:w-[200px] lg:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
+        <li
+          class="md:w-[140px] lg:w-[200px] xl:w-[248px] h-[74px] text-center flex items-center justify-center hover:border-b-1 hover:border-primary border-transparent transition duration-700 ease-in-out">
+          <a href="../contact.html" aria-label="Contact us" class="tracking-[0.5px]">
             Contact</a>
         </li>
       </ul>
@@ -108,12 +104,11 @@
       <div class="relative">
         <!-- Hidden Checkbox -->
         <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
-
         <!-- User Icon (Clickable) -->
-        <label for="dropdown-toggle" class="hidden md:flex w-[64px] h-[64px] mr-10 cursor-pointer">
+        <label for="dropdown-toggle" aria-expanded="false"
+          class="hidden md:flex w-[50px] h-[50px] lg:w-[64px] lg:h-[64px] mr-4 lg:mr-10 cursor-pointer focus:outline-2 focus:outline-offset-2">
           <img src="../../public/icons/user-circle.png" alt="User dropdown" />
         </label>
-
         <!-- Dropdown Menu -->
         <ul
           class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
@@ -126,8 +121,7 @@
               class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
           </li>
           <li>
-            <a href="#" aria-label="Log out" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log
-              out</a>
+            <a href="#" aria-label="Log out" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log out</a>
           </li>
         </ul>
       </div>
