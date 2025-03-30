@@ -16,7 +16,7 @@
   <header class="w-full bg-neutral-light-gray text-neutral-dark-gray font-Poppins border-b-1 border-[#cccccc]">
     <div class="w-full max-w-7xl mx-auto px-2 lg:px-6">
       <nav class="flex w-full items-center justify-between">
-        <img class="w-16 h-16 lg:w-30 lg:h-30" src="../public/img/logo-header.png" alt="Edugate Logo" />
+        <img class="w-16 h-16 lg:w-30 lg:h-30" src="../../public/img/logo-header.png" alt="Edugate Logo" />
         <div class="relative lg:hidden ml-auto">
           <!--Checkbox for Hamburger Toggle-->
           <input type="checkbox" id="menu-toggle" class="hidden peer" />
@@ -198,9 +198,12 @@
   </main>
 
   <footer class="w-full max-w-7xl mx-auto flex justify-center relative">
-    <img class="absolute right-0 sm:hidden md:hidden" src="../../public/img/Circles_illustration_mobile.png"
+    <div class="w-full pl-10 sm:hidden md:hidden">
+      <img class="w-full h-auto object-contain" src="../../public/img/Circles_illustration_mobile.png"
+        alt="Edugate footer circles" />
+    </div>
+    <img class="hidden sm:block shrink-0 mx-auto" src="../../public/img/circle-footer.png"
       alt="Edugate footer circles" />
-    <img class="hidden sm:block shrink-0 mx-auto" src="../../public/img/circle-footer.png" alt="Edugate footer circles" />
   </footer>
 </body>
 
