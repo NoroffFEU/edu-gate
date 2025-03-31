@@ -18,7 +18,7 @@
   <header class="bg-neutral-light-gray text-neutral-dark-gray max-lg:border max-lg:border-table-clicked">
     <nav class="max-w-7x1 flex items-center justify-between px-4 py-[0.1875rem] md:py-0">
       <img class="pl-5 max-lg:hidden" src="../public/img/logo-header.png" alt="Edugate Logo">
-      <img class="h-16 w-16 lg:hidden" src="../public/img/logo-header-small-screen.png" alt="Edugate Logo">
+      <a href="../templates/index.html"><img class="h-16 w-16 lg:hidden" src="../public/img/logo-header-small-screen.png" alt="Edugate Logo"></a>
 
 
       <!-- Hamburger Menu -->
@@ -96,7 +96,7 @@
           <label class="block text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide max-sm:my-4"
             for="email">Email</label>
           <input
-            class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-3 sm:px-4 text-neutral-dark-gray text-sm sm:text-base"
+            class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-2 sm:px-4 text-neutral-dark-gray text-sm sm:text-base"
             type="email" name="email" id="email" placeholder="example@mail.com" required />
         </div>
         <div class="flex flex-col sm:flex-row max-sm:gap-0 gap-4 max-sm:mb-0 mb-6">
@@ -104,14 +104,14 @@
             <label class="block text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide max-sm:my-4"
               for="firstname">First name</label>
             <input
-              class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-3 sm:px-4 text-neutral-dark-gray text-sm sm:text-base"
+              class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-2 sm:px-4 text-neutral-dark-gray text-sm sm:text-base"
               type="text" name="firstname" id="firstname" placeholder="Ola" required />
           </div>
           <div class="flex-1">
             <label class="block text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide max-sm:my-4"
               for="surname">Surname</label>
             <input
-              class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-3 sm:px-4 text-neutral-dark-gray text-sm sm:text-base"
+              class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-2 sm:px-4 text-neutral-dark-gray text-sm sm:text-base"
               type="text" name="surname" id="surname" placeholder="Nordmann" required />
           </div>
         </div>
@@ -119,7 +119,7 @@
           <label class="block text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide max-sm:my-4"
             for="password">Password</label>
           <input
-            class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-3 sm:px-4 text-neutral-dark-gray text-sm sm:text-base"
+            class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-2 sm:px-4 text-neutral-dark-gray text-sm sm:text-base"
             type="password" name="password" id="password" placeholder="Choose password" required
             autocomplete="new-password" minlength="8" pattern=".{8,}" />
         </div>
@@ -127,7 +127,7 @@
           <label class="block text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide max-sm:my-4"
             for="confirm-password">Confirm password</label>
           <input
-            class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-3 sm:px-4 text-neutral-dark-gray text-sm sm:text-base"
+            class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-2 sm:px-4 text-neutral-dark-gray text-sm sm:text-base"
             type="password" name="confirm-password" id="confirm-password" placeholder="Repeat password" required
             autocomplete="new-password" minlength="8" pattern=".{8,}" />
         </div>
@@ -141,7 +141,9 @@
   </main>
   <footer>
     <div class="flex justify-center items-center w-42.813 h-15.375 flex-shrink-0">
-      <img class="" src="../public/img/circle-footer.png">
+      <img class="max-sm:hidden" src="../public/img/circle-footer.png">
+      <img src="../public/img/Circles_illustration_mobile.png"
+        alt="two colorful circles where one is blue and one is green" class="md:hidden flex ml-auto mt-4">
     </div>
   </footer>
 </body>
