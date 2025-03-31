@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="../dist/output.css">
     <title>Contact</title>
 </head>
-<body>
-<!-- Student -->
-
-<header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
-    <nav class="max-w-7x1 flex items-center justify-between px-4">
-        <img class="ml-4 mr-16" src="../public/img/logo-header.png" alt="Edugate Logo">
+<body class="bg-[#F5F5F5] md:bg-neutral-light-gray">
+<header class="bg-neutral-light-gray text-neutral-dark-gray">
+    <nav class="max-w-7x1 flex items-center justify-between px-0 md:px-4">
+        <img class="pl-0 md:pl-5 w-34 md:w-auto" src="../public/img/logo-header.png" alt="Edugate Logo">
 
         <!-- Hamburger Menu -->
-        <div class="inset-0 md:hidden">
+        <div class="relative md:hidden">
             <!-- Checkbox for Hamburger Toggle -->
             <input
                 type="checkbox"
@@ -25,12 +23,10 @@
             <!-- Hamburger Icon -->
             <label
                 for="menu-toggle"
-                class="absolute top-14 right-4 cursor-pointer focus:outline-none peer-checked:hidden"
+                class="block cursor-pointer focus:outline-none peer-checked:hidden"
                 aria-label="Toggle menu"
             >
-                <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
+                <img src="../public/icons/hamburger-menu.png" alt="Hamburger menu" class="h-8 px-6">
             </label>
 
             <div
@@ -50,121 +46,81 @@
                 <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
                     <li>
                         <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
-                            Dashboard
-                            <img class="w-6 h-6" src="../public/icons/dashboard.png" alt="Dashboard Icon">
+                            Login
+                            <img class="h-5" src="../public/icons/login.png" alt="Login Icon">
                         </a>
                     </li>
                     <li>
                         <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
-                            Profile
-                            <img class="w-6 h-6" src="../public/icons/user-circle.png" alt="Profile Icon">
+                            Signup
+                            <img class="h-5" src="../public/icons/signup.png" alt="Signup Icon">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                        <a href="about.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                             About
-                            <img class="w-6 h-6" src="../public/icons/about.png" alt="About Icon">
+                            <img class="h-5" src="../public/icons/about.png" alt="About Icon">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                        <a href="contact.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                             Contact
-                            <img class="w-6 h-6" src="../public/icons/contact.png" alt="Contact Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-accent-hover">
-                            Log out
-                            <img class="w-6 h-6" src="../public/icons/logout.png" alt="Log out Icon">
+                            <img class="h-5" src="../public/icons/contact.png" alt="Contact Icon">
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <ul class="hidden md:flex justify-end mr-10 font-Poppins font-medium">
-            <li><a href="#" class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
-                Dashboard</a>
+        <ul class="hidden md:flex mr-0 font-Poppins font-medium text-l ml-auto">
+            <li class="py-8 px-12 border-b-2 border-neutral-light-gray hover:border-primary">
+                <a href="#" class="font-heading">Dashboard</a>
             </li>
-            <li><a href="../templates/about.html" class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary">
-                About</a>
+            <li class="py-8 px-12 border-b-2 border-neutral-light-gray hover:border-primary">
+                <a href="../templates/about.html" class="font-heading">About</a>
             </li>
-            <li><a href="../templates/contact.html" class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary">
-                Contact</a>
+            <li class="py-8 px-12 border-b-2 border-primary hover:border-primary" aria-current="page">
+                <a href="../templates/contact.html" class="font-heading">Contact</a>
             </li>
         </ul>
-            <!-- User Dropdown -->
-            <div class="relative">
-              <!-- Hidden Checkbox -->
-              <input type="checkbox" id="dropdown-toggle" class="hidden peer">
-  
-              <!-- User Icon (Clickable) -->
-              <label
-                  for="dropdown-toggle"
-                  class="hidden md:flex w-14 h-14 mr-10 cursor-pointer"
-              >
-                  <img src="/public/icons/user-circle.png" alt="User dropdown">
-              </label>
-  
-              <!-- Dropdown Menu -->
-              <ul
-                  class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
-                  <li>
-                      <a href="#" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
-                  </li>
-                  <li>
-                      <a href="#" class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
-                  </li>
-                  <li>
-                      <a href="#" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log out</a>
-                  </li>
-              </ul>
-          </div>
+        <img src="../public/icons/user-circle.png" alt="" class="hidden md:flex h-[64px] pr-5">
     </nav>
-
 </header>
 
-<main>
-    <section class="mx-14 sm:mx-24 md:mx-60 lg:mx-72 xl:mx-96">
-        <h1 class="text-black text-center font-Poppins text-[32px] font-bold tracking-wide mt-6 mb-4">Contact</h1>
-        <p class="text-neutral-dark-gray font-Roboto text-[20px] sm:text-[14px] font-normal tracking-wide mb-8 pl-10 pr-10">If you have any questions or feedback, please use the contact form.</p>
-        <p class="text-neutral-dark-gray font-Roboto text-[20px] sm:text-[14px] font-normal tracking-wide pl-10 pr-10">We would love to hear from you.</p>
+<main class="border-t-2 border-[#CCCCCC]">
+    <section class="sm:mx-auto sm:w-[600px] mx-0">
+        <h1 class="text-black text-center font-Poppins text-[32px] font-bold tracking-wide sm:mb-12 mt-6 mb-4">Contact</h1>
+        <p class="text-neutral-dark-gray font-Roboto sm:text-xl text-sm font-normal tracking-wide mb-4 sm:mb-12 pt-0 pl-10 pr-10 sm:pt-10">If you have any questions or feedback, please use the contact form.</p>
+        <p class="text-neutral-dark-gray font-Roboto sm:text-xl text-sm font-normal tracking-wide mb-4 sm:mb-12 pb-0 pl-10 pr-10 sm:pb-10">We would love to hear from you.</p>
     </section>
 
+
     <section class="my-2">
-        <form action="#" class="mx-4 sm:mx-14 md:mx-40 lg:mx-60 xl:mx-80 sm:mt-10 sm:border-2 border-zinc-300 p-10 sm:px-28 lg:px-40">
-
-            <!-- Email Field -->
-            <label class="text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide" for="email">Email
-                <input id="email" type="email" name="Email" placeholder="example@gmail.com" class="w-full p-2 border-2 rounded mt-1 font-Roboto h-12" style="border-color: var(--color-accent);">
+        <form action="#" class="sm:mx-auto mx-0 sm:mt-20 sm:border-2 border-[#BFBFBF] p-10 pt-4 md:p-10 sm:px-28 lg:px-40 bg-[#F5F5F5] sm:w-[600px]">
+            <label class="text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide" for="email"><span class="mb-3 block md:mb-0">Email</span>
+                <input id="email" type="email" name="Email" placeholder="example@mail.com" class="w-full bg-white mb-2 px-4 py-3 border-2 border-[#FF3333] rounded-lg mt-1 font-normal focus:outline-none text-sm md:text-base">
             </label>
-            <p class="mb-8 mt-1 font-Roboto" style="color: var(--color-accent);">Valid Email Required</p>
+            <p class="mb-6 mt-1 font-Roboto text-[#FF3333]">Valid email required</p>
 
-            <!-- Name Field -->
-            <label class="text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide" for="name">Name
-                <input id="name" type="text" name="Name" placeholder="Ola" class="w-full p-2 border-2 rounded mt-1 font-Roboto h-12" style="border-color: var(--color-accent);">
+            <label class="text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide" for="name"><span class="mb-3 block md:mb-0">Name</span>
+                <input id="name" type="text" name="Name" placeholder="Ola" class="w-full bg-white mb-2 px-4 py-3 border-2 border-[#FF3333] rounded-lg mt-1 font-normal focus:outline-none">
+
             </label>
-            <p class="mb-8 mt-1 font-Roboto" style="color: var(--color-accent);">Name required</p>
+            <p class="mb-6 mt-1 font-Roboto text-[#FF3333]">Name required</p>
 
-            <!-- Surname Field -->
-            <label class="text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide" for="surname">Surname
-                <input id="surname" type="text" name="Surname" placeholder="Nordmann" class="w-full p-2 border-2 rounded mt-1 font-Roboto h-12" style="border-color: var(--color-accent);">
+            <label class="text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide" for="surname"><span class="mb-3 block md:mb-0">Surname</span>
+                <input id="surname" type="text" name="Surname" placeholder="Nordmann" class="w-full bg-white mb-2 px-4 py-3 border-2 border-[#FF3333] rounded-lg mt-1 font-normal focus:outline-none">
             </label>
-            <p class="mb-8 mt-1 font-Roboto" style="color: var(--color-accent);">Surname required</p>
+            <p class="mb-6 mt-1 font-Roboto text-[#FF3333]">Surname required</p>
 
-            <!-- Message Field -->
-            <label class="text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide" for="message">Message</label>
-            <textarea id="message" type="message" name="Message" maxlength="2000" placeholder="Your message.." class="w-full p-2 min-h-40 border-2 rounded mt-1 font-Roboto" style="border-color: var(--color-accent);"></textarea>
-            <p class="font-Roboto" style="color: var(--color-accent);">Message required</p>
-
-
-            <!-- Try Again Button Field -->
+            <label class="text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide" for="message"><span class="mb-3 block md:mb-0">Message</span></label>
+            <textarea id="message" type="message" name="Message" maxlength="2000" placeholder="Your message ..." class="w-full bg-white px-4 py-3 min-h-40 border-2 border-[#FF3333] rounded-lg mt-1 font-normal focus:outline-none"></textarea>
+            <p class="mb-6 mt-1 font-Roboto text-[#FF3333]">Message required</p>
             <div class="flex justify-center">
-                <a href="./contact.html" class="alert-button mt-8">
+                <a href="./contact.html" class="alert-button mt-4 md:mt-16">
                     Try Again
                 </a>
             </div>
-
         </form>
     </section>
 </main>
