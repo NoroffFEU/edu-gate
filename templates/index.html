@@ -8,11 +8,13 @@
   <title>Landing page Edugate</title>
 </head>
 <body class="bg-neutral-light-gray font-Roboto min-h-screen flex flex-col">
-    <header class="border border-gray-300 h-16 md:h-36">
-      <nav class="flex items-center justify-end" >
-          <img src="../public/img/logo-header.png" alt="header logo for Edugate." class="mr-auto h-16 w-16 md:h-40 md:w-40">
+    <header class="border border-gray-300 md:h-36">
+      <nav class="flex items-center justify-between px-4 py-[0.1875rem]" >
+        <a href="../templates/index.html"><img src="../public/img/logo-header-small-screen.png" alt="header logo for Edugate." class="h-16 w-16"></a>
+        <a href="../templates/index.html"><img class="max-md:hidden" src="../public/img/logo-header.png" alt="Edugate Logo"></a>
+
       <!-- Hamburger Menu for Mobile Only -->
-      <div class="relative w-[25px] h-[24px] md:hidden mr-5">
+      <div class="relative w-[25px] h-[24px] md:hidden">
         <input type="checkbox" id="menu-toggle" class="hidden peer" />
         <label for="menu-toggle" class="block cursor-pointer focus:outline-none peer-checked:hidden" 
                aria-label="Toggle menu">
@@ -80,8 +82,8 @@
         <!-- Overlay Text Container -->
         <div class="absolute inset-0">
           <!-- Centered Heading -->
-          <h1 class="relative top-[7.5px] left-[50%] transform -translate-x-1/2 text-center text-neutral-dark-gray font-bold font-heading"
-              style="font-size:5vw;">
+          <h1 class="relative top-[7.5px] left-[50%] transform -translate-x-1/2 text-center text-neutral-dark-gray font-bold text-3xl"
+        >
             Edugate
           </h1>
           <!-- Centered Paragraph -->
