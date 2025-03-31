@@ -21,6 +21,7 @@
       <a href="../templates/index.html"><img class="h-16 w-16 lg:hidden" src="../public/img/logo-header-small-screen.png" alt="Edugate Logo"></a>
 
 
+
       <!-- Hamburger Menu -->
       <div class="relative md:hidden">
         <!-- Checkbox for Hamburger Toggle -->
@@ -29,6 +30,7 @@
         <label for="menu-toggle" class="block cursor-pointer focus:outline-none peer-checked:hidden"
           aria-label="Toggle menu">
           <img class="w-[1.5625rem] h-[1.5625rem]" src="../public/icons/hamburger-menu.png" alt="Hamburger Menu">
+
         </label>
 
         <div
@@ -44,28 +46,32 @@
 
           <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
             <li>
-              <a href="../templates/login-page.html"
+
+              <a href="login-page.html"
                 class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                 Login
                 <img class="w-6 h-6" src="../public/icons/login.png" alt="Login Icon">
               </a>
             </li>
             <li>
-              <a href="../templates/sign-up.html"
+
+              <a href="sign-up.html"
                 class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                 Signup
                 <img class="w-6 h-6" src="../public/icons/signup.png" alt="Signup Icon">
               </a>
             </li>
             <li>
-              <a href="../templates/about.html"
+
+              <a href="about.html"
                 class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                 About
                 <img class="w-6 h-6" src="../public/icons/about.png" alt="About Icon">
               </a>
             </li>
             <li>
-              <a href="../templates/contact.html"
+
+              <a href="contact.html"
                 class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                 Contact
                 <img class="w-6 h-6" src="../public/icons/contact.png" alt="Contact Icon">
@@ -77,10 +83,11 @@
 
       <ul class="hidden md:flex mr-10 font-Poppins font-medium text-xl">
         <li class="py-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
-          <a href="../templates/about.html" class="font-heading ">About</a>
+
+          <a href="about.html" class="font-heading ">About</a>
         </li>
         <li class="py-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
-          <a href="../templates/contact.html" class="font-heading ">Contact</a>
+          <a href="contact.html" class="font-heading ">Contact</a>
         </li>
       </ul>
     </nav>
@@ -139,6 +146,16 @@
       </form>
     </div>
   </main>
+
+  <section class="flex flex-col items-center ">
+    <div class="bg-[rgb(255,235,238)] h-28 w-84 md:h-42 md:w-112 border-none shadow-[-2px_4px_4px_2px_rgba(0,0,0,0.25)] items-center text-center">
+        <img src="../public/icons/x-red.png" alt="an icon of a red x, clicked to close the alert." class="ml-auto pr-2 pt-2 md:pr-4 md:pt-4">
+        <div class="text-center, items-center justify-center flex flex-col">
+          <h2 class="md:text-[2rem] text-[1.5rem] text-Poppins text-[#C62828] font-[700] tracking-[0.5px] -mt-2 mr-15 md:mr-0 md:mt-0">Failed Sign Up!</h2>
+          <img src="../public/icons/vector.png" alt="a circle with an exclamation mark inside. a vector" class="mr-70 -mt-9 md:mr-84 md:-mt-10 md:mb-8 h-8 w-8 md:h-20 md:w-20">
+        <p class="text-[1rem] text-roboto text-[#C62828] font-[400] tracking-[0.5px] mt-3 mr-12 md:-mt-18 md:ml-20">Wrong password or email address!</p>
+        </div>
+  </section>
   <footer>
     <div class="flex justify-center items-center w-42.813 h-15.375 flex-shrink-0">
       <img class="max-sm:hidden" src="../public/img/circle-footer.png">

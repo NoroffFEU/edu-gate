@@ -3,33 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A page for editing admin information" />
-    <link rel="stylesheet" href="../dist/output.css" />
-    <title>Edit Profile - Admin</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <title>Profile</title>
   </head>
-
-  <body class="bg-neutral-light-gray">
+  <body>
     <header
       class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins border-b-1 border-[#cccccc]"
     >
       <nav class="max-w-7x1 flex items-center justify-between px-4">
         <img
           class="ml-4 mr-16"
-          src="../public/img/logo-header.png"
+          src="../../public/img/logo-header.png"
           alt="Edugate Logo"
         />
 
-        <div class="relative md:hidden">
+        <!-- Hamburger Menu -->
+        <div class="fixed inset-0 md:hidden">
           <!-- Checkbox for Hamburger Toggle -->
           <input type="checkbox" id="menu-toggle" class="hidden peer" />
           <!-- Hamburger Icon -->
           <label
             for="menu-toggle"
-            class="block cursor-pointer focus:outline-none peer-checked:hidden"
+            class="absolute top-14 right-4 cursor-pointer focus:outline-none peer-checked:hidden"
             aria-label="Toggle menu"
           >
             <svg
-              class="w-14 h-14 mr-4"
+              class="w-16 h-16"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -70,17 +69,17 @@
             </label>
 
             <ul
-              class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8 font-semibold text-[20px] text-neutral-dark-gray font-Poppins"
+              class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8"
             >
               <li>
                 <a
                   href="#"
-                  class="items-center gap-5 p-3 border-b-2 border-white hover:border-primary"
+                  class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary"
                 >
                   Dashboard
                   <img
                     class="w-6 h-6"
-                    src="../public/icons/dashboard.png"
+                    src="../../public/icons/dashboard.png"
                     alt="Dashboard Icon"
                   />
                 </a>
@@ -93,21 +92,8 @@
                   Profile
                   <img
                     class="w-6 h-6"
-                    src="../public/icons/user-circle.png"
+                    src="../../public/icons/user-circle.png"
                     alt="Profile Icon"
-                  />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary"
-                >
-                  Manage results
-                  <img
-                    class="w-6 h-6"
-                    src="../public/icons/results.png"
-                    alt="Manage results Icon"
                   />
                 </a>
               </li>
@@ -119,7 +105,7 @@
                   About
                   <img
                     class="w-6 h-6"
-                    src="../public/icons/about.png"
+                    src="../../public/icons/about.png"
                     alt="About Icon"
                   />
                 </a>
@@ -132,7 +118,7 @@
                   Contact
                   <img
                     class="w-6 h-6"
-                    src="../public/icons/contact.png"
+                    src="../../public/icons/contact.png"
                     alt="Contact Icon"
                   />
                 </a>
@@ -145,7 +131,7 @@
                   Log out
                   <img
                     class="w-6 h-6"
-                    src="../public/icons/logout.png"
+                    src="../../public/icons/logout.png"
                     alt="Log out Icon"
                   />
                 </a>
@@ -167,7 +153,7 @@
           </li>
           <li>
             <a
-              href="../templates/about.html"
+              href="../about.html"
               class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary font-Poppins font-semibold md:text-[20px] text-neutral-dark-gray"
             >
               About</a
@@ -175,7 +161,7 @@
           </li>
           <li>
             <a
-              href="../templates/contact.html"
+              href="../contact.html"
               class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary font-Poppins font-semibold md:text-[20px] text-neutral-dark-gray"
             >
               Contact</a
@@ -192,7 +178,7 @@
             for="dropdown-toggle"
             class="hidden md:flex w-14 h-14 mr-10 cursor-pointer"
           >
-            <img src="/public/icons/user-circle.png" alt="User dropdown" />
+            <img src="../../public/icons/user-circle.png" alt="User dropdown" />
           </label>
 
           <!-- Dropdown Menu -->
@@ -224,117 +210,95 @@
         </div>
       </nav>
     </header>
-    <main class="mb-10 mx-6">
-      <div class="flex mb-10 mt-10 gap-4">
-        <a
-          src="#"
-          class="text-neutral-medium-gray font-Roboto font-normal text-[16px]"
+    <div class="flex bg-neutral-light-gray gap-4 pl-8 py-12">
+      <p class="text-neutral-medium-gray font-Roboto font-normal text-[16px]">
+        Dashboard
+      </p>
+      <p class="text-neutral-medium-gray font-Roboto font-bold text-[16px]">
         >
-          <!--add link to breadcrumbs-->
-          Dashboard</a
-        >
-        <p class="text-neutral-medium-gray font-Roboto font-bold text-[16px]">
-          >
-        </p>
-        <a src="#" class="text-primary font-Roboto font-medium text-[16px]">
-          Profile</a
-        >
-      </div>
-
-      <section
-        class="mx-4 md:mx-40 md:p-10 xl:mx-80 lg:border-3 border-neutral-medium-gray"
+      </p>
+      <p class="text-primary font-Roboto font-medium text-[16px]">Profile</p>
+    </div>
+    <main class="flex items-center justify-center bg-neutral-light-gray">
+      <div
+        class="bg-neutral-light-gray sm:shadow-none shadow-lg border-2 border-neutral-medium-gray p-8 w-[361px] sm:w-[612px] text-center mb-20 mt-4"
       >
         <h1
-          class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4"
+          class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-4 sm:mb-2 sm:mt-8"
+        >
+          Profile
+        </h1>
+        <div
+          class="mb-8 w-18 h-18 sm:w-32 sm:h-32 mx-auto rounded-full bg-primary flex items-center justify-center text-white sm:text-black text-[32px] font-bold"
+        >
+          <span>JB</span>
+        </div>
+        <div
+          class="mt-4 grid sm:grid-cols-2 grid-cols-[1fr_2fr] gap-y-2 sm:gap-y-4 text-left"
+        >
+          <span class="mb-4 sm:ml-35 font-bold font-Roboto text-[16px]"
+            >Name:</span
+          >
+          <span
+            class="text-left sm:text-left sm:ml-10 font-medium font-Roboto text-[16px]"
+            >Joe Bloggs</span
+          >
+          <span class="mb-4 sm:ml-35 font-bold font-Roboto text-[16px]"
+            >Email:</span
+          >
+          <span
+            class="text-left sm:text-left sm:ml-10 font-medium font-Roboto text-[16px]"
+            >joeblog2020@edugate.no</span
+          >
+          <span class="mb-4 sm:ml-35">
+            <span class="block sm:hidden">DOB:</span>
+            <span class="hidden sm:block font-bold font-Roboto text-[16px]"
+              >Date og birth:</span
+            >
+          </span>
+
+          <span
+            class="text-left sm:text-left sm:ml-10 font-medium font-Roboto text-[16px]"
+            >19/11/1988</span
+          >
+          <span class="mb-4 sm:ml-35 font-bold font-Roboto text-[16px]"
+            >ID:</span
+          >
+          <span
+            class="text-left sm:text-left sm:ml-10 font-medium font-Roboto text-[16px]"
+            >1921840</span
+          >
+          <span class="mb-4 sm:ml-35 font-bold font-Roboto text-[16px]"
+            >Position:</span
+          >
+          <span
+            class="text-left sm:text-left sm:ml-10 font-medium font-Roboto text-[16px]"
+            >Teacher</span
+          >
+          <span class="mb-4 sm:ml-35 font-bold font-Roboto text-[16px]"
+            >School:</span
+          >
+          <span
+            class="text-left sm:text-left sm:ml-10 font-medium font-Roboto text-[16px]"
+            >The Academy</span
+          >
+        </div>
+        <button
+          class="block mx-auto mt-12 mb-16 border-2 border-secondary h-[44px] sm:h-[59px] w-[195px] sm:w-[190px] text-secondary text-[18px] sm:text-[26px] rounded-md font-semibold hover:bg-secondary-hover font-Poppins cursor-pointer"
         >
           Edit Profile
-        </h1>
-        <div class="flex justify-center">
-          <div
-            class="flex items-center justify-center w-[74px] h-[74px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[129px] lg:h-[129px] rounded-full bg-primary"
-          >
-            <p class="text-white font-bold font-Poppins text-[32px]">JB</p>
-          </div>
-        </div>
-        <section class="flex items-center justify-center">
-          <form action="#" class="xl:w-[315px]">
-            <!-- Editable fields -->
-            <label
-              class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
-              >Name:
-              <input
-                type="text"
-                name="Name"
-                placeholder="Joe Bloggs"
-                required
-                class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto"
-              />
-            </label>
-            <label
-              class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
-              for="email"
-              >Email:
-              <input
-                id="email"
-                type="email"
-                name="Email"
-                placeholder="joeblog2024@edugate.no"
-                required
-                class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto"
-              />
-            </label>
-            <label
-              class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
-              for="dob"
-              >Date of Birth:
-              <input
-                itemid="dob"
-                type="text"
-                id="dob"
-                name="dob"
-                placeholder="01/01/1987"
-                required
-                class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-[#000000] opacity-100 font-Roboto"
-              />
-            </label>
-
-            <!-- Read-only fields -->
-
-            <div>
-              <label
-                class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
-                for="school"
-                >School:</label
-              >
-              <input
-                type="text"
-                id="school"
-                name="school"
-                value="The Academy"
-                readonly
-                class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto"
-              />
-            </div>
-
-            <div class="flex justify-center">
-              <button class="primary-button mt-4 mb-6" type="submit">
-                Update
-              </button>
-            </div>
-          </form>
-        </section>
-      </section>
+        </button>
+      </div>
     </main>
-
     <footer class="flex justify-end sm:justify-center">
       <img
         class="sm:hidden"
-        src="../public/img/Circles_illustration_mobile.png"
+        src="../../public/img/Circles illustration mobile.png"
         alt="Edugate footer circles"
       />
       <img
         class="hidden sm:block shrink-0 mx-4 mt-8"
-        src="../public/img/circle-footer.png"
+        src="../../public/img/circle-footer.png"
         alt="Edugate footer circles"
       />
     </footer>
