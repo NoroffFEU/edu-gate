@@ -266,6 +266,7 @@
               alt="Profile icon"
               class="w-full h-full transition-opacity duration-300 group-hover:opacity-0"
             />
+           
 
             <!-- Hover state -->
             <img
@@ -273,6 +274,12 @@
               alt="Click to change profile picture"
               class="w-full h-full absolute top-0 left-0 right-0 bottom-0 m-auto transition-opacity duration-300 opacity-0 group-hover:opacity-100"
             />
+            <input 
+            type="file" 
+            id="profileImageInput" 
+            accept="image/*" 
+            class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
+          />
           </div>
         </div>
 
@@ -284,6 +291,12 @@
             role="button"
             aria-label="Change profile picture - mobile version"
           />
+          <input 
+          type="file" 
+          id="profileImageInput" 
+          accept="image/*" 
+          class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
+        />
         </div>
 
         <section class="flex items-center justify-center">
