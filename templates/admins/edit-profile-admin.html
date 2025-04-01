@@ -14,19 +14,17 @@
   <!-- Suggestex fix for header!-->
 
   <header class="w-full bg-neutral-light-gray text-neutral-dark-gray font-Poppins border-b-1 border-[#cccccc]">
-    <div class="w-full max-w-7xl mx-auto px-6">
+    <div class="w-full max-w-7xl mx-auto px-2 lg:px-6">
       <nav class="flex w-full items-center justify-between">
-        <img class="" src="../../public/img/logo-header.png" alt="Edugate Logo" />
+        <img class="ml-4 w-16 h-16 lg:hidden" src="../../public/img/logo-header-cropped.png" alt="Edugate Logo" />
+        <img class="w-44 h-44 hidden lg:block" src="../../public/img/logo-header.png" alt="Edugate Logo" />
         <div class="relative lg:hidden ml-auto">
           <!--Checkbox for Hamburger Toggle-->
           <input type="checkbox" id="menu-toggle" class="hidden peer" />
           <!--Hamburger Icon-->
-          <label for="menu-toggle" class="block cursor-pointer focus:outline-none peer-checked:hidden"
+          <label for="menu-toggle" class="block cursor-pointer focus:outline-none peer-checked:hidden mr-4"
             aria-label="Toggle menu">
-            <svg class="w-14 h-14 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
+            <img src="../../public/icons/hamburger-menu.png" alt="hamburger-menu">
           </label>
           <div
             class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
@@ -124,8 +122,8 @@
     </div>
   </header>
 
-  <main class="w-full max-w-7xl mx-auto mb-12">
-    <div class="flex mt-4 mb-4 lg:mb-20 lg:mt-20 gap-6 ml-6">
+  <main class="w-full max-w-7xl mx-auto mb-4 lg:mb-12">
+    <div class="flex mt-4 lg:mt-12 mb-4 lg:mb-12 gap-6 ml-6">
       <a src="#" class="text-neutral-medium-gray font-Roboto font-normal text-[16px]">
         <!--add link to breadcrumbs-->
         Dashboard</a>
@@ -136,7 +134,7 @@
         Profile</a>
     </div>
 
-    <section class="max-w-2xl mx-auto md:pt-12 px-6 lg:border-3 border-neutral-medium-gray">
+    <section class="max-w-3xl mx-auto md:pt-20 px-6 lg:border-3 border-neutral-medium-gray">
       <h1
         class="text-neutral-dark-gray text-center font-Poppins text-[20px] font-bold tracking-wide mb-4 md:text-[32px]">
         Edit Profile
@@ -158,7 +156,7 @@
           Picture" class="w-[74px] h-[74px] md:hidden block m-2" />
       </div>
       <div class="flex items-center justify-center">
-        <form action="#" class="w-full max-w-sm mx-auto">
+        <form action="#" class="w-full max-w-xs mx-auto">
           <!--Editable fields-->
           <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide">Name:
             <input type="text" name="Name" placeholder="Joe Bloggs" required
@@ -169,13 +167,19 @@
             <input id="email" type="email" name="Email" placeholder="joeblog2024@edugate.no" required
               class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" />
           </label>
-          <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
-            for="dob">Date of Birth:
+          <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide lg:hidden"
+            for="dob">DOB:
+            <input itemid="dob" type="text" id="dob" name="dob" placeholder="01/01/1987" required
+              class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-[#000000] opacity-100 font-Roboto" />
+          </label>
+          <label
+            class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide hidden lg:block"
+            for="dob">Date of birth:
             <input itemid="dob" type="text" id="dob" name="dob" placeholder="01/01/1987" required
               class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-[#000000] opacity-100 font-Roboto" />
           </label>
           <!--Added Extra field mobile screens-->
-          <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
+          <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide sm:hidden"
             for="position">Position:
             <input itemid="position" type="text" id="position" name="position" placeholder="Administrator" readonly
               class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto" />
@@ -188,7 +192,7 @@
               class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto" />
           </div>
           <div class="flex justify-center">
-            <button class="primary-button mt-4 mb-12" type="submit">
+            <button class="primary-button mt-4 mb-4 lg:mb-40" type="submit">
               Update
             </button>
           </div>
@@ -198,8 +202,10 @@
   </main>
 
   <footer class="w-full max-w-7xl mx-auto flex justify-center relative">
-    <img class="absolute right-0 sm:hidden md:hidden" src="../../public/img/Circles_illustration_mobile.png"
-      alt="Edugate footer circles" />
+    <div class="w-full pl-10 sm:hidden md:hidden">
+      <img class="w-full h-auto object-contain" src="../../public/img/Circles_illustration_mobile.png"
+        alt="Edugate footer circles" />
+    </div>
     <img class="hidden sm:block shrink-0 mx-auto" src="../../public/img/circle-footer.png"
       alt="Edugate footer circles" />
   </footer>
