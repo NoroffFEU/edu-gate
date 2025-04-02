@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A page for editing admin information">
+	<link rel="stylesheet" href="../dist/output.css">
+	<title>Edit Profile - Admin</title>
+</head>
+
+<body class="bg-neutral-light-gray">
+<header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
+	<nav class="max-w-7x1 flex items-center justify-between px-4">
+		<img class="ml-4 mr-16" src="../public/img/logo-header.png" alt="Edugate Logo">
+        <ul class="hidden md:flex justify-end mr-10 font-Poppins font-medium">
+            <li>
+                <a href="#" class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary">
+                    <span class="sr-only">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="../templates/about.html" class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary">
+                    <span class="sr-only">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="../templates/contact.html" class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary">
+                    <span class="sr-only">Contact</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- User Dropdown -->
+        <div class="relative">
+            <input type="checkbox" id="dropdown-toggle" class="hidden peer">
+            
+            <!-- User Icon (Clickable) -->
+            <label for="dropdown-toggle" class="hidden md:flex w-14 h-14 mr-10 cursor-pointer">
+                <img src="/public/icons/user-circle.png" alt="User dropdown">
+            </label>
+
+            <!-- Dropdown Menu -->
+            <ul class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
+                <li>
+                    <a href="#" class="block px-8 py-4 hover:bg-white hover:text-green-600">
+                        <span class="sr-only">View Results</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">
+                        <span class="sr-only">Go to Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block px-8 py-4 hover:bg-white hover:text-red-600">
+                        <span class="sr-only">Log out of account</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</nav>
+</header>
+
+<main class="mb-10 mx-6">
+	<!-- Breadcrumb -->
+	<div class="flex mb-6 gap-2 font-light text-neutral-medium-gray text-base sm:text-lg">
+		<a href="#">Dashboard</a>
+		<p>></p>
+		<a href="#" class="text-primary">Profile</a>
+	</div>
+
+	<section class="mx-4 md:mx-40 md:p-10 xl:mx-80 lg:border-2 border-neutral-medium-gray">
+		<h3 class="text-neutral-dark-gray text-center font-Poppins text-2xl sm:text-3xl font-bold tracking-wide mb-10 sm:mb-6">Edit Profile</h3>
+		
+		<div class="flex justify-center mb-6">
+			<img class="w-20 h-20 md:w-28 md:h-28" src="../public/icons/user-circle-edit-mobile.png" alt="User profile icon and initials">
+		</div>
+
+		<section>
+			<form action="#" class="w-full lg:px-40">
+				<label for="admin-name" class="text-neutral-dark-gray font-Roboto text-lg sm:text-xl font-bold tracking-wide block mb-2">Admin Name:</label>
+				<input id="admin-name" type="text" name="Name" placeholder="Ola" required 
+					class="w-full mb-6 p-3 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin text-lg"
+					aria-label="Admin Name">
+				
+				<label for="email" class="text-neutral-dark-gray font-Roboto text-lg sm:text-xl font-bold tracking-wide block mb-2">Admin Email:</label>
+				<input id="email" type="email" name="Email" placeholder="example@gmail.com" required 
+					class="w-full mb-6 p-3 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin text-lg"
+					aria-label="Admin Email">
+				
+				<label for="dob" class="text-neutral-dark-gray font-Roboto text-lg sm:text-xl font-bold tracking-wide block mb-2">Admin Date of Birth:</label>
+				<input id="dob" type="date" name="dob" required 
+					class="w-full mb-6 p-3 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin text-lg"
+					aria-label="Admin Date of Birth">
+			
+				<!-- Read-only fields -->
+				<div>
+					<label for="position" class="text-neutral-dark-gray font-Roboto text-lg sm:text-xl font-bold tracking-wide block mb-2">Admin Position:</label>
+					<input id="position" type="text" name="position" value="Administrator" readonly 
+						class="w-full mb-6 p-3 border-2 border-zinc-300 bg-zinc-300 text-neutral-medium-gray rounded shadow-inner shadow-gray-600 mt-1 font-thin text-lg"
+						aria-label="Admin Position">
+				</div>
+				<div>
+					<label for="school" class="text-neutral-dark-gray font-Roboto text-lg sm:text-xl font-bold tracking-wide block mb-2">Admin School:</label>
+					<input id="school" type="text" name="school" value="The Academy" readonly 
+						class="w-full mb-6 p-3 border-2 border-zinc-300 bg-zinc-300 text-neutral-medium-gray rounded shadow-inner shadow-gray-600 mt-1 font-thin text-lg"
+						aria-label="Admin School">
+				</div>
+			
+				<div class="flex justify-center">
+					<button class="primary-button mt-6 mb-6 text-lg sm:text-xl" type="submit" aria-label="Update Admin Profile">
+						Update
+					</button>
+				</div>
+			</form>
+			
+		</section>
+	</section>
+</main>
+
+
+
+<footer class="flex justify-end sm:justify-center">
+	<img class="sm:hidden" src="../public/img/Circles_illustration_mobile.png" alt="Edugate footer circles">
+	<img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles">
+</footer>
+
+</body>
+</html>
