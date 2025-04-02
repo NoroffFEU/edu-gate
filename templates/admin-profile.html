@@ -226,39 +226,43 @@
         </div>
       </nav>
     </header>
-        <div class="flex bg-neutral-light-gray pl-5">
+        <div class="hidden md:flex bg-neutral-light-gray pl-5 pt-20">
             <p class="text-neutral-medium-gray font-Roboto text-base font-normal tracking-[0.015rem]">Dashboard</p>
-            <p class="text-neutral-medium-gray font-Roboto text-base font-normal mx-4">></p>
+            <p class="text-neutral-medium-gray font-Roboto text-base font-normal px-6">></p>
             <p class="text-primary font-Roboto text-base font-normal tracking-[0.015rem]">Profile</p>
         </div>
-        <main>
-            <main class="flex items-center justify-center min-h-screen bg-neutral-light-gray">
-                <div class="bg-neutral-light-gray sm:shadow-none shadow-lg border-3 border-neutral-medium-gray p-8 w-[361px] sm:w-[612px] sm:h-[771px] text-center mb-20 mt-40">
+        <div class="md:hidden flex bg-neutral-light-gray pl-5 pt-4">
+          <p class="text-neutral-medium-gray font-Roboto text-base font-normal tracking-[0.015rem]">Dashboard</p>
+          <p class="text-neutral-medium-gray font-Roboto text-base font-normal px-6">></p>
+          <p class="text-primary font-Roboto text-base font-normal tracking-[0.015rem]">Profile</p>
+      </div>
+        <main class="flex items-center justify-center bg-neutral-light-gray">
+                <div class="bg-neutral-light-gray sm:shadow-none shadow-lg border-2 border-neutral-medium-gray p-8 w-[361px] sm:w-[612px] sm:h-[771px] text-center mt-20">
                     <h1 class="text-black text-center font-Poppins text-xl sm:text-[32px] font-bold tracking-wide mb-4 mt-0 sm:mt-8">Profile</h1>
                     <div class=" mb-8 w-18 h-18 sm:w-32 sm:h-32 mx-auto rounded-full bg-primary flex items-center justify-center text-white sm:text-black text-[32px] font-bold">
                     JB
                     </div>
-                <div class="mt-4 grid sm:grid-cols-2 grid-cols-[1fr_2fr] gap-y-2 sm:gap-y-4 text-left">
-                    <strong class="mb-6 sm:ml-35">Name:</strong>
-                    <span class="text-left sm:text-left sm:ml-10">Joe Bloggs</span>
-                    <strong class="mb-6 sm:ml-35">Email:</strong>
-                    <span class="text-left sm:text-left sm:ml-10">joeblog2020@edugate.no</span>
-                    <strong class="mb-6 sm:ml-35">
-                    <span class="block sm:hidden">DOB:</span>
-                    <span class="hidden sm:block">Date og birth:</span>
-                    </strong>
-                
-                    <span class="text-left sm:text-left sm:ml-10">01.01.1987</span>
-                    <strong class="mb-6 sm:ml-35">Position:</strong>
-                    <span class="text-left sm:text-left sm:ml-10">Administator</span>
-                    <strong class="mb-6 sm:ml-35">School:</strong>
-                    <span class="text-left sm:text-left sm:ml-10">The Academy</span>
-                </div>
-                <button class="block mx-auto mt-4 border-2 border-secondary h-[44px] sm:h-[59px] w-[195px] sm:w-[190px] text-secondary text-[18px] sm:text-[26px] rounded-md font-bold hover:bg-secondary-hover">Edit Profile</button>
+                  <div class="mt-4 grid sm:grid-cols-2 grid-cols-[1fr_2fr] gap-y-2 sm:gap-y-4 text-left">
+                      <strong class="mb-6 sm:ml-35">Name:</strong>
+                      <span class="text-left sm:text-left sm:ml-10">Joe Bloggs</span>
+                      <strong class="mb-6 sm:ml-35">Email:</strong>
+                      <span class="text-left sm:text-left sm:ml-10">joeblog2020@edugate.no</span>
+                      <strong class="mb-6 sm:ml-35">
+                      <span class="block sm:hidden">DOB:</span>
+                      <span class="hidden sm:block">Date og birth:</span>
+                      </strong>
+                  
+                      <span class="text-left sm:text-left sm:ml-10">01.01.1987</span>
+                      <strong class="mb-6 sm:ml-35">Position:</strong>
+                      <span class="text-left sm:text-left sm:ml-10">Administator</span>
+                      <strong class="mb-6 sm:ml-35">School:</strong>
+                      <span class="text-left sm:text-left sm:ml-10">The Academy</span>
+                  </div>
+                  <button class="block mx-auto mt-4 border-2 border-secondary h-[44px] sm:h-[59px] w-[195px] sm:w-[190px] text-secondary text-[18px] sm:text-[26px] rounded-md font-bold hover:bg-secondary-hover">Edit Profile</button>
                 </div>
         </main>
         <footer class="bg-neutral-light-gray flex justify-end sm:justify-center">
-            <img class="sm:hidden" src="../public/img/Circles illustration mobile.png" alt="Edugate footer circles">
+            <img class="sm:hidden shrink-0 mx-4 mt-8" src="../public/img/Circles_illustration_mobile.png" alt="Edugate footer circles">
             <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles">
         </footer>
     </body>
