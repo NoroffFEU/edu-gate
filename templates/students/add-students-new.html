@@ -9,7 +9,7 @@
     <script src="" defer></script>
     <title>Edugate | Add students</title>
 </head>
-<body class="bg-neutral-light-gray flex-col min-h-screen">
+<body class="bg-neutral-light-gray flex-col min-h-screen font-Roboto">
     <header class="bg-neutral-light-gray text-neutral-dark-gray border-b border-[#CCCCCC]">
         <nav class="max-w-7x1 flex items-center justify-between px-0 md:px-4">
             <img class="pl-0 md:pl-5 w-34 md:w-auto" src="../../public/img/logo-header.png" alt="Edugate Logo">
@@ -31,7 +31,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </label>
-
+  
             <div
                 class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
             >
@@ -45,7 +45,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </label>
-
+  
                 <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
                     <li>
                         <a href="dashboard-student.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
@@ -80,7 +80,7 @@
                 </ul>
             </div>
         </div>
-
+  
         <ul class="hidden md:flex mr-0 font-Poppins font-medium text-l ml-auto">
             <li class="py-8 px-12 border-b-2 border-neutral-light-gray hover:border-primary">
                 <a href="../../templates/students/dashboard-student.html" class="font-heading">Dashboard</a>
@@ -120,23 +120,43 @@
               </ul>
           </div>
     </nav>
-</header>
-<section class="mb-6 mt-6">
-    <nav class="text-sm ml-4">
-      <a href ="#" class="text-gray-500 hover:text-gray-700">Dashboard</a> &gt;
-      <a href="#" class="text-green-600 font-medium">Add students</a>
-    </nav>
-  </section>
-<div class="flex">
-    <!--Sidebar-->
-    <div id="sidebar" class="hidden lg:flex flex-col gap-12 ml-1/4 ml-4">
-     <a href="../index.html"><img class="cursor-pointer w-12" src="../../public/icons/dashboard.png" alt="Picutre of a green home icon"></a>
-     <a href="../../templates/students/student-results.html"><img class="cursor-pointer w-12" src="../../public/icons/results.png" alt="Picture of a green results icon"></a>
-     <a href="../../student-profile.html"><img class="cursor-pointer w-12" src="/public/icons/user-circle.png" alt="Picture of a green user icon"></a>
-     <a href="../../templates/students/top-performing-students.html"><img class="cursor-pointer w-12" src="../../public/icons/school-management.png" alt="Picture of a green school icon"></a>
-     <a href="#"><img class="cursor-pointer w-12" src="../../public/icons/logout.png" alt="Picture of a red log out icon"></a>
- </div>
-  <main class="w-full mx-auto mt-6 font-Poppins flex-1">
+  </header>
+    <main class="flex flex-row flex-grow gap-0 m-0"> 
+      <div id="sidebar" class="sidebar teacher-sidebar hidden lg:flex flex-col gap-12 ml-4">
+        <div class="flex flex-col gap-12 mt-10">
+        <img src="/public/icons/dashboard.png" class="w-[41px]" alt="Dashboard icon">
+        <img src="/public/icons/results.png" class="w-[41px]" alt="Results icon">
+        <img src="/public/icons/user-circle.png" class="w-[41px]" alt="User icon">
+        <img src="/public/icons/school-management.png" class="w-[41px]" alt="School management icon">
+        <img src="/public/icons/logout.png" class="w-[41px]" alt="Log out icon">
+        </div>
+  </div>
+  <!--Sidebar-->
+  <div id="sidebar-hov" class="teacher-sidebar hidden lg:flex flex-col gap-12 ">
+    <a href="dashboard-admin.html" class=" rounded-md">
+        <img src="/public/icons/dashboard.png" class="w-[41px]" alt="Dashboard icon"><span>Home</span>
+    </a>
+    <a href="add-results.html" class=" rounded-md">
+        <img src="/public/icons/results.png" class="w-[41px]" alt="Results management icon"><span>Results Management</span>
+    </a>
+    <a href="manage-user.html" class="rounded-md">
+        <img src="/public/icons/user-circle.png" class="w-[41px]" alt="User icon"><span>User Management</span>
+    </a>
+    <a href="add-school.html" class="rounded-md">
+        <img src="/public/icons/school-management.png" class="w-[41px]" alt="School management icon"><span>Top Students</span>
+    </a>
+    <a href="/templates" class="rounded-md">
+        <img src="/public/icons/logout.png" class="w-[41px]" alt="Log out icon"><span>Logout</span>
+    </a>
+  </div>
+      
+  <!-- <section class="mb-6 mt-6"> -->
+    <section class="flex flex-col w-full gap-12 m-0 pr-[16px] sm:!pr-[80px]  border-#CCCCCC-400 pl-4 pt-5">
+        <p class="self-start mb-12 text-[#757575] ">
+          Dashboard &nbsp;&nbsp;> <span class="text-[#4CAF50]"> &nbsp;&nbsp;Add students</span>
+        </p>
+
+    <main class="w-full font-Poppins flex-1">
     <section class="mb-4 flex flex-col justify-center text-center items-center mt-24 md:mt-10 py-6">
     <h1 class="text-black text-center font-Poppins text-[32px] font-bold tracking-wide sm:mb-12 mb-6">Add students</h1>
     <p class="text-neutral-dark-gray font-Roboto sm:text-xl text-sm font-normal sm:tracking-wide sm:mb-12 mb-4">To add students, upload an excel spreadsheet with this format:</p>
@@ -201,4 +221,5 @@
 </footer>
 </body>
 </html>
+
 
