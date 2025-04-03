@@ -16,7 +16,7 @@
 
 <body class="bg-neutral-light-gray font-Roboto">
   <header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins h-17.5 md:h-44">
-    <nav class="flex items-center justify-between px-4">
+    <nav class="flex items-center justify-between px-4 border-b-2 border-[#D1D1D1]">
       <a href="index.html"><img class="mr-16 w-16 h-16 md:hidden" src="../public/img/logo-header-small-screen.png" alt="Edugate Logo"></a>
       <a href="index.html"><img class="mr-16 w-44 h-44 hidden md:flex" src="../public/img/logo-header.png" alt="Edugate Logo"></a>
 
@@ -25,20 +25,22 @@
         <label for="menu-toggle" class="peer-checked:hidden" aria-label="Toggle menu">
           <img src="../public/icons/hamburger-menu.png" alt="hamburger menu icon toggle button" class="w-6.25 h-6.25 cursor-pointer">
         </label>
-        <div class="fixed inset-0 bg-white text-neutral-dark-gray z-100 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
-          <label for="menu-toggle" class="cursor-pointer focus:outline-none" aria-label="Close menu">
-            <img src="../public/icons/x-close(1).jpg" alt="hamburger menu icon toggle button" class="w-6.25 h-6.25 mb-4 flex justify-end ml-auto mr-4 mt-4">
-            <img src="../public/img/logo-header.png" alt="Edugate Logo" class="w-16 h-16 flex mr-4 -mt-14">
-          </label>
+        <div class="fixed inset-0 text-neutral-dark-gray z-100 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 bg-white">
+          <div class="bg-[#F5F5F5] -mt-3.75 py-2">
+            <label for="menu-toggle" class="cursor-pointer focus:outline-none" aria-label="Close menu">
+              <img src="../public/icons/x-close(1).jpg" alt="hamburger menu icon toggle button" class="w-6.25 h-6.25 mb-4 flex justify-end ml-auto mr-4 mt-4 ">
+              <img src="../public/img/logo-header.png" alt="Edugate Logo" class="w-16 h-16 flex mr-4 -mt-14">
+            </label>
+          </div>
           <ul class="flex flex-col items-end justify-start gap-10 text-xl">
             <li>
-              <a href="login-page.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+              <a href="login-page.html" class="flex items-center gap-5 p-3 border-b-2 border-transparent hover:border-primary">
                 Login
                 <img class="w-6 h-6" src="../public/icons/login.png" alt="login Icon">
               </a>
             </li>
             <li>
-              <a href="sign-up.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+              <a href="sign-up.html" class="flex items-center gap-5 p-3 border-b-2 border-transparent hover:border-primary">
                 Sign up
                 <img class="w-6 h-6" src="../public/icons/signup.png" alt="signup Icon">
               </a>
