@@ -8,28 +8,119 @@
   <link rel="stylesheet" href="../dist/output.css"> <!-- Added stylesheet direction -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-neutral-light-gray flex-col min-h-screen">
+  <header class="bg-neutral-light-gray text-neutral-dark-gray border-b border-[#CCCCCC]">
+      <nav class="max-w-7x1 flex items-center justify-between px-0 md:px-4">
+          <img class="pl-0 md:pl-5 w-34 md:w-auto" src="../../public/img/logo-header.png" alt="Edugate Logo">
+      <!-- Hamburger Menu -->
+      <div class="fixed inset-0 md:hidden">
+          <!-- Checkbox for Hamburger Toggle -->
+          <input
+              type="checkbox"
+              id="menu-toggle"
+              class="hidden peer"
+          />
+          <!-- Hamburger Icon -->
+          <label
+              for="menu-toggle"
+              class="absolute top-14 right-4 cursor-pointer focus:outline-none peer-checked:hidden"
+              aria-label="Toggle menu"
+          >
+              <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+          </label>
 
-<body class="flex bg-neutral-light-gray"> 
-  <div class="flex-1 flex-col min-h-screen"> 
-    <header class="flex items-center justify-between px-6 h-[176px] border-b border-gray-300">
-      <!-- Logo -->
-      <img src="../public/img/logo-header.png" class="h-[176px]" alt="Edugate logo">
-  
-      <!-- Navigation -->
-      <nav class="w-full flex justify-end">
-          <ul class="flex items-center gap-x-16 text-black font-Roboto text-xl">
-              <li class="li-items cursor-pointer">Dashboard</li>
-              <li class="li-items cursor-pointer">About</li>
-              <li class="li-items cursor-pointer">Contact</li>
-              <li>
-                  <img src="../public/icons/user-circle.png" class="h-[64px] w-[64px]" alt="Profile button">
-              </li>
-          </ul>
-      </nav>
-  </header>
-  
-  
+          <div
+              class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300"
+          >
+              <!-- Close Icon -->
+              <label
+                  for="menu-toggle"
+                  class="absolute top-4 right-4 cursor-pointer focus:outline-none"
+                  aria-label="Close menu"
+              >
+                  <svg class="w-12 h-12 mt-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+              </label>
 
+              <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
+                  <li>
+                      <a href="dashboard-student.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                          Dashboard
+                          <img class="w-6 h-6" src="../../public/icons/dashboard.png" alt="Dashboard Icon">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="edit-profile-student.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                          Profile
+                          <img class="w-6 h-6" src="../../public/icons/user-circle.png" alt="Profile Icon">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="../about.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                          About
+                          <img class="w-6 h-6" src="../../public/icons/about.png" alt="About Icon">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="../contact.html" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
+                          Contact
+                          <img class="w-6 h-6" src="../../public/icons/contact.png" alt="Contact Icon">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-accent-hover">
+                          Log out
+                          <img class="w-6 h-6" src="../../public/icons/logout.png" alt="Log out Icon">
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <ul class="hidden md:flex mr-0 font-Poppins font-medium text-l ml-auto">
+        <li class="py-8 px-12 border-b-2 border-transparent hover:border-green-500 transition duration-200">
+          <a href="../../templates/students/dashboard-student.html" class="font-heading">Dashboard</a>
+        </li>
+        <li class="py-8 px-12 border-b-2 border-transparent hover:border-green-500 transition duration-200">
+          <a href="../../templates/about.html" class="font-heading">About</a>
+        </li>
+        <li class="py-8 px-12 border-b-2 border-transparent hover:border-green-500 transition duration-200">
+          <a href="../../templates/contact.html" class="font-heading">Contact</a>
+        </li>
+        
+      </ul>
+          <!-- User Dropdown -->
+          <div class="relative">
+            <!-- Hidden Checkbox -->
+            <input type="checkbox" id="dropdown-toggle" class="hidden peer">
+
+            <!-- User Icon (Clickable) -->
+            <label
+                for="dropdown-toggle"
+                class="hidden md:flex w-14 h-14 mr-10 cursor-pointer"
+            >
+                <img src="../../public/icons/user-circle.png" alt="User dropdown">
+            </label>
+
+            <!-- Dropdown Menu -->
+            <ul
+                class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
+                <li>
+                    <a href="#" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log out</a>
+                </li>
+            </ul>
+        </div>
+  </nav>
+</header>
   <main class="flex flex-row flex-grow gap-0 m-0"> 
     <!-- <section class="flex flex-col box-border border-r-[2px] border-[#e3e5e8]-400 p-5 hidden sm:table-cell pt-20">
       <input type="checkbox" id="nav-right-checkbox" aria-label="nav-right" class="hidden">
