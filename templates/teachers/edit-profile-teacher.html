@@ -7,7 +7,7 @@
       name="description"
       content="A page for editing teacher profile information"
     />
-    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../../dist/output.css" />
     <title>Edit Profile - Teacher</title>
   </head>
   <body class="bg-neutral-light-gray">
@@ -17,7 +17,7 @@
       <nav class="max-w-7x1 flex items-center justify-between px-4">
         <img
           class="ml-4 mr-16"
-          src="../public/img/logo-header.png"
+          src="../../public/img/logo-header.png"
           alt="Edugate Logo"
         />
 
@@ -71,7 +71,7 @@
               </svg>
             </label>
 
-            <ul
+            <ul              
               class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8"
             >
               <li>
@@ -82,7 +82,7 @@
                   Dashboard
                   <img
                     class="w-6 h-6"
-                    src="../public/icons/dashboard.png"
+                    src="../../public/icons/dashboard.png"
                     alt="Dashboard Icon"
                   />
                 </a>
@@ -95,7 +95,7 @@
                   Profile
                   <img
                     class="w-6 h-6"
-                    src="../public/icons/user-circle.png"
+                    src="../../public/icons/user-circle.png"
                     alt="Profile Icon"
                   />
                 </a>
@@ -108,46 +108,46 @@
                   Manage user
                   <img
                     class="w-6 h-6"
-                    src="../public/icons/user-management.png"
+                    src="../../public/icons/user-management.png"
                     alt="Manage user Icon"
                   />
                 </a>
               </li>
               <li>
                 <a
-                  href="../templates/about.html"
+                  href="../about.html"
                   class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary"
                 >
                   About
                   <img
                     class="w-6 h-6"
-                    src="../public/icons/about.png"
+                    src="../../public/icons/about.png"
                     alt="About Icon"
                   />
                 </a>
               </li>
               <li>
                 <a
-                  href="../templates/contact.html"
+                  href="../contact.html"
                   class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary"
                 >
                   Contact
                   <img
                     class="w-6 h-6"
-                    src="../public/icons/contact.png"
+                    src="../../public/icons/contact.png"
                     alt="Contact Icon"
                   />
                 </a>
               </li>
               <li>
                 <a
-                  href="../templates/index.html"
+                  href="../index.html"
                   class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-accent-hover"
                 >
                   Log out
                   <img
                     class="w-6 h-6"
-                    src="../public/icons/logout.png"
+                    src="../../public/icons/logout.png"
                     alt="Log out Icon"
                   />
                 </a>
@@ -169,16 +169,16 @@
           </li>
           <li>
             <a
-              href="../templates/about.html"
-              class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary font-Poppins font-semibold md:text-[20px] text-neutral-dark-gray"
+              href="../about.html"
+              class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary"
             >
               About</a
             >
           </li>
           <li>
             <a
-              href="../templates/contact.html"
-              class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary font-Poppins font-semibold md:text-[20px] text-neutral-dark-gray"
+              href="../contact.html"
+              class="py-8 md:px-8 border-b-2 border-neutral-light-gray hover:border-primary"
             >
               Contact</a
             >
@@ -194,7 +194,7 @@
             for="dropdown-toggle"
             class="hidden md:flex w-14 h-14 mr-10 cursor-pointer"
           >
-            <img src="/public/icons/user-circle.png" alt="User dropdown" />
+            <img src="../../public/icons/user-circle.png" alt="User dropdown" />
           </label>
 
           <!-- Dropdown Menu -->
@@ -227,7 +227,7 @@
       </nav>
     </header>
 
-    <main class="mb-10 mx-6">
+    <main class="mb-10 mx-6" role="main" aria-labelledby="edit-profile-title">
       <div class="flex mb-10 mt-10 gap-4">
         <a
           src="#"
@@ -245,8 +245,10 @@
 
       <section
         class="mx-4 md:mx-40 md:p-10 xl:mx-80 lg:border-3 border-neutral-medium-gray"
+        aria-labelledby="edit-profile-title"
       >
         <h1
+          id="edit-profile-title"
           class="text-neutral-dark-gray text-center font-Poppins text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-bold mb-4"
         >
           Edit Profile
@@ -255,18 +257,20 @@
         <div class="flex justify-center relative">
           <div
             class="relative w-[129px] h-[129px] group cursor-pointer hidden md:block"
+            role="button"
+            aria-label="Change profile picture"
           >
             <!-- Default profile icon -->
             <img
-              src="../public/icons/profile-icon.png"
+              src="../../public/icons/profile-icon.png"
               alt="Profile icon"
               class="w-full h-full transition-opacity duration-300 group-hover:opacity-0"
             />
 
             <!-- Hover state -->
             <img
-              src="../public/icons/profile-icon-hover.png"
-              alt="Change Picture"
+              src="../../public/icons/profile-icon-hover.png"
+              alt="Click to change profile picture"
               class="w-full h-full absolute top-0 left-0 right-0 bottom-0 m-auto transition-opacity duration-300 opacity-0 group-hover:opacity-100"
             />
           </div>
@@ -274,25 +278,29 @@
 
         <div class="flex justify-center">
           <img
-            src="../public/icons/user-circle-edit-mobile.png"
-            alt="Change
-          Picture"
+            src="../../public/icons/user-circle-edit-mobile.png"
+            alt="Change profile picture"
             class="w-[74px] h-[74px] md:hidden block m-2"
+            role="button"
+            aria-label="Change profile picture - mobile version"
           />
         </div>
 
         <section class="flex items-center justify-center">
-          <form action="#" class="xl:w-[315px]">
+          <form action="#" class="xl:w-[315px]" aria-label="Edit profile form">
             <!-- Editable fields -->
             <label
               class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
+              for="name"
               >Name:
               <input
                 type="text"
+                id="name"
                 name="Name"
                 placeholder="Joe Bloggs"
                 required
                 class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto"
+                aria-required="true"
               />
             </label>
             <label
@@ -306,6 +314,7 @@
                 placeholder="joeblog2024@edugate.no"
                 required
                 class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto"
+                aria-required="true"
               />
             </label>
             <label
@@ -319,6 +328,8 @@
                 placeholder="19/11/1988"
                 required
                 class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-black opacity-100 font-Roboto"
+                aria-required="true"
+                aria-label="Date of Birth in DD/MM/YYYY format"
               />
             </label>
 
@@ -336,6 +347,7 @@
                 value="1921840"
                 readonly
                 class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto"
+                aria-readonly="true"
               />
             </div>
             <div>
@@ -351,6 +363,7 @@
                 value="Teacher"
                 readonly
                 class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto"
+                aria-readonly="true"
               />
             </div>
             <div>
@@ -366,11 +379,12 @@
                 value="The Academy"
                 readonly
                 class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto"
+                aria-readonly="true"
               />
             </div>
 
             <div class="flex justify-center">
-              <button class="primary-button mt-4 mb-6" type="submit">
+              <button class="primary-button mt-4 mb-6 bg-[#4CAF50]" type="submit" aria-label="Update profile information">
                 Update
               </button>
             </div>
@@ -382,14 +396,14 @@
     <footer class="flex justify-end sm:justify-center">
       <img
         class="sm:hidden"
-        src="../public/img/Circles_illustration_mobile.png"
+        src="../../public/img/Circles_illustration_mobile.png"
         alt="Edugate footer circles"
       />
       <img
         class="hidden sm:block shrink-0 mx-4 mt-8"
-        src="../public/img/circle-footer.png"
+        src="../../public/img/circle-footer.png"
         alt="Edugate footer circles"
       />
     </footer>
   </body>
-</html>
+</html> 
