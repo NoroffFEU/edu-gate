@@ -15,9 +15,10 @@
 
   <body class="bg-neutral-light-gray font-Roboto">
     <header class="bg-neutral-light-gray text-neutral-dark-gray">
-      <nav class="max-w-screen-xl flex items-center justify-between px-2 border-b-2 border-[#D1D1D1] md:border-0">
+      <nav class="flex items-center justify-between px-2 border-b-2 border-[#D1D1D1] md:border-hidden">
         <a href="../templates/index.html">
-          <img class="w-16 h-16 md:w-44 md:h-44" src="../public/img/logo-header-small-screen.png" alt="Edugate Logo">
+          <img class="w-44 h-44 hidden md:flex" src="../public/img/logo-header.png" alt="Edugate Logo">
+          <img class="w-16 h-16 md:hidden" src="../public/img/logo-small-header.png" alt="Edugate Logo">
         </a>
 
       <div class="md:hidden">
@@ -113,7 +114,7 @@
             />
           </div>
           <p
-            class="mb-6 text-center text-sm sm:text-base font-light sm:font-normal text-neutral-dark-gray font-Roboto"
+            class="mb-6 text-center md:text-left text-sm sm:text-base font-light sm:font-normal text-neutral-dark-gray font-Roboto"
           >
             Forgot your password? Click
             <a class="font-bold hover:cursor-pointer" href="#">here</a>.
