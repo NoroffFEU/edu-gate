@@ -28,10 +28,7 @@
           font-size: 15px;
         }
 
-        main {
-          margin-left: 0px;
-        }
-
+        main,
         header {
           margin-left: 0px;
         }
@@ -44,10 +41,7 @@
           font-size: 15px;
         }
 
-        main {
-          margin-left: 0px;
-        }
-
+        main,
         header {
           margin-left: 0px;
         }
@@ -201,7 +195,7 @@
         >
           <li>
             <a
-              href="../templates/dashboard-admin.html"
+              href="../templates/admins/dashboard-admin.html"
               class="py-8 md:px-8 px-16 border-b-2 border-neutral-light-gray hover:border-primary mr-36"
               id="header-dashboard"
             >
@@ -251,7 +245,7 @@
             </li>
             <li>
               <a
-                href="../templates/student-profile.html"
+                href="../templates/students/edit-profile-student.html"
                 class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600"
                 >Profile</a
               >
@@ -297,7 +291,7 @@
       id="sidebar"
       class="fixed h-full hidden lg:flex flex-col gap-12 border-r-2 border-gray-300 px-4 top-44 left-0 pt-28 h-screen"
     >
-      <a href="../templates/dashboard-admin.html"
+      <a href="../templates/admins/dashboard-admin.html"
         ><img
           class="cursor-pointer w-12"
           src="/public/icons/dashboard.png"
@@ -309,7 +303,7 @@
           src="/public/icons/results.png"
           alt="Picture of a green results icon"
       /></a>
-      <a href="../templates/teacher-profile.html"
+      <a href="../templates/teachers/edit-profile-teacher.html"
         ><img
           class="cursor-pointer w-12"
           src="/public/icons/user-circle.png"
@@ -455,9 +449,11 @@
         <button type="button" class="primary-button py-2 px-6 text-sm mb-4">
           Upload +
         </button>
-        <button type="button" class="secondary-button py-2 px-6 text-sm">
-          Back to dashboard
-        </button>
+        <a href="../templates/admins/dashboard-admin.html"
+          ><button type="button" class="secondary-button py-2 px-6 text-sm">
+            Back to dashboard
+          </button></a
+        >
       </section>
     </main>
     <footer class="flex justify-center sm:justify-center mt-35 sm:mt-10">
