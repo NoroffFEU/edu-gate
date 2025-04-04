@@ -11,7 +11,7 @@
 
 <body class="flex bg-neutral-light-gray"> 
   <div class="flex-1 flex-col min-h-screen"> 
-  <header class="flex flex-row justify-between items-center p-4"> <!-- Reduced border width -->
+  <header class="flex flex-row justify-between items-center p-4 border-2 w-full"> <!-- Reduced border width -->
       <img src="../public/img/logo-header.png" alt="Edugate logo"> <!-- Added icon directions -->
       <nav>
         <ul class="flex items-center space-x-6">
@@ -24,15 +24,25 @@
   </header>
 
   <main class="flex flex-row flex-grow gap-0 m-0"> 
-    <section class="flex flex-col box-border border-r-2 border-gray-400 p-5 hidden sm:table-cell pt-20">
+    <section class="flex flex-col box-border border-r-2 border-gray-400 p-5 hidden sm:table-cell pt-20 bg-gray-100">
       <input type="checkbox" id="nav-right-checkbox" aria-label="nav-right" class="hidden">
-      <ul class="flex flex-col justify gap-[41px] justify-around">
-      <li><img src="../public/icons/dashboard.png" alt="" class="w-[41px]"></li>
-      <li><img src="../public/icons/results.png" alt="" class="w-[41px]"></li>
-      <li><img src="../public/icons/user-management.png" alt="" class="w-[41px]"></li>
-      <li><img src="../public/icons/top-students.png" alt="" class="w-[41px]"></li>
-      <li><img src="../public/icons/logout.png" alt="" class="w-[41px]"></li>
-    </ul>
+      <nav class="flex flex-col gap-12">
+        <a href="dashboard-admin.html" class="hover:bg-gray-200 p-2 rounded-lg">
+            <img src="/public/icons/dashboard.png" class="w-[41px]" alt="Dashboard icon">
+        </a>
+        <a href="add-results.html" class="hover:bg-gray-200 p-2 rounded-lg">
+            <img src="/public/icons/results.png" class="w-10" alt="Results management icon">
+        </a>
+        <a href="manage-user.html" class="hover:bg-gray-200 p-2 rounded-lg">
+            <img src="/public/icons/user-management.png" class="w-10" alt="User management icon">
+        </a>
+        <a href="add-school.html" class="hover:bg-gray-200 p-2 rounded-lg">
+            <img src="/public/icons/top-students.png" class="w-10" alt="Top students icon">
+        </a>
+        <a href="logout.html" class="hover:bg-red-200 p-2 rounded-lg">
+          <img src="/public/icons/logout.png" class="w-10" alt="Log out icon">
+      </a>
+    </nav>
     </section>
     <section class="flex flex-col w-full gap-12 m-0 pr-[16px] sm:!pr-[80px] border-t-2 border-gray-400 pl-4 pt-5">
       <p class="self-start mb-12">
