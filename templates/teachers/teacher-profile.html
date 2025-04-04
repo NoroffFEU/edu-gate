@@ -95,28 +95,30 @@
           </li>
 
           <!--User Dropdown-->
-          <div class="relative">
-            <!--Hidden Checkbox-->
-            <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
-            <!--User Icon (Clickable)-->
-            <label for="dropdown-toggle" class="hidden lg:flex w-14 h-14 mr-16 cursor-pointer">
-              <img src="../../public/icons/user-circle.png" alt="User dropdown" />
-            </label>
-            <!--Dropdown Menu-->
-            <ul
-              class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
-              <li>
-                <a href="#" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
-              </li>
-              <li>
-                <a href="#"
-                  class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
-              </li>
-              <li>
-                <a href="#" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log out</a>
-              </li>
-            </ul>
-          </div>
+          <li>
+            <div class="relative">
+              <!--Hidden Checkbox-->
+              <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
+              <!--User Icon (Clickable)-->
+              <label for="dropdown-toggle" class="hidden lg:flex w-14 h-14 mr-16 cursor-pointer">
+                <img src="../../public/icons/user-circle.png" alt="User dropdown" />
+              </label>
+              <!--Dropdown Menu-->
+              <ul
+                class="absolute right-0 mr-8 w-40 text-center border bg-neutral-light-gray border-neutral-light-gray rounded-lg shadow-lg opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-opacity duration-200">
+                <li>
+                  <a href="#" class="block px-8 py-4 hover:bg-white hover:text-green-600">See results</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="block px-8 py-4 hover:bg-white border-y-2 border-white hover:text-green-600">Profile</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-8 py-4 hover:bg-white hover:text-red-600">Log out</a>
+                </li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </nav>
     </div>
@@ -124,54 +126,68 @@
 
   <main class="w-full max-w-7xl mx-auto">
     <div>
-      <div class="flex ml-4 mt-4 mb-10 gap-4 lg:mb-20 lg:mt-20 lg:ml-6">
-        <p class="text-neutral-medium-gray font-Roboto font-normal text-[16px]">
-          Dashboard
-        </p>
-        <p class="text-neutral-medium-gray font-Roboto font-bold text-[16px]">
-          >
-        </p>
-        <p class="text-primary font-Roboto font-medium text-[16px]">Profile</p>
-      </div>
+      <nav aria-label="Breadcrumb" class="ml-4 mt-4 mb-10 lg:mb-20 lg:mt-20 lg:ml-6">
+        <ol class="flex gap-4 items-center">
+          <li>
+            <a href="#" class="text-neutral-medium-gray font-Roboto font-normal text-[16px]" aria-current="false">Dashboard</a>
+          </li>
+          <li class="text-neutral-medium-gray font-Roboto font-bold text-[16px]" aria-hidden="true">
+            >
+          </li>
+          <li>
+            <span class="text-primary font-Roboto font-medium text-[16px]" aria-current="page">Profile</span>
+          </li>
+        </ol>
+      </nav>
     </div>
 
     <div class="flex justify-center sm:items-center">
-      <div
-        class=" shadow-lg sm:shadow-none border-1 sm:border-2 border-neutral-medium-gray p-8 w-[361px] sm:w-[612px] text-center mb-10 sm:mb-20">
+      <section 
+        aria-labelledby="profile-heading"
+        class="shadow-lg sm:shadow-none border-1 sm:border-2 border-neutral-medium-gray p-8 w-[361px] sm:w-[612px] text-center mb-10 sm:mb-20">
         <h1
+          id="profile-heading"
           class="text-neutral-dark-gray text-center font-Poppins text-[20px] sm:text-[32px] font-bold tracking-wide mt-0 sm:mt-6 mb-2 sm:mb-4">
           Profile
         </h1>
         <div
-          class="w-18 h-18 sm:w-32 sm:h-32 mx-auto rounded-full bg-primary flex items-center justify-center text-white sm:text-black text-[32px] font-bold">
-          <span>JB</span>
+          class="w-18 h-18 sm:w-32 sm:h-32 mx-auto rounded-full bg-primary flex items-center justify-center text-white sm:text-black text-[32px] font-bold"
+          role="img"
+          aria-label="Profile initials: JB">
+          <span aria-hidden="true">JB</span>
         </div>
-        <div
-          class="mx-auto mt-4 mb-4 sm:mt-8 sm:mb-8 grid grid-cols-[1fr_2fr] sm:grid-cols-2  gap-y-2 sm:gap-y-4 text-left">
-          <span class="sm:ml-35 font-bold font-Roboto text-[14px] sm:text-[16px]">Name:</span>
-          <span class="sm:ml-10 font-medium font-Roboto text-[14px] sm:text-[16px]">Joe
-            Bloggs</span>
-          <span class="sm:ml-35 font-bold font-Roboto text-[14px] sm:text-[16px]">Email:</span>
-          <span class="sm:ml-10 font-medium font-Roboto text-[14px] sm:text-[16px]">joeblog2020@edugate.no</span>
-          <span class="sm:ml-35">
+        <dl
+          class="mx-auto mt-4 mb-4 sm:mt-8 sm:mb-8 grid grid-cols-[1fr_2fr] sm:grid-cols-2 gap-y-2 sm:gap-y-4 text-left">
+          <dt class="sm:ml-35 font-bold font-Roboto text-[14px] sm:text-[16px]">Name:</dt>
+          <dd class="sm:ml-10 font-medium font-Roboto text-[14px] sm:text-[16px]">Joe Bloggs</dd>
+          
+          <dt class="sm:ml-35 font-bold font-Roboto text-[14px] sm:text-[16px]">Email:</dt>
+          <dd class="sm:ml-10 font-medium font-Roboto text-[14px] sm:text-[16px]">
+            <a href="mailto:joeblog2020@edugate.no" class="underline hover:text-primary focus:text-primary focus:outline-none">joeblog2020@edugate.no</a>
+          </dd>
+          
+          <dt class="sm:ml-35">
             <span class="block sm:hidden font-bold font-Roboto text-[14px] sm:text-[16px]">DOB:</span>
             <span class="hidden sm:block font-bold font-Roboto text-[14px] sm:text-[16px]">Date of birth:</span>
-          </span>
-
-          <span class="sm:ml-10 font-medium font-Roboto text-[14px] sm:text-[16px]">19/11/1988</span>
-          <span class="sm:ml-35 font-bold font-Roboto text-[14px] sm:text-[16px]">ID:</span>
-          <span class="sm:ml-10 font-medium font-Roboto text-[14px] sm:text-[16px]">1921840</span>
-          <span class="sm:ml-35 font-bold font-Roboto text-[14px] sm:text-[16px]">Position:</span>
-          <span class="sm:ml-10 font-medium font-Roboto text-[14px] sm:text-[16px]">Teacher</span>
-          <span class="sm:ml-35 font-bold font-Roboto text-[14px] sm:text-[16px]">School:</span>
-          <span class="sm:ml-10 font-medium font-Roboto text-[14px] sm:text-[16px]">The
-            Academy</span>
-        </div>
+          </dt>
+          <dd class="sm:ml-10 font-medium font-Roboto text-[14px] sm:text-[16px]">19/11/1988</dd>
+          
+          <dt class="sm:ml-35 font-bold font-Roboto text-[14px] sm:text-[16px]">ID:</dt>
+          <dd class="sm:ml-10 font-medium font-Roboto text-[14px] sm:text-[16px]">1921840</dd>
+          
+          <dt class="sm:ml-35 font-bold font-Roboto text-[14px] sm:text-[16px]">Position:</dt>
+          <dd class="sm:ml-10 font-medium font-Roboto text-[14px] sm:text-[16px]">Teacher</dd>
+          
+          <dt class="sm:ml-35 font-bold font-Roboto text-[14px] sm:text-[16px]">School:</dt>
+          <dd class="sm:ml-10 font-medium font-Roboto text-[14px] sm:text-[16px]">The Academy</dd>
+        </dl>
         <button
-          class="block mx-auto mt-0 mb-0 sm:mt-14 sm:mb-16 border-2 border-secondary h-[44px] sm:h-[59px] w-[195px] sm:w-[190px] text-secondary text-[16px] sm:text-[26px] rounded-md font-semibold hover:bg-secondary-hover font-Poppins cursor-pointer">
+          class="block mx-auto mt-0 mb-0 sm:mt-14 sm:mb-16 border-2 border-secondary h-[44px] sm:h-[59px] w-[195px] sm:w-[190px] text-secondary text-[16px] sm:text-[26px] rounded-md font-semibold hover:bg-secondary-hover font-Poppins cursor-pointer focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2"
+          aria-label="Edit Profile Information"
+          type="button">
           Edit Profile
         </button>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="flex justify-end sm:justify-center">
