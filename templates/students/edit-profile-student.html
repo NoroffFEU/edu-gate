@@ -10,7 +10,7 @@
 </head>
 
 <body class="bg-neutral-light-gray">
-	<header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
+	<header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins mb-20">
 		<nav class="max-w-7x1 flex items-center justify-between px-4">
 			<img class="ml-4 mr-16" src="../../public/img/logo-header.png" alt="Edugate Logo">
 			<!-- Hamburger Menu -->
@@ -118,59 +118,69 @@
 		</nav>
 	</header>
 
-	<main class="mb-10 mx-6">
-		<div class="flex mb-10 gap-4 text-neutral-medium-gray">
-			<a src="#">Dashboard</a>
+	<main class="mx-6">
+		<div class="flex mt-6 gap-4 font-light text-neutral-medium-gray pl-10">
+			<a src="" class="text-neutral-medium-gray font-Roboto text-base font-normal">
+				Dashboard</a>
 			<p>></p>
-			<a src="#" class="text-primary">Profile</a>
+			<a src="#" class="text-neutral-medium-gray font-Roboto text-base font-normal">
+				Profile</a>
+			<p>></p>
+			<a src="#" class="text-primary font-Roboto text-base font-normal">
+				Edit Profile</a>
 		</div>
-		<section
-			class="flex flex-col justify-center max-w-186 mx-4 md:mx-40 md:p-10 lg:border-2 xl:mx-80 border-neutral-medium-gray">
+
+		<section class="mt-10 mb-[4.35rem] mx-4 md:mx-40 md:p-10 xl:mx-80 lg:border-2 border-neutral-medium-gray h-[71.33463rem]">
 			<h3
-				class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4">
+				class="hidden sm:block text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4">
 				Edit Profile</h3>
 			<h1
-				class="hidden text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4">
+				class="sm:hidden text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-4 sm:mb-4">
 				Edit Profile</h1>
 			<div class="flex justify-center">
-				<img class="w-[74px] h-[74px] md:w-28 md:h-28" src="../../public/icons/user-circle-edit-mobile.png"
+				<img class="hidden sm:block w-[74px] h-[74px] md:w-28 md:h-28" src="../../public/icons/profile-icon.png"
+					alt="user profile icon and initials">
+					<img class="sm:hidden w-[74px] h-[74px] md:w-28 md:h-28" src="../../public/icons/user-circle-edit-mobile.png"
 					alt="user profile icon and initials">
 			</div>
-			<section class="">
-				<form action="#" class="w-full lg:px-40">
+			<section class="mt-10 mb-[4.35rem] mx-10 md:p-10 h-[71.33463rem] border-neutral-medium-gray">
+				<form action="#" class="w-[23.33919rem] h-[3.2765rem] w-full max-w-sm mx-auto">
 					<!-- Editable fields -->
 					<label class="text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide">Name:
-						<input type="text" name="Name" placeholder="Ola" required
-							class="w-full mb-4 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
+						<input type="text" name="Name" placeholder="Joe Bloggs" required
+							class="h-12.5 w-full mb-4 p-2 border border-zinc-300 bg-white text-neutral-dark-gray rounded-lg shadow-inner shadow-gray-600 mt-1 text-sm font-Roboto font-normal">
 					</label>
 					<label class="text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide"
 						for="email">Email:
-						<input id="email" type="email" name="Email" placeholder="example@gmail.com" required
-							class="w-full mb-4 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
+						<input id="email" type="email" name="Email" placeholder="joeblog2024@edugate.no" required
+							class="h-12.5 w-full mb-4 p-2 border border-zinc-300 bg-white text-neutral-dark-gray rounded-lg shadow-inner shadow-gray-600 mt-1 text-sm font-Roboto font-normal">
 					</label>
 					<label class="text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide"
 						for="dob">Date of Birth:
-						<input type="date" id="dob" name="dob" required
-							class="w-full mb-4 p-2 border-2 border-zinc-300 focus:border-primary rounded shadow-inner shadow-gray-600 mt-1 font-thin">
+						<input type="text" placeholder="01/01/2002" onfocus="(this.type='date')" onblur="(this.type='text')" id="dob" name="dob" required
+							class="h-12.5 w-full mb-4 p-2 border border-zinc-300 bg-white text-neutral-dark-gray rounded-lg shadow-inner shadow-gray-600 mt-1 text-sm font-Roboto font-bold">
 					</label>
 					<!-- Read-only fields -->
 					<div class="hidden sm:block">
 						<label class="text-neutral-dark-gray font-Roboto text-sm font-bold tracking-wide"
 							for="id">ID:</label>
 						<input type="text" id="id" name="id" value="1921840" readonly
-							class="h-12.5 w-full mb-2 p-2 border border-[#CCCCCC] bg-[#D9D9D9] text-neutral-medium-gray rounded-lg shadow-inner shadow-gray-500 mt-1 text-sm font-Roboto font-bold" />
+
+							class="h-12.5 w-full mb-4 p-2 border border-zinc-300 bg-zinc-300 text-neutral-dark-gray rounded-lg shadow-inner shadow-gray-600 mt-1 text-sm font-Roboto font-bold" />
 					</div>
 					<div>
 						<label class="text-neutral-dark-gray font-Roboto text-sm font-bold tracking-wide"
 							for="gradYear">Grad Year:</label>
 						<input type="text" id="gradYear" name="gradYear" value="2020" readonly
-							class="h-12.5 w-full mb-2 p-2 border border-[#CCCCCC] bg-[#D9D9D9] text-neutral-medium-gray rounded-lg shadow-inner shadow-gray-500 mt-1 text-sm font-Roboto font-bold" />
+
+							class="h-12.5 w-full mb-4 p-2 border border-zinc-300 bg-zinc-300 text-neutral-dark-gray rounded-lg shadow-inner shadow-gray-600 mt-1 text-sm font-Roboto font-bold" />
 					</div>
 					<div>
 						<label class="text-neutral-dark-gray font-Roboto text-sm font-bold tracking-wide"
 							for="school">School:</label>
 						<input type="text" id="school" name="school" value="The Academy" readonly
-							class="h-12.5 w-full mb-2 p-2 border border-[#CCCCCC] bg-[#D9D9D9] text-neutral-medium-gray rounded-lg shadow-inner shadow-gray-500 mt-1 text-sm font-Roboto font-bold" />
+
+							class="h-12.5 w-full mb-4 p-2 border border-zinc-300 bg-zinc-300 text-neutral-dark-gray rounded-lg shadow-inner shadow-gray-600 mt-1 text-sm font-Roboto font-bold" />
 					</div>
 					<div class="flex justify-center">
 						<button class="border-2 hover:bg-[#388e3c] hover:border-[#388e3c] md:hover:border-[#4CAF50] md:hover:bg-[#4CAF50] border-[#4CAF50] bg-[#4CAF50] text-[#FFFFFF] font-Poppins font-semibold text-[1.625rem] text-center tracking-[0.5px] items-center justify-center flex m-auto h-14.5 w-37.5 rounded-md">Update</button>
