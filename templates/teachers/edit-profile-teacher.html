@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta
       name="description"
       content="A page for editing teacher profile information"
-    />
-    <link rel="stylesheet" href="../../dist/output.css" />
+    >
+    <link rel="stylesheet" href="../../dist/output.css">
     <title>Edit Profile - Teacher</title>
   </head>
   <body class="bg-neutral-light-gray">
@@ -19,11 +19,11 @@
           class="ml-4 mr-16"
           src="../../public/img/logo-header.png"
           alt="Edugate Logo"
-        />
+        >
 
         <div class="relative md:hidden">
           <!-- Checkbox for Hamburger Toggle -->
-          <input type="checkbox" id="menu-toggle" class="hidden peer" />
+          <input type="checkbox" id="menu-toggle" class="hidden peer">
           <!-- Hamburger Icon -->
           <label
             for="menu-toggle"
@@ -84,7 +84,7 @@
                     class="w-6 h-6"
                     src="../../public/icons/dashboard.png"
                     alt="Dashboard Icon"
-                  />
+                  >
                 </a>
               </li>
               <li>
@@ -97,7 +97,7 @@
                     class="w-6 h-6"
                     src="../../public/icons/user-circle.png"
                     alt="Profile Icon"
-                  />
+                  >
                 </a>
               </li>
               <li>
@@ -110,7 +110,7 @@
                     class="w-6 h-6"
                     src="../../public/icons/user-management.png"
                     alt="Manage user Icon"
-                  />
+                  >
                 </a>
               </li>
               <li>
@@ -123,7 +123,7 @@
                     class="w-6 h-6"
                     src="../../public/icons/about.png"
                     alt="About Icon"
-                  />
+                  >
                 </a>
               </li>
               <li>
@@ -136,7 +136,7 @@
                     class="w-6 h-6"
                     src="../../public/icons/contact.png"
                     alt="Contact Icon"
-                  />
+                  >
                 </a>
               </li>
               <li>
@@ -149,7 +149,7 @@
                     class="w-6 h-6"
                     src="../../public/icons/logout.png"
                     alt="Log out Icon"
-                  />
+                  >
                 </a>
               </li>
             </ul>
@@ -187,14 +187,14 @@
         <!-- User Dropdown -->
         <div class="relative">
           <!-- Hidden Checkbox -->
-          <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
+          <input type="checkbox" id="dropdown-toggle" class="hidden peer">
 
           <!-- User Icon (Clickable) -->
           <label
             for="dropdown-toggle"
             class="hidden md:flex w-14 h-14 mr-10 cursor-pointer"
           >
-            <img src="../../public/icons/user-circle.png" alt="User dropdown" />
+            <img src="../../public/icons/user-circle.png" alt="User dropdown" >
           </label>
 
           <!-- Dropdown Menu -->
@@ -227,10 +227,10 @@
       </nav>
     </header>
 
-    <main class="mb-10 mx-6" role="main" aria-labelledby="edit-profile-title">
+    <main class="mb-10 mx-6" aria-labelledby="edit-profile-title">
       <div class="flex mb-10 mt-10 gap-4">
         <a
-          src="#"
+          href="#"
           class="text-neutral-medium-gray font-Roboto font-normal text-[16px]"
         >
           Dashboard</a
@@ -238,7 +238,7 @@
         <p class="text-neutral-medium-gray font-Roboto font-bold text-[16px]">
           >
         </p>
-        <a src="#" class="text-primary font-Roboto font-medium text-[16px]">
+        <a href="#" class="text-primary font-Roboto font-medium text-[16px]">
           Profile</a
         >
       </div>
@@ -255,9 +255,9 @@
         </h1>
         <!-- Desktop Version -->
 <div class="flex justify-center relative">
-  <div
+  <label
     class="relative w-[129px] h-[129px] group cursor-pointer hidden md:block"
-    role="button"
+    
     aria-label="Change profile picture"
   >
     <!-- Default profile icon -->
@@ -265,14 +265,14 @@
       src="../../public/icons/profile-icon.png"
       alt="Profile icon"
       class="w-full h-full transition-opacity duration-300 group-hover:opacity-0"
-    />
+    >
 
     <!-- Hover state -->
     <img
       src="../../public/icons/profile-icon-hover.png"
       alt="Click to change profile picture"
       class="w-full h-full absolute top-0 left-0 right-0 bottom-0 m-auto transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-    />
+    >
 
     <!-- File input for profile image -->
     <input 
@@ -281,15 +281,14 @@
       accept="image/*" 
       class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer z-10 group-hover:block" 
       aria-label="Upload profile picture"
-    />
-  </div>
+    >
+  </label>
 </div>
 
 <!-- Mobile Version -->
 <div class="flex justify-center mt-4 md:hidden">
-  <div
+  <label
     class="relative w-[74px] h-[74px] group cursor-pointer bg-gray-200 rounded-full hover:bg-gray-300"
-    role="button"
     aria-label="Change profile picture - mobile version"
   >
     <!-- Default profile icon for mobile -->
@@ -299,7 +298,7 @@
       class="w-full h-full"
       role="button"
       aria-label="Click to change profile picture"
-    />
+    >
 
    
     <!-- File input for mobile version -->
@@ -309,12 +308,12 @@
       accept="image/*" 
       class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer z-10 group-hover:block" 
       aria-label="Upload profile picture"
-    />
-  </div>
+    >
+  </label>
 </div>
 
 
-        <section class="flex items-center justify-center">
+        <div class="flex items-center justify-center">
           <form action="#" class="xl:w-[315px]" aria-label="Edit profile form">
             <!-- Editable fields -->
             <label
@@ -329,7 +328,7 @@
                 required
                 class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto"
                 aria-required="true"
-              />
+              >
             </label>
             <label
               class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
@@ -343,7 +342,7 @@
                 required
                 class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto"
                 aria-required="true"
-              />
+              >
             </label>
             <label
               class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
@@ -358,7 +357,7 @@
                 class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-black opacity-100 font-Roboto"
                 aria-required="true"
                 aria-label="Date of Birth in DD/MM/YYYY format"
-              />
+              >
             </label>
 
             <!-- Read-only fields -->
@@ -376,7 +375,7 @@
                 readonly
                 class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto"
                 aria-readonly="true"
-              />
+              >
             </div>
             <div>
               <label
@@ -392,7 +391,7 @@
                 readonly
                 class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto"
                 aria-readonly="true"
-              />
+              >
             </div>
             <div>
               <label
@@ -408,7 +407,7 @@
                 readonly
                 class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] text-neutral-dark-gray opacity-80 font-Roboto"
                 aria-readonly="true"
-              />
+              >
             </div>
 
             <div class="flex justify-center">
@@ -417,7 +416,7 @@
               </button>
             </div>
           </form>
-        </section>
+        </div>
       </section>
     </main>
 
@@ -426,12 +425,12 @@
         class="sm:hidden"
         src="../../public/img/Circles_illustration_mobile.png"
         alt="Edugate footer circles"
-      />
+      >
       <img
         class="hidden sm:block shrink-0 mx-4 mt-8"
         src="../../public/img/circle-footer.png"
         alt="Edugate footer circles"
-      />
+      >
     </footer>
   </body>
 </html>
