@@ -7,6 +7,12 @@
   <meta name="description" content="A page for editing admin information">
   <link rel="stylesheet" href="../../dist/output.css">
   <title>Edit Profile - Admin</title>
+  <style>
+    input:focus-visible, button:focus-visible {
+      outline: 2px solid #4A90E2;
+      outline-offset: 2px;
+    }
+  </style>
 </head>
 
 <body class="bg-neutral-light-gray">
@@ -21,7 +27,7 @@
           <!--Hamburger Icon-->
           <label for="menu-toggle" class="block cursor-pointer focus:outline-none peer-checked:hidden mr-4"
             aria-label="Toggle menu">
-            <img src="../../public/icons/hamburger-menu.png" alt="hamburger-menu">
+            <img src="../../public/icons/hamburger-menu.png" alt="Hamburger menu icon for navigation">
           </label>
           <div
             class="fixed inset-0 bg-white text-neutral-dark-gray z-50 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
@@ -44,13 +50,13 @@
               <li>
                 <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                   Profile
-                  <img class="w-6 h-6" src="../../public/icons/user-circle.png" alt="Profile Icon">
+                  <img class="w-6 h-6" src="../../public/icons/user-circle.png" alt="User profile Icon">
                 </a>
               </li>
               <li>
                 <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                   Manage results
-                  <img class="w-6 h-6" src="../../public/icons/results.png" alt="Manage results Icon">
+                  <img class="w-6 h-6" src="../../public/icons/results.png" alt="Results management icon">
                 </a>
               </li>
               <li>
@@ -62,7 +68,7 @@
               <li>
                 <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
                   Contact
-                  <img class="w-6 h-6" src="../../public/icons/contact.png" alt="Contact Icon" >
+                  <img class="w-6 h-6" src="../../public/icons/contact.png" alt="Contact Icon">
                 </a>
               </li>
               <li>
@@ -122,13 +128,12 @@
   <main class="w-full max-w-7xl mx-auto mb-4 lg:mb-12">
     <div class="flex mt-4 lg:mt-12 mb-4 lg:mb-12 gap-6 ml-6">
       <a href="#" class="text-neutral-medium-gray font-Roboto font-normal text-[16px]">
-        <!--add link to breadcrumbs-->
         Dashboard</a>
       <p class="text-neutral-medium-gray font-Roboto font-bold text-[16px]">
         >
       </p>
       <a href="#" class="text-primary font-Roboto font-medium text-[16px]">
-        Profile</a>
+        Profile</a>      
     </div>
     <section class="max-w-3xl mx-auto md:pt-20 px-6 lg:border-3 border-neutral-medium-gray" aria-labelledby="edit-profile-title">
       <h1
@@ -195,30 +200,34 @@
   >
 </label>
 </div>
-
       <div class="flex items-center justify-center">
         <form action="#" class="w-full max-w-xs mx-auto">
           <!--Editable fields-->
           <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide">Name:
             <input type="text" name="Name" placeholder="Joe Bloggs" required
-              class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" >
+              class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto">
           </label>
           <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
             for="email">Email:
             <input id="email" type="email" name="Email" placeholder="joeblog2024@edugate.no" required
-              class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto" >
+              class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto">
+          </label>
+          <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide lg:hidden"
+            for="dob-mobile">DOB:
+            <input type="text" id="dob-mobile" name="dob" placeholder="01/01/1987" required
+              class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-[#000000] opacity-100 font-Roboto">
           </label>
           <label
-            class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide lg:block"
-            for="dob">Date of birth:
-            <input type="text" id="dob" name="dob" placeholder="01/01/1987" required
-              class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-[#000000] opacity-100 font-Roboto" >
+            class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide hidden lg:block"
+            for="dob-desktop">Date of birth:
+            <input type="text" id="dob-desktop" name="dob" placeholder="01/01/1987" required
+              class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-[#000000] opacity-100 font-Roboto">
           </label>
           <!--Added Extra field mobile screens-->
           <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide sm:hidden"
             for="position">Position:
             <input type="text" id="position" name="position" placeholder="Administrator" readonly
-              class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto" >
+              class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto">
           </label>
           <!--Read-only fields-->
           <div>
@@ -237,7 +246,8 @@
     </section>
   </main>
 
-  <footer class="w-full max-w-7xl mx-auto flex justify-center relative">
+  
+<footer class="w-full max-w-7xl mx-auto flex justify-center relative">
     <div class="w-full pl-10 sm:hidden md:hidden">
       <img class="w-full h-auto object-contain" src="../../public/img/Circles_illustration_mobile.png"
         alt="Edugate footer circles" >
