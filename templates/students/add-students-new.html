@@ -149,6 +149,25 @@
         <img src="/public/icons/logout.png" class="w-[41px]" alt="Log out icon"><span>Logout</span>
     </a>
   </div>
+
+  <div class="fixed top-10 right-4 flex flex-col items-end space-y-4">
+    <div id="success-alert"
+        class="alert-main hidden bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-lg shadow-md max-w-md w-fit">
+        <p class="font-bold flex items-center font-Roboto">
+            <img src="../../public/icons/verified.png" class="w-6 h-6 mr-2" alt="verified"> 
+            Files were successfully added!
+        </p>
+    </div>
+
+    <div id="error-alert"
+        class="alert-main hidden bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-lg shadow-md max-w-md w-fit">
+        <p class="font-bold flex items-center font-Roboto">
+            <img src="../../public/icons/fail.png" class="w-6 h-6 mr-2" alt="Fail"> 
+            Failed to upload files. Please try again.
+        </p>
+    </div>
+</div>
+
       
   <!-- <section class="mb-6 mt-6"> -->
     <section class="flex flex-col w-full gap-12 m-0 pr-[16px] sm:!pr-[80px]  border-#CCCCCC-400 pl-4 pt-5">
@@ -210,7 +229,7 @@
     </table>
   </div>
     <div class="flex flex-col items-center justify-center space-y-4">
-        <button type="button" class="px-6 py-2 max-w-xs bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition mt-6">Upload +</button>
+        <button id="upload-btn" type="button" class="px-6 py-2 max-w-xs bg-green-500 text-white font-semibold rounded-md hover:bg-green-600 transition mt-6">Upload +</button>
         <a href="dashboard-student.html"><button type="button" class="px-6 py-2 max-w-xs bg-white text-blue-500 border-2 border-blue-500 font-semibold rounded-md hover:bg-blue-100 hover:text-blue-700 transition">Back to dashboard</button></a>
     </div>
   </main>
@@ -220,6 +239,28 @@
     <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../../public/img/circle-footer.png" alt="Edugate footer circles">
 </footer>
 </body>
+<script>
+    // here i have used java script to make the botton functional, after discusssing with team leader Annak, and was given go a head by one of the teachers Adu
+    document.getElementById("upload-btn").addEventListener("click", function () {
+    const errorAlert = document.getElementById("error-alert");
+    const successAlert = document.getElementById("success-alert");
+
+    const isSuccess = Math.random() < 0.5;
+
+    if (isSuccess) {
+        successAlert.classList.remove("hidden");
+        setTimeout(() => {
+            successAlert.classList.add("hidden");
+        }, 6000);
+    } else {
+        errorAlert.classList.remove("hidden");
+        setTimeout(() => {
+            errorAlert.classList.add("hidden");
+        }, 6000);
+    }
+});
+</script>
 </html>
+
 
 
