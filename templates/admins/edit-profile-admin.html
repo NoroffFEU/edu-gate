@@ -7,12 +7,6 @@
   <meta name="description" content="A page for editing admin information">
   <link rel="stylesheet" href="../../dist/output.css">
   <title>Edit Profile - Admin</title>
-  <style>
-    input:focus-visible, button:focus-visible {
-      outline: 2px solid #4A90E2;
-      outline-offset: 2px;
-    }
-  </style>
 </head>
 
 <body class="bg-neutral-light-gray">
@@ -125,119 +119,90 @@
     </div>
   </header>
 
-  <main class="w-full max-w-7xl mx-auto mb-4 lg:mb-12">
-    <div class="flex mt-4 lg:mt-12 mb-4 lg:mb-12 gap-6 ml-6">
+  <main class="w-full max-w-7xl mx-auto md:mb-8 px-6">
+    <div class="flex mb-6 mt-3 gap-6 lg:mt-10 lg:ml-9 lg:mb-10">
       <a href="#" class="text-neutral-medium-gray font-Roboto font-normal text-[16px]">
         Dashboard</a>
       <p class="text-neutral-medium-gray font-Roboto font-bold text-[16px]">
         >
       </p>
       <a href="#" class="text-primary font-Roboto font-medium text-[16px]">
-        Profile</a>      
+        Profile</a>
     </div>
-    <section class="max-w-3xl mx-auto md:pt-20 px-6 lg:border-3 border-neutral-medium-gray" aria-labelledby="edit-profile-title">
-      <h1
-        id="edit-profile-title"
-        class="text-neutral-dark-gray text-center font-Poppins text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-bold mb-4"
-      >
+    <section class="max-w-3xl mx-auto md:pt-20 lg:border-3 border-neutral-medium-gray"
+      aria-labelledby="edit-profile-title">
+      <h1 id="edit-profile-title"
+        class="text-neutral-dark-gray text-center font-Poppins text-[20px] md:text-[32px] font-bold mb-4">
         Edit Profile
       </h1>
       <!-- Desktop Version -->
-<div class="flex justify-center relative">
-<label
-  class="relative w-[129px] h-[129px] group cursor-pointer hidden md:block"
-  
-  aria-label="Change profile picture"
->
-  <!-- Default profile icon -->
-  <img
-    src="../../public/icons/profile-icon.png"
-    alt="Profile icon"
-    class="w-full h-full transition-opacity duration-300 group-hover:opacity-0"
-  >
+      <div class="flex justify-center relative">
+        <label class="relative w-[129px] h-[129px] group cursor-pointer hidden md:block"
+          aria-label="Change profile picture">
+          <!-- Default profile icon -->
+          <img src="../../public/icons/profile-icon.png" alt="Profile icon"
+            class="w-full h-full transition-opacity duration-300 group-hover:opacity-0">
 
-  <!-- Hover state -->
-  <img
-    src="../../public/icons/profile-icon-hover.png"
-    alt="Click to change profile picture"
-    class="w-full h-full absolute top-0 left-0 right-0 bottom-0 m-auto transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-  >
+          <!-- Hover state -->
+          <img src="../../public/icons/profile-icon-hover.png" alt="Click to change profile picture"
+            class="w-full h-full absolute top-0 left-0 right-0 bottom-0 m-auto transition-opacity duration-300 opacity-0 group-hover:opacity-100">
 
-  <!-- File input for profile image -->
-  <input 
-    type="file" 
-    id="profileImageInput" 
-    accept="image/*" 
-    class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer z-10 group-hover:block" 
-    aria-label="Upload profile picture"
-  >
-</label>
-</div>
+          <!-- File input for profile image -->
+          <input type="file" id="profileImageInput" accept="image/*"
+            class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer z-10 group-hover:block"
+            aria-label="Upload profile picture">
+        </label>
+      </div>
 
-<!-- Mobile Version -->
-<div class="flex justify-center mt-4 md:hidden">
-<label
-  class="relative w-[74px] h-[74px] group cursor-pointer bg-gray-200 rounded-full hover:bg-gray-300"
-  aria-label="Change profile picture - mobile version"
->
-  <!-- Default profile icon for mobile -->
-  <img
-    src="../../public/icons/user-circle-edit-mobile.png"
-    alt="Change profile picture - mobile"
-    class="w-full h-full"
-    role="button"
-    aria-label="Click to change profile picture"
-  >
+      <!-- Mobile Version -->
+      <div class="flex justify-center mt-4 md:hidden">
+        <label class="relative w-[74px] h-[74px] group cursor-pointer bg-gray-200 rounded-full hover:bg-gray-300"
+          aria-label="Change profile picture - mobile version">
+          <!-- Default profile icon for mobile -->
+          <img src="../../public/icons/user-circle-edit-mobile.png" alt="Change profile picture - mobile"
+            class="w-full h-full" role="button" aria-label="Click to change profile picture">
 
- 
-  <!-- File input for mobile version -->
-  <input 
-    type="file" 
-    id="profileImageInputMobile" 
-    accept="image/*" 
-    class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer z-10 group-hover:block" 
-    aria-label="Upload profile picture"
-  >
-</label>
-</div>
+
+          <!-- File input for mobile version -->
+          <input type="file" id="profileImageInputMobile" accept="image/*"
+            class="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer z-10 group-hover:block"
+            aria-label="Upload profile picture">
+        </label>
+      </div>
       <div class="flex items-center justify-center">
         <form action="#" class="w-full max-w-xs mx-auto">
           <!--Editable fields-->
-          <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide">Name:
+          <label class="text-neutral-dark-gray text-[16px] font-Roboto font-bold tracking-wide">Name:
             <input type="text" name="Name" placeholder="Joe Bloggs" required
-              class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto">
+              class="bg-white w-full h-[51.04px] mb-2 p-[8px] pl-3 border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray hover:border-primary focus:border-primary focus:ring focus:ring-primary outline-none font-Roboto">
           </label>
-          <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
-            for="email">Email:
+          <label class="text-neutral-dark-gray text-[16px] font-Roboto font-bold tracking-wide" for="email">Email:
             <input id="email" type="email" name="Email" placeholder="joeblog2024@edugate.no" required
-              class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray font-Roboto">
+              class="bg-white w-full h-[51.04px] mb-2 p-[8px] pl-3 border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray hover:border-primary focus:border-primary focus:ring focus:ring-primary outline-none font-Roboto">
           </label>
-          <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide lg:hidden"
+          <label class="text-neutral-dark-gray text-[16px] font-Roboto font-bold tracking-wide lg:hidden"
             for="dob-mobile">DOB:
             <input type="text" id="dob-mobile" name="dob" placeholder="01/01/1987" required
-              class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-[#000000] opacity-100 font-Roboto">
+              class="bg-white w-full h-[51.04px] mb-2 p-[8px] pl-3 border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray focus:border-primary focus:ring focus:ring-primary outline-none font-Roboto">
           </label>
-          <label
-            class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide hidden lg:block"
+          <label class="text-neutral-dark-gray text-[16px] font-Roboto font-bold tracking-wide hidden lg:block"
             for="dob-desktop">Date of birth:
             <input type="text" id="dob-desktop" name="dob" placeholder="01/01/1987" required
-              class="bg-white w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-[#000000] opacity-100 font-Roboto">
+              class="bg-white w-full h-[51.04px] mb-2 p-[8px] pl-3 border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-medium text-[16px] text-neutral-dark-gray hover:border-primary focus:border-primary focus:ring focus:ring-primary outline-none font-Roboto">
           </label>
           <!--Added Extra field mobile screens-->
-          <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide sm:hidden"
+          <label class="text-neutral-dark-gray text-[16px] font-Roboto font-bold tracking-wide sm:hidden"
             for="position">Position:
             <input type="text" id="position" name="position" placeholder="Administrator" readonly
-              class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto">
+              class="bg-[#d9d9d9] w-full h-[51.04px] mb-2 p-[8px] pl-3 border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto">
           </label>
           <!--Read-only fields-->
-          <div>
-            <label class="text-neutral-dark-gray text-[16px] font-Roboto sm:text-sm font-bold tracking-wide"
-              for="school">School:</label>
-            <input type="text" id="school" name="school" placeholder="The Academy" readonly
-              class="bg-[#d9d9d9] w-full h-[51.04px] mb-4 p-[8px] border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto">
-          </div>
+          <label class="text-neutral-dark-gray text-[16px] font-Roboto font-bold tracking-wide"
+            for="school">School:</label>
+          <input type="text" id="school" name="school" placeholder="The Academy" readonly
+            class="bg-[#d9d9d9] w-full h-[51.04px] mb-2 p-[8px] pl-3 border-[1px] border-[#cccccc] rounded-md shadow-inner shadow-gray-400 mt-1 font-bold text-[16px] font-Roboto">
           <div class="flex justify-center">
-            <button class="primary-button mt-4 mb-4 lg:mb-40" type="submit">
+            <button class="primary-button mt-3 mb-6 lg:mt-6 lg:mb-40" type="submit">
               Update
             </button>
           </div>
@@ -246,14 +211,13 @@
     </section>
   </main>
 
-  
-<footer class="w-full max-w-7xl mx-auto flex justify-center relative">
+
+  <footer class="w-full max-w-7xl mx-auto flex justify-center relative">
     <div class="w-full pl-10 sm:hidden md:hidden">
       <img class="w-full h-auto object-contain" src="../../public/img/Circles_illustration_mobile.png"
-        alt="Edugate footer circles" >
+        alt="Edugate footer circles">
     </div>
-    <img class="hidden sm:block shrink-0 mx-auto" src="../../public/img/circle-footer.png"
-      alt="Edugate footer circles" >
+    <img class="hidden sm:block shrink-0 mx-auto" src="../../public/img/circle-footer.png" alt="Edugate footer circles">
   </footer>
 </body>
 
