@@ -9,37 +9,45 @@
       content="The Log In page for Edugate. Edugate is a result management system for high schools in Nigeria."
     />
     <link rel="stylesheet" href="../dist/output.css" />
-    <script src="" defer></script>
     <title>Edugate | Log In</title>
   </head>
-  <body class="bg-neutral-light-gray font-Roboto p-0 m-0">
-    <nav class="flex items-center justify-between">
-      <img src="/public/img/logo-header.png" alt="Logo" />
-      <ul class="flex space-x-30 text-lg mr-30">
-        <li>About</li>
-        <li>Contact</li>
+  <body class="bg-neutral-light-gray font-Roboto m-0 p-0">
+    <nav class="flex items-center justify-between px-8 py-4">
+      <a href="index.html">
+        <img
+          src="/public/img/logo-header.png"
+          alt="Logo"
+          class="mr-auto h-16 w-16 md:h-44 md:w-44 md:ml-12"
+        />
+      </a>
+      <ul class="flex space-x-8 text-lg mr-8 font-poppins font-medium">
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
       </ul>
     </nav>
+
     <main>
-      <div class="w-full max-w-sm sm:max-w-md mx-auto mt-6 px-4 sm:px-0">
+      <div class="w-full max-w-md mx-auto mt-6 px-4">
         <form
-          class="bg-neutral-light-gray border-0 sm:border-3 sm:border-[#cccccc] shadow-none sm:inset-shadow-sm sm:inset-shadow-[#cccccc] px-10 sm:px-12 pt-6 sm:pt-8 pb-8 sm:pb-10 mb-4"
+          class="bg-neutral-light-gray sm:border sm:border-[#cccccc] shadow-none px-10 sm:px-12 pt-6 sm:pt-8 pb-8 sm:pb-10 mb-4"
           action="submit-form-here"
           method="post"
         >
           <h1
-            class="text-neutral-dark-gray text-center font-Poppins text-[32px] font-bold tracking-wide mb-12 sm:mb-4"
+            class="text-neutral-dark-gray text-center font-Poppins text-[2rem] font-bold tracking-wide mb-10 sm:mb-4"
           >
             Log in
           </h1>
+
           <div class="mb-6">
             <label
-              class="block text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide"
+              class="block text-neutral-dark-gray font-bold tracking-wide text-base"
               for="email"
-              >Email</label
             >
+              Email
+            </label>
             <input
-              class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-3 sm:px-4 text-neutral-dark-gray text-sm sm:text-base"
+              class="bg-white border border-[#cccccc] shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-3 text-neutral-dark-gray text-base"
               type="email"
               name="email"
               id="email"
@@ -49,14 +57,16 @@
               inputmode="email"
             />
           </div>
+
           <div class="mb-6">
             <label
-              class="block text-neutral-dark-gray font-Roboto text-base sm:text-sm font-bold tracking-wide"
+              class="block text-neutral-dark-gray font-bold tracking-wide text-base"
               for="password"
-              >Password</label
             >
+              Password
+            </label>
             <input
-              class="bg-white border border-[#cccccc] inset-shadow-sm inset-shadow-[#cccccc] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-3 sm:px-4 text-dark-medium-gray text-sm sm:text-base"
+              class="bg-white border border-[#cccccc] shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] rounded-md focus:border-primary focus:ring-0 w-full py-2 px-3 text-dark-medium-gray text-base"
               type="password"
               name="password"
               id="password"
@@ -65,22 +75,30 @@
               autocomplete="current-password"
             />
           </div>
-          <p
-            class="mb-6 text-center text-sm sm:text-base font-light sm:font-normal text-neutral-dark-gray font-Roboto"
-          >
+
+          <p class="mb-6 text-left text-base font-light text-neutral-dark-gray">
             Forgot your password? Click
-            <a class="font-bold hover:cursor-pointer" href="#">here</a>.
+            <a class="font-bold hover:underline" href="#">here</a>.
           </p>
+
           <div class="text-center mb-4">
-            <button type="submit" class="primary-button primary-button:hover">
+            <button
+              type="submit"
+              class="bg-primary text-white text-base font-semibold py-2 px-6 rounded-md shadow-[inset_0_4px_4px_rgba(0,0,0,0.2)] hover:bg-primary-dark transition"
+            >
               Submit
             </button>
           </div>
         </form>
       </div>
     </main>
-    <footer class="flex justify-center pt-16 p-0">
-      <img src="/public/img/circle-footer.png" alt="twocircles" />
+
+    <footer class="flex justify-center pt-16">
+      <img
+        src="/public/img/circle-footer.png"
+        alt="twocircles"
+        class="mt-20 hidden md:flex"
+      />
     </footer>
   </body>
 </html>
