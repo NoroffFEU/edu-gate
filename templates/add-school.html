@@ -260,30 +260,7 @@
           </ul>
         </div>
 
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const dropdownButton = document.getElementById("dropdown-button");
-            const dropdownMenu = document.getElementById("dropdown-menu");
-
-            dropdownButton.addEventListener("click", function (event) {
-              dropdownMenu.classList.toggle("opacity-100");
-              dropdownMenu.classList.toggle("visible");
-              dropdownMenu.classList.toggle("opacity-0");
-              dropdownMenu.classList.toggle("invisible");
-              event.stopPropagation();
-            });
-
-            document.addEventListener("click", function (event) {
-              if (
-                !dropdownMenu.contains(event.target) &&
-                !dropdownButton.contains(event.target)
-              ) {
-                dropdownMenu.classList.add("opacity-0", "invisible");
-                dropdownMenu.classList.remove("opacity-100", "visible");
-              }
-            });
-          });
-        </script>
+        
       </nav>
     </header>
     <!--Sidebar-->
@@ -321,6 +298,34 @@
         alt="Picture of a red log out icon"
       />
     </div>
+    <div
+      id="success-alert"
+      class="alert-main hidden bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-lg shadow-md w-full max-w-md mx-auto"
+    >
+      <p class="font-bold">
+        <img
+          src="../../public/icons/verified.png"
+          style="display: inline"
+          alt="verified"
+        />
+        School were successfully added!
+      </p>
+    </div>
+
+    <div
+      id="error-alert"
+      class="alert-main hidden bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-lg shadow-md w-full max-w-md mx-auto"
+    >
+      <p class="font-bold">
+        <img
+          src="../../public/icons/fail.png"
+          style="display: inline"
+          alt="Fail"
+        />
+        Failed to upload school. Please try again.
+      </p>
+    </div>
+
     <main class="ml-10 mx-auto p-4 sm:p-6 font-Poppins font-medium">
       <section class="mb-12 text-sm">
         <nav>
@@ -446,7 +451,7 @@
         </div>
       </section>
       <section class="mt-6 flex flex-col gap-3 items-center">
-        <button type="button" class="primary-button py-2 px-6 text-sm mb-4">
+        <button id="upload-btn" type="button" class="primary-button py-2 px-6 text-sm mb-4">
           Upload +
         </button>
         <a href="../templates/admins/dashboard-admin.html"
@@ -468,5 +473,51 @@
         alt="Edugate footer circles"
       />
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdownButton = document.getElementById("dropdown-button");
+        const dropdownMenu = document.getElementById("dropdown-menu");
+
+        dropdownButton.addEventListener("click", function (event) {
+          dropdownMenu.classList.toggle("opacity-100");
+          dropdownMenu.classList.toggle("visible");
+          dropdownMenu.classList.toggle("opacity-0");
+          dropdownMenu.classList.toggle("invisible");
+          event.stopPropagation();
+        });
+
+        document.addEventListener("click", function (event) {
+          if (
+            !dropdownMenu.contains(event.target) &&
+            !dropdownButton.contains(event.target)
+          ) {
+            dropdownMenu.classList.add("opacity-0", "invisible");
+            dropdownMenu.classList.remove("opacity-100", "visible");
+          }
+        });
+      });
+
+      // here i have used java script to make the botton functional, after discusssing with team leader Annak, and was given go a head by one of the teachers Adu
+      document
+        .getElementById("upload-btn")
+        .addEventListener("click", function () {
+          const errorAlert = document.getElementById("error-alert");
+          const successAlert = document.getElementById("success-alert");
+
+          const isSuccess = Math.random() < 0.5;
+
+          if (isSuccess) {
+            successAlert.classList.remove("hidden");
+            setTimeout(() => {
+              successAlert.classList.add("hidden");
+            }, 6000);
+          } else {
+            errorAlert.classList.remove("hidden");
+            setTimeout(() => {
+              errorAlert.classList.add("hidden");
+            }, 6000);
+          }
+        });
+    </script>
   </body>
 </html>
