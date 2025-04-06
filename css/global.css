@@ -1,25 +1,26 @@
-html, body {
-    height: 100%;
-    margin: 0;
+html,
+body {
+	height: 100%;
+	margin: 0;
 }
 
 /* Header */
 
 header {
-    margin-bottom: 25px;
-    border: var(--color-neutral-medium-gray);
-    border-style: inset;
-    border-width: 0.5px;
+	margin-bottom: 25px;
+	border: var(--color-neutral-medium-gray);
+	border-style: inset;
+	border-width: 0.5px;
 }
 
 .HeaderLogo {
-    width: 120px;
+	width: 120px;
 }
 
 .UserLogo {
-    width: 60px;
-    height: 60px;
-    justify-items: center;
+	width: 60px;
+	height: 60px;
+	justify-items: center;
 }
 
 /* /header */
@@ -27,21 +28,19 @@ header {
 /* footer */
 
 footer {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
 }
 
 footer img {
-    height: 250px;
-    min-width: 350px;
+	height: 250px;
+	min-width: 350px;
 }
 
 @media (max-width: 424px) {
-    footer img {
-        width: 100%;
-        min-width: 1px;
-    }
+	footer img {
+		width: 100%;
+		min-width: 1px;
+	}
 }
-
-/* /footer */
