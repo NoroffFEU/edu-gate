@@ -9,7 +9,7 @@
 	"main": "app.js",
   "scripts": {
     "build": "npx @tailwindcss/cli -i ./css/styles.css -o ./dist/output.css --watch",
-    "start": "node ./src/index.js"
+    "start": "npm run build && node ./src/index.js"
 	},
 	"repository": {
 		"type": "git",
