@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../dist/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <title>Edugate | Select User</title>
 </head>
 <body class="bg-neutral-light-gray font-roboto">
 
-<header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
+<header class="bg-neutral-light-gray border border-gray-300 border-l-0 border-r-0 border-t-0 text-neutral-dark-gray font-Poppins">
   <nav class="max-w-7x1 flex items-center justify-between px-4">
     <img class="ml-4 mr-16" src="../public/img/logo-header.png" alt="Edugate Logo">
 
@@ -34,7 +35,7 @@
         </label>
 
         <ul class="flex flex-col items-end justify-start mt-40 h-full gap-10 text-xl mr-8">
-          <li>
+          <li class="" >
             <a href="#" class="flex items-center gap-5 p-3 border-b-2 border-white hover:border-primary">
               Dashboard
               <img class="w-6 h-6" src="../public/icons/dashboard.png" alt="Dashboard Icon">
@@ -74,20 +75,20 @@
       </div>
     </div>
 
-    <ul class="hidden md:flex justify-end mr-10 font-Poppins font-medium">
+    <ul class="hidden md:flex font-Poppins font-medium items-center ml-auto mr-20">
       <li>
-        <a href="#" class="py-8 md:px-8 px-16">
+          <a href="#" class="py-8 md:px-12 lg:px-20 text-[1.25rem] hover:border hover:border-[#4CAF50] hover:border-l-0 hover:border-r-0 hover:border-t-0 ">
           Dashboard</a>
       </li>
       <li>
-        <a href="about.html" class="py-8 md:px-8">
+          <a href="about.html" class="py-8 md:px-12 lg:px-20 text-[1.25rem] hover:border hover:border-[#4CAF50] hover:border-l-0 hover:border-r-0 hover:border-t-0">
           About</a>
       </li>
       <li>
-        <a href="contact.html" class="py-8 md:px-8">
+          <a href="contact.html" class="py-8 md:px-12 lg:px-20 text-[1.25rem] hover:border hover:border-[#4CAF50] hover:border-l-0 hover:border-r-0 hover:border-t-0">
           Contact</a>
       </li>
-    </ul>
+      </ul>
     <!-- User Dropdown -->
     <div class="relative">
       <!-- Hidden Checkbox -->
@@ -118,17 +119,32 @@
 </header>
   
 <main class="flex flex-row gap-0 m-0">
-  <section class="flex flex-col box-border border-r-2 border-gray-400 p-5 hidden sm:table-cell pt-20">
-    <input type="checkbox" id="nav-right-checkbox" aria-label="nav-right" class="hidden">
-    <ul class="flex flex-col justify gap-[41px] justify-around">
-    <li><img src="../public/icons/dashboard.png" alt="" class="w-[41px]"></li>
-    <li><img src="../public/icons/results.png" alt="" class="w-[41px]"></li>
-    <li><img src="../public/icons/user-management.png" alt="" class="w-[41px]"></li>
-    <li><img src="../public/icons/top-students.png" alt="" class="w-[41px]"></li>
-    <li><img src="../public/icons/logout.png" alt="" class="w-[41px]"></li>
-  </ul>
-  </section>
-<section class="flex flex-col gap-12 m-0 w-full sm:pr-[80px] pr-[16px] border-t-2 border-gray-400 pl-4 pt-5">
+  <div id="sidebar" class="sidebar teacher-sidebar hidden lg:flex flex-col gap-12 ml-4">
+    <img src="/public/icons/dashboard.png" class="w-[41px]">
+    <img src="/public/icons/results.png" class="w-[41px]">
+    <img src="/public/icons/user-circle.png" class="w-[41px]">
+    <img src="/public/icons/school-management.png" class="w-[41px]">
+    <img src="/public/icons/logout.png" class="w-[41px]">
+</div>
+<!--Sidebar-->
+<div id="sidebar-hov" class="teacher-sidebar hidden lg:flex flex-col gap-12 ">
+<a href="dashboard-admin.html" class=" rounded-md">
+    <img src="/public/icons/dashboard.png" class="w-[41px]"><span>Home</span>
+</a>
+<a href="add-results.html" class=" rounded-md">
+    <img src="/public/icons/results.png" class="w-[41px]"><span>Results Management</span>
+</a>
+<a href="manage-user.html" class="rounded-md">
+    <img src="/public/icons/user-circle.png" class="w-[41px]"><span>User Management</span>
+</a>
+<a href="add-school.html" class="rounded-md">
+    <img src="/public/icons/school-management.png" class="w-[41px]"><span>Top Students</span>
+</a>
+<a href="/templates" class="rounded-md">
+    <img src="/public/icons/logout.png" class="w-[41px]"><span>Logout</span>
+</a>
+</div>
+<section class="flex flex-col gap-12 m-0 w-full sm:pr-[80px] pr-[16px] border-gray-400 pl-4 pt-5">
   <section>
     <nav>
       <ul class="flex text-neutral-medium-gray gap-6 capitalize">
@@ -159,231 +175,19 @@
 
 
     <table class="bg-table">
-      <tr class="justify-end text-left capitalize text-primary">
-        <th class="p-4 uppercase text-2xl">id</th>
-        <th class="hidden p-4 md:table-cell text-2xl">first name</th>
-        <th class="p-4 text-2xl">last name</th>
-        <th class="hidden p-4 lg:table-cell text-2xl">year</th>
-        <th class="hidden p-4 sm:table-cell text-2xl">role</th>
-        <th class="hidden p-4 uppercase lg:table-cell text-2xl">dob</th>
-      </tr>  
-      <tr class="text-xl text-neutral-dark-gray bg-neutral-light-gray hover:bg-table-hover hover:cursor-default">
-        <td class="p-4">1921840</td>
-        <td class="hidden p-4 md:table-cell">Joe</td>
-        <td class="p-4">Bloggs</td>
-        <td class="hidden p-4 lg:table-cell">2020</td>
-        <td class="hidden p-4 sm:table-cell">Student</td>
-        <td class="hidden p-4 lg:table-cell">01/01/2002</td>
-        <td class="p-4" style="text-align: right; ">
-          <a href="#"> <!-- link to manage student -->
-            <button class="!text-primary">Edit</button>
-          </a>
-        </td>
-        <td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
-          <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden">
-          <label for="delete-checkbox" class="alert-button text-[16px] cursor-pointer">Delete</label>
-                  <!-- Overlay that will be hidden in css, and shown when checkbox checked -->
-        <div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center">
-          <div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
-            <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
-            <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
-              <img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
-            </label>
-            <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
-            <div class="flex justify-around gap-2">
-            <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
-            <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
-          </div>
-          </div>
-        </div>
-        </td>
-      </tr>
-      <tr class="text-xl text-neutral-dark-gray hover:bg-table-hover hover:cursor-default">
-        <td class="p-4">1921840</td>
-        <td class="hidden p-4 md:table-cell">Joe</td>
-        <td class="p-4">Bloggs</td>
-        <td class="hidden p-4 lg:table-cell">2020</td>
-        <td class="hidden p-4 sm:block">Student</td>
-        <td class="hidden p-4 lg:table-cell">01/01/2002</td>
-        <td class="p-4" style="text-align: right; ">
-          <a href="#"> <!-- link to manage student -->
-            <button class="!text-primary">Edit</button>
-          </a>
-        </td>
-        <td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
-          <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden">
-          <label for="delete-checkbox" class="alert-button text-[16px] cursor-pointer">Delete</label>
-                  <!-- Overlay that will be hidden in css, and shown when checkbox checked -->
-        <div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center">
-          <div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
-            <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
-            <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
-              <img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
-            </label>
-            <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
-            <div class="flex justify-around gap-2">
-            <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
-            <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
-          </div>
-          </div>
-        </div>
-        </td>
-      </tr>
-      <tr class="text-xl text-neutral-dark-gray bg-neutral-light-gray hover:bg-table-hover hover:cursor-default">
-        <td class="p-4">2035168</td>
-        <td class="hidden p-4 md:table-cell">Leslie</td>
-        <td class="p-4">Swanson</td>
-        <td class="hidden p-4 lg:table-cell">-</td>
-        <td class="hidden p-4 sm:table-cell">Teacher</td>
-        <td class="hidden p-4 lg:table-cell">03/02/1971</td>
-        <td class="p-4" style="text-align: right; ">
-          <a href="#"> <!-- link to manage student -->
-            <button class="!text-primary">Edit</button>
-          </a>
-        </td>
-        <td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
-          <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden">
-          <label for="delete-checkbox" class="alert-button text-[16px] cursor-pointer">Delete</label>
-                  <!-- Overlay that will be hidden in css, and shown when checkbox checked -->
-        <div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center">
-          <div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
-            <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
-            <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
-              <img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
-            </label>
-            <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
-            <div class="flex justify-around gap-2">
-            <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
-            <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
-          </div>
-          </div>
-        </div>
-        </td>
-      </tr>
-      <tr class="text-xl text-neutral-dark-gray hover:bg-table-hover hover:cursor-default">
-        <td class="p-4">2035168</td>
-        <td class="hidden p-4 md:table-cell">Leslie</td>
-        <td class="p-4">Swanson</td>
-        <td class="hidden p-4 lg:table-cell">-</td>
-        <td class="hidden p-4 sm:table-cell">Teacher</td>
-        <td class="hidden p-4 lg:table-cell">03/02/1971</td>
-        <td class="p-4" style="text-align: right; ">
-          <a href="#"> <!-- link to manage student -->
-            <button class="!text-primary">Edit</button>
-          </a>
-        </td>
-        <td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
-          <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden">
-          <label for="delete-checkbox" class="alert-button text-[16px] cursor-pointer">Delete</label>
-                  <!-- Overlay that will be hidden in css, and shown when checkbox checked -->
-        <div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center">
-          <div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
-            <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
-            <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
-              <img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
-            </label>
-            <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
-            <div class="flex justify-around gap-2">
-            <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
-            <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
-          </div>
-          </div>
-        </div>
-        </td>
-      </tr>
-      <tr class="text-xl text-neutral-dark-gray bg-neutral-light-gray hover:bg-table-hover hover:cursor-default">
-        <td class="p-4">1921840</td>
-        <td class="hidden p-4 md:table-cell">Joe</td>
-        <td class="p-4">Bloggs</td>
-        <td class="hidden p-4 lg:table-cell">2020</td>
-        <td class="hidden p-4 sm:table-cell">Student</td>
-        <td class="hidden p-4 lg:table-cell">01/01/2002</td>
-        <td class="p-4" style="text-align: right; ">
-          <a href="#"> <!-- link to manage student -->
-            <button class="!text-primary">Edit</button>
-          </a>
-        </td>
-        <td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
-          <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden">
-          <label for="delete-checkbox" class="alert-button text-[16px] cursor-pointer">Delete</label>
-                  <!-- Overlay that will be hidden in css, and shown when checkbox checked -->
-        <div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center">
-          <div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
-            <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
-            <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
-              <img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
-            </label>
-            <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
-            <div class="flex justify-around gap-2">
-            <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
-            <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
-          </div>
-          </div>
-        </div>
-        </td>
-      </tr>
-      <tr class="text-xl text-neutral-dark-gray hover:bg-table-hover hover:cursor-default">
-        <td class="p-4">1921840</td>
-        <td class="hidden p-4 md:table-cell">Joe</td>
-        <td class="p-4">Bloggs</td>
-        <td class="hidden p-4 lg:table-cell">2020</td>
-        <td class="hidden p-4 sm:table-cell">Student</td>
-        <td class="hidden p-4 lg:table-cell">01/01/2002</td>
-        <td class="p-4" style="text-align: right; ">
-          <a href="#"> <!-- link to manage student -->
-            <button class="!text-primary">Edit</button>
-          </a>
-        </td>
-        <td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
-          <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden">
-          <label for="delete-checkbox" class="alert-button text-[16px] cursor-pointer">Delete</label>
-                  <!-- Overlay that will be hidden in css, and shown when checkbox checked -->
-        <div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center">
-          <div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
-            <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
-            <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
-              <img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
-            </label>
-            <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
-            <div class="flex justify-around gap-2">
-            <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
-            <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
-          </div>
-          </div>
-        </div>
-        </td>
-      </tr>
-      <tr class="text-xl text-neutral-dark-gray bg-neutral-light-gray hover:bg-table-hover hover:cursor-default">
-        <td class="p-4">1921840</td>
-        <td class="hidden p-4 md:table-cell">Joe</td>
-        <td class="p-4">Bloggs</td>
-        <td class="hidden p-4 lg:table-cell">2020</td>
-        <td class="hidden p-4 sm:table-cell">Student</td>
-        <td class="hidden p-4 lg:table-cell">01/01/2002</td>
-        <td class="p-4" style="text-align: right; ">
-          <a href="#"> <!-- link to manage student -->
-            <button class="!text-primary">Edit</button>
-          </a>
-        </td>
-        <td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> <!--Need to style the checkbox:checked to show the modal overlay-->
-          <input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden">
-          <label for="delete-checkbox" class="alert-button text-[16px] cursor-pointer">Delete</label>
-                  <!-- Overlay that will be hidden in css, and shown when checkbox checked -->
-        <div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center">
-          <div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
-            <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
-            <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
-              <img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
-            </label>
-            <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
-            <div class="flex justify-around gap-2">
-            <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
-            <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
-          </div>
-          </div>
-        </div>
-        </td>
-      </tr>  
+      <thead class="w-full ">
+        <tr class="justify-end text-left capitalize text-primary">
+          <th class="p-4 uppercase text-2xl">id</th>
+          <th class="hidden p-4 md:table-cell text-2xl">first name</th>
+          <th class="p-4 text-2xl">last name</th>
+          <th class="hidden p-4 lg:table-cell text-2xl">year</th>
+          <th class="hidden p-4 sm:table-cell text-2xl">role</th>
+          <th class="hidden p-4 uppercase lg:table-cell text-2xl">dob</th>
+        </tr> 
+      </thead>
+      <tbody class="text-base lg:text-xl text-neutral-dark-gray">
+                    
+      </tbody>
     </table>  
 
 
@@ -419,6 +223,82 @@
   <img class="sm:hidden p-4 pb-0 w-full" src="../public/img/Circles_illustration_mobile.png" alt="Edugate footer circles mobile">
   <img class="hidden sm:block shrink-0 mx-4 mt-8" src="../public/img/circle-footer.png" alt="Edugate footer circles">
 </footer>
+
+<script>
+  const data = [
+    {ID: 1921840,FirstName: "Joe",LastName: "Bloggs",Year: 2020,Role: "Student",DOB: "01/01/2002"},
+    {ID: 1921840,FirstName: "Joe",LastName: "Bloggs",Year: 2020,Role: "Student",DOB: "01/01/2002"},
+    {ID: 2035168,FirstName: "Leslie",LastName: "Swanson",Year: "-",Role: "Teacher",DOB: "03/02/1971"},
+    {ID: 2035168,FirstName: "Leslie",LastName: "Swanson",Year: "-",Role: "Teacher",DOB: "03/02/1971"},
+    {ID: 1921840,FirstName: "Joe",LastName: "Bloggs",Year: 2020,Role: "Student",DOB: "01/01/2002"},
+    {ID: 1921840,FirstName: "Joe",LastName: "Bloggs",Year: 2020,Role: "Student",DOB: "01/01/2002"},
+    {ID: 1921840,FirstName: "Joe",LastName: "Bloggs",Year: 2020,Role: "Student",DOB: "01/01/2002"}
+  ]; 
+  const tableBody = document.querySelector("tbody");
+  var defaultUser = data;
+             
+  const populate = (data, i) => {
+    data.forEach((user, i) => { 
+          const row = document.createElement("tr");
+          row.classList.add("text-xl", "text-neutral-dark-gray", "bg-neutral-light-gray", "hover:bg-table-hover", "hover:cursor-default");
+          row.innerHTML = `
+      <tr class="">
+        <td class="p-4">${user.ID}</td>
+        <td class="hidden p-4 md:table-cell">${user.FirstName}</td>
+        <td class="p-4">${user.LastName}</td>
+        <td class="hidden p-4 lg:table-cell">${user.Year}</td>
+        <td class="hidden p-4 sm:table-cell">${user.Role}</td>
+        <td class="hidden p-4 lg:table-cell">${user.DOB}</td>
+        <td class="p-4" style="text-align: right; ">
+          <a href="/templates/manage-user.html">
+            <button class="!text-primary">Edit</button>
+          </a>
+        </td>
+        <td class="hidden pr-4 sm:table-cell w-[100px]" style="text-align: right;"> 
+          <input type="checkbox" id="delete-checkbox-${i}" aria-label="delete user" class="peer hidden">
+          <label for="delete-checkbox-${i}" class="alert-button text-[16px] cursor-pointer">Delete</label>
+        <div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center">
+          <div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
+            <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
+            <label for="delete-checkbox-${i}" class="absolute top-4 right-4 cursor-pointer">
+              <img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
+            </label>
+            <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
+            <div class="flex justify-around gap-2">
+            <button onclick="deleteClickHandler(${i})" class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
+            <label for="delete-checkbox-${i}" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
+          </div>
+          </div>
+        </div>
+        </td>
+      </tr>
+          `;
+          tableBody.appendChild(row);
+      });
+}
+
+  document.addEventListener("DOMContentLoaded", function () {        
+      populate(defaultUser);
+  });
+  document.querySelector("input[type='text']").addEventListener("input", (e) => {
+  const searchQuery = e.target.value.toLowerCase();
   
+  const filteredData = defaultUser.filter(user => 
+      user.FirstName.toLowerCase().includes(searchQuery) || 
+      user.LastName.toLowerCase().includes(searchQuery) ||
+      user.ID.toString().includes(searchQuery) ||
+      user.Role.toLowerCase().includes(searchQuery)
+  );
+  document.querySelector("tbody").innerHTML = ""; 
+  populate(filteredData);
+});
+
+const deleteClickHandler = (index)=>{
+  defaultUser.splice(index, 1);
+  document.querySelector("tbody").innerHTML = ""; 
+  populate(defaultUser)  
+}
+</script>
+
 </body>
 </html>
