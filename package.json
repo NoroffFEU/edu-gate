@@ -8,7 +8,7 @@
 	},
 	"main": "app.js",
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./css/styles.css -o ./dist/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./css/styles.css -o ./dist/output.css",
     "start": "npm run build && node ./src/index.js"
 	},
 	"repository": {
