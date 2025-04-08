@@ -1,4 +1,4 @@
-{
+
 	"name": "edu-gate",
 	"version": "1.0.0",
 	"description": "The frontend part of edugate",
@@ -7,8 +7,9 @@
 		"npm": ">=10.8.2"
 	},
 	"main": "app.js",
-	"scripts": {
-		"build": "npx @tailwindcss/cli -i ./css/styles.css -o ./dist/output.css --watch"
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./css/styles.css -o ./dist/output.css",
+    "start": "npm run build && node ./src/index.js"
 	},
 	"repository": {
 		"type": "git",
@@ -34,3 +35,5 @@
 		"tailwindcss": "^4.0.14"
 	}
 }
+
+
