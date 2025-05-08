@@ -2,6 +2,8 @@
 
 Edugate is a result management system tailored to meet the needs of high schools in Nigeria.
 
+URL GitHub Pages: https://norofffeu.github.io/edu-gate
+
 ## Requirements
 
 For development, you will only need node version >=18.17.1 and npm  version >=10.8.2 installed in your environement.
