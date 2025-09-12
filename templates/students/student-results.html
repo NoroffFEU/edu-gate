@@ -14,7 +14,7 @@
 	<script src="https://kit.fontawesome.com/8908c40066.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="w-full bg-neutral-light-gray p-5">
+<body class="w-full bg-neutral-light-gray min-h-full overflow-x-hidden">
 
 	<header class="bg-neutral-light-gray text-neutral-dark-gray font-Poppins">
 		<nav class="max-w-7x1 flex items-center justify-between px-4">
@@ -128,11 +128,23 @@
 			</div>
 		</nav>
 		<!-- Horizontal line -->
-		<hr class="border-t border-gray-300 my-4">
+		<hr class="border-t border-gray-300 my-">
 		</hr>
 	</header>
-
-	<main class="flex flex-col w-full font-Roboto self-center px-8 gap-5 pb-8">
+	
+	<section class="flex flex-row flex-grow">
+		<section class="flex flex-col box-border border-r-2 border-gray-300 p-5 hidden sm:table-cell pt-20 w-fit min-h-full">
+			<input type="checkbox" id="nav-right-checkbox" aria-label="nav-right" class="hidden">
+			<ul class="flex flex-col justify gap-[41px] justify-around">
+				<li><img src="../../public/icons/dashboard.png" alt="" class="w-[41px]"></li>
+				<li><img src="../../public/icons/results.png" alt="" class="w-[41px]"></li>
+				<li><img src="../../public/icons/user-management.png" alt="" class="w-[41px]"></li>
+				<li><img src="../../public/icons/top-students.png" alt="" class="w-[41px]"></li>
+				<li><img src="../../public/icons/logout.png" alt="" class="w-[41px]"></li>
+	  		</ul>
+		</section>
+	<main class="flex flex-col w-full font-Roboto self-center gap-5">
+	<section class="flex flex-col w-full font-Roboto self-center px-8 gap-5 pb-8">	
 		<div class="text-neutral-medium-gray flex h-10 items-center mt-5 gap-6 text-xs sm:text-base pl-5">
 			<a href="#">Dashboard</a>&gt;
 			<a href="#">Select student</a>
@@ -142,7 +154,6 @@
 
 		<div class="flex flex-col gap-5 items-center">
 			<div class="flex flex-row w-full justify-center">
-				<img src="../../public/icons/green-double-arrows-right.png" alt="arrows" class="w-12 h-12 md:hidden" />
 				<h1 class="w-fit font-bold text-2xl font-Poppins">Student results</h1>
 			</div>
 
@@ -238,6 +249,11 @@
 						<th class="p-4 w-fit">Exam</th>
 						<th class="p-4 w-fit">Result</th>
 						<th class="p-4 w-fit">Grade</th>
+						<th colspan="2" class="w-fit">
+							<div class="flex justify-end">
+							  <span class="text-right"></span>
+							</div>
+						  </th>
 					</tr>
 				</thead>
 				<tbody class="text-base lg:text-xl text-neutral-dark-gray">
@@ -248,6 +264,29 @@
 						<td class="p-4 w-fit">M1</td>
 						<td class="p-4 w-fit">90/120</td>
 						<td class="p-4 w-fit">B</td>
+						<td class="font-Roboto text-xl not-italic font-medium leading-[1.5px] tracking-[0.5px]">
+							<a href="#"> <!-- link to manage student -->
+							  <button class="!text-primary">Edit</button>
+							</a>
+						  </td>
+						<td class="hidden sm:table-cell text-right text-base font-Poppins not-italic font-semibold leading-normal tracking-[0.5px] p-4 w-24 h-11"> 
+							<input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden ">
+							<label for="delete-checkbox" class="alert-button text-base">Delete</label>
+
+						<div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center ">
+							<div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
+							  <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
+							  <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
+								<img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
+							  </label>
+							  <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
+							  <div class="flex justify-around gap-2">
+							  <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
+							  <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
+							</div>
+							</div>
+						</div>
+						</td>
 					</tr>
 					<tr class="hover:bg-table-hover hover:cursor-default">
 						<td class="p-4 w-fit">2019</td>
@@ -256,6 +295,29 @@
 						<td class="p-4 w-fit">P3</td>
 						<td class="p-4 w-fit">102/120</td>
 						<td class="p-4 w-fit">A</td>
+						<td class="font-Roboto text-xl not-italic font-medium leading-[1.5px] tracking-[0.5px]">
+							<a href="#"> <!-- link to manage student -->
+							  <button class="!text-primary">Edit</button>
+							</a>
+						  </td>
+						<td class="hidden sm:table-cell text-right text-base font-Poppins not-italic font-semibold leading-normal tracking-[0.5px] p-4 w-24 h-11"> 
+							<input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden ">
+							<label for="delete-checkbox" class="alert-button text-base">Delete</label>
+
+						<div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center ">
+							<div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
+							  <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
+							  <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
+								<img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
+							  </label>
+							  <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
+							  <div class="flex justify-around gap-2">
+							  <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
+							  <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
+							</div>
+							</div>
+						</div>
+						</td>
 					</tr>
 					<tr class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray">
 						<td class="p-4 w-fit">2019</td>
@@ -264,6 +326,29 @@
 						<td class="p-4 w-fit">E2</td>
 						<td class="p-4 w-fit">80/110</td>
 						<td class="p-4 w-fit">B</td>
+						<td class="font-Roboto text-xl not-italic font-medium leading-[1.5px] tracking-[0.5px]">
+							<a href="#"> <!-- link to manage student -->
+							  <button class="!text-primary">Edit</button>
+							</a>
+						  </td>
+						<td class="hidden sm:table-cell text-right text-base font-Poppins not-italic font-semibold leading-normal tracking-[0.5px] p-4 w-24 h-11"> 
+							<input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden ">
+							<label for="delete-checkbox" class="alert-button text-base">Delete</label>
+
+						<div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center ">
+							<div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
+							  <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
+							  <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
+								<img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
+							  </label>
+							  <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
+							  <div class="flex justify-around gap-2">
+							  <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
+							  <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
+							</div>
+							</div>
+						</div>
+						</td>
 					</tr>
 					<tr class="hover:bg-table-hover hover:cursor-default">
 						<td class="p-4 w-fit">2019</td>
@@ -272,6 +357,29 @@
 						<td class="p-4 w-fit">E1</td>
 						<td class="p-4 w-fit">95/130</td>
 						<td class="p-4 w-fit">B</td>
+						<td class="font-Roboto text-xl not-italic font-medium leading-[1.5px] tracking-[0.5px]">
+							<a href="#"> <!-- link to manage student -->
+							  <button class="!text-primary">Edit</button>
+							</a>
+						  </td>
+						<td class="hidden sm:table-cell text-right text-base font-Poppins not-italic font-semibold leading-normal tracking-[0.5px] p-4 w-24 h-11"> 
+							<input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden ">
+							<label for="delete-checkbox" class="alert-button text-base">Delete</label>
+
+						<div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center ">
+							<div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
+							  <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
+							  <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
+								<img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
+							  </label>
+							  <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
+							  <div class="flex justify-around gap-2">
+							  <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
+							  <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
+							</div>
+							</div>
+						</div>
+						</td>
 					</tr>
 					<tr class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray">
 						<td class="p-4 w-fit">2019</td>
@@ -280,6 +388,29 @@
 						<td class="p-4 w-fit">B2</td>
 						<td class="p-4 w-fit">73/120</td>
 						<td class="p-4 w-fit">C</td>
+						<td class="font-Roboto text-xl not-italic font-medium leading-[1.5px] tracking-[0.5px]">
+							<a href="#"> <!-- link to manage student -->
+							  <button class="!text-primary">Edit</button>
+							</a>
+						  </td>
+						<td class="hidden sm:table-cell text-right text-base font-Poppins not-italic font-semibold leading-normal tracking-[0.5px] p-4 w-24 h-11"> 
+							<input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden ">
+							<label for="delete-checkbox" class="alert-button text-base">Delete</label>
+
+						<div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center ">
+							<div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
+							  <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
+							  <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
+								<img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
+							  </label>
+							  <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
+							  <div class="flex justify-around gap-2">
+							  <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
+							  <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
+							</div>
+							</div>
+						</div>
+						</td>
 					</tr>
 					<tr class="hover:bg-table-hover hover:cursor-default">
 						<td class="p-4 w-fit">2019</td>
@@ -288,6 +419,29 @@
 						<td class="p-4 w-fit">P2</td>
 						<td class="p-4 w-fit">110/120</td>
 						<td class="p-4 w-fit">A</td>
+						<td class="font-Roboto text-xl not-italic font-medium leading-[1.5px] tracking-[0.5px]">
+							<a href="#"> <!-- link to manage student -->
+							  <button class="!text-primary">Edit</button>
+							</a>
+						  </td>
+						<td class="hidden sm:table-cell text-right text-base font-Poppins not-italic font-semibold leading-normal tracking-[0.5px] p-4 w-24 h-11"> 
+							<input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden ">
+							<label for="delete-checkbox" class="alert-button text-base">Delete</label>
+
+						<div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center ">
+							<div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
+							  <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
+							  <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
+								<img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
+							  </label>
+							  <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
+							  <div class="flex justify-around gap-2">
+							  <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
+							  <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
+							</div>
+							</div>
+						</div>
+						</td>
 					</tr>
 					<tr class="hover:bg-table-hover hover:cursor-default bg-neutral-light-gray">
 						<td class="p-4 w-fit">2019</td>
@@ -296,6 +450,29 @@
 						<td class="p-4 w-fit">H2</td>
 						<td class="p-4 w-fit">90/110</td>
 						<td class="p-4 w-fit">A</td>
+						<td class="font-Roboto text-xl not-italic font-medium leading-[1.5px] tracking-[0.5px]">
+							<a href="#"> <!-- link to manage student -->
+							  <button class="!text-primary">Edit</button>
+							</a>
+						  </td>
+						<td class="hidden sm:table-cell text-right text-base font-Poppins not-italic font-semibold leading-normal tracking-[0.5px] p-4 w-24 h-11"> 
+							<input type="checkbox" id="delete-checkbox" aria-label="delete user" class="peer hidden ">
+							<label for="delete-checkbox" class="alert-button text-base">Delete</label>
+
+						<div class="fixed inset-0 bg-black bg-opacity-50 hidden peer-checked:flex items-center justify-center ">
+							<div class="bg-white p-6 rounded shadow-lg w-96 relative text-left">
+							  <h2 class="text-neutral-dark-gray font-Poppins text-2xl sm:text-xl font-bold tracking-wide mb-4">Delete this user?</h2>
+							  <label for="delete-checkbox" class="absolute top-4 right-4 cursor-pointer">
+								<img src="../public/icons/x.png" class="w-4 h-4 hover:bg-neutral-light-gray">
+							  </label>
+							  <p class="text-neutral-dark-gray font-Roboto text-xl sm:text-sm font-normal tracking-wide mb-4">Are you sure you want to delete selected user? This action is permanent and cannot be undone.</p>
+							  <div class="flex justify-around gap-2">
+							  <button class="bg-[#FF5722] text-white px-4 py-2 rounded-md hover:bg-[#E64A19]">Yes, delete user</button>
+							  <label for="delete-checkbox" class="border-[#2196F3] border-solid border-2 text-[#2196F3] px-4 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#2196F3]">Cancel</label>
+							</div>
+							</div>
+						</div>
+						</td>
 					</tr>
 				</tbody>
 			</table>
@@ -336,12 +513,16 @@
 			href="#">
 			Back to dashboard
 		</button>
-	</main>
-	
+	</section>	
 	<footer class="flex justify-end sm:justify-center mt-35 sm:mt-10">
 		<img class="sm:hidden" src="../../public/img/Circles illustration mobile.png" alt="Edugate footer circles">
 		<img class="hidden sm:block shrink-0 mx-4 mt-8" src="../../public/img/circle-footer.png" alt="Edugate footer circles">
 	</footer>
+	</main>	
+	</section>
+	
+	
+	
 	
 </body>
 
