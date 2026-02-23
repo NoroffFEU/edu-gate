@@ -6,7 +6,6 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -20,7 +19,8 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react"
+    "jsx-a11y",
+    "import"
   ],
   "rules": {
     "array-bracket-spacing": ["error", "always"],

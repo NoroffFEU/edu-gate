@@ -4,16 +4,42 @@ Edugate is a result management system tailored to meet the needs of high schools
 
 ## Requirements
 
-For development, you will only need node version >=18.17.1 and npm  version >=10.8.2 installed in your environement.
+For development, you will only need node version >=20.13.1 and npm version >=10.5.2 installed in your environement.
+
+## Development Standard
+
+[Click here to view the Development Standard](https://docs.google.com/document/d/1Y2X9s_OPY0wSVfV1-ZlJ1qSaZ8mw_EytcUXP--uKMFs/edit?tab=t.0#heading=h.a1d2xjp35qkh)
 
 ## Technologies
 
     - HTML
     - CSS
-    - Tailwind
+    - JS
+
+## Optional: VS Code integration
+
+Install the following VS Code extensions:
+
+- **ESLint**
+- **Prettier – Code formatter**
+
+In your VS Code settings (`.vscode/settings.json`), add:
+
+```json
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.validate": ["javascript", "html"],
+  "files.exclude": {
+    "node_modules": true
+  }
+}
+```
 
 ## Getting started
-    $ Change directory to edu-gate `cd  edu-gate`
-    $ `npm i`
-    $ `npm run build`
-    $ Open page with live-server
+
+    $ Clone the repository by running `git clone https://github.com/NoroffFEU/edu-gate-aug24-pt` in your terminal
+    $ Change directory to edu-gate-aug24-pt `cd  edu-gate-aug24-pt`
+    $ Install the dependencies `npm i`
+    $ Start the server `npm run start`
+    $ Browse to `http://127.0.0.1:8181`
